@@ -10,5 +10,3 @@ This is a sample image!
 
 ```{tableofcontents}
 ```
-
-TEST
