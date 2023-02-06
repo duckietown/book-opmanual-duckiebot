@@ -1,3 +1,2 @@
-# Section 1
+# Installing `dts`
 
-Write the content of `Chapter A / Section 1` here.

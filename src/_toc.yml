@@ -4,13 +4,14 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
+    - caption: Setup - Laptop
       maxdepth: 2
       numbered: False
       chapters:
           - file: part_1/chapter_a/index
             sections:
                 - file: part_1/chapter_a/section_1
+                - file: part_1/chapter_a/section_2
     - caption: PART_TWO
       maxdepth: 2
       numbered: False
