@@ -1,7 +1,6 @@
 # Chapter B
 
-Write the content of `Chapter B` here.
-
+## Knowledge Graph
 
 <div class='requirements' markdown='1'>
 
@@ -15,3 +14,6 @@ Results: A laptop ready to be used for Duckietown.
 
 </div>
 
+## Whatever
+
+Write the content of `Chapter B` here.
