@@ -37,22 +37,36 @@ You will need:
 :::
 
 
+### To set docker credentials
 ```bash
-dts config docker \
-    --docker-username YOUR_DOCKERHUB_USERNAME \
-    --docker-password YOUR_DOCKERHUB_ACCESS_TOKEN
-```
-
-To verify:
-```bash
-dts challenges info
-
-# (The following line is expected among the output)
-# credentials_available: [docker.io]
+dts config docker set \
+    --username YOUR_DOCKERHUB_USERNAME \
+    --password YOUR_DOCKERHUB_ACCESS_TOKEN
 ```
 
 :::{admonition} For developers
 :class: dropdown
 
-Use the extra option `--docker-registry` to specify a custom docker registry other than `docker.io`
+With an extra **positional** argument, one could specify a custom docker registry server other than `docker.io`. Check `dts config docker set --help` for more details.
+:::
+
+### To verify existing docker credentials
+```bash
+dts config docker info
+
+# expected outcome:
+# saved docker registry server (default: docker.io) and the username
+```
+
+### FAQs
+```{trouble}
+I mistakenly set a wrong/unwanted username or password. How can I update the credentials?
+---
+Just run the command again with the correct credentials. Only the latest inputs are stored for the same docker registry.
+```
+
+:::{trouble}
+I would like to remove my stored docker credentials. How could I achieve that?
+---
+Simply use a text editor to remove the section `docker-credentials` in `~/.dt-shell/config.yaml` file.
 :::
