@@ -22,7 +22,7 @@ If you are using Mac OSX, [see Option 2](mac-users-cli).
 
 To move your Duckiebot using your computer's keyboard open a terminal and run:
 
-    dts duckiebot keyboard_control <ROBOT_NAME>
+    dts duckiebot keyboard_control ![DUCKIEBOT_NAME]
 
 ```{attention}
 For all operation commands that use the Duckiebot's name - input just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
@@ -31,7 +31,7 @@ For all operation commands that use the Duckiebot's name - input just the Duckie
 After startup, the `keyboard_control` command will open an interface window. Make sure the window is active by selecting it, and use the keys in the table below to command your Duckiebot:
 
 ```{figure} ../../_images/assembly_setup/setup_dashboard/keyboard_gui.png
-:name: keyboard-control-gui
+:name: keyboard_control_gui
 
 The keyboard control graphical user interface.
 ```
@@ -57,7 +57,7 @@ The following keys control the Duckiebot:
 ```
 
 ```{note}
-The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane following demo](#demo-lane-following) to be running. For now, just try out the keyboard control and get your Duckiebot moving!
+The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane following demo](demo-lane-following) to be running. For now, just try out the keyboard control and get your Duckiebot moving!
 ```
 
 (mac-users-cli)=
@@ -65,7 +65,7 @@ The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane fol
 
 If you are using MacOSX and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
 
-    dts duckiebot keyboard_control <ROBOT_NAME> --cli
+    dts duckiebot keyboard_control ![DUCKIEBOT_NAME] --cli
 
 ## Troubleshooting
 
@@ -78,7 +78,7 @@ Make sure that the keyboard gui window is active by selecting it, then try the k
 ```{trouble}
 I can see the commands being sent to the Duckiebot (e.g., through the **Dashboard > Mission Control**), but the Duckiebot does not move. My **Dashboard > Robot > Components** page shows a red alert for the `HUT`.
 ---
-If you have a `HUT` v3.15 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](#reflash-microcontroller).
+If you have a `HUT` v3.15 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](reflash-microcontroller).
 ```
 
 ```{trouble}

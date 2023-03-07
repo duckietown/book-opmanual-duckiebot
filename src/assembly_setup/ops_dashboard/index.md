@@ -55,7 +55,7 @@ In this tab, you can find information for your robot - including your robot name
 ```
 
 ```{note}
-From this page you can read the Duckiebot's firmware version, i.e., the version of the base image used during [initialization](#setup-duckiebot). This might inform if a re-initialization is needed, e.g., to perform the `DB21` [battery update](#howto-db21m-battery-update).
+From this page you can read the Duckiebot's firmware version, i.e., the version of the base image used during [initialization](setup-duckiebot). This might inform if a re-initialization is needed, e.g., to perform the `DB21` [battery update](howto-db21m-battery-update).
 ```
 
 (dashboard-mission-control)=
@@ -94,7 +94,7 @@ This is the Health Page. It will show you a plot of the robot's health status su
 (dashboard-robot-architecture)=
 ### Architecture
 
-This is the Architecture Page. It will allow you to visualize all the published ROS topics and see their details. It is a useful tool to see what is running and what is not. You can also use this tool as a replacement of `rqt-graph`. For more instructions on rqt-graph, you can see it [here](#rqt-graph-no-vnc)
+This is the Architecture Page. It will allow you to visualize all the published ROS topics and see their details. It is a useful tool to see what is running and what is not. You can also use this tool as a replacement of `rqt-graph`. For more instructions on rqt-graph, you can see it [here](rqt-graph-no-vnc)
 
 ```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard-architecture.png
 :name: dashboard_architecture_page
