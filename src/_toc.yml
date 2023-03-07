@@ -4,22 +4,16 @@
 format: jb-book
 root: intro
 parts:
-    - caption: Setup - Laptop
+    - caption: Duckiebot Assembly and Handling
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
+          - file: assembly_setup/setup_laptop/index
             sections:
-                - file: part_1/chapter_a/section_1
-                - file: part_1/chapter_a/section_2
-    - caption: PART_TWO
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2/chapter_b/index
-            sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
-            sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+                - file: assembly_setup/setup_laptop/section_1
+                - file: assembly_setup/setup_laptop/section_2
+          - file: assembly_setup/setup_dashboard/index
+          - file: assembly_setup/ops_dashboard/index
+          - file: assembly_setup/ops_move/index
+          - file: assembly_setup/ops_see/index
+          - file: assembly_setup/ops_tools/index
