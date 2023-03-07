@@ -3,14 +3,10 @@
 
 This section describes how to see what your Duckiebot sees.
 
-## Check the camera hardware
-
-If you have a `DB18` or `DB19`, it might be useful to do a quick camera hardware check as documented in [](howto-camera-db18).
-
 (view-image-using-rqt-image-view)=
-## Viewing an Image Stream on Your Laptop
+## Viewing the Image Stream on Your Laptop
 
-The imagery is streaming from your Duckiebot by default on startup.
+The camera image is streaming from your Duckiebot by default on startup.
 To see it, open a terminal on your laptop and run:
 
     dts start_gui_tools ![DUCKIEBOT_NAME]
@@ -37,7 +33,37 @@ You will have to select the `camera_node/image/compressed` topic from the drop-d
 The rqt image view window with dropdown menu - select the `camera_node/image/compressed` topic.
 ```
 
-### Troubleshooting
+(image-dashboard)=
+## Viewing the image stream on the Dashboard
+
+If you followed the instructions in [](duckiebot-dashboard-setup), you
+should have access to the Duckiebot dashboard.
+
+Open the browser and visit the page `http://![DUCKIEBOT_NAME].local/`. Login using your Duckietown token, and select robot panel on the left hand side navigation bar. Once selected you should see mission control page there. If you are unfamiliar with the dashboard, you can find more information here: [](dashboard-overview)
+
+The bottom of the page shows the camera block.
+You should be able to see the camera feed in the camera block,
+as shown in the image below.
+
+```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_mission_control_camera_feed.png
+:name: dashboard_mission_control_camera_feed
+```
+
+By default, the camera stream is throttled down to 8 frames per second.
+This is to minimize the resources used by your browser while streaming
+images from the robot.
+Feel free to increase the data stream frequency in the **Properties** tab
+of the camera block.
+
+Note: If you see a black image in the camera block, make sure that you
+removed the protective cap that covers the camera lens of your Duckiebot.
+
+(image-novnc)=
+## Viewing the image stream in no-vnc (optional)
+
+For instructions on using the no-vnc tool and viewing the image stream from the remote Desktop, see the [Operation - Software Tools](using-no-vnc) section.
+
+## Troubleshooting
 
 ```{trouble}
 I see a black image like this:
@@ -108,33 +134,3 @@ The camera is not detected from Duckiebot.
 ---
 (`DB18`, `DB19` only) remove the battery pack and check the camera cable for damage.
 ```
-
-(image-novnc)=
-## Viewing the image in no-vnc
-
-For instructions using the no-vnc tool, see [here](using-no-vnc)
-
-(image-dashboard)=
-## Viewing the image stream on the Dashboard
-
-If you followed the instructions in [](duckiebot-dashboard-setup), you
-should have access to the Duckiebot dashboard.
-
-Open the browser and visit the page `http://![hostname].local/`. Login using your duckietown token, and select robot panel on the left hand side navigation bar. Once selected you should see mission control page there. If you are unfamiliar with the dashboard, you can find more information here: [](dashboard-overview)
-
-The bottom of the page shows the camera block.
-You should be able to see the camera feed in the camera block,
-as shown in the image below.
-
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_mission_control_camera_feed.png
-:name: dashboard_mission_control_camera_feed
-```
-
-By default, the camera stream is throttled down to 8 frames per second.
-This is to minimize the resources used by your browser while streaming
-images from the robot.
-Feel free to increase the data stream frequency in the **Properties** tab
-of the camera block.
-
-Note: If you see a black image in the camera block, make sure that you
-removed the protective cap that covers the camera lens of your Duckiebot.

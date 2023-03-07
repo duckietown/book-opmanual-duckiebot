@@ -13,7 +13,7 @@ of the Duckietown Dashboard on your Duckiebot.
 <dtvideo src="vimeo:527022343"/>
 </div>
 
-To see all the available dashboard components, you will need to first log in. Once legged into the dashboard, you will see a navigation panel down the left side of the page. The 7 available subpages are:
+To see all the available dashboard components, you will need to first log in. Once logged into the dashboard, you will see a navigation panel down the left side of the page. The 7 available subpages are:
 
 
 ```{list-table}
@@ -40,8 +40,10 @@ To see all the available dashboard components, you will need to first log in. On
   - Advanced Feature: Documentation to the RestAPI exposed by the Dashboard.
 ```
 
+Let's dive into a few pages that you will need to get started.
+
 (dashboard-robot)=
-## Robot Page
+## The Robot Page
 
 In this page you will find several tabs that help you see and understand the status of your Duckiebot. The default tab is `Info`.
 
@@ -83,7 +85,7 @@ This could be caused by a few issues. Make sure you are accessing the dashboard 
 ```
 
 (dashboard-robot-health)=
-### Health
+### The Health Page
 
 This is the Health Page. It will show you a plot of the robot's health status such as temperature, frequency, and CPU usage. It is a good debugging tool to watch your code's resource usage.
 
@@ -92,7 +94,7 @@ This is the Health Page. It will show you a plot of the robot's health status su
 ```
 
 (dashboard-robot-architecture)=
-### Architecture
+### The Architecture Page
 
 This is the Architecture Page. It will allow you to visualize all the published ROS topics and see their details. It is a useful tool to see what is running and what is not. You can also use this tool as a replacement of `rqt-graph`. For more instructions on rqt-graph, you can see it [here](rqt-graph-no-vnc)
 
@@ -101,7 +103,7 @@ This is the Architecture Page. It will allow you to visualize all the published 
 ```
 
 (dashboard-portainer)=
-## Portainer
+## The Portainer Page
 
 Portainer is a provided tool for managing all the docker containers that are running on the Duckiebot. Using portainer tools, you can quickly see the status of the containers on your Duckiebot.
 
@@ -109,7 +111,7 @@ Portainer is a provided tool for managing all the docker containers that are run
 :name: dashboard_portainer_page
 ```
 
-You can select `containers` to see all the containers on the Duckiebot.
+You can select **containers** to see all the containers on the Duckiebot.
 
 For more information about portainer, you can find them in [this](#sub:dashboard-portainer) page.
 
@@ -120,15 +122,15 @@ You can remotely drive your Duckiebot through mission control page.
 
 The first thing to check to make sure that everything we have done so far
 is correct, is the status of the **Bridge**, in the top-right corner of the page.
-The label should show the status "`Bridge: Connected`" (as shown in the image above).
-If the indicator reads "`Bridge: Closed`", it means that something went wrong
+The label should show the status "**Bridge: Connected**" (as shown in the image above).
+If the indicator reads "**Bridge: Closed**", it means that something went wrong
 while launching the ROS websocket node above. In that case, start again from
 the beginning of this section.
 
 Note: Don't worry if one of the blocks is called "Camera" but you
 don't see an image. We will get to that later.
 
-Toggle the `Take over` switch
+Toggle the **Take over** switch
 in the top-right corner of the page to gain control of your robot.
 You will see that the background of the page will highlight and the
 central plot will start moving.

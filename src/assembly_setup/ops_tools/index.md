@@ -112,8 +112,8 @@ This will open up a window that contains all the ROS topics being published, all
 My ros commands are not working. I cannot use tab to auto complete ROS commands.
 ---
 You can fix that by sourcing `devel/setup.bash`
-
-    source /code/catkin_ws/devel/setup.bash
+        
+    `source /code/catkin_ws/devel/setup.bash`
 ```
 
 ```{trouble}
@@ -121,10 +121,9 @@ I cannot connect to ROS master.
 ---
 Go to **Dashboard > Portainer** to make sure the following containers are running without errors:
 
-
-    ROS
-    car-interface
-    duckiebot-interface
+    * ROS
+    * car-interface
+    * duckiebot-interface
 
 If they are not running, refer to [Docker troubleshooting](setup-troubleshooting-docker) for instructions to resolve the issue.
 ```

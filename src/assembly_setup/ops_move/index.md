@@ -4,7 +4,7 @@
 This section describes how to make your Duckiebot move.
 
 ```{tip}
-If any one of the following commands does not work for you, see the `Troubleshooting` section at the end of this page.  `Troubleshooting` sections are provided at the end of each operation page - start there if you run into any issues.
+If any one of the following commands does not work for you, see the **Troubleshooting** section at the end of this page.  **Troubleshooting** sections are provided at the end of each operation page - start there if you run into any issues.
 ```
 
 (make-it-move_shell)=
@@ -25,7 +25,7 @@ To move your Duckiebot using your computer's keyboard open a terminal and run:
     dts duckiebot keyboard_control ![DUCKIEBOT_NAME]
 
 ```{attention}
-For all operation commands that use the Duckiebot's name - input just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
+For all operation commands that use the Duckiebot's name - replace `![DUCKIEBOT_NAME]` with just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
 ```
 
 After startup, the `keyboard_control` command will open an interface window. Make sure the window is active by selecting it, and use the keys in the table below to command your Duckiebot:
@@ -90,13 +90,13 @@ Open [the Portainer interface](dashboard-portainer) and check the running contai
 
 You can also determine this by running:
 
-    $ docker -H ![ROBOT_NAME].local ps
+    `docker -H ![ROBOT_NAME].local ps`
 
 and look at the output to find the `duckiebot-interface` container and verify that it is running.
 
 If you don't see the container, your base image is out of date - update your Duckiebot with the command
 
-    laptop $ dts duckiebot update ![ROBOT_NAME]
+    `dts duckiebot update ![ROBOT_NAME]`
 ```
 
 ```{trouble}

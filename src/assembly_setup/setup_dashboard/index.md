@@ -12,15 +12,15 @@ packages that can be installed using the built-in Package Store.
 
 The Duckiebot Dashboard is a package that you can install on your instance
 of \\compose\\ running on your Duckiebot.
-To make is easier for you to get started, we provide a Docker image with \\compose\\
-and all the packages you need. Follow the instructions in the next step to get started.
+To make it easier for you to get started, we provide a Docker image with \\compose\\
+and all the packages you need already running on your Duckiebot after the first boot. Follow the instructions in the next step to get started.
 
 Visit the
 [official documentation page](http://compose.afdaniele.com/docs/latest/index)
-for further information.
+if you would like further information about how \\compose\\ works.
 
 (init-dashboard)=
-## Setting up dashboard
+## Setting up the Duckiebot dashboard
 
 (init-dashboard-video)=
 ### Video Tutorial
@@ -104,7 +104,7 @@ If you have not retrieved your personal Duckietown Token as described in [](dt-a
 it is now time to do so. You should be able to
 retrieve your token by visiting the page here:
 
-> [`https://www.duckietown.org/site/your-token`](https://www.duckietown.org/site/your-token)
+>[https://www.duckietown.org/site/your-token](https://www.duckietown.org/site/your-token)
 
 Once you have your personal Duckietown token, go ahead and click on
 the button **Sign in with Duckietown**.
