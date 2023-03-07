@@ -23,3 +23,10 @@ parts:
             sections:
                 - file: part_2/chapter_c/section_1
                 - file: part_2/chapter_c/section_2
+    - caption: Assembly
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: part_3/index
+            sections:
+                - file: part_3/1_5_hw_assembly_db21m.md
