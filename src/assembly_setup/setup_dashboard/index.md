@@ -1,3 +1,4 @@
+(duckiebot-dashboard-setup)=
 # Setup - Dashboard
 
 This section shows how to install the Duckietown Dashboard on the Duckiebot.
