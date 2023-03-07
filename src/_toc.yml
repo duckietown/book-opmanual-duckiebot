@@ -19,7 +19,15 @@ parts:
           - file: part_2/chapter_b/index
             sections:
                 - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
+      1_4_hw_assembly_db21    - file: part_2/chapter_c/index
             sections:
                 - file: part_2/chapter_c/section_1
                 - file: part_2/chapter_c/section_2
+
+    - caption: Duckiebot Assembly and Setup
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: part_3/index
+          sections:
+                - file: part_3/1_4_hw_assembly_db21
