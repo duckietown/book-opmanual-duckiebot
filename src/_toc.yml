@@ -8,10 +8,6 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: assembly_setup/setup_laptop/index
-            sections:
-                - file: assembly_setup/setup_laptop/section_1
-                - file: assembly_setup/setup_laptop/section_2
           - file: assembly_setup/setup_dashboard/index
           - file: assembly_setup/ops_dashboard/index
           - file: assembly_setup/ops_move/index
