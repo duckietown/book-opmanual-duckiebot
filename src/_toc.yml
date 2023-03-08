@@ -4,22 +4,8 @@
 format: jb-book
 root: intro
 parts:
-    - caption: Setup - Laptop
+    - caption: Preliminaries - Software
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
-                - file: part_1/chapter_a/section_2
-    - caption: PART_TWO
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2/chapter_b/index
-            sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
-            sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+          - file: preliminaries_software/docker_basics/index
