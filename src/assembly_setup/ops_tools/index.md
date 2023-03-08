@@ -89,7 +89,7 @@ The command will open a window where you can view the image.
 
 You will have to select the `camera_node/image/compressed` topic from the drop-down menu:
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/rqt_image_view.png
+```{figure} ../../_images/assembly_setup/rqt_image_view.png
 :name: rqt_dropdown
 
 The rqt image view window with dropdown menu - select the `camera_node/image/compressed` topic.

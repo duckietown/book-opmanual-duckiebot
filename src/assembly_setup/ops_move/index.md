@@ -30,7 +30,7 @@ For all operation commands that use the Duckiebot's name - replace `![DUCKIEBOT_
 
 After startup, the `keyboard_control` command will open an interface window. Make sure the window is active by selecting it, and use the keys in the table below to command your Duckiebot:
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/keyboard_gui.png
+```{figure} ../../_images/assembly_setup/keyboard_gui.png
 :name: keyboard_control_gui
 
 The keyboard control graphical user interface.

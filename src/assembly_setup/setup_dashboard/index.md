@@ -46,7 +46,7 @@ If `.local` does not work, that means your router's default domain name is set t
 
 You should be greeted by the dashboard shown here. Read the steps below before continuing through the setup page.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/compose_first_setup_step3.png
+```{figure} ../../_images/assembly_setup/compose_first_setup_step3.png
 :name: compose_first_setup
 ```
 
@@ -61,7 +61,7 @@ using a Duckietown token later on.
 
 #### Step 3: Configure your dashboard
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/compose_first_setup_step3.png
+```{figure} ../../_images/assembly_setup/compose_first_setup_step3.png
 :name: compose_first_setup_step3
 ```
 
@@ -77,7 +77,7 @@ When you are happy with your choices, click on **Next**.
 
 The **Step 4: Complete** tab should now be open, as shown below.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/compose_first_setup_step4.png
+```{figure} ../../_images/assembly_setup/compose_first_setup_step4.png
 :name: compose_first_setup_step4
 ```
 
@@ -89,7 +89,7 @@ If everything went as planned, the dashboard is now configured and ready to go!
 
 You should be able to see the login page, as shown below.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_login_page.png
+```{figure} ../../_images/assembly_setup/dashboard_login_page.png
 :name: dashboard_login_page
 ```
 
@@ -109,7 +109,7 @@ retrieve your token by visiting the page here:
 Once you have your personal Duckietown token, go ahead and click on
 the button **Sign in with Duckietown**.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_login_with_duckietown_modal.png
+```{figure} ../../_images/assembly_setup/dashboard_login_with_duckietown_modal.png
 :name: dashboard_login_with_duckietown_modal
 ```
 
@@ -117,7 +117,7 @@ Copy/paste or type in your personal token and press Login.
 Wait for the token to be validated, and if your token is correct, you will
 be redirected to your profile page, similar to the one shown below.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_profile_page_full.png
+```{figure} ../../_images/assembly_setup/dashboard_profile_page_full.png
 :name: dashboard_profile_page
 ```
 

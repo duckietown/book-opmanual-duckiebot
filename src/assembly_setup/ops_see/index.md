@@ -27,7 +27,7 @@ The command will open a window where you can view the image.
 
 You will have to select the `camera_node/image/compressed` topic from the drop-down menu:
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/rqt_image_view.png
+```{figure} ../../_images/assembly_setup/rqt_image_view.png
 :name: rqt_dropdown_sub
 
 The rqt image view window with dropdown menu - select the `camera_node/image/compressed` topic.
@@ -45,7 +45,7 @@ The bottom of the page shows the camera block.
 You should be able to see the camera feed in the camera block,
 as shown in the image below.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_mission_control_camera_feed.png
+```{figure} ../../_images/assembly_setup/dashboard_mission_control_camera_feed.png
 :name: dashboard_mission_control_camera_feed
 ```
 
@@ -68,7 +68,7 @@ For instructions on using the no-vnc tool and viewing the image stream from the 
 ```{trouble}
 I see a black image like this:
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/capon.png
+```{figure} ../../_images/assembly_setup/capon.png
 :name: camera_cap_on
 
 What you see if you leave the camera cap on.

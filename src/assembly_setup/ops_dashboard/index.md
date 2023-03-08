@@ -52,7 +52,7 @@ In this page you will find several tabs that help you see and understand the sta
 
 In this tab, you can find information for your robot - including your robot name, type, configuration, and critical information such as CPU usage, temperature, and other crucial robot vitals.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_info.png
+```{figure} ../../_images/assembly_setup/dashboard_info.png
 :name: dashboard_info_tab
 ```
 
@@ -65,7 +65,7 @@ From this page you can read the Duckiebot's firmware version, i.e., the version 
 
 This is the Mission Control tab.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard_mission_control.png
+```{figure} ../../_images/assembly_setup/dashboard_mission_control.png
 :name: dashboard_mission_control_tab
 ```
 
@@ -89,7 +89,7 @@ This could be caused by a few issues. Make sure you are accessing the dashboard 
 
 This is the Health Page. It will show you a plot of the robot's health status such as temperature, frequency, and CPU usage. It is a good debugging tool to watch your code's resource usage.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard-health.png
+```{figure} ../../_images/assembly_setup/dashboard-health.png
 :name: dashboard_health_page
 ```
 
@@ -98,7 +98,7 @@ This is the Health Page. It will show you a plot of the robot's health status su
 
 This is the Architecture Page. It will allow you to visualize all the published ROS topics and see their details. It is a useful tool to see what is running and what is not. You can also use this tool as a replacement of `rqt-graph`. For more instructions on rqt-graph, you can see it [here](rqt-graph-no-vnc)
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard-architecture.png
+```{figure} ../../_images/assembly_setup/dashboard-architecture.png
 :name: dashboard_architecture_page
 ```
 
@@ -107,7 +107,7 @@ This is the Architecture Page. It will allow you to visualize all the published 
 
 Portainer is a provided tool for managing all the docker containers that are running on the Duckiebot. Using portainer tools, you can quickly see the status of the containers on your Duckiebot.
 
-```{figure} ../../_images/assembly_setup/setup_dashboard/dashboard-portainer.png
+```{figure} ../../_images/assembly_setup/dashboard-portainer.png
 :name: dashboard_portainer_page
 ```
 
