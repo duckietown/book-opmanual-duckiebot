@@ -10,9 +10,9 @@
 -->
 
 ```{needget}
-* Duckiebot `DB21M` parts ([get a `DB21M`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check this overview of all existing [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21M` parts ([get a `DB21M`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check this overview of all existing [**TODO: update link**] [Duckiebot configurations](duckiebot-configurations).
 
-* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot).
+* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [**TODO: update link**] [here](setup-duckiebot).
 
 * 3 hours of assembly time.
 ---
@@ -26,10 +26,10 @@ These instructions are your friend. Follow them carefully, especially if it's th
 (db21m-assembly-video)=
 ## Video tutorial
 
-<div figure-id="fig:howto-assemble-db21m-video" figure-caption="DB21M: What's in the box and assembly.">
-    <dtvideo src="vimeo:528621827"/>
-</div>
-
+```{admonition} What's in the box and assembly video
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/528621827?h=44014b1b93" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/528621827">Duckiebot DB21M unpacking and assembly</a> from <a href="https://vimeo.com/duckietown">Duckietown</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+```
 
 ## Overview
 
