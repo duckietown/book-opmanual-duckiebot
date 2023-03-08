@@ -28,4 +28,5 @@ parts:
       numbered: False
       chapters:
           - file: duckiebot_assembly_and_setup/calibration_camera/index
+          - file: duckiebot_assembly_and_setup/calibration_wheels/index
 
