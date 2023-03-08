@@ -27,6 +27,6 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_3/index
+          - file: duckiebot-assembly-and-setup/index.md
             sections:
-                - file: part_3/1_5_hw_assembly_db21m.md
+                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21m/index
