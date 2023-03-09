@@ -19,7 +19,7 @@ parts:
           - file: part_2/chapter_b/index
             sections:
                 - file: part_2/chapter_b/section_1
-      1_4_hw_assembly_db21    - file: part_2/chapter_c/index
+          - file: part_2/chapter_c/index
             sections:
                 - file: part_2/chapter_c/section_1
                 - file: part_2/chapter_c/section_2
@@ -28,6 +28,6 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: duckiebot-assembly-and-setup/index.md
+          - file: duckiebot-assembly-and-setup/index
             sections:
-                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21j/index
+                - file: duckiebot-assembly-and-setup/assembly-db21j/index
