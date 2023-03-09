@@ -24,10 +24,10 @@ parts:
                 - file: part_2/chapter_c/section_1
                 - file: part_2/chapter_c/section_2
 
-    - caption: Duckiebot Assembly and Setup
+    - caption: Assembly
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_3/index
-          sections:
-                - file: part_3/1_4_hw_assembly_db21
+          - file: duckiebot-assembly-and-setup/index.md
+            sections:
+                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21j/index
