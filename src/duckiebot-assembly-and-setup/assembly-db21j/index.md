@@ -1,14 +1,14 @@
 (assembling-duckiebot-db21)=
-# Assembly - Duckiebot `DB21`
+# Assembly - Duckiebot `DB21J`
 
 ```{needget}
-* Duckiebot `DB21` parts ([get a `DB21`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21J` parts ([get a `DB21J`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot).
 
 * 3-4 hours of assembly time.
 ---
-* An assembled Duckiebot in configuration `DB21`.
+* An assembled Duckiebot in configuration `DB21J`.
 ```
 
 ## Foreword
@@ -617,7 +617,7 @@ This simplified block diagram of data and electrical connections of the `DB21M` 
 
      ```{figure} ../../_images/assembly/db21j/db21-rev1-schematics-block-diagram.png
 
-     Block diagram of electrical and data connections for the `DB21` and `DB21M`.
+     Block diagram of electrical and data connections for the `DB21J` and `DB21M`.
      ```
 
 ````
