@@ -11,14 +11,16 @@ parts:
           - file: part_1/chapter_a/index
             sections:
                 - file: part_1/chapter_a/section_1
-    - caption: PART_TWO
+    - caption: Hardware preliminaries
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_2/chapter_b/index
+          - file: part_2_hw_prelim/index
             sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
-            sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+                - file: part_2_hw_prelim/chap_2_1/sec_1_handling
+                - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
+                - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
+#          - file: part_2_hw_prelim/chapter_c/index
+#            sections:
+#                - file: part_2_hw_prelim/chapter_c/section_1
+#                - file: part_2_hw_prelim/chapter_c/section_2
