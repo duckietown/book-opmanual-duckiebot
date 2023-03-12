@@ -19,9 +19,9 @@ These instructions are your friend. Follow them carefully, especially if it's th
 
 This is the old DB21M one. Needs re-do.
 
-## Video tutorial {#db21m-rev1-assembly-video}
+## Video tutorial {#02-legacy-rev1-assembly-video}
 
-<div figure-id="fig:howto-assemble-db21m-rev1-video">
+<div figure-id="fig:howto-assemble-02-legacy-rev1-video">
     <dtvideo src="vimeo:528621827"/>
 </div>
 
@@ -187,7 +187,7 @@ The following steps (17 to 25) guide through the assembly of the *Computation* u
 <!--
 You can try to mount the wheels even without the distance disks. But make sure that the wheels do not touch the frame of the Duckiebot when turning.
 
-<div figure-id="fig:db21m-step_22B">
+<div figure-id="fig:02-legacy-step_22B">
      <img src="db21-step_22B.png" style='width: 40em' />
 </div>
 -->

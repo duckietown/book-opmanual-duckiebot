@@ -55,15 +55,15 @@ The `DB21M` is the first Duckiebot equipped with an NVIDIA Jetson Nano 2 GB comp
 
 The `DB21M` debuts in 2021 with the [first edition](https://cutt.ly/n81LRus) of the massive open online course, hosted on the edX platform.
 
-```{figure} ./chap_2_1_images/db21m.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/db21m.jpg
 :width: 400px
 :name: fig:db21m
 
 The Duckiebot version `DB21M`.
 ```
 <!--
-<div figure-id="fig:db21m" figure-caption="The Duckiebot version `DB21M`.">
-   <img src="db21m.jpg" style='width: 20em'/>
+<div figure-id="fig:02-legacy" figure-caption="The Duckiebot version `DB21M`.">
+   <img src="02-legacy.jpg" style='width: 20em'/>
 </div>
 -->
 
@@ -83,7 +83,7 @@ To assemble a `DB21M` Duckiebot, follow [these](#assembling-duckiebot-db21m) ins
 
 The `DB19` is the latest version of the Duckiebot. You have a `DB19` Duckiebot for sure if you have the blue motors shown in figure [](#fig:dc-motor-db19).
 
-```{figure} ./chap_2_1_images/dc-motor-db19.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/dc-motor-db19.png
 :width: 400px
 :name: fig:dc-motor-db19
 
@@ -97,7 +97,7 @@ The motors for the version `DB19`.
 
 Apart from the new motors and another HUT (v. 2.1), the `DB19` is identical with the `DB18`. A complete version can be seen here:
 
-```{figure} ./chap_2_1_images/db19-complete-cad.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/db19-complete-cad.png
 :width: 400px
 :name: fig:db19-complete-cad
 
@@ -135,14 +135,14 @@ The `DB18` supports different power bank models depending on the geographical re
 
 You can recognize a `DB18` from previous versions for having only one board in addition to the Raspberry Pi, a backplate, and the computational stack mounted in the bottom deck.
 
-```{figure} ./chap_2_1_images/howto_assemble_finish_milestone.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/howto_assemble_finish_milestone.jpg
 :width: 400px
 :name: fig:db18-battery1
 
 A `DB18` Duckiebot assembly.
 ```
 
-```{figure} ./chap_2_1_images/howto_assemble_finish_milestone-2.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/howto_assemble_finish_milestone-2.jpg
 :width: 400px
 :name: fig:db18-battery2
 
@@ -180,7 +180,7 @@ Autolabs are experimental Duckietown features, currently under development. You 
 
 If you are interested in obtaining `DB18-Robotarium` Duckiebots, or in building your Duckietown Autolab, contact the [Duckietown team](mailto:info@duckietown.com).
 
-```{figure} ./chap_2_1_images/a-glimpse-in-the-robotariums.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/a-glimpse-in-the-robotariums.png
 :width: 400px
 :name: fig:db18-robotarium
 

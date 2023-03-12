@@ -17,7 +17,7 @@ This battery is the standard battery for the Duckiebots since 2021. For example,
 The Duckiebattery is special because it is a programmable, smart battery, designed and manufactured specifically for Duckiebots. Using this battery will allow your Duckiebot to monitor the state of charge and other diagnostics, and shutdown via software. Moreover, it enables advanced features such as auto-charging in Autolabs, because it will guarantee power to the onboard computer when being plugged in or out of charge. 
 
 <!--
-```{figure} ./chap_2_1_images/DB-C-DBatt_real2.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_real2.jpg
 :width:
 :name:
 
@@ -33,7 +33,7 @@ Caption
 
 
 
-```{figure} ./chap_2_1_images/DB-C-DBatt_real2.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_real2.jpg
 :width: 200px
 :name: fig:DB-C-DBatt_real
 
@@ -93,7 +93,7 @@ The Duckiebattery has several operation modes, the most relevant of which are de
 ### LED description
 The battery has five LEDs on the top, used for indicating state of charge.
 
-```{figure} ./chap_2_1_images/DB-C-DBatt_1.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_1.png
 :width: 200px
 :name: fig:DB-C-DBatt_1
 
@@ -111,7 +111,7 @@ LEDs indicate the state of charge of the Duckiebattery.
 To see the battery state of charge, click _once_ on the button. The state of charge LEDs will stay on for 10 seconds and the battery set in `idle` state, " waking up" the battery.
 ```
 
-```{figure} ./chap_2_1_images/DB-C-DBatt_2.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_2.png
 :width: 200px
 :name: DB-C-DBatt_2
 
@@ -130,7 +130,7 @@ Wake up the battery by pressing the button once.
 
 After setting the battery in `idle` mode, charge it by connecting a 5V 2A power adapter. Note that using a higher amperage charger will not damage the unit. The LEDs will be flashing at 1 Hz, showing the battery is receiving charge.
 
-```{figure} ./chap_2_1_images/DB-C-DBatt_3.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_3.png
 :width: 200px
 :name: fig:DB-C-DBatt_3
 
@@ -163,7 +163,7 @@ The battery protection mode can last up to 30 minutes, during which the battery 
 
 The battery have two separate 5V 2A USB type A output, namely USB OUT-1 (a.k.a. the muscles) and USB OUT-2 (a.k.a. the brains).
 
-```{figure} ./chap_2_1_images/duckiebattery-outputs.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-outputs.png
 :width: 300px
 :name: fig:DB-C-DBatt_4
 
@@ -226,7 +226,7 @@ There can be several reasons why the USB output is not working. Below are the mo
 
 The Duckie-power-bank (or Duckiebattery version 1) is the standard power source for Duckiebots in `DB18` and `DB19` configurations. Duckie-power-banks are easily recognizable:
 
-```{figure} ./chap_2_1_images/duckiebattery-front.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-front.png
 :width: 37em
 :name: fig:duckiebattery-front
 
@@ -245,7 +245,7 @@ The Duckie Power Bank is the first version of the Duckiebattery, used in `DB18` 
 
 The Duckiebattery is equipped with 2 USB type A outputs (port A and B) and 1 Micro USB connector for charging.
 
-```{figure} ./chap_2_1_images/duckiebattery-ports.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-ports.png
 :width: 37em
 :name: fig:duckiebattery-ports
 
@@ -300,7 +300,7 @@ The battery pack is charged via the Micro USB port with a 5V supply. While charg
 When the battery pack is connected to the charger, the output voltage of port A and B will turn off for around 280ms:
 ```
 
-```{figure} ./chap_2_1_images/duckiebattery-voltage-profile.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-voltage-profile.png
 :width: 400px
 :name: fig:duckiebattery-voltage-profile
 
