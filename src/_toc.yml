@@ -4,25 +4,26 @@
 format: jb-book
 root: intro
 parts:
-    - caption: Setup - Laptop
+    - caption: Duckiebot Assembly and Setup
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
+          - file: assembly_and_setup/setup_laptop/index
             sections:
-                - file: part_1/chapter_a/section_1
-                - file: part_1/chapter_a/section_2
-    - caption: PART_TWO
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2/chapter_b/index
+                - file: assembly_and_setup/setup_laptop/setup_ubuntu
+                - file: assembly_and_setup/setup_laptop/setup_macosx
+          - file: assembly_and_setup/setup_account/index
             sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
+                - file: assembly_and_setup/setup_account/duckietown_token
+                - file: assembly_and_setup/setup_account/duckietown_shell
+                - file: assembly_and_setup/setup_account/third_party_accounts
+          - file: assembly_and_setup/setup_sd_card/index
             sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+                - file: assembly_and_setup/setup_sd_card/gui
+                - file: assembly_and_setup/setup_sd_card/cli
+                - file: assembly_and_setup/setup_sd_card/first_boot
+                - file: assembly_and_setup/setup_sd_card/troubleshooting
+
     - caption: Assembly
       maxdepth: 2
       numbered: False
