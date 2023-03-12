@@ -1,1 +1,0 @@
-# Duckiebot assembly and setup

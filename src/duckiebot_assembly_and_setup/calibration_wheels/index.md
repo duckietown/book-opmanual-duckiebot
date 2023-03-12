@@ -8,7 +8,7 @@ You can calibrate the wheels of the Duckiebot such that it goes in a straight li
 when commanded so. You can set the maximum speed of the Duckiebot.
 ```
 
-:::{note}
+````{note}
 In the following documentation on this page, `[hostname]` refers to the hostname of your duckiebot. For example:
 
 ```
@@ -23,11 +23,11 @@ ping myrobot.local
 
 Also, replace other fields in a command with `[]` around with the corresponding values.
 
-:::
+````
 
 ## Step 1: Make your robot move
 
-Follow instructions in [TODO](sec:rc-control) to make your robot move with keyboard control, and keep the terminal open. 
+Follow instructions in [](sec:rc-control) to make your robot move with keyboard control, and keep the terminal open. 
 
 ## Step 2: See how the robot really moves
 
@@ -60,7 +60,7 @@ Keep this terminal open. We will use it to perform the wheel calibration. All th
 
 ### Calibrating the `trim` parameter
 
-The trim parameter is set to $0.00$ by default, under the assumption that both motors and wheels are perfectly identical. You can change the value of the trim parameter by running the command (in the `start_gui_tools` terminal from the previous step):
+The trim parameter is set to `0.00` by default, under the assumption that both motors and wheels are perfectly identical. You can change the value of the trim parameter by running the command (in the `start_gui_tools` terminal from the previous step):
 
 ```
 rosparam set /[hostname]/kinematics_node/trim [trim_value]
@@ -101,17 +101,17 @@ Make sure that the ruler is orthogonal to the tape.
 Measure the amount of drift after 2 meters run
 ```
 
-If the Duckiebot drifted by less than $10$ centimeters you can stop calibrating the trim parameter.
-A drift of $10$ centimeters in a $2$ meters run is good enough for Duckietown.
-If the Duckiebot drifted by more than $10$ centimeters, continue with the next step.
+If the Duckiebot drifted by less than `10` centimeters you can stop calibrating the trim parameter.
+A drift of `10` centimeters in a `2` meters run is good enough for Duckietown.
+If the Duckiebot drifted by more than `10` centimeters, continue with the next step.
 
-If the Duckiebot drifted to the left side of the tape, decrease the value of $r$, by running, for example:
+If the Duckiebot drifted to the left side of the tape, decrease the value of `r`, by running, for example:
 
 ```
 rosparam set /[hostname]/kinematics_node/trim -0.1
 ```
 
-If the Duckiebot drifted to the right side of the tape, increase the value of $r$, by running, for example:
+If the Duckiebot drifted to the right side of the tape, increase the value of `r`, by running, for example:
 
 ```
 rosparam set /[hostname]/kinematics_node/trim 0.1
@@ -122,7 +122,7 @@ Repeat this process until the robot drives straight.
 
 ### Calibrating the `gain` parameter
 
-The gain parameter is set to $1.00$ by default. You can change its value by
+The gain parameter is set to `1.00` by default. You can change its value by
 running the command:
 
 ```
