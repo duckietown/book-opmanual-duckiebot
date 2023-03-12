@@ -9,3 +9,36 @@ parts:
       numbered: False
       chapters:
           - file: preliminaries_software/docker_basics/index
+
+    - caption: Duckiebot Assembly and Setup
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: assembly_and_setup/setup_laptop/index
+            sections:
+                - file: assembly_and_setup/setup_laptop/setup_ubuntu
+                - file: assembly_and_setup/setup_laptop/setup_macosx
+          - file: assembly_and_setup/setup_account/index
+            sections:
+                - file: assembly_and_setup/setup_account/duckietown_token
+                - file: assembly_and_setup/setup_account/duckietown_shell
+                - file: assembly_and_setup/setup_account/third_party_accounts
+          - file: assembly_and_setup/setup_sd_card/index
+            sections:
+                - file: assembly_and_setup/setup_sd_card/gui
+                - file: assembly_and_setup/setup_sd_card/cli
+                - file: assembly_and_setup/setup_sd_card/first_boot
+                - file: assembly_and_setup/setup_sd_card/troubleshooting
+          -   file: assembly_setup/setup_dashboard/index
+          -   file: assembly_setup/ops_dashboard/index
+          -   file: assembly_setup/ops_move/index
+          -   file: assembly_setup/ops_see/index
+          -   file: assembly_setup/ops_tools/index
+
+    - caption: Assembly
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: duckiebot-assembly-and-setup/index.md
+            sections:
+                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21m/index
