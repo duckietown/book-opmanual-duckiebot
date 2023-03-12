@@ -101,7 +101,7 @@ If you have an error like the following when running `dts start_gui_tools` or an
 This could occur on a computer that has two graphics cards, e.g., a NVIDIA GPU and an integrated Intel card. Switch to the Intel card by following the official guidelines for your OS and graphics card.
 ```
 
-```{trouble}
+````{trouble}
 I don't see any image.
 ---
 Use `rostopic hz /![DUCKIEBOT_NAME]/camera_node/image/compressed` and see if the image is being published. Images should be published at roughly 30 Hz.  If the message is not being published, 
@@ -112,22 +112,25 @@ Open [the Portainer interface](dashboard-portainer) and check the running contai
 
 You call also determine this by running:
 
-    docker -H ![DUCKIEBOT_NAME].local ps
+`docker -H ![DUCKIEBOT_NAME].local ps`
 
 and look at the output to find the Duckiebot interface container and verify that it is running.
 
 If that image is not running, you should update your Duckiebot to restart all continers with 
 
-    dts duckiebot update ![DUCKIEBOT_NAME]
+`dts duckiebot update ![DUCKIEBOT_NAME]`
 
 Or to manually start just the `duckiebot-interface`, do:
 
-    docker -H ![DUCKIEBOT_NAME].local run --name duckiebot-interface -v /data:/data --privileged --network=host -dit --restart unless-stopped duckietown/dt-duckiebot-interface:daffy-arm32v7
+`docker -H ![DUCKIEBOT_NAME].local run --name duckiebot-interface -v /data:/data --privileged --network=host -dit --restart unless-stopped duckietown/dt-duckiebot-interface:daffy-arm32v7`
 
 ```{seealso}
-For more information about `rostopic`, see [](using-no-vnc). You can see the images as your robot sees them with `rostopic echo /![DUCKIEBOT_NAME]/camera_node/image/compressed`. <kbd>Ctrl</kbd>+<kbd>c</kbd> on the terminal once you've seen enough to confirm the messages are being populated.
-%```
+For more information about `rostopic`, see [](using-no-vnc). 
+You can see the images as your robot sees them with `rostopic echo /![DUCKIEBOT_NAME]/camera_node/image/compressed`. 
+<kbd>Ctrl</kbd>+<kbd>c</kbd> on the terminal once you've seen enough to confirm the messages are being populated.
 ```
+````
+
 
 ```{trouble}
 The camera is not detected from Duckiebot.
