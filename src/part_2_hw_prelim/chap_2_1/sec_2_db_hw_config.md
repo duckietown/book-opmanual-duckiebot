@@ -1,13 +1,11 @@
 (duckiebot-configurations)= 
 # Duckiebot Configurations
 
-<div class='requirements' markdown="1">
-
-Requires: Nothing
-
-Results: Knowledge of Duckiebot configuration naming conventions and their respective functionalities.
-
-</div>
+```{needget}
+* Nothing
+---
+* Knowledge of Duckiebot configuration naming conventions and their respective functionalities.
+```
 
 We define the different Duckiebot configurations, from the first `DB17` used during the MIT course 2.166 in 2017 to the latest available.  
 

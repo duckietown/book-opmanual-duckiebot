@@ -1,13 +1,11 @@
 (db-opmanual-preliminaries-electronics)= 
 # Handling circuits and batteries
 
-<div class='requirements' markdown="1">
-
-Requires: Nothing
-
-Results: Preliminary knowledge on circuits and power source properties useful in Duckietown
-
-</div>
+```{needget}
+* Nothing
+---
+* Preliminary knowledge on circuits and power source properties useful in Duckietown
+```
 
 Duckiebots support several power bank models, although not all power sources will work. Here, we list properties of the supported models.
 
@@ -306,7 +304,7 @@ When the battery pack is connected to the charger, the output voltage of port A 
 :width: 400px
 :name: fig:duckiebattery-voltage-profile
 
-The Duckie Power Bank output voltage drops when plugging in and removing teh charger.
+The Duckie Power Bank output voltage drops when plugging in and removing the charger.
 ```
 
 <!--
