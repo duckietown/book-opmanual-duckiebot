@@ -10,15 +10,15 @@ parts:
         chapters:
             -   file: preliminaries_software/docker_basics/index
             
-   - caption: Preliminaries - Hardware
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2_hw_prelim/index
-            sections:
-                - file: part_2_hw_prelim/chap_2_1/sec_1_handling
-                - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
-                - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
+    -   caption: Preliminaries - Hardware
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: part_2_hw_prelim/index
+                sections:
+                    -   file: part_2_hw_prelim/chap_2_1/sec_1_handling
+                    -   file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
+                    -   file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
 
     -   caption: Duckiebot Assembly and Setup
         maxdepth: 2
