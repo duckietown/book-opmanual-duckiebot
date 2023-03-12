@@ -4,14 +4,13 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
-    - caption: Hardware preliminaries
+    -   caption: Preliminaries - Software
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: preliminaries_software/docker_basics/index
+            
+   - caption: Preliminaries - Hardware
       maxdepth: 2
       numbered: False
       chapters:
@@ -20,7 +19,43 @@ parts:
                 - file: part_2_hw_prelim/chap_2_1/sec_1_handling
                 - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
                 - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
-#          - file: part_2_hw_prelim/chapter_c/index
-#            sections:
-#                - file: part_2_hw_prelim/chapter_c/section_1
-#                - file: part_2_hw_prelim/chapter_c/section_2
+
+    -   caption: Duckiebot Assembly and Setup
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: assembly_and_setup/setup_laptop/index
+                sections:
+                    -   file: assembly_and_setup/setup_laptop/setup_ubuntu
+                    -   file: assembly_and_setup/setup_laptop/setup_macosx
+            -   file: assembly_and_setup/setup_account/index
+                sections:
+                    -   file: assembly_and_setup/setup_account/duckietown_token
+                    -   file: assembly_and_setup/setup_account/duckietown_shell
+                    -   file: assembly_and_setup/setup_account/third_party_accounts
+            -   file: assembly_and_setup/setup_sd_card/index
+                sections:
+                    -   file: assembly_and_setup/setup_sd_card/gui
+                    -   file: assembly_and_setup/setup_sd_card/cli
+                    -   file: assembly_and_setup/setup_sd_card/first_boot
+                    -   file: assembly_and_setup/setup_sd_card/troubleshooting
+            -   file: assembly_setup/setup_dashboard/index
+            -   file: assembly_setup/ops_dashboard/index
+            -   file: assembly_setup/ops_move/index
+            -   file: assembly_setup/ops_see/index
+            -   file: assembly_setup/ops_tools/index
+
+    -   caption: Assembly
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: assembly/db21j/index
+            -   file: assembly/db21m/index
+            
+    -   caption: Duckiebot Setup
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: duckiebot_assembly_and_setup/calibration_camera/index
+            -   file: duckiebot_assembly_and_setup/calibration_wheels/index
+
