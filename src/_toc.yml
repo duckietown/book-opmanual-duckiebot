@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 parts:
+    - caption: Preliminaries - Software
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: preliminaries_software/docker_basics/index
+
     - caption: Duckiebot Assembly and Setup
       maxdepth: 2
       numbered: False
