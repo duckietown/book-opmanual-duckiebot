@@ -23,3 +23,9 @@ parts:
                 - file: assembly_and_setup/setup_sd_card/cli
                 - file: assembly_and_setup/setup_sd_card/first_boot
                 - file: assembly_and_setup/setup_sd_card/troubleshooting
+
+          - file: assembly_setup/setup_dashboard/index
+          - file: assembly_setup/ops_dashboard/index
+          - file: assembly_setup/ops_move/index
+          - file: assembly_setup/ops_see/index
+          - file: assembly_setup/ops_tools/index
