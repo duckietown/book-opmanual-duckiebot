@@ -23,9 +23,16 @@ parts:
                 - file: assembly_and_setup/setup_sd_card/cli
                 - file: assembly_and_setup/setup_sd_card/first_boot
                 - file: assembly_and_setup/setup_sd_card/troubleshooting
+          -   file: assembly_setup/setup_dashboard/index
+          -   file: assembly_setup/ops_dashboard/index
+          -   file: assembly_setup/ops_move/index
+          -   file: assembly_setup/ops_see/index
+          -   file: assembly_setup/ops_tools/index
 
-          - file: assembly_setup/setup_dashboard/index
-          - file: assembly_setup/ops_dashboard/index
-          - file: assembly_setup/ops_move/index
-          - file: assembly_setup/ops_see/index
-          - file: assembly_setup/ops_tools/index
+    - caption: Assembly
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: duckiebot-assembly-and-setup/index.md
+            sections:
+                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21m/index
