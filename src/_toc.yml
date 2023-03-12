@@ -42,3 +42,10 @@ parts:
           - file: duckiebot-assembly-and-setup/index.md
             sections:
                 - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21m/index
+
+    - caption: Duckiebot Assembly and Setup
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: duckiebot_assembly_and_setup/calibration_camera/index
+          - file: duckiebot_assembly_and_setup/calibration_wheels/index
