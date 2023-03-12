@@ -10,15 +10,15 @@ parts:
         chapters:
             -   file: preliminaries_software/docker_basics/index
             
-    - caption: Preliminaries - Hardware
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2_hw_prelim/index
-            sections:
-                - file: part_2_hw_prelim/chap_2_1/sec_1_handling
-                - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
-                - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
+    -   caption: Preliminaries - Hardware
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: part_2_hw_prelim/index
+              sections:
+                  - file: part_2_hw_prelim/chap_2_1/sec_1_handling
+                  - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
+                  - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
 
     -   caption: Duckiebot Assembly and Setup
         maxdepth: 2
@@ -59,3 +59,27 @@ parts:
             -   file: duckiebot_assembly_and_setup/calibration_camera/index
             -   file: duckiebot_assembly_and_setup/calibration_wheels/index
 
+    -   caption: Demos
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: 80-demos/demos-index
+            - file: 80-demos/01-supported/supported-demos-index
+              sections:
+                  - file: 80-demos/01-supported/02_running_demos
+                  - file: 80-demos/01-supported/20_lane_following
+            - file: 80-demos/02-legacy/legacy-demos-index
+              sections:
+                  - file: 80-demos/02-legacy/01-legacy-demos-placeholder
+
+    -   caption: Learning Experiences
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: 90-db-lx/lx-index
+            - file: 90-db-lx/01-lx-supported/supported-lx-index
+              sections:
+                  - file: 90-db-lx/01-lx-supported/01_supported_general_running_lx
+            - file: 90-db-lx/02-lx-experimental/exp-lx-index
+              sections:
+                  - file: 90-db-lx/02-lx-experimental/01-exp-lx

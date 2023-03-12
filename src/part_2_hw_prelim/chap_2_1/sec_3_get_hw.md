@@ -252,7 +252,7 @@ We chose it because it has a double-decker configuration, and so we can put the 
 
 The chassis pack includes 2 DC motors and wheels as well as the structural part, in addition to a screwdriver and several necessary mechanical bits (standoffs, screws and nuts).
 
-```{figure} ./chap_2_1_images/magician_chassis.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/magician_chassis.jpg
 :width: 15em
 :name: fig:magician_chassis"
 
@@ -271,7 +271,7 @@ Note: It is recommended to upgrade to Raspberry Pi 3 model B+. In this case the 
 
 The Raspberry Pi is the central computer of the Duckiebot. Duckiebots use Model B ({numref}`fig:rpi3b`), a small but powerful computer.
 
-```{figure} ./chap_2_1_images/rpi3b.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/rpi3b.png
 :width: 15em
 :name: fig:rpi3b
 
@@ -287,7 +287,7 @@ The Raspberry Pi 3 Model B is a 1.2GHz, 64-bit quad-core ARMv8 CPU, 1GB RAM litt
 
 We want a hard-wired power source (5VDC, 2.4A, Micro USB) to supply the Raspberry Pi ([](fig:power_supply)) while not driving. This charger can double down as battery charger as well.
 
-```{figure} ./chap_2_1_images/power_supply.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/power_supply.png
 :width: 15em
 :name: fig:power_supply
 
@@ -303,7 +303,7 @@ The power supply.
 
 The Raspberry Pi will heat up significantly during use. It is recommended adding heat sinks, as in  [](fig:heat_sinks). Since we will be stacking HATs on top of the Raspberry Pi with 15 mm standoffs, the maximum height of the heat sinks should be well below 15 mm. The chip dimensions are 15x15mm and 10x10mm.
 
-```{figure} ./chap_2_1_images/heat-sinks.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/heat-sinks.jpg
 :width: 15em
 :name: fig:heat_sinks
 
@@ -319,7 +319,7 @@ The heat sinks.
 
 The MicroSD card ([](fig:SDcard)) is the hard disk of the Raspberry Pi. 16 GB of capacity are sufficient for the system image.
 
-```{figure} ./chap_2_1_images/SDcard.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/SDcard.png
 :width: 15em
 :name: fig:SDcard
 
@@ -335,7 +335,7 @@ The MicroSD card.
 
 A microSD card reader ([](fig:microsd-reader)) is useful to copy the system image to a Duckiebot from a computer to the Raspberry Pi microSD card, when the computer does not have a native SD card slot.
 
-```{figure} ./chap_2_1_images/microsd-reader.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/microsd-reader.png
 :width: 15em
 :name: fig:microsd-reader
 
@@ -351,7 +351,7 @@ The Mirco SD card reader.
 
 The Camera is the main sensor of the Duckiebot. All versions equip a 5 Mega Pixels 1080p camera with wide field of view ($160^\circ$) fisheye lens ([](fig:camera)).
 
-```{figure} ./chap_2_1_images/camera.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/camera.png
 :width: 15em
 :name: fig:camera
 
@@ -367,7 +367,7 @@ The Raspberry Pi camera with fisheye lens.
 
 The camera mount ([](fig:camera_mount)) serves to keep the camera looking forward at the right angle to the road (looking slightly down). The front cover is not essential.
 
-```{figure} ./chap_2_1_images/camera-mount.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/camera-mount.jpg
 :width: 15em
 :name: fig:camera_mount
 
@@ -380,7 +380,7 @@ The camera mount.
 
 The assembled camera (without camera cable), is shown in ([](fig:mounted-camera)).
 
-```{figure} ./chap_2_1_images/mounted-camera.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/mounted-camera.jpg
 :width: 15em
 :name: fig:mounted-camera
 
@@ -396,7 +396,7 @@ The camera on its mount.
 
 A longer (300 mm) camera cable [](fig:long_camera_cable) makes assembling the Duckiebot easier, allowing for more freedom in the relative positioning of camera and computational stack.
 
-```{figure} ./chap_2_1_images/long_camera_cable.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/long_camera_cable.png
 :width: 15em
 :name: fig:long_camera_cable
 
@@ -412,7 +412,7 @@ A 300 mm camera cable for the Raspberry Pi.
 
 We use the DC Stepper motor HAT ([](fig:motor_hat)) to control the DC motors that drive the wheels. This item will require [soldering](#assembling-duckiebot-db17-soldering) to be functional. This HAT has dedicate PWM and H-bridge for driving the motors.
 
-```{figure} ./chap_2_1_images/motor_hat.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/motor_hat.png
 :width: 15em
 :name: fig:motor_hat
 
@@ -428,7 +428,7 @@ The stepper motor HAT.
 
 We use a long 20x2 GPIO stacking header ([](fig:stacking_header)) to connect the Raspberry Pi with the DC Motor HAT. This item will require [soldering](#assembling-duckiebot-db17-soldering) to be functional.
 
-```{figure} ./chap_2_1_images/stacking_header.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/stacking_header.png
 :width: 15em
 :name: fig:stacking_header
 
@@ -447,7 +447,7 @@ The battery ([](fig:battery)) provides power to the Duckiebot.
 
 We choose this battery because it has a good combination of size (to fit in the lower deck of the Magician Chassis), high output amperage (2.4A and 2.1A at 5V DC) over two USB outputs, a good capacity (10400 mAh) at an affordable price. The battery linked in the table above comes with two USB to microUSB cables.
 
-```{figure} ./chap_2_1_images/battery-and-cables.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/battery-and-cables.jpg
 :width: 15em
 :name: fig:battery
 
@@ -465,7 +465,7 @@ We use non electrically conductive standoffs (M2.5 12mm F 6mm M), nuts (M2.5), a
 
 The Duckiebot requires 8 standoffs, 4 nuts and 4 screws.
 
-```{figure} ./chap_2_1_images/mech-bits.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/mech-bits.jpg
 :width: 15em
 :name: fig:stands_nuts_screws
 
@@ -482,7 +482,7 @@ Standoffs, Nuts and Screws.
 
 Two 300x5mm zip ties are needed to keep the battery at the lower deck from moving around.
 
-```{figure} ./chap_2_1_images/zipties.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/zipties.png
 :width: 15em
 :name: fig:zipties
 
@@ -502,7 +502,7 @@ The zip ties.
 
 The Edimax AC1200 EW-7822ULC 5 GHz wireless adapter ([](fig:edimax)) boosts the connectivity of the Duckiebot, especially useful in busy Duckietowns (e.g., classroom). This additional network allows easy streaming of images.  
 
-```{figure} ./chap_2_1_images/edimax.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/edimax.png
 :width: 15em
 :name: fig:edimax
 
@@ -526,7 +526,7 @@ The joypad is used to manually remote control the Duckiebot. Any 2.4 GHz wireles
 
 The model linked in the table ([](fig:joystick)) does not include batteries.
 
-```{figure} ./chap_2_1_images/joystick.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/joystick.png
 :width: 15em
 :name: fig:joystick
 
@@ -540,7 +540,7 @@ A Wireless joypad.
 
 Requires: 2 AA 1.5V batteries ([](fig:batteries)) not included in the [bill of materials](#tab:materials).
 
-```{figure} ./chap_2_1_images/batteries.jpg
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/batteries.jpg
 :width: 15em
 :name: fig:batteries
 
@@ -560,7 +560,7 @@ Batteries.
 
 In configuration `DB17-d`, the Duckiebot is equipped with an "external" hard drive ([](fig:USBdrive)). This add-on is very convenient to store logs during experiments and later port them to a workstation for analysis. It provides storage capacity and faster data transfer than the MicroSD card.
 
-```{figure} ./chap_2_1_images/USBdrive.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/USBdrive.png
 :width: 15em
 :name: fig:USBdrive
 
@@ -582,7 +582,7 @@ This Duckiebot is equipped with 5 RGB LEDs ([](fig:led)). LEDs can be used to si
 
 The pack of LEDs linked in the table above holds 10 LEDs, enough for two Duckiebots.
 
-```{figure} ./chap_2_1_images/led.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/led.png
 :width: 15em
 :name: fig:led
 
@@ -601,7 +601,7 @@ The LED HAT ([](fig:led_hat)) provides an interface for our RGB LEDs and the com
 
 This board is custom designed and can only be ordered in minimum runs of 3 pieces. The price scales down quickly with quantity, and lead times may be significant, so it is better to buy these boards in bulk.
 
-```{figure} ./chap_2_1_images/led_hat.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/led_hat.png
 :width: 25em
 :name: fig:led_hat
 
@@ -618,7 +618,7 @@ The LED HAT.
 
 The PWM/Servo HAT ([](fig:servo_hat)) mates to the LED HAT and provides the signals to control the LEDs, without taking computational resources away from the Rasperry Pi itself. This item will require [soldering](0_5_soldering_boards_c1.md).
 
-```{figure} ./chap_2_1_images/servo_hat.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/servo_hat.png
 :width: 15em
 :name: fig:servo_hat
 
@@ -635,7 +635,7 @@ The PWM-Servo HAT.
 
 To power the PWM/Servo HAT from the battery, we use a short (30cm) angled male USB-A to 5.5/2.1mm DC power jack cable ([](fig:power-cable-usb-to-jack)).
 
-```{figure} ./chap_2_1_images/power-cable-usb-to-jack.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/power-cable-usb-to-jack.png
 :width: 15em
 :name: fig:power-cable-usb-to-jack
 
@@ -652,7 +652,7 @@ The 30cm angled USB to 5.5/2.1mm power jack cable.
 
 The Duckiebot needs one male-male jumper wire ([](fig:mm_wires)) to power the DC Stepper Motor HAT from the PWM/Servo HAT.
 
-```{figure} ./chap_2_1_images/mm_wires.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/mm_wires.png
 :width: 15em
 :name: fig:mm_wires
 
@@ -669,7 +669,7 @@ Male-male jumper wires.
 
 20 Female-Female Jumper Wires ([](fig:ff_wires)) are necessary to connect 5 LEDs to the LED HAT.
 
-```{figure} ./chap_2_1_images/ff_wires.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/ff_wires.png
 :width: 15em
 :name: fig:ff_wires
 
@@ -690,7 +690,7 @@ These bumpers are designed to keep the LEDs in place and are therefore used only
 Our design files are available [here].
 
 
-```{figure} ./chap_2_1_images/placeholder.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/placeholder.png
 :width: 15em
 :name: fig:bumpers
 
@@ -710,7 +710,7 @@ Upgrading `DB17` to `DB17-l` requires several electrical bits: 5 of 4 pin female
 These items require [soldering](0_5_soldering_boards_c1.md).
 
 <!--
-```{figure} ./chap_2_1_images/duckiebattery-voltage-profile.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-voltage-profile.png
 :width: 15em
 :name: fig:duckiebattery-voltage-profile
 
@@ -722,7 +722,7 @@ div figure-id="fig:headers" figure-caption="The Headers">
      <img src="placeholder.png" style='width: 15em'/>
 </div-->
 <!--
-```{figure} ./chap_2_1_images/duckiebattery-voltage-profile.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-voltage-profile.png
 :width: 15em
 :name: fig:duckiebattery-voltage-profile
 
@@ -739,7 +739,7 @@ div figure-id="fig:resistors" figure-caption="The Resistors">
 
 The caster ([](fig:caster)) is an `DB17-c` component that substitutes the steel omni-directional wheel that comes in the Magician Chassis package. Although the caster is not essential, it provides smoother operations and overall enhanced Duckiebot performance.
 
-```{figure} ./chap_2_1_images/caster.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/caster.png
 :width: 15em
 :name: fig:caster
 
@@ -757,19 +757,19 @@ To assemble the caster at the right height we will need to purchase:
 - 8 screws (M3x8mm) ([](fig:caster-screws)), and
 - 8 split lock washers ([](fig:caster-split-washer)).
 
-```{figure} ./chap_2_1_images/caster-standoffs.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/caster-standoffs.png
 :width: 15em
 :name: fig:caster-standoffs
 
 Standoffs for caster wheel.
 ```
-```{figure} ./chap_2_1_images/caster-screws.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/caster-screws.png
 :width: 15em
 :name: fig:caster-screws
 
 Screws for caster wheel.
 ```
-```{figure} ./chap_2_1_images/caster-split-washer.png
+```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/caster-split-washer.png
 :width: 15em
 :name: fig:caster-split-washer
 
