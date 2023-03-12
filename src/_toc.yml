@@ -10,7 +10,7 @@ parts:
         chapters:
             -   file: preliminaries_software/docker_basics/index
             
-   - caption: Preliminaries - Hardware
+    - caption: Preliminaries - Hardware
       maxdepth: 2
       numbered: False
       chapters:
