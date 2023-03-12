@@ -45,7 +45,7 @@ parts:
             -   file: assembly_setup/ops_see/index
             -   file: assembly_setup/ops_tools/index
 
-    -   caption: Assembly
+    -   caption: Duckiebot Assembly
         maxdepth: 2
         numbered: False
         chapters:
