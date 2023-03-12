@@ -1,16 +1,17 @@
+(demo-lane-following-with-obstacles)=
+# Lane following with obstacles 
 
-# LFV with Object Detection {#lane-following-with-obj-det status=beta}
+This demo is build on the [lane following demo](demo-lane-following-lf) by allowing multiple Duckiebots on the same lane. Duckiebots will detect and maintain a distance from other vehicles. This demo is sometimes referred to as "follow the leader", when ran outside a city, or more simply as "traffic management". 
 
-This is a documentation for our demo, which is about using Object detection to do the lane-following-with-vehicles demo.
-
-<div class='requirements' markdown="1">
-
-Requires: Wheel and Camera calibration.
-
-Requires: Fully setting up Duckietown framework and Duckiebot.
-
-Results: One or more Duckiebot safely following lane and stops when there is a vehicle ahead.
-</div>
+```{needget}
+* Several assembled and initialized Duckiebot;
+* [Wheels calibration](#wheel-calibration) completed on all Duckiebots;
+* [Camera calibration](#camera-calib) completed on all Duckiebots;
+* [Joystick demo](#rc-control) has been successfully launched;
+* A Duckietown city loop, as detailed in the [appearance specifications](+opmanual_duckietown#dt-ops-appearance-specifications).
+---
+* One or more Duckiebot driving autonomously in lanes while preventing crashes with other Duckiebots on the same lane.
+```
 
 ## Video of expected results {#demo-lane-following-with-obj-det-expected}
 

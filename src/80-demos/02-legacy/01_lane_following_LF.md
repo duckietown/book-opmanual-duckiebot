@@ -1,4 +1,4 @@
-(demo-lane-following)=
+(demo-lane-following-lf)=
 # Lane following (`LF`)
 
 ```{needget}
@@ -32,7 +32,7 @@
 
 Before getting started, make sure your Duckietown is ready to go:
 
-* The layout adheres to the Duckietown [appearance specifications](book-opmanual-duckietown:dt-ops-appearance-specifications)
+* The layout adheres to the Duckietown [appearance specifications](opmanual-duckietown:dt-ops-appearance-specifications)
 * The lighting is "good": ideally white diffused light. This demo relies on images from the camera and color detections, so avoid colored lights, reflections or other conditions that might confuse or blind the onboard image sensor. 
 
 (demo-lane-following-duckiebot-setup)=

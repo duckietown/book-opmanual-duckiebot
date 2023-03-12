@@ -1,9 +1,8 @@
 (running-exercises)=
 # General Exercise Running Procedure 
 
-```{todo}
-this must be updated to new `LX` workflow
-```
+TODO - this must be updated to new `LX` workflow
+
 
 This page describes the exercises' infrastructure. This infrastructure affords a seamless method to build on existing baselines, test them in simulation, test them on robot hardware either remotely or locally, and then evaluate and submit them as challenges with the [AIDO challenges infrastructure](+AIDO#book).
 
