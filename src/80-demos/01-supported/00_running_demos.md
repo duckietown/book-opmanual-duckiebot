@@ -1,6 +1,8 @@
 (running-demos)=
 # General Demo Running Procedure
 
+TODO: AfD review
+
 This page describes the basic procedure for running demos. Some demos have specific requirements that must be adhered to, but the general process of running them through the Duckietown shell is standardized.
 
 ```{needget}

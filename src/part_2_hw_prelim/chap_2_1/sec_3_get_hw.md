@@ -254,7 +254,7 @@ The chassis pack includes 2 DC motors and wheels as well as the structural part,
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/magician_chassis.jpg
 :width: 15em
-:name: fig:magician_chassis"
+:name: fig:magician_chassis
 
 The "Magician" chassis was very popular. It is used in `DB17` through `DB19` Duckiebot models.
 ```
@@ -616,7 +616,11 @@ The LED HAT.
 (db17-pwm-servo-hat)=
 ### PWM/Servo HAT
 
-The PWM/Servo HAT ([](fig:servo_hat)) mates to the LED HAT and provides the signals to control the LEDs, without taking computational resources away from the Rasperry Pi itself. This item will require [soldering](0_5_soldering_boards_c1.md).
+The PWM/Servo HAT ([](fig:servo_hat)) mates to the LED HAT and provides the signals to control the LEDs, without taking computational resources away from the Rasperry Pi itself. This item will require soldering.
+
+<!--
+[soldering](0_5_soldering_boards_c1.md).
+-->
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/servo_hat.png
 :width: 15em
@@ -707,8 +711,11 @@ The bumpers.
 
 Upgrading `DB17` to `DB17-l` requires several electrical bits: 5 of 4 pin female header, 2 of 16 pin male headers, 1 of 12 pin male header, 1 of 3 pin male header, 1 of 2 pin female shunt jumper, 5 of 200 Ohm resistors and finally 10 of 130 Ohm resistors.
 
-These items require [soldering](0_5_soldering_boards_c1.md).
+These items require soldering.
 
+<!--
+[soldering](0_5_soldering_boards_c1.md).
+-->
 <!--
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-voltage-profile.png
 :width: 15em
