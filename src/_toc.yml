@@ -66,13 +66,13 @@ parts:
             - file: 80-demos/demos-index
             - file: 80-demos/01-supported/supported-demos-index
               sections:
-                  - file: 80-demos/01-supported/00_running_demos
-                  - file: 80-demos/01-supported/01_lane_following_LF
-                  - file: 80-demos/01-supported/02_lane_following_with_vehicles_LFV
+                  - file: 80-demos/01-supported/01-supported-demos-placeholder
             - file: 80-demos/02-legacy/legacy-demos-index
               sections:
+                  - file: 80-demos/01-legacy/00_running_demos
+                  - file: 80-demos/02-legacy/01_lane_following_LF
+                  - file: 80-demos/02-legacy/02_lane_following_with_vehicles_LFV
                   - file: 80-demos/02-legacy/01-legacy-demos-placeholder
-
     -   caption: Learning Experiences
         maxdepth: 2
         numbered: False
