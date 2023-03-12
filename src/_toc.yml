@@ -23,3 +23,11 @@ parts:
                 - file: assembly_and_setup/setup_sd_card/cli
                 - file: assembly_and_setup/setup_sd_card/first_boot
                 - file: assembly_and_setup/setup_sd_card/troubleshooting
+
+    - caption: Assembly
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: duckiebot-assembly-and-setup/index.md
+            sections:
+                - file: duckiebot-assembly-and-setup/assembly-duckiebot-db21m/index
