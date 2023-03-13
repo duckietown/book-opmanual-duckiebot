@@ -75,6 +75,7 @@ parts:
                     -   file: 80-demos/02-legacy/01_lane_following_LF
                     -   file: 80-demos/02-legacy/02_lane_following_with_obstacles
                     -   file: 80-demos/02-legacy/01-legacy-demos-placeholder
+
     -   caption: Learning Experiences
         maxdepth: 2
         numbered: False

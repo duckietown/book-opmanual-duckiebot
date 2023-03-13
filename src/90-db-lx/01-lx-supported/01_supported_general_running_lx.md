@@ -1,27 +1,35 @@
 (running-exercises)=
 # General Exercise Running Procedure 
 
-TODO - this must be updated to new `LX` workflow
+```{todo}
+this must be updated to new `LX` workflow
+```
 
+This page describes the exercises' infrastructure. 
+This infrastructure affords a seamless method to build on existing baselines, test them in simulation, 
+test them on robot hardware either remotely or locally, and then evaluate and submit them as 
+challenges with the [AIDO challenges infrastructure](book-research-aido:book).
 
-This page describes the exercises' infrastructure. This infrastructure affords a seamless method to build on existing baselines, test them in simulation, test them on robot hardware either remotely or locally, and then evaluate and submit them as challenges with the [AIDO challenges infrastructure](+AIDO#book).
+```{needget}
+- A Duckiebot that is initialized
+- Laptop configured, according to [](#laptop-setup).
+- That you are able to submit a challenge according to [](book-research-aido:cm-first).
+---
+```
 
-<div class='requirements' markdown='1'>
-
-Requires: A Duckiebot that is initialized
-
-Requires: Laptop configured, according to [](#laptop-setup).
-
-Requires: That you are able to submit a challenge according to [](+AIDO#cm-first).
-
-</div>
+```{todo}
+add what we get in the needget section above
+```
 
 ## Video Tutorial
 
-<div figure-id="fig:howto-dt-exercises" figure-caption="Learn how to use the exercises infrastructure.">
-    <dtvideo src="vimeo:534777903"/>
-</div>
+```{vimeo} 534777903
+```
 
+```{todo}
+Add caption "Learn how to use the exercises infrastructure." and reference "fig:howto-dt-exercises" to
+the video above.
+```
 
 
 ## Getting Started
@@ -31,25 +39,17 @@ Fork the [`mooc-exercices`](https://github.com/duckietown/mooc-exercises) reposi
 
 Set up an upstream remote. From inside the directory you just cloned:
 
-    laptop $ git remote add upstream git@github.com:duckietown/mooc-exercises.git
+    git remote add upstream git@github.com:duckietown/mooc-exercises.git
 
 Now to pull anything new from the original repository you can do:
 
-    laptop $ git pull upstream daffy
+    git pull upstream daffy
 
 Enter the `mooc-exercises` folder that you just cloned do:
 
-    laptop $ cd mooc-exercises
+    cd mooc-exercises
 
 In here you will see a number of folders. Each folder corresponds to an exercise.
-
-<!--
-
-It is recommended that you install the requirements (this can be in a `virtualenv` if you prefer of course):
-
-    laptop $ pip install -r requirements.txt
-
--->
 
 
 ## The Anatomy of an Exercise
@@ -133,13 +133,13 @@ The code in the notebooks can also be compiled and become accessible inside the 
 
 In order to do so, from inside the exercise folder run:
 
-    laptop $ dts exercises build
+    dts exercises build
 
 This command convert the notebook into a python script and place it inside the package in `exercise_ws` directory specified in the `config.yaml` file.
 
 The same is when running the `run` command, with the difference that in this case the ROS workspace is not built:
 
-    laptop $ dts exercises run ![options]
+    dts exercises run ![options]
 
 
 ### `requirements.txt`
@@ -159,7 +159,7 @@ In the following we will describe the current commands that are supported within
 
 You can start by building your code with:
 
-    laptop $ dts exercises build
+    dts exercises build
 
 If you go inside the `exercises_ws` folder you will notice that there are more folders that weren't there before. These are build artifacts that persist from the building procedure because of mounting.
 
@@ -179,7 +179,7 @@ With `dts exercises test` you can test your agent:
 
 You can run your current solution in the gym simulator with:
 
-    laptop $ dts exercises test --sim
+    dts exercises test --sim
 
 Then you can look at what's happening by looking through the "novnc" browser at http://localhost:8087 .
 
@@ -188,7 +188,7 @@ open up the `rqt_image_view`, resize it, and choose `/agent/camera_node/image/co
 
 You might want to launch a virtual joystick by opening a terminal and doing:
 
-    laptop $ dt-launcher-joystick
+    dt-launcher-joystick
 
 If you are running the `duckietown_baseline`, by default the duckiebot is in joystick control mode, so you can freely drive it around. You can also set it to `LANE FOLLOWING` mode by pushing the `a` button when you have the virtual joystick active. If you do so you will see the robot move forward slowly and never turn.
 
@@ -198,7 +198,7 @@ Also useful are some debugging outputs that are published and visualized in `RVi
 You can open `RViz` through the terminal in the `novnc` desktop by typing:
 
 
-    laptop $ rviz
+    rviz
 
 In the window that opens click "Add" the switch to the topic tab, then find the `segment_markers`, and you should see the projected segments appear. Do the same for the `pose_markers`.
 
@@ -206,17 +206,19 @@ Another tool that may be useful is `rqt_plot` which also can be opened through t
 
 All of this data can be viewed as data through the command line also. Take a look at all of the `rostopic` command line utilities.
 
-TODO: add pictures.
+```{todo}
+add pictures.
+```
 
 #### Testing Your agent on the Robot
 
 If you are using a Linux laptop, you have two options, local (i.e., on your laptop) and remote (i.e., on the Duckiebot). If you are Mac user stick to the remote option. To run "locally"
 
-    laptop $ dts exercises test --duckiebot_name ![ROBOT_NAME] --local
+    dts exercises test --duckiebot_name ![ROBOT_NAME] --local
 
 To run on the Duckiebot:
 
-    laptop $ dts exercises test --duckiebot_name ![ROBOT_NAME]
+    dts exercises test --duckiebot_name ![ROBOT_NAME]
 
 In both cases you should still be able to look at things through novnc by pointing your browser to  http://localhost:8087 . If you are running on Linux, you can load up the virtual joystick and start lane following as above.
 
@@ -229,12 +231,12 @@ In this case, when all of the containers other than the agent have started, you 
 
 Note: If you are running an exercise based on the `duckeitown_baseline` image, the first time you will have to start the "interface" part of the agent. To do this run
 
-    laptop container $ launchers/run_interface.sh.
+    launchers/run_interface.sh.
 
 You will see some output of some ros nodes starting. At the end, if you push ENTER you will get your command line back.
 Then you can run the lane_following demo using your lane_controller by running
 
-    laptop container launchers/run_agent.sh
+    launchers/run_agent.sh
 
 You can do the normal thing of going to novnc and putting it into lane following mode or driving around with the joystick or whatever.
 
@@ -245,4 +247,4 @@ Note: You will see an output from the anti-instagram node saying it's waiting fo
 Note: There is a timeout on the simulator, so if you do CTRL-C and then spend a while editing your code, it's likely that the simulator will have shut down. So either leave it running while you edit your code or just restart everything.
 You can get out of your terminal by typing
 
-    laptop container $ exit
+    exit
