@@ -8,17 +8,19 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
+            -   file: preliminary_software/secure_shell/index
+            -   file: preliminary_software/version_control_git/index
             -   file: preliminaries_software/docker_basics/index
-            
+
     -   caption: Preliminaries - Hardware
         maxdepth: 2
         numbered: False
         chapters:
-            - file: part_2_hw_prelim/index
-              sections:
-                  - file: part_2_hw_prelim/chap_2_1/sec_1_handling
-                  - file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
-                  - file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
+            -   file: part_2_hw_prelim/index
+                sections:
+                    -   file: part_2_hw_prelim/chap_2_1/sec_1_handling
+                    -   file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
+                    -   file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
     -   caption: Duckiebot Assembly and Setup
         maxdepth: 2
         numbered: False
@@ -50,7 +52,7 @@ parts:
         chapters:
             -   file: assembly/db21j/index
             -   file: assembly/db21m/index
-            
+
     -   caption: Duckiebot Setup
         maxdepth: 2
         numbered: False
@@ -62,24 +64,24 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            - file: 80-demos/demos-index
-            - file: 80-demos/01-supported/supported-demos-index
-              sections:
-                  - file: 80-demos/01-supported/01-supported-demos-placeholder
-            - file: 80-demos/02-legacy/legacy-demos-index
-              sections:
-                  - file: 80-demos/02-legacy/00_running_demos
-                  - file: 80-demos/02-legacy/01_lane_following_LF
-                  - file: 80-demos/02-legacy/02_lane_following_with_obstacles
-                  - file: 80-demos/02-legacy/01-legacy-demos-placeholder
+            -   file: 80-demos/demos-index
+            -   file: 80-demos/01-supported/supported-demos-index
+                sections:
+                    -   file: 80-demos/01-supported/01-supported-demos-placeholder
+            -   file: 80-demos/02-legacy/legacy-demos-index
+                sections:
+                    -   file: 80-demos/02-legacy/00_running_demos
+                    -   file: 80-demos/02-legacy/01_lane_following_LF
+                    -   file: 80-demos/02-legacy/02_lane_following_with_obstacles
+                    -   file: 80-demos/02-legacy/01-legacy-demos-placeholder
     -   caption: Learning Experiences
         maxdepth: 2
         numbered: False
         chapters:
-            - file: 90-db-lx/lx-index
-            - file: 90-db-lx/01-lx-supported/supported-lx-index
-              sections:
-                  - file: 90-db-lx/01-lx-supported/01_supported_general_running_lx
-            - file: 90-db-lx/02-lx-experimental/exp-lx-index
-              sections:
-                  - file: 90-db-lx/02-lx-experimental/01-exp-lx
+            -   file: 90-db-lx/lx-index
+            -   file: 90-db-lx/01-lx-supported/supported-lx-index
+                sections:
+                    -   file: 90-db-lx/01-lx-supported/01_supported_general_running_lx
+            -   file: 90-db-lx/02-lx-experimental/exp-lx-index
+                sections:
+                    -   file: 90-db-lx/02-lx-experimental/01-exp-lx
