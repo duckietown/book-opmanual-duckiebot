@@ -59,6 +59,7 @@ parts:
         chapters:
             -   file: duckiebot_assembly_and_setup/calibration_camera/index
             -   file: duckiebot_assembly_and_setup/calibration_wheels/index
+            -   file: duckiebot_assembly_and_setup/taking-logs/index
 
     -   caption: Demos
         maxdepth: 2
