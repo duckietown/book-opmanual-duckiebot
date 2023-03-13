@@ -127,8 +127,10 @@ If the indicator reads "**Bridge: Closed**", it means that something went wrong
 while launching the ROS websocket node above. In that case, start again from
 the beginning of this section.
 
-Note: Don't worry if one of the blocks is called "Camera" but you
+```{note}
+Don't worry if one of the blocks is called "Camera" but you
 don't see an image. We will get to that later.
+```
 
 Toggle the **Take over** switch
 in the top-right corner of the page to gain control of your robot.
