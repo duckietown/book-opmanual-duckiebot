@@ -36,7 +36,7 @@ Press the button on the side of the battery ([](troubleshooting-battery-button))
 ```{trouble}
 The Raspberry Pi has power but it does not boot.
 ---
-[Initialize the SD card](setup-duckiebot) if not done already. If problem persists, ask on 
+[Initialize the SD card](setup-duckiebot-sd-card) if not done already. If problem persists, ask on 
 [Stack Overflow](https://stackoverflowteams.com/c/duckietown).
 ```
 

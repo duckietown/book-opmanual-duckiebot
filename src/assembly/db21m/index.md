@@ -10,9 +10,12 @@
 -->
 
 ```{needget}
-* Duckiebot `DB21M` parts ([get a `DB21M`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check this overview of all existing [**TODO: update link**] [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21M` parts ([get a `DB21M`](https://get.duckietown.com/)). 
+If you are unsure what version of Duckiebot you have, check this overview of all existing 
+[Duckiebot configurations](duckiebot-configurations).
 
-* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [**TODO: update link**] [here](setup-duckiebot).
+* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained 
+[here](setup-duckiebot).
 
 * 3 hours of assembly time.
 ---
