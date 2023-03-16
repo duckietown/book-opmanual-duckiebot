@@ -1,4 +1,4 @@
-(setup-duckiebot)=
+(setup-duckiebot-sd-card)=
 # Setup - SD Card
 
 Here we will learn who to initialize an SD card with the Operating System that will run on the

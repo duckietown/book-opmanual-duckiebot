@@ -201,18 +201,22 @@ The Duckiebot does not drive nicely through intersections
 For this demo, there should not be any intersections in the city layout. Duckiebots will interpret intersections as "broken" lanes, perceiving less salient features, potentially compromising the state estimate hence causing the driving troubles.
 ```
 
-```{trouble}
+````{trouble}
 The Duckiebot cuts white line while driving on inner curves (advanced)
 ---
 This might be due to wrongly constructed lanes or bad Duckiebot calibrations. Fortunately, feedback control should take care of most of these problems.  
 
 While running the demo modify the PID controller gains from the base station through:
 
-`rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_d -45`
+```
+rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_d -45
+```
 
 and/or 
 
-`rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_theta -11`
+```
+rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_theta -11
+```
 
 Note that the coefficients above are just examples and you should play around with different numbers to tune the controller specifically to your Duckiebot. Moreover, changes made in this way are not persistent. They will need to be repeated at every start of the demo. If this improved the performance of your Duckiebot, you should think about permanently change the default values in your `catkin_ws`.
-```
+````
