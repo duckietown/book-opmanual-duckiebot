@@ -83,3 +83,10 @@ parts:
             - file: 90-db-lx/02-lx-experimental/exp-lx-index
               sections:
                   - file: 90-db-lx/02-lx-experimental/01-exp-lx
+    -   caption: Debugging and Troubleshooting
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: debugging_and_troubleshooting/network_config
+            - file: debugging_and_troubleshooting/reflash_mc
+            - file: debugging_and_troubleshooting/update
