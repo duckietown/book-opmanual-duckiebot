@@ -1,10 +1,10 @@
-(assembling-duckiebot-db21)=
+(assembling-duckiebot-db21j)=
 # Assembly - Duckiebot `DB21J`
 
 ```{needget}
 * Duckiebot `DB21J` parts ([get a `DB21J`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
 
-* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot).
+* A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot-sd-card).
 
 * 3-4 hours of assembly time.
 ---
@@ -15,17 +15,13 @@
 
 These instructions are your friend. Follow them carefully, especially if it's the first time you assemble a Duckiebot. Small variations might cause big effects (e.g., don't flip your cables!).
 
-<!--
-
-This is the old DB21M one. Needs re-do.
-
-## Video tutorial {#02-legacy-rev1-assembly-video}
+```{todo}
+**Video tutorial**
 
 <div figure-id="fig:howto-assemble-02-legacy-rev1-video">
     <dtvideo src="vimeo:528621827"/>
 </div>
-
--->
+```
 
 ## Overview
 
@@ -33,12 +29,6 @@ A Duckiebox contains the following components:
 
 ```{figure} ../../_images/assembly/db21j/db21-allcomponents.jpg
 ```
-
-<!--
-
-![](images/DB21M/db21-allcomponents.jpg)
-
--->
 
 The assembly process is divided in 6 parts. They must be completed in the following order:
 
@@ -60,13 +50,13 @@ The Troubleshooting section at the bottom of this page provides resolutions to c
 Unbox all of your components and lay them out on a flat surface. Ensure that you have well lit, uncluttered space to work on.
 
 ```{note}
- "The Duckiebox hides but does not steal". Your Duckiebot chassis might be under the white protection foam inside the box. To reach it, pull out the white foam from the box after removing everything. Mind that the upper part of the inside foam has several side pockets in addition to a main compartment where components are located.
+"The Duckiebox hides but does not steal". Your Duckiebot chassis might be under the white protection foam inside the box. To reach it, pull out the white foam from the box after removing everything. Mind that the upper part of the inside foam has several side pockets in addition to a main compartment where components are located.
 ```
 
 Although not necessary, a small (M2.5) wrench might ease some passages.
 
 ```{note}
- both NVIDIA Jetson Nano 2 GB and 4 GB are supported, but the sd-cards must be initialized differently, as described in [](setup-duckiebot).
+Both NVIDIA Jetson Nano 2 GB and 4 GB are supported, but the SD cards must be initialized differently, as described in [](setup-duckiebot-sd-card).
 ```
 
 ### Plastic cover
@@ -481,7 +471,7 @@ These additional parts are not always necessary.
 
 ### Back Pattern
 
-The back pattern enables the traffic management behavior of the [indefinite navigation demo](demo-indefinite-navigation), and it might be useful in challenges with vehicles (e.g., `LFV`, `LFIV`, etc.).
+The back pattern enables the traffic management behavior used in challenges with vehicles (e.g., `LFV`, `LFIV`, etc.).
 
 
 
