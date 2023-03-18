@@ -6,7 +6,7 @@
 * [Wheels calibration](#wheel-calibration) completed;
 * [Camera calibration](#camera-calib) completed;
 * [Joystick demo](#rc-control) has been successfully launched;
-* A Duckietown city loop, as detailed in the [appearance specifications](+opmanual_duckietown#dt-ops-appearance-specifications).
+* A Duckietown city loop, as detailed in the [appearance specifications](book-opmanual-duckietown:book).
 ---
 * A Duckiebot driving autonomously in a Duckietown city loop, without other vehicles, intersections, or obstacles.
 ```
@@ -32,7 +32,7 @@
 ## Duckietown setup notes
 
 Before getting started, make sure your Duckietown is ready to go:
-- The layout adheres to the [](book-opmanual-duckietown:dt-ops-appearance-specifications);
+- The layout adheres to the [](book-opmanual-duckietown:book);
 - The lighting is "good": ideally white diffused light. This demo relies on images from the camera and 
   color detections, so avoid colored lights, reflections or other conditions that might confuse or blind 
   the onboard image sensor;

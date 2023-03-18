@@ -12,7 +12,7 @@ This demo is build on the [lane following demo](demo-lane-following) by allowing
 * [Wheels calibration](#wheel-calibration) completed on all Duckiebots;
 * [Camera calibration](#camera-calib) completed on all Duckiebots;
 * [Joystick demo](#rc-control) has been successfully launched;
-* A Duckietown city loop, as detailed in the [appearance specifications](+opmanual_duckietown#dt-ops-appearance-specifications).
+* A Duckietown city loop, as detailed in [The Duckietown Operation Manual](book-opmanual-duckietown:book).
 ---
 * One or more Duckiebot driving autonomously in lanes while preventing crashes with other Duckiebots on the same lane.
 ```
