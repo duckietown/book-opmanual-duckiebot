@@ -50,7 +50,7 @@ Some networks block pings from passing through, so a better way is to execute on
 
 which will try to download the Google homepage. If it is successful, you should see an output like:
 
-```{html}
+```
     <HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
     <TITLE>301 Moved</TITLE></HEAD><BODY>
     <H1>301 Moved</H1>
@@ -157,14 +157,14 @@ troubleshooting-mdns-ipv6 = ## I cannot access my Duckiebot via SSH
 When I run `ssh ![robot_name].local` I get the error `ssh: Could not resolve hostname ![robot_name].local`.
 ---
 Make sure that your Duckiebot is ON. Connect it to a monitor, a USB mouse and a keyboard. Run the command:
-```
+
 On the duckiebot run: 
 
     $ sudo service avahi-daemon status
 
 You should get something like the following:
 
-```{none}
+
     ● avahi-daemon.service - Avahi mDNS/DNS-SD Stack
        Loaded: loaded (/lib/systemd/system/avahi-daemon.service; enabled; vendor preset: enabled)
        Active: active (running) since Sun 2017-10-22 00:07:53 CEST; 1 day 3h ago
