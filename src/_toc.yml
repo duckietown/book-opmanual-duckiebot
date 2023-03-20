@@ -83,3 +83,11 @@ parts:
                 sections:
                     -   file: lx/supported/general_running_lx
             -   file: lx/experimental/index
+
+    -   caption: Debugging and Troubleshooting
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: debugging_and_troubleshooting/network_config/index
+            - file: debugging_and_troubleshooting/reflash_mc/index
+            - file: debugging_and_troubleshooting/update/index
