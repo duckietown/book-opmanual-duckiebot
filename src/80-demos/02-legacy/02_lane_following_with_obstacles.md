@@ -1,7 +1,7 @@
 (demo-lane-following-with-obstacles)=
 # Lane following with obstacles 
 
-```{comment}
+```{admonition} Comment
 JT: this looks cool but it is not LFV.
 ```
 
@@ -127,11 +127,9 @@ Here are some additional things you can try:
 * Try to change some of the ROS parameters to see how your Duckiebot's behavior will change. 
 -->
 
----
 
 ## Implementation details
 
----
 
 ### Description of the Demo and the Approach.
 The task is to follow the lane and avoid dynamic vehicles. 

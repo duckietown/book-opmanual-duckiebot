@@ -1,4 +1,5 @@
-duckiebot-network = # Operation - Networking
+(duckiebot-network)=
+# Operation - Networking
 
 ```{needget}
 * A Duckiebot that is initialized according to [](#setup-duckiebot).
@@ -42,7 +43,8 @@ network={
 }
 ```
 
-duckiebot-network-test = ## Testing if your Duckiebot is Connected to the Internet 
+(duckiebot-network-test)=
+## Testing if your Duckiebot is Connected to the Internet 
 
 Some networks block pings from passing through, so a better way is to execute on your duckiebot:
 

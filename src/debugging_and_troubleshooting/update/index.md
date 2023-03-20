@@ -1,4 +1,5 @@
-duckiebot-autoupdate = # Debug - Duckiebot Update 
+(duckiebot-autoupdate)=
+# Debug - Duckiebot Update 
 
 ```{needget}
 * A Duckiebot that has been initialized
@@ -11,11 +12,13 @@ duckiebot-autoupdate = # Debug - Duckiebot Update
 
 ```
 
-(dt-what-update) = ## Understand what is the difference between OTA update and Release Update 
+(dt-what-update)=
+## Understand what is the difference between OTA update and Release Update 
 
 The update method described in this page will allow you to receive an **Over The Air** (OTA) update within the distribution you so choose (e.g., `daffy`), and it can improve your Duckiebot performance. Note that this is different from using the `init_sd_card` tool: Using the `init_sd_card` tool will only provide the latest release version, not the latest Duckiebot software version.
 
-dt-autoupdate-dts = ## Update Duckiebot container using `dts` command 
+dt-autoupdate-dts=
+## Update Duckiebot container using `dts` command 
 
 If your Duckiebot has not been used for a while and a new image has been released, you don't necessarily need to re-flash the Duckiebot image as described in [the initialization procedure](setup-duckiebot). Instead, you can use `dts duckiebot update` command to update your Duckiebot.
 

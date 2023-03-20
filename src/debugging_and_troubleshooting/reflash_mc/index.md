@@ -1,4 +1,5 @@
-reflash-microcontroller = # Debug - Re-flash Microcontroller
+(reflash-microcontroller)=
+# Debug - Re-flash Microcontroller
 
 ```{needget}
 * A Duckiebot of [configuration](#duckiebot-configurations) `DB18` or above.
@@ -11,7 +12,8 @@ reflash-microcontroller = # Debug - Re-flash Microcontroller
 This procedure is needed only if your Duckiebot does not recognize the HUT (Dashboard > Robot > Components). Although often unnecessary, it is safe to perform on any HUT of version `2.0` and above.   
 ```
 
-reflash-microcontroller-when = ## When and why should I run this procedure?
+(reflash-microcontroller-when)=
+## When and why should I run this procedure?
 
 This procedure flashes the microcontroller on the Duckietown HUT. This microcontroller is responsible for translating the duty cycle commands from the onboard computer to actual `PWM` signals that control the motors and the LEDs (because they are "addressable" LEDs) of the Duckiebots.
 
