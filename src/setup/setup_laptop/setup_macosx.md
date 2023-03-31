@@ -40,7 +40,7 @@ After installing `XQuartz`, run it by executing the command,
 Go to "Preferences" and in the "Security" tab make sure that the checkbox next to 
 "Allow connections from network clients" is ticked. You can now close `XQuartz`.
 
-You may want to add the following lines to your `.bashrc` file:
+You may want to add the following lines to your `.bashrc` file. If you are using `zsh`, add these to your `.zshrc` file instead.
 
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     xhost +$IP
@@ -81,7 +81,27 @@ Install the Duckietown Shell using the following command,
 pip3 install --no-cache-dir --user --upgrade duckietown-shell
 ```
 
-The first thing you need to do with the Duckietown Shell, is set the Duckietown software
+Then, make sure your system is able to find local binaries by adding the following to your `.bashrc` file. 
+
+```{attention}
+Again, if you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
+```
+
+    export PATH=~/.local/bin:${PATH}
+
+Then source the updates to your current shell
+
+```{shell}
+source ~/.bashrc
+```
+
+You can now check that `dts` was installed with 
+
+```{shell}
+which dts
+```
+
+The first thing you need to do with the Duckietown Shell is to set the Duckietown software
 distribution you want to work with. For this version of the book, we use `daffy`.
 Set the shell to use the `daffy` distribution by running the following command,
 
