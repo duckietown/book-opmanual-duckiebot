@@ -15,7 +15,7 @@ If you are unsure what version of Duckiebot you have, check this overview of all
 [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained 
-[here](setup-duckiebot).
+[here](setup-duckiebot-sd-card).
 
 * 3 hours of assembly time.
 ---

@@ -8,43 +8,17 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: preliminary_software/secure_shell/index
-            -   file: preliminary_software/version_control_git/index
-            -   file: preliminaries_software/docker_basics/index
+            -   file: preliminaries_software/ssh/index
+            -   file: preliminaries_software/git/index
+            -   file: preliminaries_software/docker/index
 
     -   caption: Preliminaries - Hardware
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: part_2_hw_prelim/index
-                sections:
-                    -   file: part_2_hw_prelim/chap_2_1/sec_1_handling
-                    -   file: part_2_hw_prelim/chap_2_1/sec_2_db_hw_config
-                    -   file: part_2_hw_prelim/chap_2_1/sec_3_get_hw
-    -   caption: Duckiebot Assembly and Setup
-        maxdepth: 2
-        numbered: False
-        chapters:
-            -   file: assembly_and_setup/setup_laptop/index
-                sections:
-                    -   file: assembly_and_setup/setup_laptop/setup_ubuntu
-                    -   file: assembly_and_setup/setup_laptop/setup_macosx
-            -   file: assembly_and_setup/setup_account/index
-                sections:
-                    -   file: assembly_and_setup/setup_account/duckietown_token
-                    -   file: assembly_and_setup/setup_account/duckietown_shell
-                    -   file: assembly_and_setup/setup_account/third_party_accounts
-            -   file: assembly_and_setup/setup_sd_card/index
-                sections:
-                    -   file: assembly_and_setup/setup_sd_card/gui
-                    -   file: assembly_and_setup/setup_sd_card/cli
-                    -   file: assembly_and_setup/setup_sd_card/first_boot
-                    -   file: assembly_and_setup/setup_sd_card/troubleshooting
-            -   file: assembly_setup/setup_dashboard/index
-            -   file: assembly_setup/ops_dashboard/index
-            -   file: assembly_setup/ops_move/index
-            -   file: assembly_setup/ops_see/index
-            -   file: assembly_setup/ops_tools/index
+            -   file: preliminaries_hardware/circuits_batteries/index
+            -   file: preliminaries_hardware/duckiebot_configurations/index
+            -   file: preliminaries_hardware/get_hardware/index
 
     -   caption: Duckiebot Assembly
         maxdepth: 2
@@ -53,37 +27,67 @@ parts:
             -   file: assembly/db21j/index
             -   file: assembly/db21m/index
 
-    -   caption: Duckiebot Setup
+    -   caption: Setup
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: duckiebot_assembly_and_setup/calibration_camera/index
-            -   file: duckiebot_assembly_and_setup/calibration_wheels/index
-            -   file: duckiebot_assembly_and_setup/taking-logs/index
+            -   file: setup/setup_laptop/index
+                sections:
+                    -   file: setup/setup_laptop/setup_ubuntu
+                    -   file: setup/setup_laptop/setup_macosx
+            -   file: setup/setup_account/index
+                sections:
+                    -   file: setup/setup_account/duckietown_token
+                    -   file: setup/setup_account/duckietown_shell
+                    -   file: setup/setup_account/third_party_accounts
+            -   file: setup/setup_sd_card/index
+                sections:
+                    -   file: setup/setup_sd_card/gui
+                    -   file: setup/setup_sd_card/cli
+                    -   file: setup/setup_sd_card/first_boot
+                    -   file: setup/setup_sd_card/troubleshooting
+            -   file: setup/setup_dashboard/index
+
+
+    -   caption: Operations
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: operations/handling/db21
+            -   file: operations/dashboard/index
+            -   file: operations/make_it_move/index
+            -   file: operations/make_it_see/index
+            -   file: operations/software_tools/index
+            -   file: operations/calibration_camera/index
+            -   file: operations/calibration_wheels/index
+            -   file: operations/logs/index
 
     -   caption: Demos
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: 80-demos/demos-index
-            -   file: 80-demos/01-supported/supported-demos-index
+            -   file: demos/index
+            -   file: demos/supported/index
+            -   file: demos/legacy/index
                 sections:
-                    -   file: 80-demos/01-supported/01-supported-demos-placeholder
-            -   file: 80-demos/02-legacy/legacy-demos-index
-                sections:
-                    -   file: 80-demos/02-legacy/00_running_demos
-                    -   file: 80-demos/02-legacy/01_lane_following_LF
-                    -   file: 80-demos/02-legacy/02_lane_following_with_obstacles
-                    -   file: 80-demos/02-legacy/01-legacy-demos-placeholder
+                    -   file: demos/legacy/running_demos
+                    -   file: demos/legacy/lane_following
+                    -   file: demos/legacy/lane_following_with_obstacles
 
     -   caption: Learning Experiences
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: 90-db-lx/lx-index
-            -   file: 90-db-lx/01-lx-supported/supported-lx-index
+            -   file: lx/index
+            -   file: lx/supported/index
                 sections:
-                    -   file: 90-db-lx/01-lx-supported/01_supported_general_running_lx
-            -   file: 90-db-lx/02-lx-experimental/exp-lx-index
-                sections:
-                    -   file: 90-db-lx/02-lx-experimental/01-exp-lx
+                    -   file: lx/supported/general_running_lx
+            -   file: lx/experimental/index
+
+    -   caption: Debugging and Troubleshooting
+        maxdepth: 2
+        numbered: False
+        chapters:
+            - file: debugging_and_troubleshooting/network_config/index
+            - file: debugging_and_troubleshooting/reflash_mc/index
+            - file: debugging_and_troubleshooting/update/index
