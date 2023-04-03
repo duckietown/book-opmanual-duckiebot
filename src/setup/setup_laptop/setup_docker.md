@@ -1,5 +1,11 @@
 ## Step 2: Docker Installation
 
+Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
+of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
+
+If you are unfamiliar with Docker, we strongly recommend reading the following reference page to gain a 
+working understanding of this tool: [The Duckietown Intro to Docker](preliminaries-docker-basics)
+
 `````{tab-set}
 
 ````{tab-item} Ubuntu

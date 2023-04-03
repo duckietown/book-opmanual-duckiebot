@@ -34,10 +34,10 @@ And verify that it outputs a version number for pip3.
 Never skip a checkpoint!
 ```
 
-If you continue past a test that did not work, you will have further software issues down the line and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
 
 * First check for any troubleshooting sections on the page that might match the problem.
-* If you run into any issues that can't be solved using the troubleshooting sections in this development manual, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+* If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
 [Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
@@ -111,10 +111,10 @@ And verify that it outputs a version number for pip3.
 Never skip a checkpoint!  
 ```
 
-If you continue past a test that did not work, you will have further software issues down the line and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
 
 * First check for any troubleshooting sections on the page that might match the problem.
-* If you run into any issues that can't be solved using the troubleshooting sections in this development manual, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+* If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
 [Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
