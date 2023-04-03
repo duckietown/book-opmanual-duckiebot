@@ -111,3 +111,9 @@ If you correctly configured the token, then the command below should show someth
 
 If you have encountered issues or something is not working or behaving as expected, please stop here,
 it is a good time to ask for help on Stack Overflow.
+
+The first thing you need to do with the Duckietown Shell, is set the Duckietown software
+distribution you want to work with, for this version of the book, we use `daffy`.
+Set the shell to use the `daffy` distribution by running the following command,
+
+    dts --set-version daffy

@@ -19,15 +19,15 @@ Install the Duckietown Shell using the following command,
 
     pip3 install --no-cache-dir --user --upgrade duckietown-shell
 
-The first thing you need to do with the Duckietown Shell, is set the Duckietown software
-distribution you want to work with, for this version of the book, we use `daffy`.
-Set the shell to use the `daffy` distribution by running the following command,
+---
 
-    dts --set-version daffy
+**Checkpoint ✅**
+
+To confirm that dts was isntalled successfully, run
+
+    which dts
     
-**✅ Checkpoint**
-```{todo}```
-
+This should output a path ending in `dts`.
 
 ````
 
@@ -56,7 +56,7 @@ Install the Duckietown Shell using the following command,
 Make sure your system is able to find local binaries by adding the following to your `.bashrc` file. 
 
 ```{attention}
-Again, if you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
+If you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
 ```
 
     export PATH=~/.local/bin:${PATH}
@@ -65,19 +65,13 @@ Then source the updates to your current shell
 
     source ~/.bashrc
 
+---
+
+**Checkpoint ✅**
+
 You can now check that `dts` was installed with 
 
     which dts
-
-The first thing you need to do with the Duckietown Shell is to set the Duckietown software
-distribution you want to work with. For this version of the book, we use `daffy`.
-Set the shell to use the `daffy` distribution by running the following command,
-
-    dts --set-version daffy
-
-**✅ Checkpoint**
-```{todo}```
-
 
 ````
 

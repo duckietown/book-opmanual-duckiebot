@@ -5,7 +5,7 @@
 * A laptop or machine running Ubuntu 20.02 or 22.04
 * Alternatively: A laptop or machine running MacOS
 ---
-* Your laptop configured with Duckietown software and ready to run Duckietown robots and learning experiences
+* Your laptop configured with Duckietown software and ready to sign into your accounts
 ```
 
 In this section, we will install all the software that you need to run the Duckietown development environment on 
@@ -20,7 +20,9 @@ working understanding of these tools.
 ```
 
 Check out the laptop requirements below to make sure you are ready to proceed, then continue on to the next page to 
-begin setting up your development environment.  If you need help installing Ubuntu, see [Step 0: System Installation](system-installation) 
+begin setting up your development environment.  
+
+If you need help installing Ubuntu, see [Step 0: System Installation](system-installation) 
 below.
 
 ## Minimal Laptop Requirements

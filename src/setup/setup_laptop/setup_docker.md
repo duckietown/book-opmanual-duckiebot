@@ -6,40 +6,61 @@
 
 **1) Install Docker**
 
-Install Docker by following the instructions 
-[here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+Install Docker by first ensuring that you don't have older versions of Docker on your system
 
-Adds user to "docker" group:
+    sudo apt-get remove docker docker-engine docker.io containerd runc
+    
+Then set up the apt repository containing Docker
 
-```shell
-sudo adduser `whoami` docker
+    sudo apt-get update
+    sudo apt-get install \
+        ca-certificates \
+        curl \
+        gnupg
+        
+Add the official GPG key
+
+    sudo mkdir -m 0755 -p /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    
+And set up the repository with
+
+    echo \
+      "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+      "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
+
+Finally, install Docker Engine and Docker Compose
+
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    sudo apt-get install docker-compose
+
+**2) Set up Docker**
+
+Start by adding the user "docker" to your user group, then log out and back in
+
+    sudo adduser `whoami` docker
+
+```{attention}
+You need to _log out and back in_ for this group change to take effect.
 ```
 
-```{note}
-You need to _log out and back in_ for the group change to take effect.
-```
+---
 
-**2) Install Docker Compose**
+**Checkpoint ✅**
 
-Make sure you have docker-compose installed:
+Now make sure that Docker was correctly installed.
 
-```shell
-sudo apt-get install docker-compose
-```
+Ensure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+` by checking the output of
 
-Make sure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+` through:
+    docker --version
+    docker buildx --version
 
-```shell 
-docker --version
-docker buildx --version
-```
+Then run the `hello-world` image
 
-```{warning}
-If you missed this step, you will later run into docker permission issues.
-```
-
-**✅ Checkpoint**
-```{todo}```
+    docker run hello-world
+    
+You should see a message like `Hello from Docker!`.
 
 ````
 
@@ -57,9 +78,16 @@ in order to run the Duckietown containers. Open the Docker menu and go to _Prefe
 Use the slider in the _Advanced_ tab to increase Memory to a minimum of `4.5GB`.
 ```
 
-**✅ Checkpoint**
-```{todo}```
+---
 
-````
+**Checkpoint ✅**
+
+Now make sure that Docker was correctly installed.
+
+Run the `hello-world` image with
+
+    docker run hello-world
+    
+You should see a message like `Hello from Docker!`.
 
 `````

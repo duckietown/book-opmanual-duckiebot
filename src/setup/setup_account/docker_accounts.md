@@ -1,31 +1,27 @@
 ## Step 2: Docker Account Setup
 
-```{todo}
-This is a collection of all prev. dts setup info, needs to be sorted into steps
-```
-
 (dt-account-dockerhub)=
-## DockerHub
+### DockerHub
 
 Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
 of its software modules.
-If you are a developer, you will find it useful to have a DOckerHub account. If you do not have one already,
-you can sign up for one at [this link](https://hub.docker.com/signup).
 
-## Configure Docker login
-We leverage containerization a lot for reproducibility. Most procedures entail some `docker` operations behind the scene. That is why we setup the logins for docker within `dts`.
+If you do not have one already,
+you can sign up for a DockerHub account at [this link](https://hub.docker.com/signup).
 
-You will need:
-* `YOUR_DOCKERHUB_USERNAME` (or login email address)
-* `YOUR_DOCKERHUB_ACCESS_TOKEN` (to obtain one: [see this](https://docs.docker.com/docker-hub/access-tokens/))
+You will need to note your username and password to use in the following setup steps.
+
+### Configure Docker login
+
+We leverage containerization a lot for reproducibility. Most procedures entail some `docker` operations behind the scene. That is why we need to begin by setting up the logins for docker within `dts`.
 
 ```{attention}
 * The credentials are only stored locally.
 * They are stored in **plain text** at `~/.dt-shell/config.yaml`.
-* Use an access token instead of your account password!
+* You can use an access token instead of your account password! (to obtain one: [see this](https://docs.docker.com/docker-hub/access-tokens/))
 ```  
 
-You can pass wour DockerHub credentials to the Duckietown Shell by running the following command,
+You can pass your DockerHub credentials to the Duckietown Shell by running the following command,
 ```bash
 dts config docker set \
     --username YOUR_DOCKERHUB_USERNAME \

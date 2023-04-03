@@ -1,5 +1,7 @@
 ## Step 1: Dependency Installation
 
+Select the tab for your operating system below, and follow the instructions to begin installing the Duckietown software dependencies.
+
 `````{tab-set}
 
 ````{tab-item} Ubuntu
@@ -12,15 +14,34 @@ following commands in the shell:
     sudo apt update
     sudo apt install -y python3-pip git git-lfs curl wget
 
-```{attention}
-If you are running Ubuntu on a virtual machine, install the package `open-vm-tools` in addition to the 
+
+**If you are running Ubuntu on a virtual machine**, install the package `open-vm-tools` in addition to the 
 normal Ubuntu dependencies:
 
     sudo apt install open-vm-tools
+
+---
+
+**Checkpoint ✅**
+
+Before continuing, run 
+
+    pip3 --version
+    
+And verify that it outputs a version number for pip3.
+
+```{tip}
+Never skip a checkpoint!
 ```
 
-**✅ Checkpoint**
-```{todo}```
+If you continue past a test that did not work, you will have further software issues down the line and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+
+* First check for any troubleshooting sections on the page that might match the problem.
+* If you run into any issues that can't be solved using the troubleshooting sections in this development manual, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+
+You can join the 
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
 
@@ -34,7 +55,7 @@ However, if you don't have Git installed, you can follow
 [these instructions](https://github.com/git-guides/install-git#install-git-on-mac) 
 to install it.
 
-Follow 
+Once you confirm that git is installed on your system, follow 
 [these instructions](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=mac)
 to install `git-lfs`.
 
@@ -55,7 +76,11 @@ After installing `XQuartz`, run it by executing the command,
 Go to "Preferences" and in the "Security" tab make sure that the checkbox next to 
 "Allow connections from network clients" is ticked. You can now close `XQuartz`.
 
-You may want to add the following lines to your `.bashrc` file. If you are using `zsh`, add these to your `.zshrc` file instead.
+You may want to add the following lines to your `.bashrc` file.
+
+```{attention}
+If you are using `zsh`, replace the `.bashrc` in the command below with `.zshrc` instead.
+```
 
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     xhost +$IP
@@ -72,8 +97,29 @@ The command `xhost` is not found.
 Add the path `/usr/X11/bin` to your `PATH` variable. e.g., `PATH=/usr/X11/bin:${PATH} xhost ...`.
 ```
 
-**✅ Checkpoint**
-```{todo}```
+---
+
+**Checkpoint ✅**
+
+Before continuing, run 
+
+    pip3 --version
+    
+And verify that it outputs a version number for pip3.
+
+```{tip}
+Never skip a checkpoint!  
+```
+
+If you continue past a test that did not work, you will have further software issues down the line and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+
+* First check for any troubleshooting sections on the page that might match the problem.
+* If you run into any issues that can't be solved using the troubleshooting sections in this development manual, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+
+You can join the 
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+There you can request an invitation to the Duckietown Stack Overflow team.
+
 
 ````
 
