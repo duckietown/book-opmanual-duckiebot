@@ -55,18 +55,23 @@ You need to _log out and back in_ for this group change to take effect.
 
 **Checkpoint ✅**
 
-Now make sure that Docker was correctly installed.
+Now make sure that Docker was correctly installed by running the following tests
 
-Ensure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+` by checking the output of
+```{testexpect}
+```bash
+docker --version
+docker buildx --version
+---
+Make sure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+`
+```
 
-    docker --version
-    docker buildx --version
-
-Then run the `hello-world` image
-
-    docker run hello-world
-    
-You should see a message like `Hello from Docker!`.
+```{testexpect}
+Start the `hello-world` image with
+```bash
+docker run hello-world
+---
+You should see a message like `Hello from Docker!`
+```
 
 ````
 
@@ -88,12 +93,14 @@ Use the slider in the _Advanced_ tab to increase Memory to a minimum of `4.5GB`.
 
 **Checkpoint ✅**
 
-Now make sure that Docker was correctly installed.
+Now make sure that Docker was correctly installed by running the following test.
 
-Run the `hello-world` image with
-
-    docker run hello-world
-    
-You should see a message like `Hello from Docker!`.
+```{testexpect}
+Start the `hello-world` image with
+```bash
+docker run hello-world
+---
+You should see a message like `Hello from Docker!`
+```
 
 `````

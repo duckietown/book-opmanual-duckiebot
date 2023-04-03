@@ -70,29 +70,36 @@ Before we move on, let us make sure you have installed everything correctly.
 Remember, never skip a checkpoint! If you have trouble with any of these commands, see the troubleshooting section below.
 ```
 
+```{testexpect}
 If your Docker login was successful, you should be able to run
-
-    docker system info | grep "Username"
-
-to see your DockerHub username.
+```bash
+docker system info | grep "Username"
+---
+You will see your DockerHub username.
+```
 
 ```{admonition} For developers
 :class: dropdown
 The `| grep "Username"` portion of this command finds only the output line that matches "Username".  You can see your entire Docker system configuration by running the command `docker system info`.
 ```
 
+```{testexpect}
 You can verify your Docker login configuration with `dts` by first installing the `dts config` tool and then using it to show your Docker info.
-    
+```bash
     dts install config
     dts config docker info
-
-If you've set your token and updated your credentials for the challenges server, you can run
-
-    dts challenges info
-
-To see the following message
-
+---
+This should show your Docker configuration.
 ```
+
+```{testexpect}
+If you've set your token and updated your credentials for the challenges server, you can run
+```bash
+    dts challenges info
+---
+You will see the following message
+
+```bash
     ~        You are successfully authenticated:
     ~
     ~                     ID: YOUR ID

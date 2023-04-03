@@ -23,11 +23,14 @@ Install the Duckietown Shell using the following command,
 
 **Checkpoint ✅**
 
-To confirm that dts was isntalled successfully, run
+To confirm that dts was isntalled successfully, run the following test
 
-    which dts
-    
+```{testexpect}
+```bash
+which dts
+---
 This should output a path ending in `dts`.
+```
 
 ````
 
@@ -69,10 +72,13 @@ Then source the updates to your current shell
 
 **Checkpoint ✅**
 
-You can now check that `dts` was installed with 
+You can now check that `dts` was installed with the following test
 
-    which dts
-
-````
+```{testexpect}
+```bash
+which dts
+---
+This should output a path ending in `dts`.
+```
 
 `````

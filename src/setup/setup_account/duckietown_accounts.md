@@ -41,20 +41,25 @@ instructions presented in the shell
 
 ### Checkpoint ✅
 
+Run the following tests to check your setup:
 
-If the Duckietown Shell was installed correctly, then you can run a command like this,
-
-    dts version
-
+```{testexpect}
+If the Duckietown Shell was installed correctly, then you can run a command like this
+```bash
+dts version
+---
 Verify that the commands version is set to `daffy`.
+```
 
-If your token was successfully then
-
-    dts tok status
-
-Should output a message like the following,
-
-    dts :  Correctly identified as uid = ***
+```{testexpect}
+Check if your token was successfully by running
+```bash
+dts tok status
+---
+This should output a message like the following,
+```bash
+dts :  Correctly identified as uid = ***
+```
 
 If you have encountered issues or something is not behaving as expected, please stop here,
 it is a good time to ask for help on Stack Overflow.

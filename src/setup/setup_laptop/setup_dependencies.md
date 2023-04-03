@@ -24,11 +24,14 @@ normal Ubuntu dependencies:
 
 **Checkpoint ✅**
 
-Before continuing, run 
+Before continuing, run the following test command
 
-    pip3 --version
-    
-And verify that it outputs a version number for pip3.
+```{testexpect}
+```bash 
+pip3 --version
+---
+This command should output a version number for the `pip3` package.
+```
 
 ```{tip}
 Never skip a checkpoint!
@@ -101,11 +104,14 @@ Add the path `/usr/X11/bin` to your `PATH` variable. e.g., `PATH=/usr/X11/bin:${
 
 **Checkpoint ✅**
 
-Before continuing, run 
+Before continuing, run the following test command
 
-    pip3 --version
-    
-And verify that it outputs a version number for pip3.
+```{testexpect}
+```bash 
+pip3 --version
+---
+This command should output a version number for the `pip3` package.
+```
 
 ```{tip}
 Never skip a checkpoint!  
