@@ -4,42 +4,28 @@
 format: jb-book
 root: intro
 parts:
-    -   caption: Preliminaries - Software
-        maxdepth: 2
-        numbered: False
-        chapters:
-            -   file: preliminaries_software/ssh/index
-            -   file: preliminaries_software/git/index
-            -   file: preliminaries_software/docker/index
-
-    -   caption: Preliminaries - Hardware
-        maxdepth: 2
-        numbered: False
-        chapters:
-            -   file: preliminaries_hardware/circuits_batteries/index
-            -   file: preliminaries_hardware/duckiebot_configurations/index
-            -   file: preliminaries_hardware/get_hardware/index
-
     -   caption: Duckiebot Assembly
         maxdepth: 2
         numbered: False
         chapters:
+            -   file: preliminaries_hardware/duckiebot_configurations/index
+            -   file: preliminaries_hardware/get_hardware/index
             -   file: assembly/db21j/index
             -   file: assembly/db21m/index
 
-    -   caption: Setup
+    -   caption: Software Setup
         maxdepth: 2
         numbered: False
         chapters:
             -   file: setup/setup_laptop/index
                 sections:
-                    -   file: setup/setup_laptop/setup_ubuntu
-                    -   file: setup/setup_laptop/setup_macosx
+                    -   file: setup/setup_laptop/setup_dependencies
+                    -   file: setup/setup_laptop/setup_docker
+                    -   file: setup/setup_laptop/setup_dt_shell
             -   file: setup/setup_account/index
                 sections:
-                    -   file: setup/setup_account/duckietown_token
-                    -   file: setup/setup_account/duckietown_shell
-                    -   file: setup/setup_account/third_party_accounts
+                    -   file: setup/setup_account/duckietown_accounts
+                    -   file: setup/setup_account/docker_accounts
             -   file: setup/setup_sd_card/index
                 sections:
                     -   file: setup/setup_sd_card/gui
@@ -48,8 +34,7 @@ parts:
                     -   file: setup/setup_sd_card/troubleshooting
             -   file: setup/setup_dashboard/index
 
-
-    -   caption: Operations
+    -   caption: Duckiebot Operations
         maxdepth: 2
         numbered: False
         chapters:
@@ -93,3 +78,12 @@ parts:
             - file: debugging_and_troubleshooting/network_config/index
             - file: debugging_and_troubleshooting/reflash_mc/index
             - file: debugging_and_troubleshooting/update/index
+
+    -   caption: Reference Reading
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: preliminaries_software/git/index
+            -   file: preliminaries_software/docker/index
+            -   file: preliminaries_software/ssh/index
+            -   file: preliminaries_hardware/circuits_batteries/index
