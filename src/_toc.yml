@@ -83,6 +83,8 @@ parts:
                 sections:
                     -   file: lx/supported/general_running_lx
             -   file: lx/experimental/index
+                sections:
+                    -   file: lx/experimental/simulator_ROS_interface_lx
 
     -   caption: Debugging and Troubleshooting
         maxdepth: 2
