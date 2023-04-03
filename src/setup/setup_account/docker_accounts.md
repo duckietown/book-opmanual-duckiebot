@@ -1,43 +1,16 @@
-# Setup the Duckietown Shell
+## Step 2: Docker Account Setup
 
-In this section, an application called `dts`, or the ***Duckietown Shell*** is setup.
-
-It is a [command-line interface (CLI) prgram](https://en.wikipedia.org/wiki/Command-line_interface) which is used often with Duckietown operations, such as
-* Updating a Duckiebot
-* Driving a Duckiebot with a virtual keyboard
-* Viewing the camera stream of a Duckiebot from a graphical app
-* Using our MOOC exercise
-* (and more!)
-
-
-# `dts` versions and login's
-
-Your `dts` is further setup in this section.
-
-## Use the latest stable distribution version
-```bash
-dts --set-version daffy
+```{todo}
+This is a collection of all prev. dts setup info, needs to be sorted into steps
 ```
 
+(dt-account-dockerhub)=
+## DockerHub
 
-## Set your Duckietown token
-You could obtain your token by logging in on the [Duckietown homepage](https://duckietown.com). Then token looks like: `dt1-xxx`.
-
-To add the token to `dts`, run the following command,
-```bash
-dts tok set YOUR_DUCKIETOWN_TOKEN
-```
-
-You can verify you successfully authenticated using the Duckietown token by running the command,
-```bash
-dts tok status
-```
-
-The expected output looks like the following,
-```text
-dts :  Correctly identified as uid = [YOUR_DUCKIETOWN_USER_ID]
-```
-
+Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
+of its software modules.
+If you are a developer, you will find it useful to have a DOckerHub account. If you do not have one already,
+you can sign up for one at [this link](https://hub.docker.com/signup).
 
 ## Configure Docker login
 We leverage containerization a lot for reproducibility. Most procedures entail some `docker` operations behind the scene. That is why we setup the logins for docker within `dts`.
@@ -70,6 +43,30 @@ Use the following to verify your input,
 ```bash
 dts config docker info
 ```
+
+
+## Verify everything is correct
+
+Before we move on, let us make sure you have installed everything correctly.
+
+If some of these commands don’t work, please go back and fix it before continuing.
+
+If the Docker installation went well, then you can run the following command:
+
+    $ docker run hello-world
+    Hello from Docker!
+    This message shows that your installation appears to be working correctly.
+
+If you set up a Github account and private key, you should be able to run this command successfully:
+
+    $ ssh -T git@github.com
+    Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+If you have a valid DockerHub account then you can login as follows.
+
+    $ docker login -u DOCKER_USERNAME
+    Password:
+
 
 
 ## FAQs

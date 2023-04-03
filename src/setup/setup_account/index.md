@@ -1,13 +1,16 @@
 (dt-account)=
-# Setup - Account 
+# Setup - Accounts
 
-This section describes how to register your Duckietown account
-and set up authentication through the Duckietown token.
+Now that you have the required software installed on your operating system, we will set up the developer accounts 
+you need to use each of the tools.  Once you are logged in and have tested your environment, you will be ready to 
+develop with Duckietown!
 
-```{needget}
-An internet connection;
-About 10 minutes;
-A computer with the Duckietown Shell command [installed and correctly setup](laptop-setup);
----
-Duckietown token correctly set up;
-```
+(dt-account-github)=
+## Step 0: GitHub Account Setup
+
+Duckietown uses [GitHub](https://github.com/duckietown) to distribute its open-source code and engage with
+collaborators and end-users.
+
+If you do not already have a GitHub account, you can sign up for one at [this link](https://github.com/join).
+
+Once you have a GitHub username, you can continue on to the next page to set up your Duckietown account.

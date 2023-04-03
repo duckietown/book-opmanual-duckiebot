@@ -19,13 +19,13 @@ parts:
         chapters:
             -   file: setup/setup_laptop/index
                 sections:
-                    -   file: setup/setup_laptop/setup_ubuntu
-                    -   file: setup/setup_laptop/setup_macosx
+                    -   file: setup/setup_laptop/setup_dependencies
+                    -   file: setup/setup_laptop/setup_docker
+                    -   file: setup/setup_laptop/setup_dt_shell
             -   file: setup/setup_account/index
                 sections:
-                    -   file: setup/setup_account/duckietown_token
-                    -   file: setup/setup_account/duckietown_shell
-                    -   file: setup/setup_account/third_party_accounts
+                    -   file: setup/setup_account/duckietown_accounts
+                    -   file: setup/setup_account/docker_accounts
             -   file: setup/setup_sd_card/index
                 sections:
                     -   file: setup/setup_sd_card/gui
@@ -33,7 +33,6 @@ parts:
                     -   file: setup/setup_sd_card/first_boot
                     -   file: setup/setup_sd_card/troubleshooting
             -   file: setup/setup_dashboard/index
-
 
     -   caption: Duckiebot Operations
         maxdepth: 2

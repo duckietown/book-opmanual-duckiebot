@@ -1,3 +1,23 @@
+## Step 1: Duckietown Account Setup
+
+```{todo}
+This is a collection of all prev. dts setup info, needs to be sorted into steps
+```
+
+(dt-account-dockerhub-shell-credentials)=
+### Configure the Duckietown Shell
+
+The [Duckietown Challenges Server](https://challenges.duckietown.org) allows you to participate in robotics
+competitions, submit class homeworks, etc., by uploading your work, packaged as a Docker image, to DockerHub.
+
+Use the following command to give your DockerHub credentials to the Duckietown Shell so that your work
+can be seamlessly uploaded to DockerHub on your behalf and for the Duckietown Challenges Server to 
+evaluate your work on the cloud.
+
+    dts challenges config --docker-username USERNAME --docker-password PASSWORD
+
+where, `USERNAME` and `PASSWORD` need to be replaced with your DockerHub credentials.
+
 (dt-account-register)=
 # Get a Duckietown Token
 
@@ -39,27 +59,38 @@ You should see a message like the following,
     dts :  Correctly identified as uid = ***
 
 
-## Verify everything is correct
+# Setup the Duckietown Shell
 
-Before we move on, let us make sure you have installed everything correctly.
 
-If some of these commands don’t work, please go back and fix it before continuing.
 
-If the Docker installation went well, then you can run the following command:
+# `dts` versions and login's
 
-    $ docker run hello-world
-    Hello from Docker!
-    This message shows that your installation appears to be working correctly.
+Your `dts` is further setup in this section.
 
-If you set up a Github account and private key, you should be able to run this command successfully:
+## Use the latest stable distribution version
+```bash
+dts --set-version daffy
+```
 
-    $ ssh -T git@github.com
-    Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 
-If you have a valid DockerHub account then you can login as follows.
+## Set your Duckietown token
+You could obtain your token by logging in on the [Duckietown homepage](https://duckietown.com). Then token looks like: `dt1-xxx`.
 
-    $ docker login -u DOCKER_USERNAME
-    Password:
+To add the token to `dts`, run the following command,
+```bash
+dts tok set YOUR_DUCKIETOWN_TOKEN
+```
+
+You can verify you successfully authenticated using the Duckietown token by running the command,
+```bash
+dts tok status
+```
+
+The expected output looks like the following,
+```text
+dts :  Correctly identified as uid = [YOUR_DUCKIETOWN_USER_ID]
+```
+
 
 If the Duckietown Shell was installed, then you can run a command like this,
 
