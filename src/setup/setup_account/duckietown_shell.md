@@ -1,3 +1,4 @@
+(dts-setup)=
 # Setup the Duckietown Shell
 
 In this section, an application called `dts`, or the ***Duckietown Shell*** is setup.

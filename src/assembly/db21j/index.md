@@ -1,8 +1,8 @@
 (assembling-duckiebot-db21j)=
-# Assembly - Duckiebot `DB21J`
+# Assembly - Duckiebot `DB21-Jx`
 
 ```{needget}
-* Duckiebot `DB21J` parts ([get a `DB21J`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21` parts ([get a `DB21-Jx`](https://get.duckietown.com/products/duckiebot-db21). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot-sd-card).
 
