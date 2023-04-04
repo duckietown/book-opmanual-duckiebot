@@ -100,7 +100,7 @@ If you don't see the container, your base image is out of date - update your Duc
 ```
 
 ```{trouble}
-Symptom: Duckiebot goes backwards, even though I command it to go forward.
+Duckiebot goes backwards, even though I command it to go forward.
 ---
-Resolution: If you have a `DB17` or `DB18`, revert the polarities (plus and minus cables) of the cables that go to the motor driver (`HUT`) for both motors.
+If you have a `DB17` or `DB18`, revert the polarities (plus and minus cables) of the cables that go to the motor driver (`HUT`) for both motors.
 ```
