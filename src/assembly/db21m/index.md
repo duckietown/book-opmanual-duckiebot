@@ -1,6 +1,8 @@
 (assembling-duckiebot-db21m)=
 # Assembly - Duckiebot `DB21M`
 
+
+
 <!--
 
 <div figure-id="fig:Duckiebook-Banner" figure-caption="The Duckiebot MOOC Founder's Edition, powered by NVIDIA Jetson Nano.">
@@ -9,9 +11,17 @@
 
 -->
 
+````{attention}
+These instructions are not of the latest Duckiebot model. Unless you are handling a legacy Duckiebot (version `DB21M`), you should follow these instructions instead: [`DB21J` assembly instruction](assembling-duckiebot-db21j). 
+````
+
+```{seealso}
+Not sure what is your Duckiebot? Read more about [Duckiebot configurations](book-opmanual-duckiebot:duckiebot-configurations). 
+```
+
 ```{needget}
 * Duckiebot `DB21M` parts ([get a `DB21M`](https://get.duckietown.com/)). 
-If you are unsure what version of Duckiebot you have, check this overview of all existing 
+If you are unsure what version of Duckiebot you have, check this overview of all existing
 [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained 
