@@ -1,8 +1,8 @@
 (assembling-duckiebot-db21j)=
-# Assembly - Duckiebot `DB21J`
+# Assembly - Duckiebot `DB21-Jx`
 
 ```{needget}
-* Duckiebot `DB21J` parts ([get a `DB21J`](https://get.duckietown.com/)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21` parts ([get a `DB21-Jx`](https://get.duckietown.com/products/duckiebot-db21). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot-sd-card).
 
@@ -53,7 +53,7 @@ Unbox all of your components and lay them out on a flat surface. Ensure that you
 "The Duckiebox hides but does not steal". Your Duckiebot chassis might be under the white protection foam inside the box. To reach it, pull out the white foam from the box after removing everything. Mind that the upper part of the inside foam has several side pockets in addition to a main compartment where components are located.
 ```
 
-Although not necessary, a small (M2.5) wrench might ease some passages.
+Although not necessary, a small (M2.5) wrench and pliers might ease some passages.
 
 ```{note}
 Both NVIDIA Jetson Nano 2 GB and 4 GB are supported, but the SD cards must be initialized differently, as described in [](setup-duckiebot-sd-card).
@@ -69,6 +69,21 @@ Verify each connecting part before using them. This will prevent undesirable eff
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-parts-indices.png
 :name: fig:db21m-rev1-parts-indices
+```
+
+In addition, there are also shorter screws, which can be used in some cases.
+
+### `HUT`
+Hut is the electronics board:
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-hut_00.png
+:name: fig:db21-rev1-hut_00
+```
+
+It contains the connectors for various sensors, the fan, motors, external button, etc. Also it is mounted to the NVIDIA Jetson Nano. A more detailed scheme is shown in the figure:
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-hut_01.png
+:name: fig:db21-rev1-hut_01
 ```
 
 (howto-preliminary-db21-battery)=
@@ -104,6 +119,11 @@ In the following steps (1 to 16) we will build the *base-plate* assembly of the 
 ```
 
 
+```{note}
+You could try to use shorter screws in case the screws do not fully insert into the standoffs.
+```
+
+
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_03.jpg
 ```
 
@@ -112,7 +132,7 @@ In the following steps (1 to 16) we will build the *base-plate* assembly of the 
 
 
 ```{note}
-Occasionally manufacturing tolerances (on the nut and the chassis) might prevent a flush fit. Trying a different nut or changing its orientation might solve the problem.
+Occasionally manufacturing tolerances (on the nut and the chassis) might prevent a flush fit. Trying a different nut or changing its orientation might solve the problem. Sometimes it may be convenient to use pliers.
 ```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_05.jpg
@@ -208,6 +228,9 @@ You can try to mount the wheels even without the distance disks. But make sure t
 ```
 
 
+```{note}
+The fan connection and the Jetson Nano in pictures 21 and 22 are different. We would recommend following step 21.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_22.jpg
 ```
@@ -285,6 +308,9 @@ The following steps (26 to 39) guide through the assembly of the rear part of th
 ```
 
 
+```{note}
+Make sure that both rows of pins on the 40-pin expansion header on the Jetson Nano are connected to the corresponding contacts of HUT.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_35.jpg
 ```
@@ -420,6 +446,9 @@ This last section (steps 53 to 63) guide through the assembly of the top deck:
 ```
 
 
+```{note}
+On the display board you will see 4 pins: SDA, SCL, VCC, GND. Make sure that the correct color wire is connected to the corresponding pin on the HUT.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_58.jpg
 ```
@@ -457,12 +486,12 @@ One of the USB ports on the HUT will remain free. You can use this port to charg
 *Always* plug and unplug USB cables from the `HUT` with care!
 ```
 
-Once your Duckiebot is fully charged, you can press the button of the battery on the side to power it up (do this ONLY if a flashed SD card has been inserted). It is important to make sure the battery is charged to prevent undesired shutdown during the first boot, which will compromise the initialization sequence and require the sd card to be re-flashed.
+Make sure the SD card was flashed successfully without any error during the process and it is plugged in Jetson Nano under the main board. ONLY then you can continue to follow the instructions. Once your Duckiebot is fully charged, you can press the button of the battery on the side to power it up. It is important to make sure the battery is charged to prevent undesired shutdown during the first boot, which will compromise the initialization sequence and require the sd card to be re-flashed.
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_63.jpg
 ```
 
-Congratulations, your Duckiebot `DB21M` is now completely assembled.
+Congratulations, your Duckiebot `DB21J` is now completely assembled.
 
 (howto-additional-parts-db21)=
 ## Additional Parts
@@ -520,6 +549,15 @@ This top facing April Tag enables localization in [Duckietown Autolabs](+opmanua
      ```
 
 * Make sure the SD card is inserted in Jetson Nano in the dedicated SD card slot under the main board. Do not plug it in the adapter and in a USB port. If you have already inserted a flashed SD card, you are allowed to push the magic button on the battery.
+
+* Which LEDs you should see:
+
+    * Blue LEDs when the robot is off and you plug in the charger (after it's off);
+
+    * White LEDs when the robot is on;
+
+    * Random color LEDs when the robot is powering on.
+
 
 
 (op-faq-db21)=
@@ -610,6 +648,13 @@ This simplified block diagram of data and electrical connections of the `DB21M` 
      Block diagram of electrical and data connections for the `DB21J` and `DB21M`.
      ```
 
+````
+
+````{trouble}
+ToF sensor not detected
+
+---
+If you have Jetson Nano with 2 camera ports, try to plug ToF into CH4 instead of CH6 on the front LED bumper board.
 ````
 
 ````{trouble}
