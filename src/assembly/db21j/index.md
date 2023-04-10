@@ -1,5 +1,5 @@
 (assembling-duckiebot-db21j)=
-# Assembly - Duckiebot `DB21-Jx`
+# Assembly - Duckiebot `DB21J`
 
 ```{needget}
 * Duckiebot `DB21` parts ([get a `DB21-Jx`](https://get.duckietown.com/products/duckiebot-db21)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
