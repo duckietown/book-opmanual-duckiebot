@@ -22,34 +22,7 @@ If you have a valid DockerHub account then you can log in as follows
 
 You will then be prompted for your password.
 
-### 3) Configure Docker login with `dts`
-
-We leverage containerization for reproducibility. Most Duckietown procedures entail some `docker` operations behind the scenes. That is why we need to begin by setting up the logins for docker within `dts`.
-
-```{attention}
-* The credentials are only stored locally.
-* They are stored in **plain text** at `~/.dt-shell/config.yaml`.
-* You can use an access token instead of your account password! (to obtain one: [see this](https://docs.docker.com/docker-hub/access-tokens/))
-```  
-
-You can pass your DockerHub credentials to the Duckietown Shell by running the following command,
-
-```bash
-dts config docker set \
-    --username YOUR_DOCKERHUB_USERNAME \
-    --password YOUR_DOCKERHUB_PASSWORD_OR_ACCESS_TOKEN
-```
-
-Be sure to replace `YOUR_DOCKERHUB_USERNAME` and `YOUR_DOCKERHUB_PASSWORD_OR_ACCESS_TOKEN` with your credentials.
-
-```{admonition} For developers
-:class: dropdown
-
-With an extra **positional** argument, one could specify a custom docker registry server other than 
-`docker.io`. Check `dts config docker set --help` for more details.
-```
-
-### 4) Configure Docker with the Challenges Server
+### 3) Configure Docker with the Challenges Server
 
 The [Duckietown Challenges Server](https://challenges.duckietown.org) allows you to participate in robotics
 competitions, evaluate your work on the cloud, submit learning experiences, etc., by uploading your work, packaged as a Docker image, to DockerHub.
@@ -81,15 +54,6 @@ You will see your DockerHub username.
 ```{admonition} For developers
 :class: dropdown
 The `| grep "Username"` portion of this command finds only the output line that matches "Username".  You can see your entire Docker system configuration by running the command `docker system info`.
-```
-
-```{testexpect}
-You can verify your Docker login configuration with `dts` by first installing the `dts config` tool and then using it to show your Docker info.
-```bash
-    dts install config
-    dts config docker info
----
-This should show your Docker configuration.
 ```
 
 ```{testexpect}
