@@ -4,6 +4,14 @@
 (burn-sd-card-gui-instructions)=
 ## Step-by-Step Instructions
 
+```{attention}
+Please note: You will need to specify the model of your Duckiebot when initializing the SD card.
+
+* If you have a Duckiebot with a **2GB** Jetson Nano - the model is **DB21M**
+* If you have a Duckiebot with a **4GB** Jetson Nano - the model is **DB21J**
+* If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex. DB19 or DBR4)
+```
+
 Plug the SD card in your computer using an SD card reader. 
 If your computer does not have one, you will find a USB to microSD card adapter in your Duckiebot kit.
 
