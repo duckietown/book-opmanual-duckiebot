@@ -17,7 +17,7 @@
 
 The update method described in this page will allow you to receive an **Over The Air** (OTA) update within the distribution you so choose (e.g., `daffy`), and it can improve your Duckiebot performance. Note that this is different from using the `init_sd_card` tool: Using the `init_sd_card` tool will only provide the latest release version, not the latest Duckiebot software version.
 
-dt-autoupdate-dts=
+(dt-autoupdate-dts)=
 ## Update Duckiebot container using `dts` command 
 
 If your Duckiebot has not been used for a while and a new image has been released, you don't necessarily need to re-flash the Duckiebot image as described in [the initialization procedure](setup-duckiebot). Instead, you can use `dts duckiebot update` command to update your Duckiebot.
@@ -36,7 +36,8 @@ Type in `y` for yes to continue updating. If you would like to abort, you can us
 
 Note: This process is expected to take a while to complete.
 
-dt-autoupdate-dashboard = ## Update Duckiebot container using Dashboard 
+(dt-autoupdate-dashboard)=
+## Update Duckiebot container using Dashboard 
 
 To use the Dashboard for updating the Duckiebot container, first navigate to the Dashboard software page. If you are not sure how to do that, refer to [this](dashboard-tutorial-software) page. If you have containers that need to be updated, you will see the update button next to the container:
 
