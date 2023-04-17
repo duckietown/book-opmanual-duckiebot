@@ -20,5 +20,3 @@ Knowledge!
 - [State Estimation](https://github.com/duckietown/duckietown-lx/tree/mooc2022/state-estimation)
 - [Planning](https://github.com/duckietown/duckietown-lx/tree/mooc2022/planning)
 
-```{tableofcontents}
-```
