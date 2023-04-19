@@ -215,13 +215,6 @@ The elements of $\mathbb{O}$ are labels identifying optional hardware that aids 
 
 - `l`: includes **L**EDs, LED hat, bumpers and the necessary mechanical bits to set the bumpers in place. Note that the installation of the bumpers induces the _replacement_ of a few `DB17` components;
 
-<!--
-Note: During the Fall 2017 course, three Duckietown Engineering Co. branches (Zurich, Montreal, Chicago) are using these configuration naming conventions. Moreover, all institutions release hardware to their Engineers in training in two phases.
-
-
-For information on acquiring the parts for these older configurations please see [`DB17-wjd`](https://docs.duckietown.org/DT17/opmanual_duckiebot/out/acquiring_parts_c0.html) or [`DB17-wjdlc`](https://docs.duckietown.org/DT17/opmanual_duckiebot/out/acquiring_parts_c1.html).
--->
-
 It may be convenient at times to refer to hybrid configurations including any of the `DB17-jwcd` in conjunction with a _subset_ of the `DB17-l` components. In order to disambiguate, we define partial upgrades as:
 
 - `DB17-l1`: _adds_ a PWM hat to `DB17`, in addition to a short USB angled power cable and a M-M power wire;
