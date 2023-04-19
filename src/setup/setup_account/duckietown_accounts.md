@@ -23,10 +23,6 @@ The token is a string of letters and numbers that looks something like this:
 To find your token, first [log in](https://hub.duckietown.com/) to your account, 
 then open [the profile page](https://hub.duckietown.com/profile/) in your browser:
 
-```{note}
-It may take up to 5 minutes after signing up for a token to be generated.
-```
-
 Copy your token to use in the next step.
 
 (dt-account-set-token)=

@@ -53,10 +53,11 @@ parts:
         chapters:
             -   file: demos/index
             -   file: demos/supported/index
+                sections:
+                    -   file: demos/supported/lane_following
             -   file: demos/legacy/index
                 sections:
                     -   file: demos/legacy/running_demos
-                    -   file: demos/legacy/lane_following
                     -   file: demos/legacy/lane_following_with_obstacles
 
     -   caption: Learning Experiences

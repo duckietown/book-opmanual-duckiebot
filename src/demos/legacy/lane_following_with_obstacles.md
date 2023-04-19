@@ -5,6 +5,11 @@
 JT: this looks cool but it is not LFV.
 ```
 
+```{warning}
+This demo is archived and not currently maintained. 
+These instructions might be obsolete.
+```
+
 This demo is build on the [lane following demo](demo-lane-following) by allowing multiple Duckiebots on the same lane. Duckiebots will detect and maintain a distance from other vehicles. This demo is sometimes referred to as "follow the leader", when ran outside a city, or more simply as "traffic management". 
 
 ```{needget}

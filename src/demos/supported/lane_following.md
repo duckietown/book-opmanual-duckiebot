@@ -20,11 +20,7 @@
 ```
 
 ```{todo}
-<div figure-id="fig:lane_following_vid">
-    <figcaption>Outcome of the lane following demo.
-    </figcaption>
-    <dtvideo src='vimeo:334931570'/>
-</div>
+Fix video above, it does not use the proper vimeo directive.
 ```
 
 
@@ -57,20 +53,6 @@ Before getting started, make sure your Duckietown is ready to go:
 (demo-lane-following-run)=
 ## Demo instructions
 
-(demo-lane-following-run-start)=
-### Start the backbone containers
-
-Running this demo requires almost all the main Duckietown ROS nodes to be up and running. As these span 3 Docker images (`dt-duckiebot-interface`, `dt-car-interface`, and `dt-core`). The `dt-duckiebot-interface` and `dt-car-interface` container typically starts with robot startup. You will need to start `dt-core` manually.
-
-Make sure that `dt-duckiebot-interface` and `dt-car-interface` are running on your Duckiebot via Portainer. If not, you can initialize them:
-
-```none
-dts duckiebot demo --demo_name duckiebot-interface --duckiebot_name ![DUCKIEBOT_NAME] --package_name duckiebot_interface --image duckietown/dt-duckiebot-interface:daffy-arm32v7
-```
-
-```none
-dts duckiebot demo --demo_name car-interface --duckiebot_name ![DUCKIEBOT_NAME] --package_name car_interface --image duckietown/dt-car-interface:daffy-arm32v7
-```   
 (demo-lane-following-run-demo)=
 ### Start the lane following demo
 
@@ -106,13 +88,6 @@ dts duckiebot keyboard_control ![DUCKIEBOT_NAME]
   - <kbd>s</kbd>
 ```
 
-<!--
-|        Controls      |  Joystick  |     Keyboard     |
-|----------------------|:----------:|:----------------:|
-| Start Lane Following |   __R1__   |   <kbd>a</kbd>   |
-| Stop Lane Following  |   __L1__   |   <kbd>s</kbd>   |
--->
-
 
 In case intersections and/or red lines are present in the city layout, they will be neglected. The Duckiebot will drive across them like it is a normal lane. 
 
@@ -129,40 +104,13 @@ This step is optional, and it provides a visualization of the line segments that
 dts start_gui_tools ![DUCKIEBOT_NAME]
 ```
 
-* Set the ROS parameter `verbose` to `true`, so that `line_detector_node` publishes the `image_with_lines` topic.
- 
-```none
-container $ rosparam set /![DUCKIEBOT_NAME]/line_detector_node/verbose true
-```
-
-<!--
-Note: For this part, you can also use no-vnc, or directly use any container that can communicate with the ROS system.
--->
-
-* Run `rqt_image_view` and select the `/![DUCKIEBOT_NAME]/line_detector_node/image_with_lines`. You should see something like this:
+* Run `rqt_image_view` and select the `/ROBOT_NAME/line_detector_node/debug/segments/compressed`. You should see something like this:
 
 ```{admonition} Outcome of the line detector node.
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/334931437" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p><a href="https://vimeo.com/334931437">Line segment detections</a> from <a href="https://vimeo.com/duckietown">Duckietown</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 ```
 
-<!--
-<div figure-id="fig:line_detector">
-    <figcaption>Outcome of the line detector node.
-    </figcaption>
-    <dtvideo src='vimeo:334931437'/>
-</div>
--->
-
-<!--
-(demo-lane-following-extra)=
-### Extras
-
-Here are some additional things you can try:
-
-* Get a [remote stream](#read-camera-data) of your Duckiebot.
-* Try to change some of the ROS parameters to see how your Duckiebot's behavior will change. 
--->
 
 (demo-lane-following-troubleshooting)=
 ## Troubleshooting 
@@ -211,15 +159,9 @@ This might be due to wrongly constructed lanes or bad Duckiebot calibrations. Fo
 
 While running the demo modify the PID controller gains from the base station through:
 
-```
+```bash
 rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_d -45
-```
-
-and/or 
-
-```
 rosparam set /![DUCKIEBOT_NAME]/lane_controller_node/k_theta -11
 ```
 
-Note that the coefficients above are just examples and you should play around with different numbers to tune the controller specifically to your Duckiebot. Moreover, changes made in this way are not persistent. They will need to be repeated at every start of the demo. If this improved the performance of your Duckiebot, you should think about permanently change the default values in your `catkin_ws`.
 ````
