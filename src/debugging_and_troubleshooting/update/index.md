@@ -15,7 +15,7 @@
 (dt-what-update)=
 ## Understand what is the difference between OTA update and Release Update 
 
-The update method described in this page will allow you to receive an **Over The Air** (OTA) update within the distribution you so choose (e.g., `daffy`), and it can improve your Duckiebot performance. Note that this is different from using the `init_sd_card` tool: Using the `init_sd_card` tool will only provide the latest release version, not the latest Duckiebot software version.
+The update method described in this page will allow you to receive an **Over The Air** (OTA) update within the distribution you so choose (e.g., `ente`), and it can improve your Duckiebot performance. Note that this is different from using the `init_sd_card` tool: Using the `init_sd_card` tool will only provide the latest release version, not the latest Duckiebot software version.
 
 (dt-autoupdate-dts)=
 ## Update Duckiebot container using `dts` command 
