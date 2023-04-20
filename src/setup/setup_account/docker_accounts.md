@@ -1,10 +1,15 @@
 ## Step 2: Docker Account Setup
 
-Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
+Duckietown leverages containerization to ensure software portability and reproducibility.
+Most procedures entail the use of `docker` operations behind the scene.
+That is why we need to set up the logins for docker within `dts`.
+
+We use [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
 of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
 
 If you are unfamiliar with Docker, we strongly recommend reading the following reference page to gain a 
 working understanding of this tool: [The Duckietown Intro to Docker](preliminaries-docker-basics)
+
 
 (dt-account-dockerhub)=
 ### 1) Create a DockerHub account
@@ -12,75 +17,88 @@ working understanding of this tool: [The Duckietown Intro to Docker](preliminari
 If you do not have one already,
 you can sign up for a DockerHub account at [this link](https://hub.docker.com/signup).
 
-You will need to note your username and password to use in the following setup steps.
+(dt-account-dockerhub-make-access-token)=
+#### Make an access token
 
+Follow the instructions on [this page](https://docs.docker.com/docker-hub/access-tokens/)
+to create a new personal access token on DockerHub.
+
+
+(dt-account-dockerhub-login)=
 ### 2) Log in to Docker
 
-If you have a valid DockerHub account then you can log in as follows
+Once you have an account on DockerHub and an access token, you can test them by logging in using the command,
 
     docker login -u DOCKER_USERNAME
 
-You will then be prompted for your password.
+where `DOCKER_USERNAME` is the username you chose when signing up on DockerHub. 
+You will then be prompted for your password, paste the access token we created earlier and press 
+<kbd>Enter</kbd>.
 
-### 3) Configure Docker with the Challenges Server
 
-The [Duckietown Challenges Server](https://challenges.duckietown.org) allows you to participate in robotics
-competitions, evaluate your work on the cloud, submit learning experiences, etc., by uploading your work, packaged as a Docker image, to DockerHub.
+(dt-account-dockerhub-config-docker-set)=
+### 3) Configure shell
 
-Use the following command to update your credentials
+We are now going to provide the same username and access token to the shell in order to automate
+most of the back-end operations involving docker.
 
-    dts challenges config --docker-username USERNAME --docker-password PASSWORD
+```{attention}
+* These credentials are **only stored locally**;
+* **Never use your account password** instead of an access token;
+```  
 
-where, `USERNAME` and `PASSWORD` need to be replaced with your DockerHub credentials.
+You can pass wour DockerHub credentials to the Duckietown Shell by running the following command,
+```bash
+dts config docker credentials set \
+    --username DOCKERHUB_USERNAME \
+    --password DOCKERHUB_ACCESS_TOKEN
+```
+
+```{admonition} For developers
+:class: dropdown
+
+With an extra **positional** argument, one could specify a custom docker registry server other than 
+`docker.io`. Check `dts config docker set --help` for more details.
+```
 
 ---
 
 ### Checkpoint ✅
 
-Before we move on, let us make sure you have installed everything correctly. 
+Before we move on, let us make sure you have set our credentials correctly.
 
 ```{tip}
-Remember, never skip a checkpoint! If you have trouble with any of these commands, see the troubleshooting section below.
+Never skip a checkpoint!\
+If you have trouble with any of these commands, see the FAQs section below.
 ```
 
-```{testexpect}
+````{testexpect}
 If your Docker login was successful, you should be able to run
 ```bash
-docker system info | grep "Username"
----
-You will see your DockerHub username.
+dts config docker credentials info
 ```
-
-```{admonition} For developers
-:class: dropdown
-The `| grep "Username"` portion of this command finds only the output line that matches "Username".  You can see your entire Docker system configuration by running the command `docker system info`.
-```
-
-```{testexpect}
-If you've set your token and updated your credentials for the challenges server, you can run
-```bash
-    dts challenges info
 ---
-You will see the following message
+You should see an output similar to the following,
 
 ```bash
-    ~        You are successfully authenticated:
-    ~
-    ~                     ID: YOUR ID
-    ~                   name: YOUR NAME
-    ~                  login: YOUR DUCKIETOWN ACCOUNT 
-    ~
-    ~         You can find the list of your submissions at the page:
-    ~
-    ~              https://challenges.duckietown.org/v4/humans/users/YOUR ID
+Docker credentials:
+.    
+.           registry:   docker.io
+.           username:   DOCKERHUB_USERNAME
+.             secret:   DOCKERHUB_ACCESS_TOKEN
+.    
 ```
+````
 
-### Troubleshooting
+### FAQs
 
-If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+If you continue past a test that did not work, you will have further software issues down the line, 
+and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
 
 * First check the troubleshooting guide below.
-* If you run into any issues that can't be solved using the troubleshooting section, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+* If you run into any issues that can't be solved using the troubleshooting section, 
+  join the Duckietown community on StackOverflow and Slack following the instructions below and search 
+  for previous solutions.
 
 You can join the 
 [Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
