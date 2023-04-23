@@ -5,7 +5,7 @@ This FAQ page collects common roadblocks you might run into when setting up your
 operating your Duckiebot.
 
 Each symptom and resolution are also available on the pages they relate to throughout the manual, so be sure to watch for troubleshooting 
-tip and carefully complete checkpoints as you progress.
+sections and carefully complete checkpoints as you progress.
 
 If you don't find the solutions you need in this book, be sure to first search the Duckietown Stack 
 Overflow and Slack communities for previous answers, then post your own question following the support guidelines on 
