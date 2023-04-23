@@ -76,18 +76,14 @@ If you have trouble with any of these commands, see the FAQs section below.
 If your Docker login was successful, you should be able to run
 ```bash
 dts config docker credentials info
-```
 ---
 You should see an output similar to the following,
 
 ```bash
 Docker credentials:
-.    
-.           registry:   docker.io
-.           username:   DOCKERHUB_USERNAME
-.             secret:   DOCKERHUB_ACCESS_TOKEN
-.    
-```
+. registry:   docker.io
+. username:   DOCKERHUB_USERNAME
+. secret:   DOCKERHUB_ACCESS_TOKEN
 ````
 
 ### FAQs

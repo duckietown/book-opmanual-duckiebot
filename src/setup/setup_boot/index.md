@@ -134,6 +134,16 @@ If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex
 ```
 
 ```{trouble}
+The Duckiebot screen does no turn on even though it shows up in `dts fleet discover` and the dashboard is accessible.
+ The ToF and front bumper are not detected on the dashboard Components page.
+---
+Disconnect the ToF sensor from the front bumper and use the long cable that originally connected the front bumper to 
+the HUT to connect the ToF sensor directly to that same HUT port. Then reboot. This bypasses a known multiplexer 
+issue on some 
+bumpers.
+```
+
+```{trouble}
 My Duckiebot appears to be booted and the screen is on, but I can't see it using `dts fleet discover`.
 ---
 Your Duckiebot must be connected to the same network as the computer you are using to run the `dts` commands.  Check 
