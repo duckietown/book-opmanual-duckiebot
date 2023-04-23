@@ -12,6 +12,7 @@ parts:
             -   file: preliminaries_hardware/get_hardware/index
             -   file: assembly/db21j/index
             -   file: assembly/db21m/index
+            -   file: debugging_and_troubleshooting/faq/index
 
     -   caption: Software Setup
         maxdepth: 2
@@ -30,8 +31,7 @@ parts:
                 sections:
                     -   file: setup/setup_sd_card/gui
                     -   file: setup/setup_sd_card/cli
-                    -   file: setup/setup_sd_card/first_boot
-                    -   file: setup/setup_sd_card/troubleshooting
+            -   file: setup/setup_boot/index
             -   file: setup/setup_dashboard/index
 
     -   caption: Duckiebot Operations
@@ -72,7 +72,7 @@ parts:
                 sections:
                     -   file: lx/experimental/simulator_ROS_interface_lx
 
-    -   caption: Debugging and Troubleshooting
+    -   caption: Troubleshooting Guides
         maxdepth: 2
         numbered: False
         chapters:
