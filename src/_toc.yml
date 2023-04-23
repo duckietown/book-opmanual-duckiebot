@@ -10,9 +10,9 @@ parts:
         chapters:
             -   file: preliminaries_hardware/duckiebot_configurations/index
             -   file: preliminaries_hardware/get_hardware/index
-            -   file: debugging_and_troubleshooting/faq/index
             -   file: assembly/db21j/index
             -   file: assembly/db21m/index
+            -   file: debugging_and_troubleshooting/faq/index
 
     -   caption: Software Setup
         maxdepth: 2
