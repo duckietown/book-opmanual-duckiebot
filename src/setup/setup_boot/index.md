@@ -101,47 +101,50 @@ You will learn more about how to handle your Duckiebot in [](handling-duckiebot-
 ## Troubleshoot - First Boot
 
 ```{trouble}
-The red LED on the Raspberry Pi is OFF.
+I pressed the power button on top but nothing happened.
 ---
-Press the button on the side of the battery ([](troubleshooting-battery-button)).
+Power on your Duckiebot using the button on the side of the Duckiebattery.  The top button is only for powering off. 
+ You can also learn more about how to handle your Duckiebot in [](handling-duckiebot-db21).
 ```
 
 ```{trouble}
-The Raspberry Pi has power but it does not boot.
+My Duckiebot does not appear to boot after pressing the power button on the battery. I don't see a green light on 
+the HUT or the Jetson Nano.
 ---
-[Initialize the SD card](setup-duckiebot-sd-card) if not done already. If problem persists, ask on 
-[Stack Overflow](https://stackoverflowteams.com/c/duckietown).
+Refer back to [](assembling-duckiebot-db21j), and check each of your cable connections.  Confirm the start and end 
+port of each power cable from the battery.  The battery must be charged fully as shown in the first assembly step.
 ```
 
-
 ```{trouble}
-I cannot ping the Duckiebot.
+My Duckiebot is getting power but does not appear to be booting. The Wifi dongle is not blinking.
 ---
-Check the [networking section](duckiebot-network) of the book to see if your network is set up correctly.
+Make sure you flashed the SD card following the instructions in [](setup-duckiebot-sd-card).
 ```
 
-
 ```{trouble}
-I am not sure whether the Duckiebot is properly initialized.
+My Duckiebot is getting power but does not appear to be booting. The Wifi dongle is not blinking.
 ---
-As long as the fleet discover tool shows ready, your Duckiebot should be ready. 
-You can also visit `http://HOSTNAME.local/docker/` to see all the container status. 
-Generally as long as you see the Duckiebot web UI is up, your Duckiebot should be correctly initialized.
+Make sure that you correctly specified the model of your Duckiebot when initializing the SD card.
+
+If you have a Duckiebot with a 2GB Jetson Nano - the model is DB21M
+
+If you have a Duckiebot with a 4GB Jetson Nano - the model is DB21J
+
+If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex. DB19 or DBR4)
 ```
 
-
 ```{trouble}
-**`DB18` and `DB19` only**: The LEDs light up in a variety of colors when the battery is plugged in for the first time.
+My Duckiebot appears to be booted and the screen is on, but I can't see it using `dts fleet discover`.
 ---
-The LEDs of the (`DB18` and `DB19`) Duckiebot should light up in white as soon as you power the Duckiebot. 
-If the LEDs turn on and shine in any different color than white, probably the code on the microcontroller 
-is corrupted. You can reflash it using the procedure in [](reflash-microcontroller).
+Your Duckiebot must be connected to the same network as the computer you are using to run the `dts` commands.  Check 
+the [networking section](duckiebot-network) of the book to see if your network is set up correctly.
 ```
 
-
 ```{trouble}
-On first boot, the lights of the Duckiebot do not turn white (might be blue).
+I am not sure whether my Duckiebot is properly initialized.
 ---
-Run the following commands `dts duckiebot update HOSTNAME`      
+As long as the `fleet discover` tool shows ready, your Duckiebot should be ready. 
+You can also visit the dashboard to confirm that the Duckiebot is serving its status. 
+Generally as long as you see the Duckiebot dashboard is up, your Duckiebot should be correctly initialized.
 ```
 
