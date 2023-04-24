@@ -39,7 +39,7 @@ to learn more.
 
 
 (chose-robot-hostname)=
-## Choose a name for your robot
+## Step 1) Choose a name for your robot
 
 Pick a `hostname` for your robot. This will be the name of your robot and has to be unique within
 a fleet of robots connected to the same network.
@@ -50,11 +50,11 @@ A valid `hostname` satisfies all the following requirements:
 - it contains only letters, numbers, and underscores
 
 
-## Burning the SD card
+## Step 2) Burn the SD card
 
 There are two interfaces to the process of burning a Duckiebot SD card:
 
- - GUI: A graphical wizard-like interface (for newbies);
+ - GUI: A graphical wizard-like interface;
  - CLI: A terminal-based command line interface (for those who crave the terminal experience);
 
 Choose the interface that best fits your preferences and skip the other.
