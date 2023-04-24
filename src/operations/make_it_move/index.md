@@ -82,6 +82,16 @@ If you have a `HUT` v3.15 you will stumble on this problem the first time you tr
 ```
 
 ```{trouble}
+I have reflashed the HUT but the joystick commands still do not work or the Duckiebot operates in a jerky manner.  
+Additionally, the ToF sensor and front bumper are not detected on the dashboard Components page. I may also be 
+having issues with the screen.
+---
+Disconnect the ToF sensor from the front bumper and use the long cable that originally connected the front bumper to 
+the HUT to connect the ToF sensor directly to that same HUT port. Then reboot. This bypasses a known multiplexer 
+issue on some bumpers that can cause other HUT misbehaviors.
+```
+
+```{trouble}
 I checked the two troubleshooting issues above, and my Duckiebot still doesn't move.
 ---
 Check that the `duckiebot-interface` container is running
