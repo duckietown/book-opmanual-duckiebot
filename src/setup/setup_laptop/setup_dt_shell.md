@@ -1,5 +1,5 @@
 (laptop-setup-shell)=
-## Step 3: Duckietown Shell Installation
+# Step 3: Duckietown Shell Installation
 
 `````{tab-set}
 

@@ -1,4 +1,4 @@
-## Step 1: Dependency Installation
+# Step 1: Dependency Installation
 
 Select the tab for your operating system below, and follow the instructions to begin installing the Duckietown software dependencies.
 
