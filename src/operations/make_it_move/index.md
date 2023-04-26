@@ -78,7 +78,7 @@ Make sure that the keyboard gui window is active by selecting it, then try the k
 ```{trouble}
 I can see the commands being sent to the Duckiebot (e.g., through the **Dashboard > Mission Control**), but the Duckiebot does not move. My **Dashboard > Robot > Components** page shows a red alert for the `HUT`.
 ---
-If you have a `HUT` v3.15 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](reflash-microcontroller).
+If you have a `HUT` v3.1 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](reflash-microcontroller).
 ```
 
 ```{trouble}
