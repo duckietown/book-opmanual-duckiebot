@@ -99,7 +99,7 @@ instructions specific to your operating system.
 ````
 
 ````{tab-item} Windows (Beta)
-Install WSl:
+Install WSL:
 
 1. Open the `Start` menu and search for `Command prompt`.
 1. Right click on the `Command prompt` result and select `Run as administrator`.
