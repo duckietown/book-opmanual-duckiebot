@@ -103,6 +103,9 @@ Install the Duckietown Shell using the following command,
 
     pip3 install --no-cache-dir --user --upgrade duckietown-shell
 
+Once installed open a new shell and run
+
+    dts --set-version daffy
 ---
 
 **Checkpoint ✅**
