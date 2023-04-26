@@ -51,9 +51,11 @@ Duckietown team and the whole community to provide you with technical support wh
 * - Ubuntu installed via VM
   - This is possible, though network configuration is required.  See the section below for more 
   details.
+* - Windows (WSL)
+  -  An experimental setup is in development to run the `dts` through the Windows Subsystem for Linux (WSL). Select the `Windows (Beta)` tab to test this.
 * - **Not Supported**
   - 
-* - Windows
+* - Windows (Native)
   - Currently, it is not possible to run the Duckietown development tools on Windows. See below for 
   available VM options to run Ubuntu on your Windows machine.
 ```
@@ -94,6 +96,17 @@ optimal experience.
 
 Select the MacOSX tab on each of the following laptop setup pages to follow the 
 instructions specific to your operating system.
+````
+
+````{tab-item} Windows {bdg-warning}`Beta`
+Install WSl:
+
+1. Open the `Start` menu and search for `Command prompt`
+2. Right click on the `Command prompt` result and select `Run as administrator`
+3. In the command prompt execute:
+    wsl --install -d Ubuntu-22.04
+4. Update the WSL kernel:
+    wsl --update
 ````
 
 `````
