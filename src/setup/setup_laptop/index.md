@@ -102,21 +102,21 @@ instructions specific to your operating system.
 Install WSl:
 
 1. Open the `Start` menu and search for `Command prompt`.
-2. Right click on the `Command prompt` result and select `Run as administrator`.
-3. In the command prompt execute:
+1. Right click on the `Command prompt` result and select `Run as administrator`.
+1. In the command prompt execute:
     
     ```bash
     wsl --install -d Ubuntu-22.04
     ```
 
-4. Update the WSL kernel:
+1. Reboot your Windows machine for the changes to take effect.
+1. Setup Ubuntu your user account by following the prompts.
+1. Update the WSL kernel:
 
     ```bash
     wsl --update
     ```
 
-5. Setup Ubuntu your user account by running `wsl` and following the prompts.
-6. Reboot your Windows machine for the chances to take effect.
 
 ````
 
