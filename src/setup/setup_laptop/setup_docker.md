@@ -102,5 +102,35 @@ docker run hello-world
 ---
 You should see a message like `Hello from Docker!`
 ```
+````
+
+````{tab-item} Windows (Beta)
+
+**1) Install Docker**
+
+Follow [these instructions](https://docs.docker.com/desktop/windows/wsl/) to install Docker on WSL.
+
+
+---
+
+**Checkpoint ✅**
+
+Now make sure that Docker was correctly installed by running the following test.
+
+```{testexpect}
+Start the `hello-world` image with
+```bash
+docker run hello-world
+---
+You should see a message like `Hello from Docker!`
+```
+
+```{trouble}
+I cannot start Docker from my WSL distribution.
+---
+Make sure you have WSL support for Docker enabled by following [these instructions](https://docs.docker.com/desktop/windows/wsl/#enabling-docker-support-in-wsl-2-distros).
+```
+
+````
 
 `````
