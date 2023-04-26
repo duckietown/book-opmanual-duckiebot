@@ -116,11 +116,6 @@ Install WSl:
     ```
 
 5. Setup Ubuntu your user account by running `wsl` and follow the prompts.
-6. Update the packages list in Ubuntu by executing:
-
-    ```bash
-    sudo apt-get update
-    ```
 
 ````
 
