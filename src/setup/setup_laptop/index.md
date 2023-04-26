@@ -115,7 +115,8 @@ Install WSl:
     wsl --update
     ```
 
-5. Setup Ubuntu your user account by running `wsl` and follow the prompts.
+5. Setup Ubuntu your user account by running `wsl` and following the prompts.
+6. Reboot your Windows machine for the chances to take effect.
 
 ````
 
