@@ -98,15 +98,30 @@ Select the MacOSX tab on each of the following laptop setup pages to follow the
 instructions specific to your operating system.
 ````
 
-````{tab-item} Windows {bdg-warning}`Beta`
+````{tab-item} Windows (Beta)
 Install WSl:
 
-1. Open the `Start` menu and search for `Command prompt`
-2. Right click on the `Command prompt` result and select `Run as administrator`
+1. Open the `Start` menu and search for `Command prompt`.
+2. Right click on the `Command prompt` result and select `Run as administrator`.
 3. In the command prompt execute:
+    
+    ```bash
     wsl --install -d Ubuntu-22.04
+    ```
+
 4. Update the WSL kernel:
+
+    ```bash
     wsl --update
+    ```
+
+5. Setup Ubuntu your user account by running `wsl` and follow the prompts.
+6. Update the packages list in Ubuntu by executing:
+
+    ```bash
+    sudo apt-get update
+    ```
+
 ````
 
 `````
