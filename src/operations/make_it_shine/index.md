@@ -32,7 +32,13 @@ Open a terminal and run:
 For all operation commands that use the Duckiebot's name - replace `![DUCKIEBOT_NAME]` with just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
 ```
 
-After startup, the `led_control` command will open an interface window. Make sure the window is active by selecting it, and press the buttons to update the color, intensity, and frequency of your Duckiebot's LEDs.
+After startup, the `led_control` command will open an interface window. Make sure the window is active by selecting it, and press the buttons to update the color and intensity of your Duckiebot's LEDs.
+
+```{figure} ../../_images/operations/led_widget.png
+:name: led_widget
+
+The LED control interface
+```
 
 ## Troubleshooting
 
