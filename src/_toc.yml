@@ -42,6 +42,7 @@ parts:
             -   file: operations/dashboard/index
             -   file: operations/make_it_move/index
             -   file: operations/make_it_see/index
+            -   file: operations/make_it_shine/index
             -   file: operations/software_tools/index
             -   file: operations/calibration_camera/index
             -   file: operations/calibration_wheels/index
