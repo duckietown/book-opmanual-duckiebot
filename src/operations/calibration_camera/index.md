@@ -1,7 +1,7 @@
 (camera-calib)=
 # Calibration - Camera
 
-This section describes the intrinsic and extrinsic calibration procedures.
+This section describes the intrinsic and extrinsic calibration procedures. **You will need to complete both the Camera and Wheels calibration processes before running any Duckietown demos.**
 
 ```{needget}
 You can see the camera image on the laptop.
@@ -103,7 +103,7 @@ Once you have collected enough data, all four indicator bars will turn green. Th
 the "CALIBRATE" button in the sidebar.
 
 ```{tip}
-If you are having a difficult time getting the indicator bars to turn green, try slowly increading the extremes at which you present the checkerboard to the camera for each range - focusing on one indicator bar at a time. (Move further left/right along the x axis only, then the y axis, etc.)
+If you are having a difficult time getting the indicator bars to turn green, try slowly increasing the extremes at which you present the checkerboard to the camera, focusing on one indicator bar at a time. (Move further left/right along the x axis only, then the y axis, etc.)
 ```
 
 Calibration may take a few moments. Note that the screen may dim. Don't worry, the calibration is working.
@@ -136,6 +136,9 @@ This will automatically save the calibration results on your Duckiebot:
 
 You can view or download the calibration file using the Dashboard running at `http://[your_duckiebot_hostname].local` under `File Manager` in the sidebar on the left, navigating to `config/calibrations/camera_intrinsic/`.
 
+### Confirm the calibration
+
+Use the Dashboard to confirm that both calibration the intrinsic file has been saved.
 
 ### Keeping your calibration valid
 
@@ -189,14 +192,14 @@ And this will automatically save the calibration results on your Duckiebot:
 Similar to intrinsic calibration, you can also view or download the calibration file using the Dashboard.
 
 ```{attention}
-If you do not see a saved extrinsic calibration file, your Duckiebot was not able detect the calibration checkerboard and generate a valid calibration.
+If you do not see a saved extrinsic calibration file, your Duckiebot was not able detect the checkerboard and generate a valid calibration.
 
 This could be due to
 * lack of evenly bright overhead lighting
 * A patterned background in the environment
 * A textured background wall or the shadowson the background wall
 
-Try changing the calibration environment to match {numref}`extrinsic_view2`.
+Try changing the calibration environment to match {numref}`fig:extrinsic_view2` before running the `calibrate_extrinsics` command again.
 ```
 
 ### Confirm the calibration
