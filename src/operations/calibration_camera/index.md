@@ -1,16 +1,16 @@
 (camera-calib)=
 # Calibration - Camera
 
-This section describes the intrinsic and extrinsic calibration procedures.
+This section describes the intrinsic and extrinsic calibration procedures. **You will need to complete both the Camera and Wheels calibration processes before running any Duckietown demos.**
 
 ```{needget}
 You can see the camera image on the laptop.
 ---
-That your camera intrinsics and extrinsics are calibrated and stored on the Duckiebot.
+Your camera intrinsics and extrinsics are calibrated and stored on the Duckiebot. You will be able to access these calibrations via the dashboard.
 ```
 
 (camera-calibration-pattern-materials)=
-## Materials
+## 0) Required  Materials
 
 ### Calibration board
 
@@ -43,7 +43,7 @@ If the pattern is not rigid the calibration will be useless. You can print on th
 This is not necessary, but you could also use a "lane" during the extrinsic calibration procedure.
 
 
-## Intrinsic Calibration
+## 1) Intrinsic Calibration
 
 Every camera is a little bit different, so we need to do a camera calibration procedure to account for the small manufacturing discrepancies.
 This process will involve displaying a predetermined pattern to the camera, and using it to solve for the camera parameters.
@@ -52,7 +52,7 @@ And the procedure is basically a wrapper around the [ROS camera calibration tool
 
 ### Launch the intrinsic calibration application
 
-Next you can launch the intrinsic calibration program with:
+You can launch the intrinsic calibration program with:
 
 ```
 dts duckiebot calibrate_intrinsics [your_duckiebot_hostname]
@@ -73,10 +73,17 @@ Only a black window starts up
 Try resizing the window manually once using cursor, and you should see the window content correctly.
 ```
 
-### Calibration dance
+### Do the calibration dance
 
 Position the checkerboard in front of the camera until you see colored lines overlaying the checkerboard.
 You will only see the colored lines if the **entire** checkerboard is within the field of view of the camera.
+
+Make sure to focus the image by rotating the mechanical focus ring on the lens of the camera until you can clearly read the x and y labels.
+
+```{warning}
+Do not adjust the focus again after this process, as it will invalidate the calibration.
+```
+
 
 You should also see colored bars in the sidebar of the display window.
 These bars indicate the current range of the checkerboard in the camera's field of view:
@@ -86,17 +93,18 @@ These bars indicate the current range of the checkerboard in the camera's field 
 - Size bar: the observed range in the checkerboard size (forward - backward from the camera direction)
 - Skew bar: the relative tilt between the checkerboard and the camera direction
 
-Also, make sure to focus the image by rotating the mechanical focus ring on the lens of the camera.
-
-```{warning}
-Do not touch the focus anymore, ever, as it will invalidate calibration.
-```
-
 Now move the checkerboard right/left, up/down, and tilt the checkerboard
 through various angles of relative to the image plane. After each movement,
-make sure to pause long enough for the checkerboard to become highlighted. Once
-you have collected enough data, all four indicator bars will turn green. Press
+make sure to pause long enough for the checkerboard to become highlighted. 
+
+The indicator bars will fill as you collect enough data along each axis.
+
+Once you have collected enough data, all four indicator bars will turn green. Then press
 the "CALIBRATE" button in the sidebar.
+
+```{tip}
+If you are having a difficult time getting the indicator bars to turn green, try slowly increasing the extremes at which you present the checkerboard to the camera, focusing on one indicator bar at a time. (Move further left/right along the x axis only, then the y axis, etc.)
+```
 
 Calibration may take a few moments. Note that the screen may dim. Don't worry, the calibration is working.
 
@@ -128,6 +136,9 @@ This will automatically save the calibration results on your Duckiebot:
 
 You can view or download the calibration file using the Dashboard running at `http://[your_duckiebot_hostname].local` under `File Manager` in the sidebar on the left, navigating to `config/calibrations/camera_intrinsic/`.
 
+### Confirm the calibration
+
+Use the Dashboard to confirm that both calibration the intrinsic file has been saved.
 
 ### Keeping your calibration valid
 
@@ -137,7 +148,7 @@ You can view or download the calibration file using the Dashboard running at `ht
 ```
 
 (extrinsic-camera-calibration)=
-## Extrinsic Camera Calibration
+## 2) Extrinsic Camera Calibration
 
 (camera-calib-jan18-extrinsics-setup)=
 ### Setup
@@ -178,9 +189,22 @@ And this will automatically save the calibration results on your Duckiebot:
 /data/config/calibrations/camera_extrinsic/[your_duckiebot_hostname].yaml
 ```
 
-
 Similar to intrinsic calibration, you can also view or download the calibration file using the Dashboard.
 
+```{attention}
+If you do not see a saved extrinsic calibration file, your Duckiebot was not able detect the checkerboard and generate a valid calibration.
+
+This could be due to
+* lack of evenly bright overhead lighting
+* A patterned background in the environment
+* A textured background wall or the shadowson the background wall
+
+Try changing the calibration environment to match {numref}`fig:extrinsic_view2` before running the `calibrate_extrinsics` command again.
+```
+
+### Confirm the calibration
+
+Use the Dashboard to confirm that both calibration the intrinsic and extrinsic files have been saved.
 
 #### Troubleshooting
 
