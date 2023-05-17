@@ -62,7 +62,7 @@ Now make sure that Docker was correctly installed by running the following tests
 docker --version
 docker buildx version
 ---
-Make sure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+`
+Make sure the Docker version is `v1.4.0+` and `buildx` version `v.0.8.0+`
 ```
 
 ```{testexpect}
