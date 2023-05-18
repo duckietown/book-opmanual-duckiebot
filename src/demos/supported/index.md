@@ -4,11 +4,10 @@
 This section contains all the _supported_ demos that can be run on one or more Duckiebots.
 
 ```{needget}
-* An internet connection;
-* About 10 minutes;
-* A computer with the Duckietown Shell command [installed and correctly setup](laptop-setup);
+* A computer with all steps and checkpoints completed from the [Software Setup section](laptop-setup)
+* An assembled and calibrated Duckiebot
 ---
-* Duckietown token correctly set up;
+* A Duckiebot following lanes in your Duckietown!
 ```
 
 ```{tableofcontents}
