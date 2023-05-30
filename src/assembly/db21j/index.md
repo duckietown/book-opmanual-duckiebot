@@ -400,6 +400,19 @@ Steps 40 to 52 guide you through the assembly of the front bumper:
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_50.jpg
 ```
 
+```{admonition} Attention (04/2023)
+:class: attention
+Do not proceed to Steps 51 and 52.
+
+It is now recommended that you connect your ToF Sensor directly to the Duckiebot HUT. To do this:
+
+1) Locate the 260mm cable that you connected to the I2C port on the front bumper in Step 44.
+2) Disconnect the cable from the front bumper I2C port. Do not disconnect the other end of the cable from the HUT.
+3) Connect the now free end of the cable into the ToF sensor port shown in Step 51.
+4) Disregard Steps 51 and 52.
+
+You can now continue on to the [Top Deck Assembly](howto-top-deck-assembly-db21)
+```
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_51.jpg
