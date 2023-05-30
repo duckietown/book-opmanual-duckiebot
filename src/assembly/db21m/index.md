@@ -723,6 +723,20 @@ Make sure to take off the small transparent cover from the sensor.
 :name: fig:db21-step_55A
 ```
 
+```{admonition} Attention (04/2023)
+:class: attention
+Do not proceed to Step 56.
+
+It is now recommended that you connect your ToF Sensor directly to the Duckiebot HUT. To do this:
+
+1) Locate the 260mm cable that you connected to the I2C port on the front bumper in Step 49.
+2) Disconnect the cable from the front bumper I2C port. Do not disconnect the other end of the cable from the HUT.
+3) Connect the now free end of the cable into the ToF sensor port shown in Step 56.
+4) Disregard Step 56.
+
+You can now continue on to the [Top Plate Assembly](howto-interactive-cover-db21m)
+```
+
 
 ### Step 56
 Take the shortest 4-pin cable and connect the bottom of the time of flight sensor to the front bumper, as shown below.
