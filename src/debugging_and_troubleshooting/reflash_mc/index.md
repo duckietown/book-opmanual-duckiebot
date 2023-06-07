@@ -21,7 +21,8 @@ A typical example of when is necessary to flash the microcontroller is when comm
 
 This procedure will not be useful to fix problems such as one motor working and not the other, or LEDs showing unexpected colors when the motors work.
 
-reflash-microcontroller-how = ## How to flash the microcontroller
+(reflash-microcontroller-how)=
+## How to flash the microcontroller
 
 SSH into your Duckiebot by running:
 
