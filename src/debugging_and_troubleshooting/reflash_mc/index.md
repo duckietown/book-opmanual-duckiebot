@@ -26,7 +26,7 @@ This procedure will not be useful to fix problems such as one motor working and 
 
 SSH into your Duckiebot by running:
 
-    $ ssh duckie@![DUCKIEBOT_NAME].local
+    ssh duckie@![ROBOT_NAME].local
 
 
 ```{note}
@@ -36,30 +36,30 @@ All of the following instructions are run on Duckiebot throught he SSH terminal
 
 Install the packages needed to compile the microcontroller firmware:
 
-    $ sudo apt-get update
-    $ sudo apt-get install bison autoconf flex gcc-avr binutils-avr gdb-avr avr-libc avrdude build-essential
+    sudo apt-get update
+    sudo apt-get install bison autoconf flex gcc-avr binutils-avr gdb-avr avr-libc avrdude build-essential
 
 Clone the firmware for the microcontroller using the following command:
 
-    $ git clone https://github.com/duckietown/fw-device-hut.git
+    git clone https://github.com/duckietown/fw-device-hut.git
 
 Navigate inside the repository you cloned :
 
-    $ cd fw-device-hut
+    cd fw-device-hut
 
 Warning: read the next passages carefully. Do not just copy and paste every line of code!
 
 Copy the `avrdude.conf` file in the `/etc` folder of the robot. **If** you are running a Duckiebot with an NVIDIA Jetson Nano board run:
 
-    $ sudo cp _avrdudeconfig_jetson_nano/avrdude.conf /etc/avrdude.conf
+    sudo cp _avrdudeconfig_jetson_nano/avrdude.conf /etc/avrdude.conf
     
 **else**, if you have a Raspberry Pi based Duckiebot, use:
 
-    $ sudo cp _avrdudeconfig_raspberry_pi/avrdude.conf /etc/avrdude.conf
+    sudo cp _avrdudeconfig_raspberry_pi/avrdude.conf /etc/avrdude.conf
     
 **Then**, test the `avrdude` and set the low-level configuration with:
 
-    $ make fuses
+    make fuses
 
 A successful outcome looks like:
 
@@ -73,18 +73,18 @@ A successful outcome looks like:
 
 **If** you see the message `make: warning: Clock skew detected. Your build may be incomplete.` or the process is not stopping, stop the process pressing <kbd>Ctrl</kbd>-<kbd>C</kbd> and run:
 
-    $ find -exec touch \{\} \;
+    find -exec touch \{\} \;
 
 And then retry running the `make fuses` command.
 
 
 To complete the procedure (in all cases, whether or not a warning was issued), remove all temporary files by running:
 
-    $ make clean
+    make clean
 
 Compile the firmware and upload it to the microcontroller:
 
-    $ make
+    make
 
 The resulting output should be:
 
@@ -126,11 +126,11 @@ The resulting output should be:
 
 Remove the cloned repository to free up space:
 
-    $ cd .. && rm -rf fw-device-hut
+    cd .. && rm -rf fw-device-hut
 
 
 and finally reboot the Duckiebot:
 
-    $ sudo reboot
+    sudo reboot
 
 After reboot your Duckiebot should move normally and LEDs respond nominally. The Dashboard / components page will show a green status for the HUT, too.
