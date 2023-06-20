@@ -61,7 +61,7 @@ If you have encountered issues or something is not behaving as expected, please 
 it is a good time to ask for help on Stack Overflow.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/zt-1b5qpp5hx-va5A0mKL1NPopzRyTXsS_Q). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 
