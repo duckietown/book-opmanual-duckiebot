@@ -1,4 +1,4 @@
-## Step 2: Docker Installation
+# Step 2: Docker Installation
 
 Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
 of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
@@ -36,8 +36,9 @@ And set up the repository with
       "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-Finally, install Docker Engine and Docker Compose
+Finally, update again and install Docker Engine and Docker Compose
 
+    sudo apt-get update
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     sudo apt-get install docker-compose
 
@@ -62,7 +63,7 @@ Now make sure that Docker was correctly installed by running the following tests
 docker --version
 docker buildx version
 ---
-Make sure the Docker version is `v.0.8.0+` and `buildx` version `v1.4.0+`
+Make sure the Docker version is `v1.4.0+` and `buildx` version `v.0.8.0+`
 ```
 
 ```{testexpect}
@@ -102,5 +103,35 @@ docker run hello-world
 ---
 You should see a message like `Hello from Docker!`
 ```
+````
+
+````{tab-item} Windows (Beta)
+
+**1) Install Docker**
+
+Follow [these instructions](https://docs.docker.com/desktop/windows/wsl/) to install Docker on WSL.
+
+
+---
+
+**Checkpoint ✅**
+
+Now make sure that Docker was correctly installed by running the following test.
+
+```{testexpect}
+Start the `hello-world` image with
+```bash
+docker run hello-world
+---
+You should see a message like `Hello from Docker!`
+```
+
+```{trouble}
+I cannot start Docker from my WSL distribution.
+---
+Make sure you have WSL support for Docker enabled by following [these instructions](https://docs.docker.com/desktop/windows/wsl/#enabling-docker-support-in-wsl-2-distros).
+```
+
+````
 
 `````

@@ -1,4 +1,4 @@
-## Step 1: Dependency Installation
+# Step 1: Dependency Installation
 
 Select the tab for your operating system below, and follow the instructions to begin installing the Duckietown software dependencies.
 
@@ -126,6 +126,43 @@ You can join the
 [Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
+
+````
+
+````{tab-item} Windows (Beta)
+
+**1) Install dependencies**
+
+The basic development tools that you will need are `pip3`, `git`, `git-lfs`, `curl`, and `wget`.  Install these in your Ubuntu WSL by running the following commands in the shell:
+
+    sudo apt update
+    sudo apt install -y python3-pip git git-lfs curl wget
+
+---
+
+**Checkpoint ✅**
+
+Before continuing, run the following test command
+
+```{testexpect}
+```bash 
+pip3 --version
+---
+This command should output a version number for the `pip3` package.
+```
+
+```{tip}
+Never skip a checkpoint!
+```
+
+If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:
+
+* First check for any troubleshooting sections on the page that might match the problem.
+* If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
+
+You can join the 
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
 
