@@ -80,6 +80,7 @@ parts:
             - file: debugging_and_troubleshooting/network_config/index
             - file: debugging_and_troubleshooting/reflash_mc/index
             - file: debugging_and_troubleshooting/update/index
+            - file: debugging_and_troubleshooting/support/index
 
     -   caption: Reference Reading
         maxdepth: 2
