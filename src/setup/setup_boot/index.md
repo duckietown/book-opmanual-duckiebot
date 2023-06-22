@@ -34,6 +34,7 @@ burn the SD card again.
 
 Make sure your desktop or laptop computer is connected to the same WiFi network the Duckiebot
 was instructed to connect to.
+
 Then open a terminal and run the following command,
 
 ``` 
@@ -41,26 +42,31 @@ dts fleet discover
 ```
 
 The command above will show a list of all the Duckiebots
-reachable on your local network. Leave this tool open, it will refresh automatically every
+reachable on your local network.  For each Duckiebot, the tool will also show the model that was used to flash the SD card, the hostname of your robot, and a status indicator.
+
+Leave this tool open, it will refresh automatically every
 second, so there is no need to manually restart it.
 
 Within a few minutes of powering up the robot with the SD card in, your Duckiebot will appear
 in the list with status **Booting**.  If it does not appear within 5 minutes, check out the Troubleshooting guide at 
 the end of this page.
 
-```{figure} ../../_images/fleet_discover.jpg
+```{figure} ../../_images/assembly_setup/fleet_discover.png
 :name: fig:fleet-discover
 
 Output of 'dts fleet discover'
 ```
 
+```{attention}
 During the first boot, the robot will automatically reboot several times.
 Wait for the "Status" column to read "Ready" and turn solid green.
+```
 
 (confirm-first-boot)=
 ## Confirming the First Boot
 
-You are now ready to access your Duckiebot's Dashboard.
+Once the status of your Duckiebot is `Ready`, you are ready to access your Duckiebot's Dashboard.
+
 Open your browser and visit the
 URL `http://HOSTNAME.local/`. You will see a page similar to the following,
 
