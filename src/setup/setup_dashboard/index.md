@@ -71,6 +71,10 @@ You can complete these fields as you please.
 You can always update your choices through the **Settings** page after you finsh the setup process.
 ```
 
+```{tip}
+If you are seeing an error due to permissions, take a look at the [Booting FAQs](boot-faq).
+```
+
 When you are happy with your choices, click on **Next**.
 
 #### Step 4: Complete the setup
