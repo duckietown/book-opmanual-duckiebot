@@ -80,7 +80,7 @@ cannot be written`.
 * Put it in your laptop using the adapter that came with the card
 * Navigate to the root of the card in your terminal. Most OS have an option to right click on the drive when it 
 appears on your desktop or in the sidebar and select a "open in terminal", "new terminal at folder", or similar
-* Run chmod 777 /data/config/permissions
+* Run `chmod -R 777 ./data/config/permissions`
 * Eject the drive, place back in the Duckiebot, and power back up
 ```
 
