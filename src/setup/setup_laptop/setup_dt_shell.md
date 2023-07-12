@@ -20,6 +20,21 @@ Install the Duckietown Shell using the following command,
 
     pip3 install --no-cache-dir --user --upgrade duckietown-shell
 
+
+**2) Source dts**
+
+Make sure your system is able to find local binaries by adding the following to your `.bashrc` file. 
+
+```{attention}
+If you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
+```
+
+    export PATH=~/.local/bin:${PATH}
+
+Then source the updates to your current shell or restart your shell.
+
+    source ~/.bashrc
+
 ---
 
 **Checkpoint ✅**
