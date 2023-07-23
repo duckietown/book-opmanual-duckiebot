@@ -40,6 +40,8 @@ parts:
         chapters:
             -   file: operations/handling/db21
             -   file: operations/dashboard/index
+                sections:
+                    -   file: operations/dashboard/user_hardware_testing_tools
             -   file: operations/make_it_move/index
             -   file: operations/make_it_see/index
             -   file: operations/make_it_shine/index
