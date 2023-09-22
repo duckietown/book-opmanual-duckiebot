@@ -62,10 +62,19 @@ During the first boot, the robot will automatically reboot several times.
 Wait for the "Status" column to read "Ready" and turn solid green.
 ```
 
+## Software and Hardware updates
+Once the status of your Duckiebot is `Ready`, you are ready to update your Duckiebot. The software update is required now, while the hardware update is conditional and also can be carried out later.
+
+### Software update
+Please update your Duckiebot's software stack with the latest by following: [](duckiebot-autoupdate).
+
+### Hut Microcontroller update
+The reader does not need to perform this right now. This is mentioned here so that the reader is aware of the existence and a potential need of this procedure. The Hut connects to various electronics beyond the Duckiebot computer, e.g. motors, LEDs. If you run into problems with the operations in the **Duckiebot Operations** section later, and it is related to the hardware on the HUT, you are then suggested to follow the [](reflash-microcontroller) page to update the HUT firmware.
+
 (confirm-first-boot)=
 ## Confirming the First Boot
 
-Once the status of your Duckiebot is `Ready`, you are ready to access your Duckiebot's Dashboard.
+Once the Duckiebot is `Ready` and `Updated` (software), you are ready to access your Duckiebot's Dashboard.
 
 Open your browser and visit the
 URL `http://HOSTNAME.local/`. You will see a page similar to the following,
