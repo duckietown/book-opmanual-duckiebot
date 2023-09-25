@@ -33,6 +33,41 @@ You will have to select the `camera_node/image/compressed` topic from the drop-d
 The rqt image view window with dropdown menu - select the `camera_node/image/compressed` topic.
 ```
 
+### How to save a picture from `rqt_image_view`
+
+On the top right of the `rqt_image_view` window, there is a button to save the current frame to an image. But don't save it yet. A little extra setup is needed to be able to view that file later.
+
+Create a folder on you laptop for where you would like to have the image saved to, say `~/duckiebot_images/`. Then, launch the `start_gui_tools` with the following command:
+
+```
+dts start_gui_tools --mount ~/duckiebot_images/:/duckiebot_images [DUCKIEBOT_NAME]
+```
+
+Then, run `rqt_image_view` again, and use the top-right "**Save as image**" button to save to the `/duckiebot_images` folder. To find that folder, you might need to navigate to `Computer` and select `/` directory in the pop-up dialogue.
+
+```{image} ../../_images/operations/rqt_image_view_save_btn.png
+:align: center
+:name: rqt_save_btn
+```
+
+<br/>
+
+```{image} ../../_images/operations/rqt_image_view_save_dialog1.png
+:align: center
+:name: rqt_save_dialog1
+```
+
+<br/>
+
+```{image} ../../_images/operations/rqt_image_view_save_dialog2.png
+:align: center
+:name: rqt_save_dialog2
+```
+
+<br/>
+
+And the saved image from your robot's view should appear in the folder you created!
+
 (image-dashboard)=
 ## Viewing the image stream on the Dashboard
 
