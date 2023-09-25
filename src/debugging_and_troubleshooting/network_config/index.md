@@ -160,8 +160,21 @@ Additional debugging steps:
 ```{trouble}
 When I run `ssh ![robot_name].local` I get the error `ssh: Could not resolve hostname ![robot_name].local`.
 ---
-Make sure that your Duckiebot is ON. Connect it to a monitor, a USB mouse and a keyboard. Run the command:
+Make sure that your Duckiebot is ON. Connect it to a monitor, a USB mouse and a keyboard.
 
+Let's try restarting the services for the mDNS (`.local`) hostname resolution. Please run these commands on the Duckiebot:
+
+``
+    $ sudo systemctl restart avahi-daemon
+``
+
+``
+    $ sudo reboot
+``
+
+If the issue persists, please try following these steps to ensure the service status is normal, and the configuration is correct.
+
+(With the monitor, keyboard and mouse connected)
 On the duckiebot run: 
 
 ``
