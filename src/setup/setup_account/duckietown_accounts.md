@@ -13,14 +13,14 @@ For this version of the book, we use daffy. Set the shell to use the daffy distr
 
 Now your Duckietown Shell needs a Duckietown token. The Duckietown Token allows you to authenticate yourself and your robots against the Duckietown network.
 
-You can make a Duckietown account for free from the Duckietown Website.
-[Make an account here!](https://hub.duckietown.com/)
+You can make a Duckietown account for free from the Duckietown Hub.
+[Make an account here.](https://hub.duckietown.com/signup/)
 
 The token is a string of letters and numbers that looks something like this:
 
     dt1-7vEuJsaxeXXXXX-43dzqWFnWd8KBa1yev1g3UKnzVxZkkTbfSJnxzuJjWaANeMf4y6XSXBWTpJ7vWXXXX
 
-To find your token, first [log in](https://hub.duckietown.com/) to your account, 
+To find your token, first [log in](https://hub.duckietown.com/signin/) to your account, 
 then open [the profile page](https://hub.duckietown.com/profile/) in your browser:
 
 Copy your token to use in the next step.
@@ -44,7 +44,7 @@ If the Duckietown Shell was installed correctly, then you can run a command like
 ```bash
 dts version
 ---
-Verify that the commands version is set to `daffy`.
+Verify that the version of the commands is set to `daffy`.
 ```
 
 ```{testexpect}
@@ -61,9 +61,8 @@ If you have encountered issues or something is not behaving as expected, please 
 it is a good time to ask for help on Stack Overflow.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/zt-1b5qpp5hx-va5A0mKL1NPopzRyTXsS_Q). 
-There you can request an invitation to the Duckietown Stack Overflow team.
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/zt-21zgbg3wk-SnejN9XG3SEaHHKuHqDWkg). 
 
-
+There you can request an invitation to the Duckietown Stack Overflow, by following [these instructions](https://duckietown.slack.com/archives/CHHQJ0E0H/p1670874390660429).
 
 
