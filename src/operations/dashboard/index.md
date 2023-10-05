@@ -116,26 +116,3 @@ You can select **containers** to see all the containers on the Duckiebot.
 
 For more information about portainer, you can find them in [this](#sub:dashboard-portainer) page.
 
-(drive-dashboard)=
-## Drive your Duckiebot via mission control
-
-You can remotely drive your Duckiebot through mission control page.
-
-The first thing to check to make sure that everything we have done so far
-is correct, is the status of the **Bridge**, in the top-right corner of the page.
-The label should show the status "**Bridge: Connected**" (as shown in the image above).
-If the indicator reads "**Bridge: Closed**", it means that something went wrong
-while launching the ROS websocket node above. In that case, start again from
-the beginning of this section.
-
-```{note}
-Don't worry if one of the blocks is called "Camera" but you
-don't see an image. We will get to that later.
-```
-
-Toggle the **Take over** switch
-in the top-right corner of the page to gain control of your robot.
-You will see that the background of the page will highlight and the
-central plot will start moving.
-
-You can now use the arrows on your keyboard to drive your Duckiebot.
