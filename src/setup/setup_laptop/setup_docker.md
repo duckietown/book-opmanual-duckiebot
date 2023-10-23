@@ -1,4 +1,5 @@
-## Step 2: Docker Installation
+(laptop-setup-docker)=
+# Step 2: Docker Installation
 
 Duckietown uses [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
 of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
