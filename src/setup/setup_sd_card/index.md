@@ -9,8 +9,8 @@ Duckiebot on-board computer. This procedure is called `flashing`, or `burning` o
 - At least 20 GB of free space on the computer
 - An internet connection
 - SD card reader
-- Duckietown Shell, as configured in [](laptop-setup-ubuntu-shell).
-- Docker, as configured in [](laptop-setup-ubuntu-docker).
+- Duckietown Shell, as configured in [](laptop-setup-shell).
+- Docker, as configured in [](laptop-setup-docker).
 - Duckietown Token, as configured in [](dt-account).
 - 30 minutes on average (depends on internet connection and SD card adapter used)
 ---
