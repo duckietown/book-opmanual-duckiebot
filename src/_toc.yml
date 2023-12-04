@@ -40,6 +40,8 @@ parts:
         chapters:
             -   file: operations/handling/db21
             -   file: operations/dashboard/index
+                sections:
+                    -   file: operations/dashboard/user_hardware_testing_tools
             -   file: operations/make_it_move/index
             -   file: operations/make_it_see/index
             -   file: operations/make_it_shine/index
@@ -80,6 +82,8 @@ parts:
             - file: debugging_and_troubleshooting/network_config/index
             - file: debugging_and_troubleshooting/reflash_mc/index
             - file: debugging_and_troubleshooting/update/index
+            - file: debugging_and_troubleshooting/support/index
+            - file: debugging_and_troubleshooting/reset_dashboard
 
     -   caption: Reference Reading
         maxdepth: 2

@@ -2,7 +2,7 @@
 # Setup - Laptop
 
 ```{needget}
-* A laptop or machine running Ubuntu 20.02 or 22.04
+* A laptop or machine running Ubuntu 20.04 or 22.04
 * Alternatively: A laptop or machine running MacOS
 ---
 * Your laptop configured with Duckietown software and ready to sign into your accounts

@@ -97,8 +97,9 @@ and they will be more complex to fix. Instead, if you do not get the expected ou
   for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
-There you can request an invitation to the Duckietown Stack Overflow team.
+[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/zt-21zgbg3wk-SnejN9XG3SEaHHKuHqDWkg). 
+
+There you can request an invitation to the [Duckietown Stack Overflow](https://stackoverflow.com/c/duckietown/questions), in particular, following [these instructions](https://duckietown.slack.com/archives/CHHQJ0E0H/p1670874390660429).
 
 ```{trouble}
 I mistakenly set a wrong/unwanted username or password. How can I update the credentials?
