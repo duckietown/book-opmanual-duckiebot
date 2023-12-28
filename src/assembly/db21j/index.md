@@ -101,23 +101,27 @@ This preliminary step allows us to start charging the battery while confirming t
 
 You can familiarize with how the Duckiebattery works by reading its [handling instructions](db-opmanual-dtbattery-v2).
 
-(howto-base-plate-db21)=
-## Base-plate
+(howto-camera-assembly-db21)=
+## Camera Assembly
 
-In the following steps (1 to 16) we will build the *base-plate* assembly of the Duckiebot.
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_01-16.jpg
-```
-
+This last section (steps 1 to 2) guide through the assembly of the Camera:
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_01.jpg
 ```
 
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_02.jpg
 ```
 
+
+
+(howto-base-plate-db21)=
+## Base-plate
+
+In the following steps (3 to 18) we will build the *base-plate* assembly of the Duckiebot.
+
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_03-18.jpg
+```
 
 ```{note}
 You could try to use shorter screws in case the screws do not fully insert into the standoffs.
@@ -178,9 +182,15 @@ Occasionally manufacturing tolerances (on the nut and the chassis) might prevent
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_15.jpg
 ```
 
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_16.jpg
+```
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_17.jpg
+```
+
 Remove the USB cable from the Duckiebattery, connected in the [battery related preliminary step](howto-preliminary-db21-battery).
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_16.jpg
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_18.jpg
 ```
 
 Before proceeding, verify that no component is wiggling. The only things moving should be the cables and the sphere in the omni-wheel (and, yes, the motor axles). Proceed to gently tighten the screws of the offending parts, if necessary.
@@ -188,10 +198,10 @@ Before proceeding, verify that no component is wiggling. The only things moving 
 (howto-computation-db21)=
 ## Computation Unit
 
-The following steps (17 to 25) guide through the assembly of the *Computation* unit:
+The following steps (19 to 27) guide through the assembly of the *Computation* unit:
 
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_17-25.jpg
+```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_19-27.jpg
 ```
 
 <!--
@@ -202,15 +212,6 @@ You can try to mount the wheels even without the distance disks. But make sure t
 </div>
 -->
 
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_17.jpg
-```
-
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_18.jpg
-```
 
 
 
@@ -228,50 +229,43 @@ You can try to mount the wheels even without the distance disks. But make sure t
 ```
 
 
-```{note}
-The fan connection and the Jetson Nano in pictures 21 and 22 are different. We would recommend following step 21.
-```
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_22.jpg
 ```
 
 
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_23.png
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_23.jpg
 ```
 
 
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_24.png
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_24.jpg
 ```
-
-Now connect it to the base-plate (i.e, the rest of the chassis assembled in steps 1 to 16). Verify the chassis components are locked correctly.
-
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_25.jpg
 ```
 
-(howto-rear-assembly-db21)=
-## Rear Assembly
-
-The following steps (26 to 39) guide through the assembly of the rear part of the Duckiebot:
-
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_26-39.jpg
-```
-
-
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_26.jpg
 ```
+
+Now connect it to the base-plate (i.e, the rest of the chassis assembled in steps 3 to 18). Verify the chassis components are locked correctly.
 
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_27.jpg
 ```
 
+(howto-rear-assembly-db21)=
+## Rear Assembly
+
+The following steps (28 to 40) guide through the assembly of the rear part of the Duckiebot:
+
+
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_28-41.jpg
+```
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_28.jpg
@@ -308,24 +302,22 @@ The following steps (26 to 39) guide through the assembly of the rear part of th
 ```
 
 
-```{note}
-Make sure that both rows of pins on the 40-pin expansion header on the Jetson Nano are connected to the corresponding contacts of HUT.
-```
+
+
+
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_35.jpg
 ```
 
-
+```{note}
+Make sure that both rows of pins on the 40-pin expansion header on the Jetson Nano are connected to the corresponding contacts of HUT.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_36.jpg
 ```
 
-
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_37.jpg
 ```
-
-
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_38.jpg
 ```
@@ -335,24 +327,23 @@ Make sure that both rows of pins on the 40-pin expansion header on the Jetson Na
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_39.jpg
 ```
 
-(howto-front-assembly-db21)=
-## Front Assembly
-
-Steps 40 to 52 guide you through the assembly of the front bumper:
-
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_40-52.jpg
-```
-
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_40.jpg
 ```
 
 
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_41.jpg
+```
+
+(howto-front-assembly-db21)=
+## Front Assembly
+
+Steps 42 to 51 guide you through the assembly of the front bumper:
+
+
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_42-51.jpg
 ```
 
 
@@ -400,19 +391,6 @@ Steps 40 to 52 guide you through the assembly of the front bumper:
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_50.jpg
 ```
 
-```{admonition} Attention (04/2023)
-:class: attention
-Do not proceed to Steps 51 and 52.
-
-It is now recommended that you connect your ToF Sensor directly to the Duckiebot HUT. To do this:
-
-1) Locate the 260mm cable that you connected to the I2C port on the front bumper in Step 44.
-2) Disconnect the cable from the front bumper I2C port. Do not disconnect the other end of the cable from the HUT.
-3) Connect the now free end of the cable into the ToF sensor port shown in Step 51.
-4) Disregard Steps 51 and 52.
-
-You can now continue on to the [Top Deck Assembly](howto-top-deck-assembly-db21)
-```
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_51.jpg
@@ -420,17 +398,19 @@ You can now continue on to the [Top Deck Assembly](howto-top-deck-assembly-db21)
 
 
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_52.jpg
-```
-
 (howto-top-deck-assembly-db21)=
 ## Top Deck Assembly
 
-This last section (steps 53 to 63) guide through the assembly of the top deck:
+This last section (steps 52 to 62) guide through the assembly of the top deck:
 
 
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_53-63.jpg
+```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_52-62.jpg
+```
+
+
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_52.jpg
 ```
 
 
@@ -454,14 +434,14 @@ This last section (steps 53 to 63) guide through the assembly of the top deck:
 ```
 
 
+```{note}
+On the display board you will see 4 pins: SDA, SCL, VCC, GND. Make sure that the correct color wire is connected to the corresponding pin on the HUT.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_57.jpg
 ```
 
 
-```{note}
-On the display board you will see 4 pins: SDA, SCL, VCC, GND. Make sure that the correct color wire is connected to the corresponding pin on the HUT.
-```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_58.jpg
 ```
@@ -482,11 +462,6 @@ On the display board you will see 4 pins: SDA, SCL, VCC, GND. Make sure that the
 ```
 
 
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_62.jpg
-```
-
-
 (howto-power-db21)=
 ## Power your Duckiebot
 
@@ -501,7 +476,7 @@ One of the USB ports on the HUT will remain free. You can use this port to charg
 
 Make sure the SD card was flashed successfully without any error during the process and it is plugged in Jetson Nano under the main board. ONLY then you can continue to follow the instructions. Once your Duckiebot is fully charged, you can press the button of the battery on the side to power it up. It is important to make sure the battery is charged to prevent undesired shutdown during the first boot, which will compromise the initialization sequence and require the sd card to be re-flashed.
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_63.jpg
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_62.jpg
 ```
 
 Congratulations, your Duckiebot `DB21J` is now completely assembled.
@@ -514,6 +489,11 @@ These additional parts are not always necessary.
 ### Back Pattern
 
 The back pattern enables the traffic management behavior used in challenges with vehicles (e.g., `LFV`, `LFIV`, etc.).
+
+
+
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_63.jpg
+```
 
 
 
@@ -535,18 +515,21 @@ The back pattern enables the traffic management behavior used in challenges with
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_67.jpg
 ```
 
-
-
-```{figure} ../../_images/assembly/db21j/db21-rev1-step_68.jpg
-```
-
 ### April Tag
 
 This top facing April Tag enables localization in [Duckietown Autolabs](+opmanual_autolab#book).
 
 
 
+```{figure} ../../_images/assembly/db21j/db21-rev1-step_68.jpg
+```
+
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_69.jpg
+```
+
+
+```{note}
+Please place the sticker somewhere on the Duckiebot.
 ```
 
 ## Check the outcome
