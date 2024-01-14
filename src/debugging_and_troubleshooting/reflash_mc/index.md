@@ -21,8 +21,49 @@ A typical example of when is necessary to flash the microcontroller is when comm
 
 This procedure will not be useful to fix problems such as one motor working and not the other, or LEDs showing unexpected colors when the motors work.
 
+(reflash-microcontroller-how-dts)=
+## How to flash the microcontroller - Method 1: with `dts`
+On your computer
+
+```
+dts duckiebot hut_upgrade [ROBOT_NAME]
+```
+
+There are instructions on-screen to guide you through the process.
+
+During the process, you will be asked twice to compare the command output against some expected outputs. For example,
+
+```
+avrdude: verifying ...
+avrdude: 2832 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FF, H:DF, L:E2)
+
+avrdude done.  Thank you.
+
+================================================================================
+=== (Above) command output =====================================================
+
+================================================================================
+
+=== (Below) expected output ====================================================
+================================================================================
+
+avrdude: verifying ...
+avrdude: 2832 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FF, H:DF, L:E2)
+
+avrdude done.  Thank you.
+
+Did the command output match the expected output? (Y/N, default N):
+```
+
+Once confirmed, you could type 'Y' and press the "Enter" key to continue.
+
+
 (reflash-microcontroller-how)=
-## How to flash the microcontroller
+## How to flash the microcontroller - Method 2: step-by-step via SSH
 
 SSH into your Duckiebot by running:
 
