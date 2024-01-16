@@ -1,9 +1,17 @@
 (preliminaries-docker-basics)=
 # Docker Basics
 
+```{vimeo} 527006910
+:alt: A Duckietown introduction to containerization.
+
+A Duckietown introduction to containerization.
+```
+
+<!--
 <div figure-id="fig:tutorial-docker-video" figure-caption="An introduction to containerization.">
     <dtvideo src="vimeo:527006910"/>
 </div>
+-->
 
 (basic-docker-what-is)=
 ## What is Docker?
@@ -250,7 +258,7 @@ There is much more that you can learn to do with Docker.
 
 Here are some resources you can look up:
 
-- [Duckietown Introduction to Docker for Robotics and Machine Learning](book-devmanual-developer:docker-intro);
+- [Duckietown Introduction to Docker for Robotics and Machine Learning](book-devmanual-software:sec:developer_basics_docker);
 - [Docker's official Get Started tutorial](https://docs.docker.com/get-started/);
 - [Docker Curriculum](https://docker-curriculum.com/);
 - *Docker Deep Dive*, by Nigel Poulton.

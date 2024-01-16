@@ -39,7 +39,7 @@ Note: This process is expected to take a while to complete.
 (dt-autoupdate-dashboard)=
 ## Update Duckiebot container using Dashboard 
 
-To use the Dashboard for updating the Duckiebot container, first navigate to the Dashboard software page. If you are not sure how to do that, refer to [this](dashboard-tutorial-software) page. If you have containers that need to be updated, you will see the update button next to the container:
+To use the Dashboard for updating the Duckiebot container, first navigate to the Dashboard software page. If you are not sure how to do that, refer to the [](duckiebot-dashboard-setup) page. If you have containers that need to be updated, you will see the update button next to the container:
 
 ```{figure} ../../_images/dashboard-update1.png
 :name: fig:dashboard-update1
