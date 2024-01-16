@@ -2,7 +2,7 @@
 # Assembly - Duckiebot `DB21J`
 
 ```{needget}
-* Duckiebot `DB21` parts ([get a `DB21-Jx`](https://get.duckietown.com/products/duckiebot-db21)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
+* Duckiebot `DB21` parts ([get a `DB21-Jx`](https://get.duckietown.com/products/duckiebot-db21?variant=41543707099311)). If you are unsure what version of Duckiebot you have, check the overview of existing [Duckiebot configurations](duckiebot-configurations).
 
 * A micro SD card with the Duckiebot image on it. The procedure to flash the SD card is explained [here](setup-duckiebot-sd-card).
 
@@ -13,10 +13,10 @@
 
 ## Foreword
 
-These instructions are your friend. Follow them carefully, especially if it's the first time you assemble a Duckiebot. Small variations might cause big effects (e.g., don't flip your cables!).
+These instructions are your friend. Follow them carefully, especially if it is the first time you assemble a Duckiebot. Small variations might cause big effects (e.g., don't flip your cables!).
 
 ```{todo}
-**Video tutorial**
+**Video tutorial** If you would like to help make an assembly video, reach out to us at info@duckietown.com or on Slack!
 
 <div figure-id="fig:howto-assemble-02-legacy-rev1-video">
     <dtvideo src="vimeo:528621827"/>
@@ -82,7 +82,7 @@ Hut is the electronics board:
 
 It contains the connectors for various sensors, the fan, motors, external button, etc. Also it is mounted to the NVIDIA Jetson Nano. A more detailed scheme is shown in the figure:
 
-```{figure} ../../_images/assembly/db21j/db21-rev1-hut_01.png
+```{figure} ../../_images/assembly/db21j/db21-rev1-1-hut_01.png
 :name: fig:db21-rev1-hut_01
 ```
 
