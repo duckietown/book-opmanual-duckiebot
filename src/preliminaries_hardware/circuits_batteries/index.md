@@ -150,9 +150,9 @@ When the battery's state of charge is particularly depleted (e.g., as soon as yo
 (db-opmanual-dtbattery-v2-protection-mode)=
 ### Battery protection mode
 
-The battery is equipped with safety features to prevent damage to others and itself. In particular, it has dedicated hardware to protect its cell from low voltage discharge.
+The battery is equipped with safety features to prevent damage to others and itself. In particular, it has dedicated hardware to protect its cell from low-voltage discharge.
 
-When a certain low cell voltage level is detected, the battery micro-controller, together with all other active components will be turned off, except the charger. When a Duckiebattery enters protection mode, it will look unresponsive.
+When a certain low cell voltage level is detected, the battery microcontroller, together with all other active components will be turned off, except the charger. When a Duckiebattery enters protection mode, it will look unresponsive.
 
 Nonetheless, the charger will "trickle" charge the battery cell until it has reached a safe voltage level, exiting the battery protection mode.
 
