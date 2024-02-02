@@ -35,7 +35,7 @@ the video above.
 ## Getting Started
 
 
-Fork the [`mooc-exercices`](https://github.com/duckietown/mooc-exercises) repository and clone it onto your computer.
+Fork the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository and clone it onto your computer.
 
 Set up an upstream remote. From inside the directory you just cloned:
 
