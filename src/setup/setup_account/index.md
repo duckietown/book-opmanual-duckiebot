@@ -20,4 +20,6 @@ working understanding of this tool: [The Duckietown Intro to Git](version_contro
 
 If you do not already have a GitHub account, you can sign up for one at [this link](https://github.com/join).
 
-Once you have a GitHub username, you can continue on to the next page to set up your Duckietown account.
+In addition to the Github account you'll need to create an SSH key, to seamlessly access Github through terminal without having to enter the password each time. Follow the official Github documentation to create a SSH Key [Link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).  
+
+Once you have a GitHub username and SSK key associated with your account, you can continue on to the next page to set up your Duckietown account.
