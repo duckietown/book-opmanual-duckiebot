@@ -43,7 +43,7 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
@@ -123,7 +123,7 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 
@@ -161,7 +161,7 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
