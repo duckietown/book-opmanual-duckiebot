@@ -180,16 +180,31 @@ Run:
 dts duckiebot calibrate_extrinsics [your_duckiebot_hostname]
 ```
 
-First the output will instruct you place your robot on the calibration box and press <kbd>Enter</kbd>.
-If all goes well the program will complete.
+You will see the calibration window pop up:
 
-And this will automatically save the calibration results on your Duckiebot:
+```{figure} ../../_images/duckiebot_assembly_and_setup/calibration_camera/extrinsic_calibration.png
+:width: 30em
+:name: fig:extrinsic_calibration_gui
+
+Extrinsic calibration GUI
+```
+
+Press `Save` to automatically save the calibration results on your Duckiebot. You can find it at the path:
 
 ```
 /data/config/calibrations/camera_extrinsic/[your_duckiebot_hostname].yaml
 ```
 
-Similar to intrinsic calibration, you can also view or download the calibration file using the Dashboard.
+Similarly to the intrinsic calibration, you can also view or download the calibration file through the Dashboard.
+
+Once the calibration has been saved a validation window will open. Here you should be able to see the checkerboard from a top-down view obtained using the computed homography matrix.
+
+```{figure} ../../_images/duckiebot_assembly_and_setup/calibration_camera/extrinsic_validation.png
+:width: 30em
+:name: fig:extrinsic_validation_gui
+
+Extrinsic calibration validation GUI
+```
 
 ```{attention}
 If you do not see a saved extrinsic calibration file, your Duckiebot was not able detect the checkerboard and generate a valid calibration.
