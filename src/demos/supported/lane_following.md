@@ -106,11 +106,19 @@ dts start_gui_tools ![DUCKIEBOT_NAME]
 
 * Run `rqt_image_view` and select the `/ROBOT_NAME/line_detector_node/debug/segments/compressed`. You should see something like this:
 
-```{admonition} Outcome of the line detector node.
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/334931437" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/334931437">Line segment detections</a> from <a href="https://vimeo.com/duckietown">Duckietown</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-```
+    ```{admonition} Outcome of the line detector node.
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/334931437" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/334931437">Line segment detections</a> from <a href="https://vimeo.com/duckietown">Duckietown</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    ```
 
+* In `rqt_image_view` by selecting the `/ROBOT_NAME/ground_projection_node/debug/ground_projection_image/compressed` you should see a top-down view of the detected segments:
+
+    ```{figure} ../../_images/demos/lane_following/ground_projection_segments.png
+    :width: 30em
+    :name: fig:ground_projection_lf
+
+    Line segments projected on the ground
+    ```
 
 (demo-lane-following-troubleshooting)=
 ## Troubleshooting 
