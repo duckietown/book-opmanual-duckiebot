@@ -23,7 +23,7 @@ Calibration checkerboard
 
 If you do not have one already:
 
-* Download the [Calibration checkerboard pdf](https://github.com/duckietown/duckietown-mplan/blob/a025c99e218687685d80bd72a7f90996572a55c7/hardware/camera_calibration_pattern_A3.pdf)
+* Download the [Calibration checkerboard pdf](https://github.com/duckietown/lib-dt-computer-vision/blob/ente/assets/extrinsics/camera_calibration_pattern_A3_rev0424.pdf)
 * Print it with ***A3 Format***
 * Fix the checkerboard to a rigid planar surface that you can move around
 
