@@ -12,7 +12,7 @@ Duckiebots support several power bank models, although not all power sources wil
 (db-opmanual-dtbattery-v2)=
 ## The Duckiebattery (`DB-C-DBatt`)
 
-This battery is the standard battery for the Duckiebots since 2021. For example, models `DB21M`, `DB21J`, and `DBR4` use this battery.
+This battery is the standard battery for the Duckiebots since 2021. For example, models `DB21M`, `DB21J`, and `DBR` use this battery.
 
 The Duckiebattery is special because it is a programmable, smart battery, designed and manufactured specifically for Duckiebots. Using this battery will allow your Duckiebot to monitor the state of charge and other diagnostics, and shutdown via software. Moreover, it enables advanced features such as auto-charging in Autolabs, because it will guarantee power to the onboard computer when being plugged in or out of charge. 
 
