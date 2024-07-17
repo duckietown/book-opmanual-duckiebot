@@ -7,6 +7,10 @@ of its software modules, and most Duckietown procedures entail some `docker` ope
 If you are unfamiliar with Docker, we strongly recommend reading the following reference page to gain a 
 working understanding of this tool: [The Duckietown Intro to Docker](preliminaries-docker-basics)
 
+```{note}
+A free Docker account is sufficient for our purposes.
+```
+
 `````{tab-set}
 
 ````{tab-item} Ubuntu
