@@ -18,10 +18,14 @@ Your camera intrinsics and extrinsics are calibrated and stored on the Duckiebot
 :width: 20em
 :name: fig:calibration_checkerboard
 
-Calibration checkerboard
+Duckiebot calibration checkerboard
 ```
 
 If you do not have one already:
+
+`````{tab-set}
+
+````{tab-item} Duckiebot
 
 * Download the [Calibration checkerboard pdf](https://github.com/duckietown/lib-dt-computer-vision/blob/ente/assets/extrinsics/camera_calibration_pattern_A3_rev0424.pdf)
 * Print it with ***A3 Format***
@@ -32,6 +36,22 @@ If you do not have one already:
 * The squares must have side equal to 0.031 m = 3.1 cm. Please measure this, as having the wrong size will make your Duckiebot crash.
 * In case your squares are not of the right size, make sure your printer settings are on A3 format, no automatic scaling, 100% size.
 ```
+````
+
+````{tab-item} Duckiedrone
+
+* Download the [Calibration checkerboard pdf](https://github.com/duckietown/lib-dt-computer-vision/blob/6d8764c009d4e3d90a08a67af271d89d257d3b17/assets/extrinsics/dd24/camera_calibration_pattern_A4_rev0824.pdf?raw=true)
+* Print it with ***A4 Format***
+* Fix the checkerboard to a rigid planar surface that you can move around
+
+
+```{note}
+* The squares must have side equal to 0.0175 m = 1.75 cm. Please measure this, as having the wrong size will make your Duckiedrone crash.
+* In case your squares are not of the right size, make sure your printer settings are on A4 format, no automatic scaling, 100% size.
+```
+````
+
+`````
 
 ```{warning}
 If the pattern is not rigid the calibration will be useless. You can print on thick paper or adhere to something rigid to achieve this.
