@@ -52,7 +52,7 @@ Requires: Time: 15 days (average shipping to the USA for cheapest choice of comp
 
 Results: A kit of parts ready to be assembled in a `DB17` or `DB17-wjd` configuration.
 
-Next steps: After receiving these components, you are ready to do some [soldering](#assembling-duckiebot-db17-soldering) before [assembling](#assembling-duckiebot-db17-ttic) your `DB17` or `DB17-wjd` Duckiebot.
+Next steps: After receiving these components, you are ready to do some [soldering](assembling-duckiebot-db17-soldering) before [assembling](assembling-duckiebot-db17-ttic) your `DB17` or `DB17-wjd` Duckiebot.
 
 </div>
 -->
@@ -408,7 +408,7 @@ A 300 mm camera cable for the Raspberry Pi.
 (db17-dc-motor-hat)=
 ## DC Motor HAT
 
-We use the DC Stepper motor HAT ([](fig:motor_hat)) to control the DC motors that drive the wheels. This item will require [soldering](#assembling-duckiebot-db17-soldering) to be functional. This HAT has dedicate PWM and H-bridge for driving the motors.
+We use the DC Stepper motor HAT ([](fig:motor_hat)) to control the DC motors that drive the wheels. This item will require [soldering](assembling-duckiebot-db17-soldering) to be functional. This HAT has dedicate PWM and H-bridge for driving the motors.
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/motor_hat.png
 :width: 15em
@@ -424,7 +424,7 @@ The stepper motor HAT.
 (db17-stackingheaders)=
 ### Stacking Headers
 
-We use a long 20x2 GPIO stacking header ([](fig:stacking_header)) to connect the Raspberry Pi with the DC Motor HAT. This item will require [soldering](#assembling-duckiebot-db17-soldering) to be functional.
+We use a long 20x2 GPIO stacking header ([](fig:stacking_header)) to connect the Raspberry Pi with the DC Motor HAT. This item will require [soldering](assembling-duckiebot-db17-soldering) to be functional.
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/stacking_header.png
 :width: 15em
@@ -536,7 +536,7 @@ A Wireless joypad.
      <img src="joystick.png" style='width: 15em'/>
 </div> -->
 
-Requires: 2 AA 1.5V batteries ([](fig:batteries)) not included in the [bill of materials](#tab:materials).
+Requires: 2 AA 1.5V batteries ([](fig:batteries)) not included in the [bill of materials](tab:materials).
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/batteries.jpg
 :width: 15em
@@ -595,7 +595,7 @@ The `DB17` RGB LEDs.
 (db17-led-hat)=
 ### LED HAT
 
-The LED HAT ([](fig:led_hat)) provides an interface for our RGB LEDs and the computational stack. This board is a daughterboard for the Adafruit 16-Channel PWM/Servo HAT, and enables connection with additional gadgets such as [ADS1015 12 Bit 4 Channel ADC](https://www.adafruit.com/product/1083), [Monochrome 128x32 I2C OLED graphic display](https://www.adafruit.com/product/931), and [Adafruit 9-DOF IMU Breakout - L3GD20H+LSM303](https://www.adafruit.com/product/1714). This item will require [soldering](#assembling-duckiebot-db17-soldering).
+The LED HAT ([](fig:led_hat)) provides an interface for our RGB LEDs and the computational stack. This board is a daughterboard for the Adafruit 16-Channel PWM/Servo HAT, and enables connection with additional gadgets such as [ADS1015 12 Bit 4 Channel ADC](https://www.adafruit.com/product/1083), [Monochrome 128x32 I2C OLED graphic display](https://www.adafruit.com/product/931), and [Adafruit 9-DOF IMU Breakout - L3GD20H+LSM303](https://www.adafruit.com/product/1714). This item will require [soldering](assembling-duckiebot-db17-soldering).
 
 This board is custom designed and can only be ordered in minimum runs of 3 pieces. The price scales down quickly with quantity, and lead times may be significant, so it is better to buy these boards in bulk.
 

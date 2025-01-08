@@ -68,7 +68,7 @@ The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane fol
 (mac-users-cli)=
 ### Option 2: Use the CLI (For Mac Users)
 
-If you are using MacOSX and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
+If you are using macOS and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
 
     dts duckiebot keyboard_control ![DUCKIEBOT_NAME] --cli
 

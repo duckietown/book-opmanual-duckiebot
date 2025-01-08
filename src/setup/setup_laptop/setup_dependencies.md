@@ -1,6 +1,6 @@
 ```{seo}
 :description: A step-by-step guide on installing the needed software dependencies on your Duckietown workstation.
-:keywords: Duckietown, setup, computer, Ubuntu, Windows, Mac OS, dependencies
+:keywords: Duckietown, setup, computer, Ubuntu, Windows, macOS, dependencies
 ```
 
 ## Step 1: Dependency Installation
@@ -53,11 +53,11 @@ There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
 
-````{tab-item} MacOSX
+````{tab-item} macOS
 
 **1) Install Git**
 
-Most versions of MacOS will already have Git installed, and you can check that it is installed
+Most versions of macOS will already have Git installed, and you can check that it is installed
 by running the command `git version` in a terminal. 
 However, if you don't have Git installed, you can follow 
 [these instructions](https://github.com/git-guides/install-git#install-git-on-mac) 

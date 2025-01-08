@@ -8,9 +8,9 @@
 
 ```{needget}
 * An assembled and initialized Duckiebot;
-* [Wheels calibration](#wheel-calibration) completed;
-* [Camera calibration](#camera-calib) completed;
-* [Joystick demo](#rc-control) has been successfully launched;
+* [Wheels calibration](wheel-calibration) completed;
+* [Camera calibration](camera-calib) completed;
+* [Joystick demo](rc-control) has been successfully launched;
 * A Duckietown city loop, as detailed in the [appearance specifications](book-opmanual-duckietown:book).
 ---
 * A Duckiebot driving autonomously in a Duckietown city loop, without other vehicles, intersections, or obstacles.
@@ -172,7 +172,7 @@ This can be due to a number of issues, e.g.: bad robot calibrations, bad percept
 * Check `rqt_image_view` and look at `image_with_lines`.
   * Check if you see enough segments. If not enough segments are visible, reset the Anti-Instagram filter.
   * Check if you see more segments and the color of the segments are according to the color of the lines in Duckietown
-* Check your camera [calibrations](#camera-calib) are good.
+* Check that your camera [calibrations](camera-calib) are good.
 ```
 
 ```{trouble}

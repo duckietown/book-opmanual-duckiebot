@@ -12,7 +12,7 @@ challenges with the [AIDO challenges infrastructure](book-research-aido:book).
 
 ```{needget}
 - A Duckiebot that is initialized
-- Laptop configured, according to [](#laptop-setup).
+- Laptop configured, according to [](laptop-setup).
 - That you are able to submit a challenge according to [](book-research-aido:cm-first).
 ---
 ```

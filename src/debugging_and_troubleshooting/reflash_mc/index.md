@@ -7,7 +7,7 @@
 # Debug - Re-flash Microcontroller
 
 ```{needget}
-* A Duckiebot of [configuration](#duckiebot-configurations) `DB18` or above.
+* A Duckiebot of [configuration](duckiebot-configurations) `DB18` or above.
 * A stable network connection to your Duckiebot.
 ---
 * A flashed microcontroller (not SD card) on the HUT board, with the latest code version.

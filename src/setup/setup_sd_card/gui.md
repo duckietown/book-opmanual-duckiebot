@@ -76,5 +76,5 @@ This happens when the downloaded compressed disk image file appears corrupted. Y
 ```{trouble}
 The verification process fails with error `Please set up a token using "dts tok set"`.
 ---
-Make sure you completed the Duckietown token setup procedure [](#dt-account).
+Make sure you completed the Duckietown token setup procedure [](dt-account).
 ```

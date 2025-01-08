@@ -68,7 +68,7 @@ Using the dashboard file tab, you can access files on your Duckiebot.
 
 <!--
 
-For more information about the files tab, see [here](#dashboard-tutorial-files).
+For more information about the files tab, see [here](dashboard-tutorial-files).
 
 -->
 

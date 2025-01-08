@@ -1,6 +1,6 @@
 ```{seo}
 :description: A step-by-step guide on how to install needed dependencies on your workstation for taking full advantage of teh Duckietown software infrastructure.
-:keywords: Duckietown, setup, laptop, workstation, computer, Ubuntu, OS, minimal requirements, supported OS, Docker, Git, Github, windows, mac OS
+:keywords: Duckietown, setup, laptop, workstation, computer, Ubuntu, OS, minimal requirements, supported OS, Docker, Git, Github, windows, macOS
 ```
 
 (laptop-setup-docker)=
@@ -86,11 +86,11 @@ You should see a message like `Hello from Docker!`
 
 ````
 
-````{tab-item} MacOSX
+````{tab-item} macOS
 
 **1) Install Docker**
 
-Follow [these instructions](https://docs.docker.com/docker-for-mac/install/) to install Docker on MacOS.
+Follow [these instructions](https://docs.docker.com/docker-for-mac/install/) to install Docker on macOS.
 Once done, follow the [post-install instructions](https://docs.docker.com/engine/install/linux-postinstall/)
 to configure your Docker environment.
 

@@ -133,25 +133,22 @@ This section (steps 3 to 18) guides you through the assembly of the *base-plate*
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_03.jpg
 ```
 
-```{note}
-You could try to use shorter screws in case the screws do not fully insert into the standoffs.
-```
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_04.jpg
 ```
 
-
 ```{note}
-Occasionally manufacturing tolerances (on the nut and the chassis) might prevent a flush fit. Trying a different nut or changing its orientation might solve the problem. Sometimes it may be convenient to use pliers.
+For steps 4 and 5, try using shorter screws if the suggested screws do not fully insert into the standoffs.
 ```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_05.jpg
 ```
 
-
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_06.jpg
 ```
 
+```{note}
+Occasionally manufacturing tolerances (on the nut and the chassis) might prevent a flush fit. Trying a different nut or changing its orientation might solve the problem. Sometimes it may be convenient to use pliers.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_07.jpg
 ```
@@ -243,7 +240,11 @@ You can try to mount the wheels even without the distance disks. But make sure t
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_23.jpg
 ```
 
+```{note}
+Connect the red fan cable to the 5V pin, as shown in step 23, or the 3.3V pin for a lower fan speed and less noise.
 
+![](../../_images/assembly/db21j/db21-rev1-hut-pins.png)
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_24.jpg
 ```
@@ -338,6 +339,9 @@ Make sure that both rows of pins on the 40-pin expansion header on the Jetson Na
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_40.jpg
 ```
 
+```{note}
+The above refers to the IMU cable from step 28.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_41.jpg
 ```
@@ -350,10 +354,6 @@ This section (steps 42 to 51) guides you through the assembly of the *front asse
 
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-overview-step_42-51.jpg
-```
-
-```{note}
-Ignore the cable routing for the ToF sensor in the figure above.
 ```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_42.jpg
@@ -369,7 +369,9 @@ Ignore the cable routing for the ToF sensor in the figure above.
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_44.jpg
 ```
 
-
+```{note}
+Optionally, complete step 44 after step 50.
+```
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_45.jpg
 ```

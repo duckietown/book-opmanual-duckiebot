@@ -21,11 +21,11 @@ Duckiebots `DB18` onwards can be obtained from the [Duckietown project store](ht
 
 | Model |  Computation  |              Sensing|             Actuation| Memory |       Power |       Notes   |
 |-------|:-------------:|:--------------------------------:|:---------------------------------:|:------:|:-----------------:|:----------------:|
-| [DB17](#duckiebot-config-db17)   	|      RPI3     	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	|   Off-the-shelf   	|                  	|
-| [DB18](#duckiebot-config-db18)   	|     RPI3B+    	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	| addressable LEDs 	|
-| [DB19](#duckiebot-config-db19)   	|     RPI3B+    	|      Camera, Wheel Encoders      	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	|                  	|
-| [DB21M](#duckiebot-config-db21m) 	|     JN2GB     	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  32GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})    	|    Chassis v1    	|
-| [DB21](#duckiebot-config-db21)  	| JN2GB / JN4GB 	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  64GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})   	|    Chassis v2    	|
+| [DB17](duckiebot-config-db17)   	|      RPI3     	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	|   Off-the-shelf   	|                  	|
+| [DB18](duckiebot-config-db18)   	|     RPI3B+    	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	| addressable LEDs 	|
+| [DB19](duckiebot-config-db19)   	|     RPI3B+    	|      Camera, Wheel Encoders      	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	|                  	|
+| [DB21M](duckiebot-config-db21m) 	|     JN2GB     	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  32GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})    	|    Chassis v1    	|
+| [DB21](duckiebot-config-db21)  	| JN2GB / JN4GB 	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  64GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})   	|    Chassis v2    	|
 
 Legend:
 
@@ -37,7 +37,7 @@ Legend:
 (duckiebot-config-db21)=
 ## Duckiebot version 2021, or `DB21`
 
-The Duckiebot `DB21` debuted with the "[Self-Driving Cars with Duckietown](https://www.duckietown.org/mooc)" massive open online course, as version [`DB21M`](#duckiebot-config-db21m).
+The Duckiebot `DB21` debuted with the "[Self-Driving Cars with Duckietown](https://www.duckietown.org/mooc)" massive open online course, as version [`DB21M`](duckiebot-config-db21m).
 
 
 Later revisions, referred to under the broader label `DB21` and then `DB21J`, improve the `DB21M` by:
@@ -47,7 +47,7 @@ Later revisions, referred to under the broader label `DB21` and then `DB21J`, im
 - introducing a newer version of the `HUT` (v3.15); which is backwards compatible and removes the need for an additional resistor on the top button;
 - downgrades the IMU version from `MPU-9250` to `MPU-6050` due to global chip shortages (2021-2022 chip crisis).
 
-To assemble a `DB21J` Duckiebot, follow [these](#assembling-duckiebot-db21j) instructions.
+To assemble a `DB21J` Duckiebot, follow [these](assembling-duckiebot-db21j) instructions.
 
 ```{note}
 You can obtain a `DB21J` Duckiebot from the [Duckietown project shop](https://cutt.ly/Q81Lg4q).  
@@ -72,9 +72,9 @@ The Duckiebot version `DB21M`.
 </div>
 -->
 
-The `DB21M` is readily recognized by its blazing blue chassis and triple-decker configuration. It is equipped with a sensor suite including: camera, time-of-flight sensor, inertial measurement unit (IMU) and wheel encoders. Moreover, the `DB21M` features new electronics (HUT v3.1, front and back bumpers), a screen, a button and a custom designed [Duckiebattery](#db-opmanual-dtbattery-v2) (not to be confused with the [Duckie-power-bank](#db-opmanual-dtbattery-v1)).
+The `DB21M` is readily recognized by its blazing blue chassis and triple-decker configuration. It is equipped with a sensor suite including: camera, time-of-flight sensor, inertial measurement unit (IMU) and wheel encoders. Moreover, the `DB21M` features new electronics (HUT v3.1, front and back bumpers), a screen, a button and a custom designed [Duckiebattery](db-opmanual-dtbattery-v2) (not to be confused with the [Duckie-power-bank](db-opmanual-dtbattery-v1)).
 
-To assemble a `DB21M` Duckiebot, follow [these](#assembling-duckiebot-db21m) instructions.
+To assemble a `DB21M` Duckiebot, follow [these](assembling-duckiebot-db21m) instructions.
 ```{note}
 `DB21M` Duckiebots are no longer manufactured. If you want to obtain one you might try to find inventory leftovers from Duckietown official distributors, or reach out to the [Duckietown hardware team](mailto:hardware@duckietown.com).  
 ```
@@ -86,7 +86,7 @@ To assemble a `DB21M` Duckiebot, follow [these](#assembling-duckiebot-db21m) ins
 (duckiebot-config-db19)=
 ## Duckiebot version 2019, or `DB19`
 
-The `DB19` is the latest version of the Duckiebot. You have a `DB19` Duckiebot for sure if you have the blue motors shown in figure [](#fig:dc-motor-db19).
+The `DB19` is the latest version of the Duckiebot. You have a `DB19` Duckiebot for sure if you have the blue motors shown in figure [](fig:dc-motor-db19).
 
 ```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/dc-motor-db19.png
 :width: 400px
@@ -115,7 +115,7 @@ The complete Duckiebot `DB19`.
 </div>
 -->
 
-To assemble a `DB19` Duckiebot, follow [these](#assembling-duckiebot-db19) instructions.
+To assemble a `DB19` Duckiebot, follow [these](assembling-duckiebot-db19) instructions.
 
 ```{note}
 `DB19` Duckiebots have been extremely successful but are no longer manufactured, and to the best of our knowledge only a few still exist unboxed. 
@@ -164,7 +164,7 @@ Another `DB18` Duckiebot assembly, with different battery.
 </div>
 -->
 
-To assemble a `DB18` Duckiebot, follow [these](#assembling-duckiebot-db18) instructions.
+To assemble a `DB18` Duckiebot, follow [these](assembling-duckiebot-db18) instructions.
 
 ```{note}
 `DB18` Duckiebots are no longer manufactured. There are very few unopened `DB18` boxes in the world. For additional information, reach out to contact the [Duckietown hardware team](mailto:hardware@duckietown.com).
@@ -233,7 +233,7 @@ It may be convenient at times to refer to hybrid configurations including any of
 - `DB17-l2`: _adds_ a bumpers set to `DB17`, in addition to the mechanical bits to assemble it;
 - `DB17-l3`: _adds_ a LED hat and 5 RGB LEDs to `DB17-l1l2`, in addition to the F-F wires to connect the LEDs to the LED board.
 
-Note: introducing the PWM hat in `DB17-l1` induces a _replacement_ of the [spliced cable](#assembling-duckiebot-db17-cable-splitting) powering solution for the DC motor hat. Details can be found in [](#assembling-duckiebot-db17).
+Note: introducing the PWM hat in `DB17-l1` induces a _replacement_ of the [spliced cable](assembling-duckiebot-db17-cable-splitting) powering solution for the DC motor hat. Details can be found in [](assembling-duckiebot-db17).
 
 
 - **Functions**: `DB17-l` is the necessary configuration to enable communication between Duckiebots, hence fleet behaviors (e.g., negotiating the crossing of an intersection). Subset configurations are sometimes used in a standalone way for: (`DB17-l1`) avoid using a sliced power cable to power the DC motor hat in `DB17`, and (`DB17-l2`) for purely aesthetic reasons.

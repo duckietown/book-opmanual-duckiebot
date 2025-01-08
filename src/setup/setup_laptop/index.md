@@ -8,7 +8,7 @@
 
 ```{needget}
 * A laptop or machine running Ubuntu 20.04 or 22.04
-* Alternatively: A laptop or machine running MacOS
+* Alternatively: A laptop or machine running macOS
 ---
 * Your laptop configured with Duckietown software and ready to sign into your accounts
 ```
@@ -50,8 +50,8 @@ Duckietown team and the whole community to provide you with technical support wh
   - 
 * - Other Linux distributions
   - Having Ubuntu is not an enforced requirement, and everything should in theory work on any Linux operating system. 
-* - MacOSX
-  - We provide instructions for setting up on MacOSX, but you may run into bugs as you venture further into 
+* - macOS
+  - We provide instructions for setting up on macOS, but you may run into bugs as you venture further into 
   development.
 * - Ubuntu installed via VM
   - This is possible, though network configuration is required.  See the section below for more 
@@ -92,14 +92,14 @@ Follow the
 for instructions.
 ````
 
-````{tab-item} MacOSX
+````{tab-item} macOS
 
 ```{warning}
 This configuration is not officially supported. We recommend using the Ubuntu Operating System for an 
 optimal experience.
 ```
 
-Select the MacOSX tab on each of the following laptop setup pages to follow the 
+Select the macOS tab on each of the following laptop setup pages to follow the 
 instructions specific to your operating system.
 ````
 
