@@ -1,3 +1,4 @@
+
 ```{seo}
 :description: A step-by-step guide on installing the needed software dependencies on your Duckietown workstation.
 :keywords: Duckietown, setup, computer, Ubuntu, Windows, macOS, dependencies

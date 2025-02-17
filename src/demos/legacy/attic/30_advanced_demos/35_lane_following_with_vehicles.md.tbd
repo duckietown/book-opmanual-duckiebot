@@ -75,11 +75,11 @@ Warning: First, make sure all old containers from the images `dt-duckiebot-inter
 
 Then, start all the drivers in `dt-duckiebot-interface`:
 
-    laptop $ dts duckiebot demo --demo_name all_drivers --duckiebot_name ![DUCKIEBOT_NAME] --package_name duckiebot_interface --image duckietown/dt-duckiebot-interface:daffy
+    laptop $ dts duckiebot demo --demo_name all_drivers --duckiebot_name ![DUCKIEBOT_NAME] --package_name duckiebot_interface --image duckietown/dt-duckiebot-interface:ente
     
 Start also the glue nodes that handle the joystick mapping and the kinematics:
 
-    laptop $ dts duckiebot demo --demo_name all --duckiebot_name ![DUCKIEBOT_NAME] --package_name car_interface --image duckietown/dt-car-interface:daffy
+    laptop $ dts duckiebot demo --demo_name all --duckiebot_name ![DUCKIEBOT_NAME] --package_name car_interface --image duckietown/dt-car-interface:ente
 
 Pull the lane following with vehicles image onto the duckiebot:
   
@@ -129,7 +129,7 @@ From here, you can enable visualizations by setting `verbose` to `true`:
    
 Run below command to start noVNC:
    
-    laptop $ dts start_gui_tools ![DUCKIEBOT_NAME] --base_image duckietown/dt-core:daffy
+    laptop $ dts start_gui_tools ![DUCKIEBOT_NAME] --base_image duckietown/dt-core:ente
 
 Log into noVNC by going to [http://localhost:6901/vnc.html](http://localhost:6901/vnc.html) and using the password `quackquack`. Once in noVNC, open up terminal and run:
 

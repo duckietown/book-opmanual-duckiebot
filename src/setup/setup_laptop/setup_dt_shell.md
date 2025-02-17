@@ -129,7 +129,6 @@ Install the Duckietown Shell using the following command,
 Once installed open a new shell and follow the setup prompts.
 
 ---
-
 **Checkpoint ✅**
 
 To confirm that dts was installed successfully, run the following test

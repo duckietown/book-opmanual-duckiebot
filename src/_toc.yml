@@ -55,6 +55,7 @@ parts:
         numbered: False
         chapters:
             -   file: demos/index
+            -   file: demos/general_procedure
             -   file: demos/supported/index
                 sections:
                     -   file: demos/supported/lane_following

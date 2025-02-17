@@ -11,7 +11,7 @@ Please note: You will need to specify the model of your Duckiebot when initializ
 
 * If you have a Duckiebot with a **2GB** Jetson Nano - the model is **DB21M**
 * If you have a Duckiebot with a **4GB** Jetson Nano - the model is **DB21J**
-* If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex. DB19 or DBR4)
+* If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex. DB19 or DBR)
 ```
 
 (burn-sd-card-video)=
