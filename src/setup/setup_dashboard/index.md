@@ -1,3 +1,8 @@
+```{seo}
+:description: How to set up your Duckiebot Dashboard in Duckietown.
+:keywords: Duckietown, Duckiebot, Dashboard, Compose, browser based UI
+```
+
 (duckiebot-dashboard-setup)=
 # Setup - Duckiebot Dashboard
 

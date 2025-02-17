@@ -1,3 +1,7 @@
+```{seo}
+:description: How to make sure my Duckiebot hardware works? Here are individual component testing protocols.
+:keywords: Duckietown, Duckiebot, hardware, components, testing, dashboard
+```
 (duckiebot-dashboard-user-hardware-testing-tools)=
 # Hardware Component Testing
 

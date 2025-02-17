@@ -1,3 +1,8 @@
+```{seo}
+:description: How to setup the Duckietown Dashboard for Duckiebots and Duckiedrones.
+:keywords: Duckietown, Duckiebot, Dashboard setup, Browser-based UI
+```
+
 (duckiebot-dashboard-use)=
 # Operation - Use the Dashboard
 
@@ -6,8 +11,7 @@ This section shows how to use the Duckietown Dashboard on the Duckiebot.
 (dashboard-overview)=
 ## What is in the Dashboard?
 
-The following video provides a brief tour of the most important features
-of the Duckietown Dashboard on your Duckiebot.
+The following video provides a brief tour of the most important features of the Duckietown Dashboard on your Duckiebot.
 
 <div figure-id="fig:howto-dashboard-use" figure-caption="Dashboard operation tutorial.">
 <dtvideo src="vimeo:527022343"/>
@@ -82,7 +86,7 @@ You can also use the menu button of each block to resize them.
 ```{trouble}
 I do not see the camera image on the dashboard.
 ---
-This could be caused by a few issues. Make sure you are accessing the dashboard using `https://ROBOT_HOSTNAME.local/` instead of directly accessing the dashboard using robot IP address. Make sure the lens cap has been removed from your camera. If you still don't see an image, jump to the [Operation - Make it See](make-it-see) page for more debugging options.
+This could be caused by a few issues. Make sure you are accessing the dashboard using `http://ROBOT_HOSTNAME.local/` instead of directly accessing the dashboard using robot IP address. Make sure the lens cap has been removed from your camera. If you still don't see an image, jump to the [Operation - Make it See](make-it-see) page for more debugging options.
 ```
 
 (dashboard-robot-health)=

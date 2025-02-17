@@ -1,3 +1,8 @@
+```{seo}
+:description: Before getting started with Duckietown you need to set up your Duckiebot. This section provides a step-by-step guide on how to initialize your Duckiebot, by flashing the provided SD card.
+:keywords: Duckietown, setup, SD card initialization, dts init sd card, duckiebot
+```
+
 (setup-duckiebot-sd-card)=
 # Setup - Duckiebot SD Card
 

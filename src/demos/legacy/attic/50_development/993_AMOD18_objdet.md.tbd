@@ -277,7 +277,7 @@ Resolution: Make sure that the rospicam container is running.
 Symptom: The ros nodes cannot communicate with each other.
 
 
-Resolution: If you are using docker on Mac OSX, there seems to be an issue with the network of docker containers. We recommend to use docker on Ubuntu 16.04. We have tested it and everything is fine.
+Resolution: If you are using docker on macOS, there seems to be an issue with the network of docker containers. We recommend to use docker on Ubuntu 16.04. We have tested it and everything is fine.
 
 
 

@@ -1,3 +1,8 @@
+```{seo}
+:description: How to create a simulator ROS wrapper in Duckietown?
+:keywords: duckietown, LX, learning experience, learning module, curricula, curriculum, robotics class, free robotics class, robotics course, online robotics, autonomous driving, duckiebot, db21, db21-j4, AV, autonomous vehicle, self-driving car, self-driving, robot autonomy, AI robotics, simulation, no VNC, Gym-Duckietown, ROS, learn ROS, robot operating system
+```
+
 (lx-simulator-ros)=
 # Creating a Simulator ROS Wrapper
 

@@ -1,3 +1,8 @@
+```{seo}
+:description: How to set up your Docker account in Duckietown.
+:keywords: Duckietown, Docker, setup, account
+```
+
 ## Step 2: Docker Account Setup
 
 Duckietown leverages containerization to ensure software portability and reproducibility.
@@ -49,9 +54,7 @@ most of the back-end operations involving docker.
 
 You can pass wour DockerHub credentials to the Duckietown Shell by running the following command,
 ```bash
-dts config docker credentials set \
-    --username DOCKERHUB_USERNAME \
-    --password DOCKERHUB_ACCESS_TOKEN
+dts config docker credentials set --username DOCKERHUB_USERNAME --password DOCKERHUB_ACCESS_TOKEN
 ```
 
 ```{admonition} For developers
@@ -97,7 +100,7 @@ and they will be more complex to fix. Instead, if you do not get the expected ou
   for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/zt-21zgbg3wk-SnejN9XG3SEaHHKuHqDWkg). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 
 There you can request an invitation to the [Duckietown Stack Overflow](https://stackoverflow.com/c/duckietown/questions), in particular, following [these instructions](https://duckietown.slack.com/archives/CHHQJ0E0H/p1670874390660429).
 

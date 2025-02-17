@@ -1,3 +1,8 @@
+```{seo}
+:description: A liste of currently supported Duckietown Learning Experiences (LX). 
+:keywords: duckietown, LX, learning experience, learning module, curricula, curriculum, robotics class, free robotics class, robotics course, online robotics, autonomous driving, duckiebot, db21, db21-j4, AV, autonomous vehicle, self-driving car, self-driving, robot autonomy, AI robotics, simulation, hardware, jupyter notebook, nvidia jetson nano 4gb, jetson nano
+```
+
 (db-supported-lx-temp)=
 # Supported Learning Experiences 
 

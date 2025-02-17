@@ -1,3 +1,9 @@
+```{seo}
+:description: How to reset the Duckietown Duckiebot browser dashboard. 
+:keywords: Duckietown, Duckiebot, dashboard, browser, UI
+```
+
+(reset-dashboard)=
 # Reset Dashboard
 
 Sometimes the Dashboard's database can get corrupted due to an improper shutdown of the robot.

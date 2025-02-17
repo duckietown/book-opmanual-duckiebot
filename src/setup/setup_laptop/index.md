@@ -1,9 +1,14 @@
+```{seo}
+:description: Before getting started with Duckietown you need to set up your computer. This section provides a step-by-step guide on how to set up your Duckietown workstation.
+:keywords: Duckietown, setup, laptop, workstation, computer, Ubuntu, OS, minimal requirements, supported OS
+```
+
 (laptop-setup)=
 # Setup - Laptop
 
 ```{needget}
 * A laptop or machine running Ubuntu 20.04 or 22.04
-* Alternatively: A laptop or machine running MacOS
+* Alternatively: A laptop or machine running macOS
 ---
 * Your laptop configured with Duckietown software and ready to sign into your accounts
 ```
@@ -45,8 +50,8 @@ Duckietown team and the whole community to provide you with technical support wh
   - 
 * - Other Linux distributions
   - Having Ubuntu is not an enforced requirement, and everything should in theory work on any Linux operating system. 
-* - MacOSX
-  - We provide instructions for setting up on MacOSX, but you may run into bugs as you venture further into 
+* - macOS
+  - We provide instructions for setting up on macOS, but you may run into bugs as you venture further into 
   development.
 * - Ubuntu installed via VM
   - This is possible, though network configuration is required.  See the section below for more 
@@ -68,7 +73,7 @@ If you are running Ubuntu in a VM make sure that you are using a Bridged network
 (for example VirtualBox uses NAT by default). This allows you to be on the same subnetwork
 as your Duckiebot.
 
-Sometimes when running a VMware machine on a Mac OS host, it is neccessary to have two
+Sometimes when running a VMware machine on a macOS host, it is neccessary to have two
 network adapters: _Share with my Mac_ for connecting to the internet and _Bridged Networking_
 for connecting to the Duckiebot.
 
@@ -87,14 +92,14 @@ Follow the
 for instructions.
 ````
 
-````{tab-item} MacOSX
+````{tab-item} macOS
 
 ```{warning}
 This configuration is not officially supported. We recommend using the Ubuntu Operating System for an 
 optimal experience.
 ```
 
-Select the MacOSX tab on each of the following laptop setup pages to follow the 
+Select the macOS tab on each of the following laptop setup pages to follow the 
 instructions specific to your operating system.
 ````
 

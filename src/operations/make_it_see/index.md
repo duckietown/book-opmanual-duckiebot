@@ -1,3 +1,8 @@
+```{seo}
+:description: How to access the Duckiebot camera stream (or, see what it sees).
+:keywords: Duckietown, Duckiebot, camera stream, perception, image sensing
+```
+
 (make-it-see)=
 # Operation - Make it See
 
@@ -154,10 +159,6 @@ and look at the output to find the Duckiebot interface container and verify that
 If that image is not running, you should update your Duckiebot to restart all continers with 
 
 `dts duckiebot update ![DUCKIEBOT_NAME]`
-
-Or to manually start just the `duckiebot-interface`, do:
-
-`docker -H ![DUCKIEBOT_NAME].local run --name duckiebot-interface -v /data:/data --privileged --network=host -dit --restart unless-stopped duckietown/dt-duckiebot-interface:daffy-arm32v7`
 
 ```{seealso}
 For more information about `rostopic`, see [](using-no-vnc). 

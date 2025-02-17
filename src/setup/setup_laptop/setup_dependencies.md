@@ -1,4 +1,10 @@
-# Step 1: Dependency Installation
+
+```{seo}
+:description: A step-by-step guide on installing the needed software dependencies on your Duckietown workstation.
+:keywords: Duckietown, setup, computer, Ubuntu, Windows, macOS, dependencies
+```
+
+## Step 1: Dependency Installation
 
 Select the tab for your operating system below, and follow the instructions to begin installing the Duckietown software dependencies.
 
@@ -43,16 +49,16 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````
 
-````{tab-item} MacOSX
+````{tab-item} macOS
 
 **1) Install Git**
 
-Most versions of MacOS will already have Git installed, and you can check that it is installed
+Most versions of macOS will already have Git installed, and you can check that it is installed
 by running the command `git version` in a terminal. 
 However, if you don't have Git installed, you can follow 
 [these instructions](https://github.com/git-guides/install-git#install-git-on-mac) 
@@ -123,7 +129,7 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 
@@ -161,7 +167,7 @@ If you continue past a test that did not work, you will have further software is
 * If you run into any issues that can't be solved using the troubleshooting sections, join the Duckietown community on StackOverflow and Slack following the instructions below and search for previous solutions.
 
 You can join the 
-[Duckietown community on Slack at this link](https://join.slack.com/t/duckietown/shared_invite/enQtNTU0Njk4NzU2NTY1LWM2YzdlNmJmOTg4MzAyODc2YTI3YTc5MzE2MThkZGUwYTFkZWQ4M2ZlZGU1YTZhYjg5YTgzNDkyMzI2ZjNhZWE). 
+[Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````

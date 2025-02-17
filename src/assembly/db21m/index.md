@@ -1,7 +1,10 @@
 (assembling-duckiebot-db21m)=
 # Assembly - Duckiebot `DB21M`
 
-
+```{seo}
+:description: Assembly instructions for the Duckiebot model DB21-M, with Jetson Nano 2GB.
+:keywords: Duckietown, Duckiebot, DB21M, assembly, instructions, how to assemble a duckiebot
+```
 
 <!--
 

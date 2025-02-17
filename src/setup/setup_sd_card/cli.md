@@ -1,3 +1,8 @@
+```{seo}
+:description: Terminal interface for burning your Duckiebot SD card. An alternative to the graphical user interface (GUI).
+:keywords: Duckietown, setup, SD card, initialization, dts init sd card, terminal interface 
+```
+
 (burn-sd-card)=
 # Burn the SD card - CLI
 
@@ -114,5 +119,5 @@ This happens when the downloaded compressed disk image file appears corrupted. Y
 ```{trouble}
 The verification process fails with error `Please set up a token using "dts tok set"`.
 ---
-Make sure you completed the Duckietown token setup procedure [](#dt-account).
+Make sure you completed the Duckietown token setup procedure [](dt-account).
 ```

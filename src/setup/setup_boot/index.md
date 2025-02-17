@@ -1,3 +1,8 @@
+```{seo}
+:description: Guide on turning on your Duckiebot for the first time.
+:keywords: Duckietown, Duckiebot, first boot, boot, 
+```
+
 (duckiebot-boot)=
 # Setup - Booting the Duckiebot
 

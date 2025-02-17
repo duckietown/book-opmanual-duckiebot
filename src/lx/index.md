@@ -1,3 +1,8 @@
+```{seo}
+:description: Duckietown learning experiences
+:keywords: Duckietown, Duckiebot, learning experience, LX
+```
+
 (db-lx)=
 # Introduction to Learning Experiences 
 

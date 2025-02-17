@@ -1,5 +1,10 @@
+```{seo}
+:description: Duckietown remote support
+:keywords: Duckietown, Duckiebot, support, remote
+```
+
 (request-support)=
-# Requesting a Support Connection
+# Support - Requesting a Support Connection
 
 (request-support-when)=
 ## When and why should I run this procedure?

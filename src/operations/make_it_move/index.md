@@ -1,3 +1,8 @@
+```{seo}
+:description: How to remote control a Duckiebot through a keyboard (or joystick). Welcome to open loop control.
+:keywords: Duckietown, Duckiebot, remote control, keyboard control
+```
+
 (rc-control)=
 # Operation - Make it Move
 
@@ -18,7 +23,7 @@ The easiest way to move a Duckiebot is by using the `keyboard_control` command p
 
 ### Option 1: Use the GUI (For Linux Users)
 
-If you are using Mac OSX, [see Option 2](mac-users-cli). 
+If you are using macOS, [see Option 2](mac-users-cli). 
 
 To move your Duckiebot using your computer's keyboard open a terminal and run:
 
@@ -63,7 +68,7 @@ The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane fol
 (mac-users-cli)=
 ### Option 2: Use the CLI (For Mac Users)
 
-If you are using MacOSX and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
+If you are using macOS and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
 
     dts duckiebot keyboard_control ![DUCKIEBOT_NAME] --cli
 

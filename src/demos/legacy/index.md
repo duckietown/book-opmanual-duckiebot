@@ -13,3 +13,9 @@ Duckietown token correctly set up;
 
 ```{tableofcontents}
 ```
+
+
+```{seo}
+:description: Duckietown out of the box autonomous behaviors for Duckiebots. 
+:keywords: duckietown, demo, autonomous driving, demonstration, duckiebot, db21, db21-j4, AV, autonomous vehicle, self-driving car, self-driving, robot autonomy, AI robotics, demo
+```

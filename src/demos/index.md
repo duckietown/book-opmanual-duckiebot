@@ -1,3 +1,8 @@
+```{seo}
+:description: Demos in Duckietown are out-of-the-box autonomous behaviors that run with a line code.
+:keywords: duckietown, demo, autonomous driving, demonstration, duckiebot, db21, db21-j4, AV, autonomous vehicle, self-driving car, self-driving, robot autonomy, AI robotics
+```
+
 (db-demos)=
 # Introduction to Demos
 
@@ -5,7 +10,7 @@ This section lists all Duckietown _demos_. By _demos_ we mean behaviors that are
 
 - **Supported**: these are polished demos that are actively maintained. You should be able to follow the instructions and obtain the expected outcomes without errors.
 
-- **Legacy**: these demos are either under development or worked at some point in the past. This content is not actively supported at this point in time but might work if special attention is provided. We leave this non-polished content here to provide ideas on projects or classes. We welcome contributions to these materials. If you would like to see some of these demos moved to the "supported" section do not hesitate to let the Duckietown team know on Slack.
+- **Legacy**: these demos are either under development or worked at some point in the past. This content is not actively supported at this point in time but might work if special attention is provided. We leave this non-polished content here to provide ideas on projects or classes. We welcome contributions to these materials. If you would like to see some of these demos moved to the "supported" section do not hesitate to let the Duckietown team know. 
 
 
 <!--

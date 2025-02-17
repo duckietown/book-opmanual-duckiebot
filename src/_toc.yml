@@ -82,6 +82,7 @@ parts:
         chapters:
             - file: debugging_and_troubleshooting/network_config/index
             - file: debugging_and_troubleshooting/reflash_mc/index
+            - file: debugging_and_troubleshooting/update/duckiebattery-update
             - file: debugging_and_troubleshooting/update/index
             - file: debugging_and_troubleshooting/support/index
             - file: debugging_and_troubleshooting/reset_dashboard
@@ -94,3 +95,10 @@ parts:
             -   file: preliminaries_software/docker/index
             -   file: preliminaries_software/ssh/index
             -   file: preliminaries_hardware/circuits_batteries/index
+
+    -   caption: Protips
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: protips/introduction-to-protips
+            -   file: protips/duckiebot-remote-connection
