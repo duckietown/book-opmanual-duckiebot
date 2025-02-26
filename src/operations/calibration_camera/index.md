@@ -23,7 +23,7 @@ Your camera intrinsics and extrinsics are calibrated and stored on the Duckiebot
 :width: 20em
 :name: fig:calibration_checkerboard
 
-Duckiebot calibration checkerboard
+Duckiebot calibration checkerboard pattern
 ```
 
 If you do not have one already:
