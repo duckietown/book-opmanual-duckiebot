@@ -65,9 +65,9 @@ dts :  Correctly identified as uid = ***
 
 If you have encountered issues or something is not behaving as expected, please stop here, it is a good time to ask for help on Stack Overflow.
 
-You can join the 
+First, join the 
 [Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
 
-There you can request an invitation to the Duckietown Stack Overflow, by following [these instructions](https://duckietown.slack.com/archives/CHHQJ0E0H/p1670874390660429).
+Then, after you are on Slack, [join the Duckietown Stack Overflow](https://duckietown.slack.com/archives/CHHQJ0E0H/p1670874390660429).
 
 

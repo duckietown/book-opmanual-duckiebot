@@ -239,7 +239,7 @@ I can SSH to the Duckiebot but not without a password
 ---
 Check the file `~.ssh/config` and make sure you add your `ssh` key there, in case it doesn't exists.
 
-The `init_sd_card` [initialization procedure](ssetup-duckiebot-sd-card) should generate a paragraph in the above file in the following format:
+The `init_sd_card` [initialization procedure](setup-duckiebot-sd-card) should generate a paragraph in the above file in the following format:
 
 ``
     Host duckiebot

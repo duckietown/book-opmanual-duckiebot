@@ -10,9 +10,9 @@ parts:
         chapters:
             -   file: preliminaries_hardware/duckiebot_configurations/index
             -   file: preliminaries_hardware/get_hardware/index
-            -   file: assembly/db21j/index
-            -   file: assembly/db21m/index
-            -   file: debugging_and_troubleshooting/faq/index
+            -   file: assembly/db21j/assembly-instructions-db21j
+        #    -   file: assembly/db21m/assembly-instructions-db21m
+            -   file: debugging_and_troubleshooting/faq/duckiebot-troubleshooting-faq
 
     -   caption: Software Setup
         maxdepth: 2
@@ -31,15 +31,15 @@ parts:
                 sections:
                     -   file: setup/setup_sd_card/gui
                     -   file: setup/setup_sd_card/cli
-            -   file: setup/setup_boot/index
-            -   file: setup/setup_dashboard/index
+            -   file: setup/setup_boot/setup-booting-the-duckiebot
+            -   file: setup/setup_dashboard/setup-duckiebot-dashboard
 
     -   caption: Duckiebot Operations
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: operations/handling/db21
-            -   file: operations/dashboard/index
+            -   file: operations/handling/db21-handling
+            -   file: operations/dashboard/duckietown-dashboard-operation-instructions
                 sections:
                     -   file: operations/dashboard/user_hardware_testing_tools
             -   file: operations/make_it_move/index
@@ -71,8 +71,8 @@ parts:
         chapters:
             -   file: lx/index
             -   file: lx/supported/index
-                sections:
-                    -   file: lx/supported/general_running_lx
+                #sections:
+                #    -   file: lx/supported/general_running_lx
             -   file: lx/experimental/index
                 sections:
                     -   file: lx/experimental/simulator_ROS_interface_lx
