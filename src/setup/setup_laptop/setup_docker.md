@@ -99,9 +99,7 @@ to configure your Docker environment.
 
 
 ```{attention}
-If you are using **Docker Desktop for Mac**, you will need to specify the amount of memory usable by Docker 
-to run the Duckietown containers. Open the Docker menu to _Preferences_ then _Advanced_. 
-Use the slider in the _Advanced_ tab to increase Memory to a minimum of `4.5GB`.
+If you are using **Docker Desktop for Mac**, you will need to specify the amount of memory usable by Docker to run the Duckietown containers. Open the Docker menu to _Preferences_ then _Advanced_. Use the slider in the _Advanced_ tab to increase Memory to a minimum of `4.5GB`.
 ```
 
 ---
