@@ -6,7 +6,8 @@
 (db-demos)=
 # Introduction to Demos
 
-This section lists all Duckietown _demos_. By _demos_ we mean behaviors that are easily executed, but not explained. Demos are useful for doing rather than learning, e.g., to quickly test a behavior or showcase it in outreach circumstances. 
+This section lists some Duckietown _demos_. By _demos_ we mean behaviors that are easily executed, but not necessarily well-explained. 
+Demos are useful for doing rather than learning, e.g., to quickly test a behavior or showcase it in outreach circumstances. 
 
 - **Supported**: these are polished demos that are actively maintained. You should be able to follow the instructions and obtain the expected outcomes without errors.
 
@@ -16,7 +17,6 @@ This section lists all Duckietown _demos_. By _demos_ we mean behaviors that are
 <!--
 ```{needget}
 An internet connection;
-About 10 minutes;
 A computer with the Duckietown Shell command [installed and correctly setup](laptop-setup);
 ---
 Duckietown token correctly set up;

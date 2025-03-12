@@ -55,13 +55,14 @@ parts:
         numbered: False
         chapters:
             -   file: demos/index
-            -   file: demos/general_procedure
+            -   file: demos/running_demos
             -   file: demos/supported/index
                 sections:
                     -   file: demos/supported/lane_following
+                    -   file: demos/supported/lane_following_pedestrians
+                    -   file: demos/supported/lane_following_intersections
             -   file: demos/legacy/index
                 sections:
-                    -   file: demos/legacy/running_demos
                     -   file: demos/legacy/lane_following_with_obstacles
 
     -   caption: Learning Experiences
