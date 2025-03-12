@@ -1,5 +1,5 @@
 ```{seo}
-:description: A step-by-step guide on how to install needed dependencies on your workstation for taking full advantage of teh Duckietown software infrastructure.
+:description: A step-by-step guide on how to install needed dependencies on your workstation for taking full advantage of the Duckietown software infrastructure.
 :keywords: Duckietown, setup, laptop, workstation, computer, Ubuntu, OS, minimal requirements, supported OS, Docker, Git, Github, windows, macOS
 ```
 
@@ -91,12 +91,16 @@ You should see a message like `Hello from Docker!`
 **1) Install Docker**
 
 Follow [these instructions](https://docs.docker.com/docker-for-mac/install/) to install Docker on macOS.
+
+<!-- # These instructions apply only to Linux installations #
 Once done, follow the [post-install instructions](https://docs.docker.com/engine/install/linux-postinstall/)
 to configure your Docker environment.
+-->
+
 
 ```{attention}
 If you are using **Docker Desktop for Mac**, you will need to specify the amount of memory usable by Docker 
-in order to run the Duckietown containers. Open the Docker menu and go to _Preferences_ then _Advanced_. 
+to run the Duckietown containers. Open the Docker menu to _Preferences_ then _Advanced_. 
 Use the slider in the _Advanced_ tab to increase Memory to a minimum of `4.5GB`.
 ```
 
