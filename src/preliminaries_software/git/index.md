@@ -40,7 +40,7 @@ Use these commands to tell Git who you are:
     git config --global user.email "![email]"
     git config --global user.name  "![full name]"
 
-
+(prelim-sw-git-tips)=
 ## Git tips
 
 ### Fork a repository
@@ -83,7 +83,7 @@ for a new commit or that you are up-to-date (everything is ok).
 
 ### Commit and Push changes
 
-After you edited some files, you want to push your changes from the local to the remote location.
+After you edit some files, you want to push your changes from the local to the remote location.
 Check the changes that need to be committed/pushed with the command,
 
     git status
@@ -92,7 +92,7 @@ Use the following command to mark a `![file]` as ready to be committed,
 
     git add ![file]
 
-Once you marked all the files you want to include in the next commit, complete the commit with
+Once you have marked all the files you want to include in the next commit, complete the commit with
 a commit message to let collaborators know what you have changed,
 
     git commit -m "![commit-message]"
@@ -122,16 +122,17 @@ To delete a remote branch you need to push the delete command:
 
 ### Open a pull request
 
-If you are working on another branch than the master or if you forked a repository and want to propose changes you made into the master, you can open a so-called `pull-request`. In order to do so, press the corresponding tab in the dashboard of a repository and then press the green button `New pull request`. You will be asked which branch from which fork you want to merge.
+If you are working on another branch than the master or forked a repository and want to propose changes you made into the master, you can open a so-called `pull-request`. To do so, press the corresponding tab in the dashboard of a repository and then press the green button `New pull request`. You will be asked which branch from which fork you want to merge.
 
 ### Keep your password stored locally
 
-If you are setting up Github on your own personal computer, and you use two factor authentication, it might be time consuming to configure that every time you need to provide git credentials. Instead, you can have the computer to remember your password. To do that, you can:
+If you are setting up Github on your personal computer, and you use two-factor authentication, it might be time-consuming to configure that every time you need to provide git credentials. Instead, you can have the computer to remember your password. To do that, you can:
 
     git config --global credential.helper store
 
-Please note you should only do that if this is your personal computer!
+Note: you should only do this on your **personal** computer.
 
+(prelim-sw-ssh)=
 ## Connect with SSH
 
 From [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys#about-ssh-keys):
@@ -139,6 +140,7 @@ From [GitHub](https://docs.github.com/en/authentication/connecting-to-github-wit
 You can use SSH to perform Git operations in repositories on GitHub.com.
 
 If you have an existing SSH key, you can use the key to authenticate Git operations over SSH.
+
 
 ### Checking for existing SSH keys
 
@@ -218,6 +220,7 @@ Before you generate a new SSH key, you should check your local machine for exist
 ````
 `````
 
+(prelim-sw-ssh-keys)=
 ### Generating a new SSH key
 
 From [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key):
@@ -525,6 +528,7 @@ If you are using macOS or Linux, you may need to update your SSH client or insta
 `````
 ``````
 
+(prelim-sw-ssh-keys-upload)=
 ### Adding a new SSH key to your GitHub account
 
 From [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account):
