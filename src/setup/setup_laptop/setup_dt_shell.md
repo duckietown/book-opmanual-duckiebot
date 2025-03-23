@@ -1,5 +1,5 @@
 ```{seo}
-:description: The Duckietown Shell (dts) is a command line interface that abstracts many of teh nitty gritty details of daily operations in Duckietown. Here is an installation guide to dts.
+:description: The Duckietown Shell (dts) is a command line interface that abstracts many of the nitty-gritty details of daily operations in Duckietown. Here is an installation guide to dts.
 :keywords: Duckietown, setup, laptop, DTS, Duckietown shell, installation, how to install the duckietown shell
 ```
 
