@@ -100,7 +100,7 @@ We suggest adding the above lines to your shell configuration file, if you do no
 If you do not already know which shell you are using, run:
 `basename $SHELL`
 If `bash` - you'll need to modify your `.bashrc` file.
-If `zsh` - you'll need to modify yout `.zshrc` file.
+If `zsh` - you'll need to modify your `.zshrc` file.
 
 Remember to `source` your config file if you want to keep using the current shell session.
 
