@@ -102,7 +102,15 @@ If you do not already know which shell you are using, run:
 If `bash` - you'll need to modify your `.bashrc` file.
 If `zsh` - you'll need to modify yout `.zshrc` file.
 
+Remember to `source` your config file if you want to keep using the current shell session.
 
+**3) Install pip3**
+Your computer may already have pip3 installed.
+Check by running `pip3 --version`.
+
+If you're rewarded with a successful version output, continue on.
+
+If not, get on google and search for "How to install pip3 macosx"
 
 
 
@@ -115,15 +123,6 @@ Add the path `/usr/X11/bin` to your `PATH` variable. e.g., `PATH=/usr/X11/bin:${
 ---
 
 **Checkpoint ✅**
-
-Before continuing, run the following test command
-
-```{testexpect}
-```bash 
-pip3 --version
----
-This command should output a version number for the `pip3` package.
-```
 
 ```{tip}
 Never skip a checkpoint!  
