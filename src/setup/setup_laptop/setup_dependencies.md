@@ -84,10 +84,9 @@ After installing `XQuartz`, run it by executing the command,
 Go to "Preferences" and in the "Security" tab make sure that the checkbox next to 
 "Allow connections from network clients" is ticked. You can now close `XQuartz`.
 
-You may want to add the following lines to your `.bashrc` file.
 
-```{attention}
-If you are using `zsh`, replace the `.bashrc` in the command below with `.zshrc` instead.
+```{note}
+If you just installed XQuartz, you may need to restart your computer before the following command runs successfully in the Shell.
 ```
 
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
@@ -96,8 +95,16 @@ If you are using `zsh`, replace the `.bashrc` in the command below with `.zshrc`
 These will find your IP and then allow incoming connections to it in order to be able to 
 popup windows from within docker containers.
 
-Alternatively, if you do not wish to make these changes permanent, you can run the commands above 
-every time you open a new terminal.
+We suggest adding the above lines to your shell configuration file, if you do not wish to run the commands above every time you open a new terminal.
+
+If you do not already know which shell you are using, run:
+`basename $SHELL`
+If `bash` - you'll need to modify your `.bashrc` file.
+If `zsh` - you'll need to modify yout `.zshrc` file.
+
+
+
+
 
 ```{trouble}
 The command `xhost` is not found.
