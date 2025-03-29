@@ -92,26 +92,28 @@ If you just installed XQuartz, you may need to restart your computer before the 
     export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     xhost +$IP
 
-These will find your IP and then allow incoming connections to it in order to be able to 
-popup windows from within docker containers.
+This will find your IP address and allow incoming connections, to enable popping up windows from within Docker containers.
 
 We suggest adding the above lines to your shell configuration file, if you do not wish to run the commands above every time you open a new terminal.
 
 If you do not already know which shell you are using, run:
-`basename $SHELL`
+
+    basename $SHELL
+
 If `bash` - you'll need to modify your `.bashrc` file.
 If `zsh` - you'll need to modify your `.zshrc` file.
 
 Remember to `source` your config file if you want to keep using the current shell session.
 
 **3) Install pip3**
-Your computer may already have pip3 installed.
-Check by running `pip3 --version`.
 
-If you're rewarded with a successful version output, continue on.
+Your computer may already have `pip3` installed. Check by running:
+ 
+    pip3 --version
 
-If not, get on google and search for "How to install pip3 macosx"
+If you are rewarded with a successful version output, continue on. If not, search online for "How to install pip3 macOSx", e.g., with Homebrew:
 
+    brew install python3
 
 
 ```{trouble}
