@@ -73,7 +73,7 @@ If you are running Ubuntu in a VM make sure that you are using a Bridged network
 (for example VirtualBox uses NAT by default). This allows you to be on the same subnetwork
 as your Duckiebot.
 
-Sometimes when running a VMware machine on a macOS host, it is neccessary to have two
+Sometimes when running a VMware machine on a macOS host, it is necessary to have two
 network adapters: _Share with my Mac_ for connecting to the internet and _Bridged Networking_
 for connecting to the Duckiebot.
 
@@ -95,8 +95,7 @@ for instructions.
 ````{tab-item} macOS
 
 ```{warning}
-This configuration is not officially supported. We recommend using the Ubuntu Operating System for an 
-optimal experience.
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
 ```
 
 Select the macOS tab on each of the following laptop setup pages to follow the 
@@ -104,6 +103,11 @@ instructions specific to your operating system.
 ````
 
 ````{tab-item} Windows (Beta)
+
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
+
 Install WSL:
 
 1. Open the `Start` menu and search for `Command prompt`.

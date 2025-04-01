@@ -88,6 +88,10 @@ You should see a message like `Hello from Docker!`
 
 ````{tab-item} macOS
 
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
+
 **1) Install Docker**
 
 Follow [these instructions](https://docs.docker.com/docker-for-mac/install/) to install Docker on macOS.
@@ -120,19 +124,19 @@ You should see a message like `Hello from Docker!`
 
 
 ```{trouble}
-If just installed and/or signed up for Docker, you may encounter an authorization issue like this:
+If you just installed and/or signed up for Docker, you may encounter an authorization issue like this:
 
-``bash
-Unable to find image 'hello-world:latest' locally docker: Error response from daemon: failed to resolve reference "docker.io/library/hello-world:latest": failed to authorize: failed to fetch oauth token: unexpected status from GET request to https://auth.docker.io/token?scope=repository%3Alibrary%2Fhello-world%3Apull&service=registry.docker.io: 401 Unauthorized
-``
+<p><code>Unable to find image 'hello-world:latest' locally docker: Error response from daemon: failed to resolve reference "docker.io/library/hello-world:latest": failed to authorize: failed to fetch oauth token: unexpected status from GET request to https://auth.docker.io/token?scope=repository%3Alibrary%2Fhello-world%3Apull&service=registry.docker.io: 401 Unauthorized</code></p>
+<br>
+
 ---
 There is/may be [a bug with login authentication with Docker Hub.](https://forums.docker.com/t/failed-to-authorize-failed-to-fetch-oauth-token/145067/4)
 
 Force a re-login by entering:
 
-``bash
-docker login -u [YOUR DOCKER USERNAME]
-``
+
+<pre><code>docker login -u [YOUR DOCKER USERNAME]</code></pre>
+
 You will then need to enter your docker account password and, assuming correct login, be rewarded with `Login Succeeded`.
 Attempt to run the `hello-world` container again.
 
@@ -140,7 +144,11 @@ Attempt to run the `hello-world` container again.
 
 ````
 
-````{tab-item} Windows (Beta)
+````{tab-item} Windows
+
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
 
 **1) Install Docker**
 

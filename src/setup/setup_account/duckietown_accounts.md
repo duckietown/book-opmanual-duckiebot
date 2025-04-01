@@ -44,25 +44,59 @@ instructions presented in the shell
 
 Run the following tests to check your setup:
 
-```{testexpect}
+````{testexpect}
 If the Duckietown Shell was installed correctly, then you can run a command like this
-```bash
-dts version
+   ```bash
+   dts version
+   ```
 ---
 Verify that the version of the commands is set to `daffy`.
-```
+````
 
-```{testexpect}
+````{testexpect}
 Check if your token was successfully by running
-```bash
-dts tok status
+   ```bash
+   dts tok status
+   ```
 ---
 This should output a message like the following,
-```bash
-dts :  Correctly identified as uid = ***
-```
+   ```bash
+   dts :  Correctly identified as uid = ***
+   ```
+````
 
 If you have encountered issues or something is not behaving as expected, please stop here, it is a good time to ask for help on Stack Overflow.
+
+````{trouble}
+(For OSX) DuckieTown shell fails to install dependencies and throws errors similar to:
+
+   ```none
+   error: subprocess-exited-with-error
+   × Getting requirements to build wheel did not run successfully.
+   exit code: 1
+   ╰─> See above for output.
+
+   note: This error originates from a subprocess, and is likely not a problem with pip.
+---
+DuckieTown shell dependencies are dictated by the <code>requirements.txt</code> file located at
+
+<pre>~/.duckietown/shell/profiles/daffy/commands/duckietown/__command_set__/requirements.txt</pre>
+
+<p>Open the `requirements.txt` file and compare each dependency to your installed packages via</p>
+
+<pre><code>pip3 freeze</code></pre>
+
+OR
+
+<pre><code>pip3 freeze | grep [PACKAGE NAME]</code></pre>
+
+Version differences may be the culprit, especially if the original error is related to pyYAML.
+Forcing pip to install DuckieTown specific package versions (e.g. `pip3 install --user pyyaml==5.4.1`) may resolve the issue.
+
+:::{warning}
+Forcing package upgrade/downgrades outside of a virtual environment may break other application dependencies.
+:::
+````
 
 You can join the 
 [Duckietown community on Slack at this link](https://duckietown.com/join-slack). 
