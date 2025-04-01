@@ -77,7 +77,7 @@ Install the Duckietown Shell using the following command,
 
 **2) Source `dts`**
 
-Make sure your system can find local binaries by adding the following to your `.bashrc` file. 
+Make sure your system can find local `dts` binaries by adding the following to your `.bashrc` file. 
 
 ```{attention}
 If you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
@@ -90,7 +90,11 @@ Then source the updates to your current shell
     source ~/.bashrc
 
 ```{attention}
-If this does not work, try using `.bash_profile` and/or `export PATH=~/Library/Python/VERSION/bin:${PATH}` instead, where `VERSION` is your Python version.
+If this does not work, try using `.bash_profile` and/or `export PATH=~/Library/Python/VERSION/bin:${PATH}` instead, where `VERSION` is your Python version.  
+
+If you are unsure of your Python version, or have multiple, try the following: 
+<pre><code>find ~/Library/Python   -name 'dts' -type f -exec dirname {} \;</code></pre>  
+The output, if successful, can be used to set the `PATH` variable.
 ```
 
 ---
@@ -103,7 +107,7 @@ You can now check that `dts` was installed with the following test
 ```bash
 which dts
 ---
-This should output a path ending in `dts`.
+This should output a path ending in `dts`.  If there is no output, then the `dts` executables are not located where `PATH` is pointing.  Try one of the `PATH` alternatives above.
 ```
 
 
