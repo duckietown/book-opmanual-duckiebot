@@ -55,6 +55,10 @@ There you can request an invitation to the Duckietown Stack Overflow team.
 
 ````{tab-item} macOS
 
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
+
 **1) Install Git**
 
 Most versions of macOS will already have Git installed, and you can check that it is installed
@@ -143,6 +147,10 @@ There you can request an invitation to the Duckietown Stack Overflow team.
 ````
 
 ````{tab-item} Windows (Beta)
+
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
 
 **1) Install dependencies**
 

@@ -58,6 +58,10 @@ This should output a path ending in `dts`.
 
 ````{tab-item} macOS
 
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
+
 The Duckietown Shell is a [command-line interface (CLI) program](https://en.wikipedia.org/wiki/Command-line_interface) 
 that provides all of the necessary Duckietown operations, such as
 * Updating a Duckiebot
@@ -111,7 +115,11 @@ This should output a path ending in `dts`.  If there is no output, then the `dts
 ```
 
 
-````{tab-item} Windows (Beta)
+````{tab-item} Windows
+
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
 
 The Duckietown Shell is a [command-line interface (CLI) program](https://en.wikipedia.org/wiki/Command-line_interface) 
 that provides all of the necessary Duckietown operations, such as

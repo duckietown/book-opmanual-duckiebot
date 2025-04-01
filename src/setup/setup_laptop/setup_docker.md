@@ -88,6 +88,10 @@ You should see a message like `Hello from Docker!`
 
 ````{tab-item} macOS
 
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
+
 **1) Install Docker**
 
 Follow [these instructions](https://docs.docker.com/docker-for-mac/install/) to install Docker on macOS.
@@ -140,7 +144,11 @@ Attempt to run the `hello-world` container again.
 
 ````
 
-````{tab-item} Windows (Beta)
+````{tab-item} Windows
+
+```{warning}
+This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
+```
 
 **1) Install Docker**
 
