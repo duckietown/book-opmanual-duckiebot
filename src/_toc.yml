@@ -82,6 +82,7 @@ parts:
         numbered: False
         chapters:
             - file: debugging_and_troubleshooting/network_config/index
+            - file: debugging_and_troubleshooting/how-to-reflash-jetson-nano-4gb-with-overlay-patch
             - file: debugging_and_troubleshooting/reflash_mc/index
             - file: debugging_and_troubleshooting/update/duckiebattery-update
             - file: debugging_and_troubleshooting/update/index
