@@ -22,6 +22,12 @@ If you don't find the solutions you need in this section:
 ## FAQs: Booting your Duckiebot
 
 ```{trouble}
+My Duckiebot does not boot and when connecting it to a screen, I see only a static NVIDIA logo (occasionally flickering)
+---
+The Jetson Nano Developer Kit might not be accessing the SD card. This could be due to the kit not being flaseh (correctly) during manucaturing. If you have a Jetson Nano 4GB developer kit, check out these instructions: [](reflash-jetson-4gb). 
+```
+
+```{trouble}
 I pressed the power button on top to boot my Duckiebot but nothing happened.
 ---
 Power on your Duckiebot using the button on the side of the Duckiebattery.  The top button is only for powering off. 

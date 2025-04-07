@@ -1,6 +1,6 @@
 ```{seo}
-:description: Duckietown SD card flashing
-:keywords: Duckietown, Duckiebot, sd-card, sd card, flashing, reflashing, initialization
+:description: How to reflash the DUckietown Duckibot HUT microcontroller.
+:keywords: Duckietown, Duckiebot, microcontroller, flashing, reflashing, HUT, Duckiehut
 ```
 
 (reflash-microcontroller)=
