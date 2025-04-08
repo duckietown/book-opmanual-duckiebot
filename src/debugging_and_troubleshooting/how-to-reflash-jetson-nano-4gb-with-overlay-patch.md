@@ -389,8 +389,7 @@ Here are the full logs of a successful flash:
 :class: dropdown
 
 ```bash
-duckie@duckietown-ubuntu:~/jn/Linux_for_Tegra$ sudo ./flash.sh -x 0x21 jetson-nano-emmc mmcblk0p1
-[sudo] password for duckie: 
+tani@tani-ubuntu:~/jn/Linux_for_Tegra$ sudo ./flash.sh -x 0x21 jetson-nano-emmc sda1
 ###############################################################################
 # L4T BSP Information:
 # R32 , REVISION: 7.6
@@ -400,305 +399,304 @@ duckie@duckietown-ubuntu:~/jn/Linux_for_Tegra$ sudo ./flash.sh -x 0x21 jetson-na
 # OpMode: production, Boot Authentication: , 
 # Disk encryption: disabled ,
 ###############################################################################
-./tegraflash.py --chip 0x21 --applet "/home/duckie/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin" --skipuid --cmd "dump eeprom boardinfo cvm.bin" 
+./tegraflash.py --chip 0x21 --applet "/home/tani/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin" --skipuid --cmd "dump eeprom boardinfo cvm.bin" 
 Welcome to Tegra Flash
 version 1.0.0
 Type ? or help for help and q or quit to exit
 Use ! to execute system commands
  
-[   0.0026 ] Generating RCM messages
-[   0.0044 ] tegrarcm --listrcm rcm_list.xml --chip 0x21 0 --download rcm /home/duckie/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin 0 0
-[   0.0047 ] RCM 0 is saved as rcm_0.rcm
-[   0.0059 ] RCM 1 is saved as rcm_1.rcm
-[   0.0059 ] List of rcm files are saved in rcm_list.xml
-[   0.0059 ] 
-[   0.0060 ] Signing RCM messages
-[   0.0078 ] tegrasign --key None --list rcm_list.xml --pubkeyhash pub_key.key
-[   0.0082 ] Assuming zero filled SBK key
-[   0.0161 ] 
-[   0.0161 ] Copying signature to RCM mesages
+[   0.0034 ] Generating RCM messages
+[   0.0053 ] tegrarcm --listrcm rcm_list.xml --chip 0x21 0 --download rcm /home/tani/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin 0 0
+[   0.0057 ] RCM 0 is saved as rcm_0.rcm
+[   0.0069 ] RCM 1 is saved as rcm_1.rcm
+[   0.0069 ] List of rcm files are saved in rcm_list.xml
+[   0.0069 ] 
+[   0.0069 ] Signing RCM messages
+[   0.0086 ] tegrasign --key None --list rcm_list.xml --pubkeyhash pub_key.key
+[   0.0090 ] Assuming zero filled SBK key
+[   0.0162 ] 
+[   0.0162 ] Copying signature to RCM mesages
 [   0.0178 ] tegrarcm --chip 0x21 0 --updatesig rcm_list_signed.xml
-[   0.0188 ] 
-[   0.0188 ] Boot Rom communication
-[   0.0206 ] tegrarcm --chip 0x21 0 --rcm rcm_list_signed.xml --skipuid
+[   0.0190 ] 
+[   0.0190 ] Boot Rom communication
+[   0.0207 ] tegrarcm --chip 0x21 0 --rcm rcm_list_signed.xml --skipuid
 [   0.0210 ] RCM version 0X210001
-[   0.0630 ] Boot Rom communication completed
-[   1.0716 ] 
-[   1.0717 ] dump EEPROM info
-[   1.0749 ] tegrarcm --oem platformdetails eeprom /home/duckie/jn/Linux_for_Tegra/bootloader/cvm.bin
-[   1.0763 ] Applet version 00.01.0000
-[   1.0803 ] Saved platform info in /home/duckie/jn/Linux_for_Tegra/bootloader/cvm.bin
-[   1.1581 ] 
-[   1.1610 ] tegrarcm --reboot recovery
-[   1.1624 ] Applet version 00.01.0000
-[   1.1661 ] 
+[   0.0626 ] Boot Rom communication completed
+[   1.0711 ] 
+[   1.0712 ] dump EEPROM info
+[   1.0745 ] tegrarcm --oem platformdetails eeprom /home/tani/jn/Linux_for_Tegra/bootloader/cvm.bin
+[   1.0758 ] Applet version 00.01.0000
+[   1.0795 ] Saved platform info in /home/tani/jn/Linux_for_Tegra/bootloader/cvm.bin
+[   1.1654 ] 
+[   1.1684 ] tegrarcm --reboot recovery
+[   1.1698 ] Applet version 00.01.0000
+[   1.1742 ] 
 Board ID(3448) version(402) 
-copying bctfile(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/BCT/P3448_A00_lpddr4_204Mhz_P987.cfg)... done.
-copying bootloader(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
-copying initrd(/home/duckie/jn/Linux_for_Tegra/bootloader/l4t_initrd.img)... done.
+copying bctfile(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/BCT/P3448_A00_lpddr4_204Mhz_P987.cfg)... done.
+copying bootloader(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
+copying initrd(/home/tani/jn/Linux_for_Tegra/bootloader/l4t_initrd.img)... done.
 Making Boot image... done.
-Existing sosfile(/home/duckie/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin) reused.
-copying tegraboot(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/nvtboot.bin)... done.
-copying cpu_bootloader(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
-copying bpffile(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/sc7entry-firmware.bin)... done.
-copying wb0boot(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/warmboot.bin)... done.
-Existing tosfile(/home/duckie/jn/Linux_for_Tegra/bootloader/tos-mon-only.img) reused.
-Existing eksfile(/home/duckie/jn/Linux_for_Tegra/bootloader/eks.img) reused.
+Existing sosfile(/home/tani/jn/Linux_for_Tegra/bootloader/nvtboot_recovery.bin) reused.
+copying tegraboot(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/nvtboot.bin)... done.
+copying cpu_bootloader(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
+copying bpffile(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/sc7entry-firmware.bin)... done.
+copying wb0boot(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/warmboot.bin)... done.
+Existing tosfile(/home/tani/jn/Linux_for_Tegra/bootloader/tos-mon-only.img) reused.
+Existing eksfile(/home/tani/jn/Linux_for_Tegra/bootloader/eks.img) reused.
 ./flash.sh: line 2663: [: : integer expression expected
-copying dtbfile(/home/duckie/jn/Linux_for_Tegra/kernel/dtb/tegra210-p3448-0002-p3449-0000-b00.dtb)... done.
+copying dtbfile(/home/tani/jn/Linux_for_Tegra/kernel/dtb/tegra210-p3448-0002-p3449-0000-b00.dtb)... done.
 Copying nv_boot_control.conf to rootfs
-	populating kernel to rootfs... done.
-	populating initrd to rootfs... done.
-	populating kernel_tegra210-p3448-0002-p3449-0000-b00.dtb to rootfs... done.
+generating system.img for booting... 
 Making system.img... 
-	populating rootfs from /home/duckie/jn/Linux_for_Tegra/rootfs ... 	populating /boot/extlinux/extlinux.conf ... done.
+	populating rootfs from /tmp/tmp.g5o6AwlRHm ... 	populating /boot/extlinux/extlinux.conf ... done.
 	Sync'ing system.img ... done.
 	Converting RAW image to Sparse image... done.
 system.img built successfully. 
-Existing tbcfile(/home/duckie/jn/Linux_for_Tegra/bootloader/nvtboot_cpu.bin) reused.
-copying tbcdtbfile(/home/duckie/jn/Linux_for_Tegra/kernel/dtb/tegra210-p3448-0002-p3449-0000-b00.dtb)... done.
-copying cfgfile(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/cfg/flash_l4t_t210_emmc_p3448.xml) to flash.xml... done.
-copying flasher(/home/duckie/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
-Existing flashapp(/home/duckie/jn/Linux_for_Tegra/bootloader/tegraflash.py) reused.
+Existing tbcfile(/home/tani/jn/Linux_for_Tegra/bootloader/nvtboot_cpu.bin) reused.
+copying tbcdtbfile(/home/tani/jn/Linux_for_Tegra/kernel/dtb/tegra210-p3448-0002-p3449-0000-b00.dtb)... done.
+copying cfgfile(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/cfg/flash_l4t_t210_emmc_p3448.xml) to flash.xml... done.
+copying flasher(/home/tani/jn/Linux_for_Tegra/bootloader/t210ref/cboot.bin)... done.
+Existing flashapp(/home/tani/jn/Linux_for_Tegra/bootloader/tegraflash.py) reused.
 ./tegraflash.py --bl cboot.bin --bct  P3448_A00_lpddr4_204Mhz_P987.cfg --odmdata 0xa4000 --bldtb kernel_tegra210-p3448-0002-p3449-0000-b00.dtb --applet nvtboot_recovery.bin  --cmd "flash; reboot"  --cfg flash.xml --chip 0x21    --bins "EBT cboot.bin; DTB tegra210-p3448-0002-p3449-0000-b00.dtb" 
-saving flash command in /home/duckie/jn/Linux_for_Tegra/bootloader/flashcmd.txt
-saving Windows flash command to /home/duckie/jn/Linux_for_Tegra/bootloader/flash_win.bat
+saving flash command in /home/tani/jn/Linux_for_Tegra/bootloader/flashcmd.txt
+saving Windows flash command to /home/tani/jn/Linux_for_Tegra/bootloader/flash_win.bat
 assign_value: crc-flash.xml.bin 1 131056 1
 printf '\x1' | dd of=crc-flash.xml.bin bs=1 seek=131056 count=1 conv=notrunc
 1+0 records in
 1+0 records out
-1 byte copied, 5.509e-05 s, 18.2 kB/s
+1 byte copied, 5.6995e-05 s, 17.5 kB/s
 assign_value: crc-flash.xml.bin 0 131057 1
 printf '\x0' | dd of=crc-flash.xml.bin bs=1 seek=131057 count=1 conv=notrunc
 1+0 records in
 1+0 records out
-1 byte copied, 3.6513e-05 s, 27.4 kB/s
+1 byte copied, 3.266e-05 s, 30.6 kB/s
 assign_string: crc-flash.xml.bin PTHD 131064 4
 echo PTHD | dd of=crc-flash.xml.bin bs=1 seek=131064 count=4 conv=notrunc
 4+0 records in
 4+0 records out
-4 bytes copied, 4.1125e-05 s, 97.3 kB/s
+4 bytes copied, 3.7921e-05 s, 105 kB/s
 *** Flashing target device started. ***
 Welcome to Tegra Flash
 version 1.0.0
 Type ? or help for help and q or quit to exit
 Use ! to execute system commands
  
-[   0.0018 ] tegrasign --getmode mode.txt --key None
+[   0.0019 ] tegrasign --getmode mode.txt --key None
 [   0.0022 ] Assuming zero filled SBK key
 [   0.0026 ] 
 [   0.0027 ] Generating RCM messages
 [   0.0042 ] tegrarcm --listrcm rcm_list.xml --chip 0x21 0 --download rcm nvtboot_recovery.bin 0 0
 [   0.0045 ] RCM 0 is saved as rcm_0.rcm
 [   0.0051 ] RCM 1 is saved as rcm_1.rcm
-[   0.0052 ] List of rcm files are saved in rcm_list.xml
-[   0.0052 ] 
-[   0.0052 ] Signing RCM messages
-[   0.0067 ] tegrasign --key None --list rcm_list.xml --pubkeyhash pub_key.key
-[   0.0071 ] Assuming zero filled SBK key
-[   0.0123 ] 
-[   0.0124 ] Copying signature to RCM mesages
-[   0.0139 ] tegrarcm --chip 0x21 0 --updatesig rcm_list_signed.xml
-[   0.0149 ] 
-[   0.0150 ] Parsing partition layout
-[   0.0165 ] tegraparser --pt flash.xml.tmp
-[   0.0174 ] 
-[   0.0175 ] Using default ramcode: 0
-[   0.0175 ] Disable BPMP dtb trim, using default dtb
-[   0.0176 ] 
-[   0.0176 ] Creating list of images to be signed
-[   0.0192 ] tegrahost --chip 0x21 0 --partitionlayout flash.xml.bin --list images_list.xml
-[   0.0417 ] 
-[   0.0418 ] Generating signatures
-[   0.0445 ] tegrasign --key None --list images_list.xml --pubkeyhash pub_key.key
-[   0.0458 ] Assuming zero filled SBK key
-[   0.1514 ] 
-[   0.1514 ] Generating br-bct
-[   0.1556 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.cfg --chip 0x21 0
-[   0.1623 ] 
-[   0.1623 ] Updating boot device parameters
-[   0.1637 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatedevparam flash.xml.bin
-[   0.1642 ] Warning: No sdram params
-[   0.1646 ] 
-[   0.1646 ] Updating bl info
-[   0.1667 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updateblinfo flash.xml.bin --updatesig images_list_signed.xml
-[   0.1679 ] 
-[   0.1679 ] Updating secondary storage information into bct
-[   0.1697 ] tegraparser --pt flash.xml.bin --chip 0x21 0 --updatecustinfo P3448_A00_lpddr4_204Mhz_P987.bct
-[   0.1703 ] 
-[   0.1703 ] Updating Odmdata
-[   0.1718 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatefields Odmdata =0xa4000
-[   0.1722 ] Warning: No sdram params
-[   0.1724 ] 
-[   0.1724 ] Get Signed section of bct
-[   0.1738 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --listbct bct_list.xml
-[   0.1744 ] 
-[   0.1744 ] Signing BCT
-[   0.1778 ] tegrasign --key None --list bct_list.xml --pubkeyhash pub_key.key
-[   0.1781 ] Assuming zero filled SBK key
-[   0.1786 ] 
-[   0.1786 ] Updating BCT with signature
-[   0.1801 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatesig bct_list_signed.xml
-[   0.1808 ] 
-[   0.1808 ] Copying signatures
-[   0.1823 ] tegrahost --chip 0x21 0 --partitionlayout flash.xml.bin --updatesig images_list_signed.xml
-[   0.1889 ] 
-[   0.1889 ] Updating BFS information on BCT
-[   0.1908 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatebfsinfo flash.xml.bin
-[   0.1914 ]    BFS:
-[   0.1933 ]      0: [PT ] crc-flash.xml.bin (size=131072/131072)
-[   0.1939 ]      1: [TBC] nvtboot_cpu.bin.encrypt (size=80816/196608)
-[   0.1944 ]      2: [RP1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
-[   0.1951 ]      3: [EBT] cboot.bin.encrypt (size=485952/655360)
-[   0.1956 ]      4: [WB0] warmboot.bin.encrypt (size=3952/131072)
-[   0.1961 ]      5: [BPF] sc7entry-firmware.bin.encrypt (size=3376/262144)
-[   0.1966 ] BFS0: 131072 @ 2560 SUM faabf3f1 over 2883584 bytes
-[   0.1970 ]    BFS:
-[   0.1979 ]      0: [PT-1] crc-flash.xml.bin (size=131072/131072)
-[   0.1984 ]      1: [TBC-1] nvtboot_cpu.bin.encrypt (size=80816/196608)
-[   0.1989 ]      2: [RP1-1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
-[   0.1997 ]      3: [EBT-1] cboot.bin.encrypt (size=485952/655360)
-[   0.2002 ]      4: [WB0-1] warmboot.bin.encrypt (size=3952/131072)
-[   0.2006 ]      5: [BPF-1] sc7entry-firmware.bin.encrypt (size=3376/262144)
-[   0.2012 ]      8: [VER_b] emmc_bootblob_ver.txt (size=102/32768)
-[   0.2016 ]      9: [VER] emmc_bootblob_ver.txt (size=102/32768)
-[   0.2020 ] BFS1: 131072 @ 8704 SUM faabf3f1 over 2981888 bytes
-[   0.2023 ]    KFS:
-[   0.2402 ]      0: [DTB] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
-[   0.2408 ]      1: [TOS] tos-mon-only.img.encrypt (size=54208/6291456)
-[   0.2413 ]      2: [EKS] eks.img (size=1028/81920)
-[   0.2416 ]      3: [LNX] boot.img.encrypt (size=667648/67092480)
-[   0.2421 ] KFS0: 1048576 @ 29376546 SUM 4d3bf5df over 8089600 bytes
-[   0.2483 ]    KFS:
-[   0.2885 ]      0: [DTB-1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
-[   0.2893 ]      1: [TOS-1] tos-mon-only.img.encrypt (size=54208/6291456)
-[   0.2898 ]      2: [EKS-1] eks.img (size=1028/81920)
-[   0.2900 ]      3: [LNX-1] boot.img.encrypt (size=667648/67092480)
-[   0.2903 ] KFS1: 1048576 @ 29522082 SUM 4d3bf5df over 8089600 bytes
-[   0.2958 ] 
-[   0.2958 ] Boot Rom communication
-[   0.2974 ] tegrarcm --chip 0x21 0 --rcm rcm_list_signed.xml
-[   0.2977 ] BR_CID: 0x32101001644086c9180000000efd8500
-[   0.3960 ] RCM version 0X210001
-[   0.3963 ] Boot Rom communication completed
-[   1.4051 ] 
-[   1.4052 ] Sending BCTs
-[   1.4083 ] tegrarcm --download bct P3448_A00_lpddr4_204Mhz_P987.bct
-[   1.4098 ] Applet version 00.01.0000
-[   1.4140 ] Sending bct
-[   1.4145 ] [................................................] 100%
-[   1.6390 ] 
-[   1.6421 ] tegrahost --chip 0x21 --align cboot.bin
-[   1.6442 ] 
-[   1.6472 ] tegrahost --magicid EBT --appendsigheader cboot.bin cboot.bin_blheader
-[   1.6542 ] 
-[   1.6562 ] tegrasign --key None --list cboot.bin_list.xml
-[   1.6567 ] Assuming zero filled SBK key
-[   1.6735 ] 
-[   1.6757 ] tegrahost --updatesigheader cboot.bin_blheader.encrypt cboot.bin_blheader.hash zerosbk
-[   1.6776 ] 
-[   1.6798 ] tegrahost --chip 0x21 --align tegra210-p3448-0002-p3449-0000-b00.dtb
-[   1.6804 ] 
-[   1.6820 ] tegrahost --magicid DTB --appendsigheader tegra210-p3448-0002-p3449-0000-b00.dtb tegra210-p3448-0002-p3449-0000-b00.dtb_blheader
-[   1.6838 ] 
-[   1.6857 ] tegrasign --key None --list tegra210-p3448-0002-p3449-0000-b00.dtb_list.xml
-[   1.6861 ] Assuming zero filled SBK key
-[   1.6948 ] 
-[   1.6968 ] tegrahost --updatesigheader tegra210-p3448-0002-p3449-0000-b00.dtb_blheader.encrypt tegra210-p3448-0002-p3449-0000-b00.dtb_blheader.hash zerosbk
-[   1.6980 ] 
-[   1.6983 ] Sending bootloader and pre-requisite binaries
-[   1.7000 ] tegrarcm --download ebt cboot.bin.encrypt 0 0 --download rp1 tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt 0
-[   1.7005 ] Applet version 00.01.0000
-[   1.7027 ] Sending ebt
-[   1.7031 ] [................................................] 100%
-[   1.8111 ] Sending rp1
-[   1.8154 ] [................................................] 100%
-[   1.8770 ] 
-[   1.8801 ] tegrarcm --boot recovery
-[   1.8815 ] Applet version 00.01.0000
-[   1.8858 ] 
-[   1.8859 ] Retrieving storage infomation
-[   1.8886 ] tegrarcm --oem platformdetails storage storage_info.bin
-[   1.8901 ] Applet is not running on device. Continue with Bootloader
-[   2.5221 ] 
-[   2.5314 ] tegradevflash --oem platformdetails storage storage_info.bin
-[   2.5319 ] Cboot version 00.01.0000
-[   2.5354 ] Saved platform info in storage_info.bin
-[   2.5368 ] 
-[   2.5368 ] Flashing the device
-[   2.5388 ] tegradevflash --pt flash.xml.bin --storageinfo storage_info.bin --create
-[   2.5394 ] Cboot version 00.01.0000
-[   2.5413 ] Writing partition GPT with gpt.bin
-[   2.5416 ] [................................................] 100%
-[   2.5475 ] Writing partition PT with crc-flash.xml.bin
-[   3.2979 ] [................................................] 100%
-[   3.3077 ] Writing partition PT-1 with crc-flash.xml.bin
-[   3.3177 ] [................................................] 100%
-[   3.3393 ] Writing partition NVC with nvtboot.bin.encrypt
-[   3.3827 ] [................................................] 100%
-[   3.4008 ] Writing partition TBC with nvtboot_cpu.bin.encrypt
-[   3.4320 ] [................................................] 100%
-[   3.4532 ] Writing partition RP1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
-[   3.5002 ] [................................................] 100%
-[   3.5260 ] Writing partition EBT with cboot.bin.encrypt
-[   3.5766 ] [................................................] 100%
-[   3.6106 ] Writing partition WB0 with warmboot.bin.encrypt
-[   3.6653 ] [................................................] 100%
-[   3.6824 ] Writing partition BPF with sc7entry-firmware.bin.encrypt
-[   3.7301 ] [................................................] 100%
-[   3.7471 ] Writing partition NVC-1 with nvtboot.bin.encrypt
-[   3.7946 ] [................................................] 100%
-[   3.8185 ] Writing partition TBC-1 with nvtboot_cpu.bin.encrypt
-[   3.8824 ] [................................................] 100%
-[   3.9030 ] Writing partition RP1-1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
-[   3.9649 ] [................................................] 100%
-[   3.9909 ] Writing partition EBT-1 with cboot.bin.encrypt
-[   4.0531 ] [................................................] 100%
-[   4.0869 ] Writing partition WB0-1 with warmboot.bin.encrypt
-[   4.1528 ] [................................................] 100%
-[   4.1701 ] Writing partition BPF-1 with sc7entry-firmware.bin.encrypt
-[   4.2319 ] [................................................] 100%
-[   4.2488 ] Writing partition VER_b with emmc_bootblob_ver.txt
-[   4.3093 ] [................................................] 100%
-[   4.3265 ] Writing partition VER with emmc_bootblob_ver.txt
-[   4.3792 ] [................................................] 100%
-[   4.3968 ] Writing partition APP with system.img
-[   4.4459 ] [................................................] 100%
-[ 204.6738 ] Writing partition DTB with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
-[ 205.9744 ] [................................................] 100%
-[ 205.9930 ] Writing partition TOS with tos-mon-only.img.encrypt
-[ 206.0333 ] [................................................] 100%
-[ 206.0457 ] Warning: EKS partition magic header mismatch!
-[ 206.0833 ] Writing partition EKS with eks.img
-[ 206.0842 ] [................................................] 100%
-[ 206.0935 ] Writing partition LNX with boot.img.encrypt
-[ 206.1282 ] [................................................] 100%
-[ 206.1641 ] Writing partition DTB-1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
-[ 206.2124 ] [................................................] 100%
-[ 206.2308 ] Writing partition TOS-1 with tos-mon-only.img.encrypt
-[ 206.2707 ] [................................................] 100%
-[ 206.2831 ] Writing partition EKS-1 with eks.img
-[ 206.3190 ] [................................................] 100%
-[ 206.3296 ] Writing partition LNX-1 with boot.img.encrypt
-[ 206.3652 ] [................................................] 100%
-[ 206.3995 ] Writing partition BMP with bmp.blob
-[ 206.4417 ] [................................................] 100%
-[ 206.4653 ] Writing partition RP4 with rp4.blob
-[ 206.5027 ] [................................................] 100%
-[ 206.5554 ] 
-[ 206.5583 ] tegradevflash --write BCT P3448_A00_lpddr4_204Mhz_P987.bct
-[ 206.5596 ] Cboot version 00.01.0000
-[ 206.6606 ] Writing partition BCT with P3448_A00_lpddr4_204Mhz_P987.bct
-[ 206.6627 ] [................................................] 100%
-[ 207.0590 ] 
-[ 207.0591 ] Flashing completed
+[   0.0053 ] List of rcm files are saved in rcm_list.xml
+[   0.0053 ] 
+[   0.0053 ] Signing RCM messages
+[   0.0069 ] tegrasign --key None --list rcm_list.xml --pubkeyhash pub_key.key
+[   0.0072 ] Assuming zero filled SBK key
+[   0.0118 ] 
+[   0.0119 ] Copying signature to RCM mesages
+[   0.0135 ] tegrarcm --chip 0x21 0 --updatesig rcm_list_signed.xml
+[   0.0145 ] 
+[   0.0145 ] Parsing partition layout
+[   0.0159 ] tegraparser --pt flash.xml.tmp
+[   0.0166 ] 
+[   0.0167 ] Using default ramcode: 0
+[   0.0168 ] Disable BPMP dtb trim, using default dtb
+[   0.0168 ] 
+[   0.0168 ] Creating list of images to be signed
+[   0.0187 ] tegrahost --chip 0x21 0 --partitionlayout flash.xml.bin --list images_list.xml
+[   0.0276 ] 
+[   0.0276 ] Generating signatures
+[   0.0292 ] tegrasign --key None --list images_list.xml --pubkeyhash pub_key.key
+[   0.0295 ] Assuming zero filled SBK key
+[   0.1184 ] 
+[   0.1184 ] Generating br-bct
+[   0.1228 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.cfg --chip 0x21 0
+[   0.1306 ] 
+[   0.1306 ] Updating boot device parameters
+[   0.1323 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatedevparam flash.xml.bin
+[   0.1326 ] Warning: No sdram params
+[   0.1328 ] 
+[   0.1328 ] Updating bl info
+[   0.1344 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updateblinfo flash.xml.bin --updatesig images_list_signed.xml
+[   0.1358 ] 
+[   0.1358 ] Updating secondary storage information into bct
+[   0.1378 ] tegraparser --pt flash.xml.bin --chip 0x21 0 --updatecustinfo P3448_A00_lpddr4_204Mhz_P987.bct
+[   0.1385 ] 
+[   0.1385 ] Updating Odmdata
+[   0.1406 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatefields Odmdata =0xa4000
+[   0.1410 ] Warning: No sdram params
+[   0.1412 ] 
+[   0.1412 ] Get Signed section of bct
+[   0.1427 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --listbct bct_list.xml
+[   0.1441 ] 
+[   0.1441 ] Signing BCT
+[   0.1485 ] tegrasign --key None --list bct_list.xml --pubkeyhash pub_key.key
+[   0.1494 ] Assuming zero filled SBK key
+[   0.1510 ] 
+[   0.1510 ] Updating BCT with signature
+[   0.1532 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatesig bct_list_signed.xml
+[   0.1549 ] 
+[   0.1549 ] Copying signatures
+[   0.1571 ] tegrahost --chip 0x21 0 --partitionlayout flash.xml.bin --updatesig images_list_signed.xml
+[   0.1741 ] 
+[   0.1742 ] Updating BFS information on BCT
+[   0.1763 ] tegrabct --bct P3448_A00_lpddr4_204Mhz_P987.bct --chip 0x21 0 --updatebfsinfo flash.xml.bin
+[   0.1771 ]    BFS:
+[   0.1806 ]      0: [PT ] crc-flash.xml.bin (size=131072/131072)
+[   0.1813 ]      1: [TBC] nvtboot_cpu.bin.encrypt (size=80816/196608)
+[   0.1818 ]      2: [RP1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
+[   0.1825 ]      3: [EBT] cboot.bin.encrypt (size=485952/655360)
+[   0.1829 ]      4: [WB0] warmboot.bin.encrypt (size=3952/131072)
+[   0.1832 ]      5: [BPF] sc7entry-firmware.bin.encrypt (size=3376/262144)
+[   0.1836 ] BFS0: 131072 @ 2560 SUM e53bd17c over 2883584 bytes
+[   0.1840 ]    BFS:
+[   0.1861 ]      0: [PT-1] crc-flash.xml.bin (size=131072/131072)
+[   0.1865 ]      1: [TBC-1] nvtboot_cpu.bin.encrypt (size=80816/196608)
+[   0.1869 ]      2: [RP1-1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
+[   0.1875 ]      3: [EBT-1] cboot.bin.encrypt (size=485952/655360)
+[   0.1878 ]      4: [WB0-1] warmboot.bin.encrypt (size=3952/131072)
+[   0.1881 ]      5: [BPF-1] sc7entry-firmware.bin.encrypt (size=3376/262144)
+[   0.1885 ]      8: [VER_b] emmc_bootblob_ver.txt (size=102/32768)
+[   0.1892 ]      9: [VER] emmc_bootblob_ver.txt (size=102/32768)
+[   0.1898 ] BFS1: 131072 @ 8704 SUM e53bd17c over 2981888 bytes
+[   0.1904 ]    KFS:
+[   0.2272 ]      0: [DTB] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
+[   0.2277 ]      1: [TOS] tos-mon-only.img.encrypt (size=54208/6291456)
+[   0.2282 ]      2: [EKS] eks.img (size=1028/81920)
+[   0.2285 ]      3: [LNX] boot.img.encrypt (size=667648/67092480)
+[   0.2289 ] KFS0: 1048576 @ 29376546 SUM 5040b3ff over 8089600 bytes
+[   0.2330 ]    KFS:
+[   0.2668 ]      0: [DTB-1] kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt (size=261712/1048576)
+[   0.2675 ]      1: [TOS-1] tos-mon-only.img.encrypt (size=54208/6291456)
+[   0.2679 ]      2: [EKS-1] eks.img (size=1028/81920)
+[   0.2681 ]      3: [LNX-1] boot.img.encrypt (size=667648/67092480)
+[   0.2686 ] KFS1: 1048576 @ 29522082 SUM 5040b3ff over 8089600 bytes
+[   0.2733 ] 
+[   0.2733 ] Boot Rom communication
+[   0.2752 ] tegrarcm --chip 0x21 0 --rcm rcm_list_signed.xml
+[   0.2755 ] BR_CID: 0x32101001644086c9180000000efd8500
+[   0.3743 ] RCM version 0X210001
+[   0.3750 ] Boot Rom communication completed
+[   1.3830 ] 
+[   1.3831 ] Sending BCTs
+[   1.3859 ] tegrarcm --download bct P3448_A00_lpddr4_204Mhz_P987.bct
+[   1.3872 ] Applet version 00.01.0000
+[   1.3911 ] Sending bct
+[   1.3915 ] [................................................] 100%
+[   1.6159 ] 
+[   1.6193 ] tegrahost --chip 0x21 --align cboot.bin
+[   1.6211 ] 
+[   1.6237 ] tegrahost --magicid EBT --appendsigheader cboot.bin cboot.bin_blheader
+[   1.6298 ] 
+[   1.6317 ] tegrasign --key None --list cboot.bin_list.xml
+[   1.6322 ] Assuming zero filled SBK key
+[   1.6482 ] 
+[   1.6502 ] tegrahost --updatesigheader cboot.bin_blheader.encrypt cboot.bin_blheader.hash zerosbk
+[   1.6517 ] 
+[   1.6539 ] tegrahost --chip 0x21 --align tegra210-p3448-0002-p3449-0000-b00.dtb
+[   1.6547 ] 
+[   1.6565 ] tegrahost --magicid DTB --appendsigheader tegra210-p3448-0002-p3449-0000-b00.dtb tegra210-p3448-0002-p3449-0000-b00.dtb_blheader
+[   1.6582 ] 
+[   1.6601 ] tegrasign --key None --list tegra210-p3448-0002-p3449-0000-b00.dtb_list.xml
+[   1.6605 ] Assuming zero filled SBK key
+[   1.6684 ] 
+[   1.6703 ] tegrahost --updatesigheader tegra210-p3448-0002-p3449-0000-b00.dtb_blheader.encrypt tegra210-p3448-0002-p3449-0000-b00.dtb_blheader.hash zerosbk
+[   1.6714 ] 
+[   1.6717 ] Sending bootloader and pre-requisite binaries
+[   1.6735 ] tegrarcm --download ebt cboot.bin.encrypt 0 0 --download rp1 tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt 0
+[   1.6739 ] Applet version 00.01.0000
+[   1.6760 ] Sending ebt
+[   1.6764 ] [................................................] 100%
+[   1.7854 ] Sending rp1
+[   1.7897 ] [................................................] 100%
+[   1.8517 ] 
+[   1.8547 ] tegrarcm --boot recovery
+[   1.8560 ] Applet version 00.01.0000
+[   1.8604 ] 
+[   1.8605 ] Retrieving storage infomation
+[   1.8631 ] tegrarcm --oem platformdetails storage storage_info.bin
+[   1.8645 ] Applet is not running on device. Continue with Bootloader
+[   2.4968 ] 
+[   2.5061 ] tegradevflash --oem platformdetails storage storage_info.bin
+[   2.5068 ] Cboot version 00.01.0000
+[   2.5111 ] Saved platform info in storage_info.bin
+[   2.5125 ] 
+[   2.5125 ] Flashing the device
+[   2.5146 ] tegradevflash --pt flash.xml.bin --storageinfo storage_info.bin --create
+[   2.5155 ] Cboot version 00.01.0000
+[   2.5180 ] Writing partition GPT with gpt.bin
+[   2.5189 ] [................................................] 100%
+[   2.5262 ] Writing partition PT with crc-flash.xml.bin
+[   3.2718 ] [................................................] 100%
+[   3.2817 ] Writing partition PT-1 with crc-flash.xml.bin
+[   3.2933 ] [................................................] 100%
+[   3.3166 ] Writing partition NVC with nvtboot.bin.encrypt
+[   3.3577 ] [................................................] 100%
+[   3.3762 ] Writing partition TBC with nvtboot_cpu.bin.encrypt
+[   3.4072 ] [................................................] 100%
+[   3.4269 ] Writing partition RP1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
+[   3.4756 ] [................................................] 100%
+[   3.5014 ] Writing partition EBT with cboot.bin.encrypt
+[   3.5527 ] [................................................] 100%
+[   3.5897 ] Writing partition WB0 with warmboot.bin.encrypt
+[   3.6432 ] [................................................] 100%
+[   3.6600 ] Writing partition BPF with sc7entry-firmware.bin.encrypt
+[   3.7081 ] [................................................] 100%
+[   3.7247 ] Writing partition NVC-1 with nvtboot.bin.encrypt
+[   3.7728 ] [................................................] 100%
+[   3.7970 ] Writing partition TBC-1 with nvtboot_cpu.bin.encrypt
+[   3.8589 ] [................................................] 100%
+[   3.8789 ] Writing partition RP1-1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
+[   3.9402 ] [................................................] 100%
+[   3.9681 ] Writing partition EBT-1 with cboot.bin.encrypt
+[   4.0314 ] [................................................] 100%
+[   4.0694 ] Writing partition WB0-1 with warmboot.bin.encrypt
+[   4.1366 ] [................................................] 100%
+[   4.1548 ] Writing partition BPF-1 with sc7entry-firmware.bin.encrypt
+[   4.2165 ] [................................................] 100%
+[   4.2344 ] Writing partition VER_b with emmc_bootblob_ver.txt
+[   4.2951 ] [................................................] 100%
+[   4.3135 ] Writing partition VER with emmc_bootblob_ver.txt
+[   4.3653 ] [................................................] 100%
+[   4.3841 ] Writing partition APP with system.img
+[   4.4349 ] [................................................] 100%
+[   7.3784 ] Writing partition DTB with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
+[   8.9185 ] [................................................] 100%
+[   8.9381 ] Writing partition TOS with tos-mon-only.img.encrypt
+[   8.9774 ] [................................................] 100%
+[   8.9901 ] Warning: EKS partition magic header mismatch!
+[   9.0258 ] Writing partition EKS with eks.img
+[   9.0270 ] [................................................] 100%
+[   9.0368 ] Writing partition LNX with boot.img.encrypt
+[   9.0729 ] [................................................] 100%
+[   9.1121 ] Writing partition DTB-1 with kernel_tegra210-p3448-0002-p3449-0000-b00.dtb.encrypt
+[   9.1572 ] [................................................] 100%
+[   9.1780 ] Writing partition TOS-1 with tos-mon-only.img.encrypt
+[   9.2170 ] [................................................] 100%
+[   9.2303 ] Writing partition EKS-1 with eks.img
+[   9.2679 ] [................................................] 100%
+[   9.2801 ] Writing partition LNX-1 with boot.img.encrypt
+[   9.3170 ] [................................................] 100%
+[   9.3577 ] Writing partition BMP with bmp.blob
+[   9.4061 ] [................................................] 100%
+[   9.4325 ] Writing partition RP4 with rp4.blob
+[   9.4703 ] [................................................] 100%
+[   9.5249 ] 
+[   9.5282 ] tegradevflash --write BCT P3448_A00_lpddr4_204Mhz_P987.bct
+[   9.5296 ] Cboot version 00.01.0000
+[   9.6306 ] Writing partition BCT with P3448_A00_lpddr4_204Mhz_P987.bct
+[   9.6330 ] [................................................] 100%
+[  10.0292 ] 
+[  10.0293 ] Flashing completed
 
-[ 207.0592 ] Coldbooting the device
-[ 207.0622 ] tegradevflash --reboot coldboot
-[ 207.0635 ] Cboot version 00.01.0000
-[ 207.0673 ] 
+[  10.0294 ] Coldbooting the device
+[  10.0324 ] tegradevflash --reboot coldboot
+[  10.0339 ] Cboot version 00.01.0000
+[  10.0377 ] 
 *** The target t210ref has been flashed successfully. ***
-Reset the board to boot from internal eMMC.
+Make the target filesystem available to the device and reset the board to boot from external sda1.
+
 ```
 ````
 
