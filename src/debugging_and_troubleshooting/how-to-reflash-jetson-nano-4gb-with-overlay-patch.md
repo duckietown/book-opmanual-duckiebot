@@ -301,7 +301,7 @@ Refer to the [](reflash-jetson-faq) section on this page if this checkpoint is f
 
 Continue from the base station terminal:
 
-    sudo ./flash.sh -x 0x21 ${BOARD} mmcblk0p1
+    sudo ./flash.sh -x 0x21 ${BOARD} sda1
 
 The process takes about 2-4 minutes, depending on the speed of the base station used. Successful flashing will result in:
 
