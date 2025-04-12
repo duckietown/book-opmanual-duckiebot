@@ -6,21 +6,22 @@
 (setup-duckiebot-sd-card)=
 # Setup - Duckiebot SD Card
 
-Here we will learn who to initialize an SD card with the Operating System that will run on the
+Follow these instructions to initialize an SD card with the Operating System that will run on the
 Duckiebot on-board computer. This procedure is called `flashing`, or `burning` of the SD card.
 
 ```{needget}
-- An SD card of size at least 32 GB
+- An SD card of size at least 64 GB
 - At least 20 GB of free space on the computer
 - An internet connection
-- SD card reader
-- Duckietown Shell, as configured in [](laptop-setup-shell).
+- A SD card adapter
+- Up to date Duckietown Shell, as configured in [](laptop-setup-shell).
 - Docker, as configured in [](laptop-setup-docker).
 - Duckietown Token, as configured in [](dt-account).
 - 30 minutes on average (depends on internet connection and SD card adapter used)
 ---
 A flashed Duckiebot SD card, ready to be used to give life to your Duckiebot.
 ```
+
 
 
 ```{admonition} For non-Unix-like systems
@@ -56,6 +57,10 @@ A valid `hostname` satisfies all the following requirements:
 
 
 ## Step 2) Burn the SD card
+
+```{tip}
+Make sure your environment is up to date (`dts desktop update`) before proceeding. 
+```
 
 There are two interfaces to the process of burning a Duckiebot SD card:
 
