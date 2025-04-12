@@ -22,8 +22,12 @@
 * A Jetson Nano 4GB development kit that boots correctly and does not get stuck on an NVIDIA logo at startup.
 ```
 
+```{attention}
+After running this procedure it will be necessary to reflash the Duckietown SD card. The minimum sufficient firmware version is  `v1.4.2`. 
+```
+
 ```{warning}
-Do not undergo this procedue unless your Jetson is affected by the booting problem described below. This fix applies only to a very specific use case and irreversibly changes your Jetson's onboard filesystem. If you are not sure what is going on refer to the [Duckiebot FAQ Guide](troubleshooting-faq) for help with any Duckiebot setup or operation issues. 
+You should not proceed with these instructions unless your Jetson is affected by the booting problem described below. This fix applies to a specific use case and irreversibly changes your Jetson's onboard filesystem. We do not provide instructions to revert the effects of these instructions. If you are uncertain, refer to the [Duckiebot FAQ Guide](troubleshooting-faq) for help or [reach out to the Duckietown team](https://duckietown.com/contact/). 
 ```
 
 (reflash-jetson-4gb-when)=
@@ -163,7 +167,7 @@ This concludes the first step of preparing the flashing environment. We now move
 To start, make sure the Jetson is powered off. If it is already assembled in your Duckiebot, remove all USB cables going into it, and all USB cables going into the HUT (detach the battery). The fan in the pictures below is unnecessary for this procedure and can be ignored.
 
 ```{figure} ../_images/troubleshooting/01-JN4GB.jpg
-:width: 50%
+:width: 70%
 :name: fig:01-JN4GB
 :alt: A Jetson Nano 4GB with 3rd party carrier board
 
@@ -175,7 +179,7 @@ A Jetson Nano 4GB developer kit with 3rd party carrier board
 To (over)write the Jetson's (carrier board...) onboard memory, which in the case of this document is assumed to be a 16GB eMMC hard drive, we need to power on the Jetson while in "Forced Recovery" mode. To do so, we need to first identify the `FC REC` pin placed underneath the Jetson Nano module, near the SD card slot, as shown in {numref}`fig:02-JN-ForcedRecoveryPins`.
 
 ```{figure} ../_images/troubleshooting/02-JN-ForcedRecoveryPins.jpg
-:width: 50%
+:width: 70%
 :name: fig:02-JN-ForcedRecoveryPins
 :alt: Jetson Nano 4GB dev kit forced recovery mode pins 
 
@@ -188,7 +192,7 @@ Forced recovery mode pin is labeled as `FC REC` and needs to be shorted with `GN
 The Jetson will boot in forced recovery mode when the `FC REC` and `GND` pins are shorted when the Jetson is powered on.
 
 ```{figure} ../_images/troubleshooting/03-Shorting-for-recovery-mode.jpg
-:width: 50%
+:width: 70%
 :name: fig:03-Shorting-for-recovery-mode
 :alt: Jetson Nano 4GB dev kit - shorting the forced recovery mode pins with a jumper cable
 
@@ -202,7 +206,7 @@ These Jetsons can only be powered through the DC jack, or the `5V` and `GND` pin
 Place your Duckietown HUT on the GPIO pins of the Jetson board. Make sure to align perfectly the Jetson's pins with the HUT's pin header, as shown in {numref}`fig:04-Adding-the-HUT-for-power` to avoid erratic behaviors. 
 
 ```{figure} ../_images/troubleshooting/04-Adding-the-HUT-for-power.jpg
-:width: 50%
+:width: 70%
 :name: fig:04-Adding-the-HUT-for-power
 :alt: Jetson Nano 4GB dev kit - adding a Duckietown HUT for power
 
@@ -214,7 +218,7 @@ Connecting the Duckietown HUT to the GPIOs is a hack to power the JN without hav
 Take a micro-USB to base station cable **with data channel**. Connect the micro-USB end to the Jetson Nano carrier board, as shown in {numref}`fig:05-Connect-the-JN-and-base-station`, and the other end to your base station.
 
 ```{figure} ../_images/troubleshooting/05-Connect-the-JN-and-base-station.jpg
-:width: 50%
+:width: 70%
 :name: fig:05-Connect-the-JN-and-base-station
 :alt: Connect the Jetson Nano dev kit to the base station through the micro-USB port
 
@@ -224,7 +228,7 @@ Connect the Jetson Nano to the base station. Make sure the cable used carries da
 Unfortunately, the USB cables provided in the Duckiebox (`DB21J4`) are all power only, except for the USB-A to USB-A connection of the "Y" shaped cable, shown in {numref}`fig:the-data-cable-available-in-the-duckiebox`. If you have a USB-A to micro-USB adapter, you can use this cable. 
 
 ```{figure} ../_images/troubleshooting/the-duckiebot-Y-usb-data-cable.png
-:width: 50%
+:width: 70%
 :name: fig:the-data-cable-available-in-the-duckiebox
 :alt: USB data cable available in the Duckiebox
 
@@ -244,7 +248,7 @@ To gain a better understanding of what will happen in the next steps, you can pe
 
 
 ```{figure} ../_images/troubleshooting/07-optional-uart-connection.jpg
-:width: 50%
+:width: 70%
 :name: fig:07-optional-uart-connection
 :alt: Optional UART connection through serial cable to view the detailed logs of the Jetson Nano 4GB dev kit
 
@@ -263,7 +267,7 @@ Depending on the base station configuration, the number after USB could be diffe
 At this point we are ready to power up the Jetson. Connect your 5V 2A charger to the `5VRASPI` port of the HUT. You should see a (previously faint) green LED shining bright on the HUT, and a new green LED turn on on the Jetson, near the power cable. 
 
 ```{figure} ../_images/troubleshooting/06-Power-the-Jetson.jpg
-:width: 50%
+:width: 70%
 :name: fig:06-Power-the-Jetson
 :alt: Powering the Jetson Nano 4GB dev kit through a Duckietown HUT
 
@@ -324,7 +328,11 @@ The Jetson board will restart immediately after the process is complete. If you 
 
 **Checkpoint ✅**
 
-If the flashing completed successfully, there are several ways to test if it worked. As long as one of these checkpoints passed, the process is completed successfully and the problem solved. 
+```{tip}
+Never skip a checkpoint!
+```
+
+There are several ways to test if this flashing procedure worked. 
 
 * The easiest way: plug in a screen
 
@@ -337,14 +345,29 @@ You will briefly see a white background green NVIDIA logo, followed by boot info
 * Another way:
 
 ```{testexpect}
-[Assemble your Duckiebot](assembling-duckiebot-db21j), then [flash a Duckietown SD card](setup-duckiebot-sd-card), and finally [perform the first boot](duckiebot-boot).  
+[Assemble your Duckiebot](assembling-duckiebot-db21j), then [flash a (new) Duckietown SD card](setup-duckiebot-sd-card) (minimum v1.4.2), and finally [perform the first boot](duckiebot-boot).  
 ---
 The Duckiebot boots successfully. 
 ```
 
-```{tip}
-Never skip a checkpoint!
+
+````{attention}
+This procedure updates the NVIDIA Jetpack version to 4.6.6. This requires a Duckietown firmware `v1.4.2` or above. You can find the firmware version number in your Dashbaord or, e.g., from the name of the file downloaded when flashing a new Duckietown SD card (e.g., `dt-nvidia-jetpack-v1.4.2-4gb`).
+
+```bash
+$ dts init_sd_card [...]
+[...]
+This disk image uses the Nvidia Jetpack OS.
+By proceeding, you agree to the terms and conditions of the License For Customer Use of NVIDIA Software.
+Do you accept? (y=Yes, n=No, r=Read License) [n]: y
+
+2025-04-11 14:55:56 tani-ubuntu dts[34564] INFO Looking for ZIP image file...
+2025-04-11 14:55:56 tani-ubuntu dts[34564] INFO Downloading ZIP image...
+2025-04-11 14:55:56 tani-ubuntu dts[34564] INFO Downloading [public]:disk_image/**dt-nvidia-jetpack-v1.4.2-4gb.zip** -> /tmp/duckietown/dts/init_sd_card/dt-nvidia-jetpack-v1.4.2-4gb.zip
+[...]
 ```
+````
+
 
 (reflash-jetson-faq)=
 ### Troubleshooting
@@ -369,15 +392,15 @@ Remove the power cable before re-attaching the data cable.
 ```
 
 ```{trouble}
-I completed the flashing of the Jetson Nano successfully, but it still does not work (e.g., static NVIDIA logo on screen). In particular, I see from the logs that my Jetson is recognized as a 2GB version, and not 4GB. 
+The board showed up under `lsusb`, but the flashing procedure gets stuck.    
 ---
-The overlay patch has not been applied correctly. Make sure to set up your flashing environment according to the instructions. Do not skip any step. 
+Make sure you are using a native Ubuntu OS and not a virtual machine. 
 ```
 
 ```{trouble}
-My Jetson Nano is a 2GB version, but I purchased a 4GB version from Duckietown. I want a reimbursement!  
+I completed the flashing of the Jetson Nano successfully, but it still does not work (e.g., static NVIDIA logo on screen). In particular, I see from the logs that my Jetson is recognized as a 2GB version, and not 4GB. 
 ---
-If you are sure you purchased a 4GB Jetson and Duckietown staff confirmed you were provided a 4GB Jetson, you have a 4GB Jetson that has been previously flashed incorrectly. [Reflash the Jetson](reflash-jetson-4gb). The nature of this specific problem is that the memory will not be recognized correctly, showing 2GB when the board is in fact a 4GB one.
+The overlay patch has not been applied correctly. Make sure to set up your flashing environment according to the instructions. Do not skip any step. 
 ```
 
 (reflash-jetson-additional)=
