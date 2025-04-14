@@ -1,5 +1,5 @@
 ```{seo}
-:description: How to reflash the DUckietown Duckibot HUT microcontroller.
+:description: How to reflash the Duckietown Duckiebot HUT microcontroller.
 :keywords: Duckietown, Duckiebot, microcontroller, flashing, reflashing, HUT, Duckiehut
 ```
 
