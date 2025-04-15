@@ -94,6 +94,11 @@ This step needs to be executed only once, even if flashing multiple boards.
 
 And then create a new folder with arbitrary name (e.g., `$ mkdir jn`), and move these files in there.
 
+#### Install dependencies
+
+	sudo apt-get install qemu-user-static
+ 	sudo apt-get install libxml2-utils
+
 #### Open a terminal window and define the following variables:
 
         L4T_RELEASE_PACKAGE=Jetson-210_Linux_R32.7.6_aarch64.tbz2
