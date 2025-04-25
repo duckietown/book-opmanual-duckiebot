@@ -89,7 +89,7 @@ This step needs to be executed only once, even if flashing multiple boards.
 #### Downloading the necessary files
 
    * [Jetson Nano Driver Package R32.7.6 (Jetson-210_Linux_R32.7.6_aarch64.tbz2)](https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.6/t210/jetson-210_linux_r32.7.6_aarch64.tbz2)
-   * [Sample Root Filesystem (Tegra_Linux_Sample-Root-Filesystem_R32.7.2_aarch64.tbz2)](https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.6/t210/tegra_linux_sample-root-filesystem_r32.7.6_aarch64.tbz2)
+   * [Sample Root Filesystem (Tegra_Linux_Sample-Root-Filesystem_R32.7.6_aarch64.tbz2)](https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.6/t210/tegra_linux_sample-root-filesystem_r32.7.6_aarch64.tbz2)
    * [Overlay patch (overlay_32.7.5_PCN211181.tbz2)](https://drive.google.com/file/d/1Kmocz6tPmEaepPIvwKc3bT7MpJqpwkvv/view?usp=sharing)
 
 And then create a new folder with arbitrary name (e.g., `$ mkdir jn`), and move these files in there.
