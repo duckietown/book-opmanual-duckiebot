@@ -6,8 +6,8 @@
 ## Step 2: Docker Account Setup
 
 Duckietown leverages containerization to ensure software portability and reproducibility.
-Most procedures entail the use of `docker` operations behind the scene.
-That is why we need to set up the logins for docker within `dts`.
+Most procedures entail the use of `docker` operations behind the scenes.
+That is why we need to set up the logins for Docker within `dts`.
 
 We use [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
 of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
@@ -36,23 +36,23 @@ Once you have an account on DockerHub and an access token, you can test them by 
 
     docker login -u DOCKER_USERNAME
 
-where `DOCKER_USERNAME` is the username you chose when signing up on DockerHub. 
-You will then be prompted for your password, paste the access token we created earlier and press 
+where `DOCKER_USERNAME` is the username you used when signing up for DockerHub. 
+You will then be prompted for your password, paste the access token we created earlier, and press 
 <kbd>Enter</kbd>.
 
 
 (dt-account-dockerhub-config-docker-set)=
 ### 3) Configure shell
 
-We are now going to provide the same username and access token to the shell in order to automate
-most of the back-end operations involving docker.
+We are now going to provide the same username and access token to the shell to automate
+most of the back-end operations involving Docker.
 
 ```{attention}
 * These credentials are **only stored locally**;
 * **Never use your account password** instead of an access token;
 ```  
 
-You can pass wour DockerHub credentials to the Duckietown Shell by running the following command,
+You can pass your DockerHub credentials to the Duckietown Shell by running the following command,
 ```bash
 dts config docker credentials set --username DOCKERHUB_USERNAME --password DOCKERHUB_ACCESS_TOKEN
 ```
@@ -60,7 +60,7 @@ dts config docker credentials set --username DOCKERHUB_USERNAME --password DOCKE
 ```{admonition} For developers
 :class: dropdown
 
-With an extra **positional** argument, one could specify a custom docker registry server other than 
+With an extra **positional** argument, one could specify a custom Docker registry server other than 
 `docker.io`. Check `dts config docker set --help` for more details.
 ```
 
@@ -96,7 +96,7 @@ and they will be more complex to fix. Instead, if you do not get the expected ou
 
 * First check the troubleshooting guide below.
 * If you run into any issues that can't be solved using the troubleshooting section, 
-  join the Duckietown community on StackOverflow and Slack following the instructions below and search 
+  join the Duckietown community on StackOverflow and Slack, following the instructions below, and search 
   for previous solutions.
 
 You can join the 
@@ -108,11 +108,11 @@ There you can request an invitation to the [Duckietown Stack Overflow](https://s
 I mistakenly set a wrong/unwanted username or password. How can I update the credentials?
 ---
 Just run the command again with the correct credentials. 
-Only the latest inputs are stored for the same docker registry.
+Only the latest inputs are stored for the same Docker registry.
 ```
 
 ```{trouble}
-I would like to remove my stored docker credentials. How could I achieve that?
+I would like to remove my stored Docker credentials. How could I achieve that?
 ---
 Simply use a text editor to remove the section `docker-credentials` in `~/.dt-shell/config.yaml` file.
 ```
