@@ -23,7 +23,7 @@ If you do not have one already,
 you can sign up for a DockerHub account at [this link](https://hub.docker.com/signup).
 
 (dt-account-dockerhub-make-access-token)=
-#### Make an access token
+#### Generate an access token
 
 Follow the instructions on [this page](https://docs.docker.com/docker-hub/access-tokens/)
 to create a new personal access token on DockerHub.
