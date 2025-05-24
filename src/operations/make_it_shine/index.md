@@ -6,14 +6,14 @@
 (led-control)=
 # Operation - Make it Shine
 
-This section describes how control the LEDs on your Duckiebot.
+This section describes how to control the LEDs on your Duckiebot.
 
 Duckiebots have four LEDs, positioned similarly to the head and tail lights on a car.
 
 ```{figure} ../../_images/operations/leds_layout.png
 :name: leds_layout
 
-A duckiebot with the LEDs shining white and a diagram with arrows indicating the front and rear LEDs.
+A Duckiebot with the LEDs shining white and a diagram with arrows indicating the front and rear LEDs.
 ```
 
 LEDs as actuators on a Duckiebot can be used for many purposes, including
