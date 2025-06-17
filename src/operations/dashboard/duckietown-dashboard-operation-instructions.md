@@ -1,122 +1,103 @@
 ```{seo}
-:description: How to setup the Duckietown Dashboard for Duckiebots and Duckiedrones.
-:keywords: Duckietown, Duckiebot, Dashboard setup, Browser-based UI
+:description: How to use the Dashboard.
+:keywords: Duckietown, Duckiebot, Dashboard
 ```
 
 (duckiebot-dashboard-use)=
 # Operation - Use the Dashboard
 
-This section shows how to use the Duckietown Dashboard on the Duckiebot.
+This section describes how to use the `Dashboard`.
+
+To open the `Dashboard`, run:
+
+    dts duckiebot dashboard ![DUCKIEBOT_NAME]
+
+To open a specific page on the `Dashboard`, run the following command, where `![PAGE]` is the page (e.g., `robot/mission_control`):
+
+    dts duckiebot dashboard ![DUCKIEBOT_NAME] --page ![PAGE]
 
 (dashboard-overview)=
-## What is in the Dashboard?
+## Pages
 
-The following video provides a brief tour of the most important features of the Duckietown Dashboard on your Duckiebot.
+```{vimeo} 527022343
+```
 
-<div figure-id="fig:howto-dashboard-use" figure-caption="Dashboard operation tutorial.">
-<dtvideo src="vimeo:527022343"/>
-</div>
+Once logged in, you will see a navigation panel on the left side of the `Dashboard`.
 
-To see all the available dashboard components, you will need to first log in. Once logged into the dashboard, you will see a navigation panel down the left side of the page. The 7 available subpages are:
-
+Note the pages in the table below.
 
 ```{list-table}
 :header-rows: 1
 :name: dashboard-pages
 
-* - PAGE NAME
-  - DESCRIPTION
-* - Portainer
-  - A nice GUI tool for seeing all containers running on a Duckiebot
+* - Page
+  - Description
 * - File Manager
-  - A file manager for managing the files on the robot
+  - A tool for managing the files on a Duckiebot
+* - Portainer
+  - A tool for managing the containers on a Duckiebot
 * - Robot
-  - A summary page for the robot status
-* - Profile
-  - Information for your duckietown account
-* - Package Store
-  - A package store contain all available packages for your Duckiebot
+  - Provides information about the status of a Duckiebot
 * - Users
-  - Advanced Feature: Allow multiple students to use one Duckiebot
+  - Allow multiple accounts to use one Duckiebot
+* - Profile
+  - Provides information about a Duckietown account
+* - Package Store
+  - Provides available packages for a Duckiebot
 * - Settings
-  - Advanced Feature: Change configuration of your Duckiebot dashboard manually
-* - Restful API
-  - Advanced Feature: Documentation to the RestAPI exposed by the Dashboard.
+  - Allows the configuration of the `Dashboard` to be changed manually
 ```
 
-Let's dive into a few pages that you will need to get started.
-
 (dashboard-robot)=
-## The Robot Page
+### Robot
 
-In this page you will find several tabs that help you see and understand the status of your Duckiebot. The default tab is `Info`.
+On this page, you can find several tabs related to your Duckiebot.
 
 (dashboard-robot-overview)=
-### Robot - Info
+#### Info
 
-In this tab, you can find information for your robot - including your robot name, type, configuration, and critical information such as CPU usage, temperature, and other crucial robot vitals.
+In this tab, you can find information about your Duckiebot, including its name, type, configuration, CPU usage, temperature, etc.
 
 ```{figure} ../../_images/assembly_setup/dashboard_info.png
 :name: dashboard_info_tab
 ```
 
 ```{note}
-From this page you can read the Duckiebot's firmware version, i.e., the version of the base image used 
-during [initialization](setup-duckiebot-sd-card). 
+In this tab, you can find your Duckiebot's [firmware version](setup-duckiebot-sd-card).
 ```
 
 (dashboard-mission-control)=
-### Robot - Mission Control
+#### Mission Control
 
-This is the Mission Control tab.
+In this tab, you can see what your Duckiebot sees, its lateral and angular speed, and a plot of its left and right motor speeds.
 
 ```{figure} ../../_images/assembly_setup/dashboard_mission_control.png
 :name: dashboard_mission_control_tab
 ```
 
-In this tab you can see what the Duckiebot sees via the iamge stream, the lateral and angular speed of your robot, and a plot of left and right motor speed.
-This is the tab that lets you monitor and control your Duckiebot.
-
-```{tip}
-The page contains 4 blocks by default.
-Feel free to drag them around and rearrange them as you please.
-You can also use the menu button of each block to resize them.
-```
-
-```{trouble}
-I do not see the camera image on the dashboard.
----
-This could be caused by a few issues. Make sure you are accessing the dashboard using `http://ROBOT_HOSTNAME.local/` instead of directly accessing the dashboard using robot IP address. Make sure the lens cap has been removed from your camera. If you still don't see an image, jump to the [Operation - Make it See](make-it-see) page for more debugging options.
-```
-
 (dashboard-robot-health)=
-### The Health Page
+#### Health
 
-This is the Health Page. It will show you a plot of the robot's health status such as temperature, frequency, and CPU usage. It is a good debugging tool to watch your code's resource usage.
+In this tab, you can see a plot of your Duckiebot's temperature, frequency and CPU usage.
 
 ```{figure} ../../_images/assembly_setup/dashboard-health.png
 :name: dashboard_health_page
 ```
 
 (dashboard-robot-architecture)=
-### The Architecture Page
+#### Architecture
 
-This is the Architecture Page. It will allow you to visualize all the published ROS topics and see their details. It is a useful tool to see what is running and what is not. You can also use this tool as a replacement of `rqt-graph`. For more instructions on rqt-graph, you can see it [here](rqt-graph-no-vnc)
+In this tab, you can see the a graphical representation of the ROS network on your Duckiebot.
 
 ```{figure} ../../_images/assembly_setup/dashboard-architecture.png
 :name: dashboard_architecture_page
 ```
 
 (dashboard-portainer)=
-## The Portainer Page
+### Portainer
 
-Portainer is a provided tool for managing all the docker containers that are running on the Duckiebot. Using portainer tools, you can quickly see the status of the containers on your Duckiebot.
+On this page, you can manage the containers on your Duckiebot.
 
 ```{figure} ../../_images/assembly_setup/dashboard-portainer.png
 :name: dashboard_portainer_page
 ```
-
-You can select **containers** to see all the containers on the Duckiebot.
-
-For more information about portainer, you can find them in [this](#sub:dashboard-portainer) page.
-

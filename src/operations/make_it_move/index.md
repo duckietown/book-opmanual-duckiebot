@@ -1,121 +1,103 @@
 ```{seo}
-:description: How to remote control a Duckiebot through a keyboard (or joystick). Welcome to open loop control.
+:description: How to make a Duckiebot move.
 :keywords: Duckietown, Duckiebot, remote control, keyboard control
 ```
 
-(rc-control)=
+(operation-make-it-move)=
 # Operation - Make it Move
 
 This section describes how to make your Duckiebot move.
 
-```{tip}
-**Troubleshooting** sections are provided at the end of each operation page - start there if you run into any issues.
+(operation-make-it-move-keyboard-controller)=
+## The Keyboard Controller
+
+The easiest way to make your Duckiebot move is by using the `Keyboard Controller`.
+
+```{figure} ../../_images/operations/keyboard_controller.png
+:name: keyboard-controller
+
+The `Keyboard Controller`.
 ```
 
-(make-it-move_shell)=
-## Keyboard control
-
-The easiest way to move a Duckiebot is by using the `keyboard_control` command provided in the Duckietown shell. This video shows how to drive a Duckiebot using the keyboard, through the Duckietown Shell.
-
-<div figure-id="fig:howto-virtual" figure-caption="Duckiebot keyboard control.">
-<dtvideo src="vimeo:526584868"/>
-</div>
-
-### Option 1: Use the GUI (For Linux Users)
-
-If you are using macOS, [see Option 2](mac-users-cli). 
-
-To move your Duckiebot using your computer's keyboard open a terminal and run:
+To activate the `Keyboard Controller`, run:
 
     dts duckiebot keyboard_control ![DUCKIEBOT_NAME]
 
-```{attention}
-For all operation commands that use the Duckiebot's name - replace `![DUCKIEBOT_NAME]` with just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
-```
-
-After startup, the `keyboard_control` command will open an interface window. Make sure the window is active by selecting it, and use the keys in the table below to command your Duckiebot:
-
-```{figure} ../../_images/assembly_setup/keyboard_gui.png
-:name: keyboard_control_gui
-
-The keyboard control graphical user interface.
-```
-
-The following keys control the Duckiebot:
+Note the keys in the table below.
 
 ```{list-table}
 :header-rows: 1
-:name: keyboard-control-commands
+:name: keyboard-controller-commands
 
-* - KEY
+* - Key
   - Function
-* - Arrow Keys - <kbd>&uarr;</kbd> <kbd>&darr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd>
-  - Steer your Duckiebot
-* - <kbd>q</kbd>
-  - Quit
-* - <kbd>a</kbd>
-  - Turn on lane following (see note below)
-* - <kbd>s</kbd>
-  - Stop lane following
-* - <kbd>i</kbd>
-  - Toggle Anti-Instagram
+* - <kbd>W</kbd>
+  - Drive forwards
+* - <kbd>S</kbd>
+  - Drive backwards
+* - <kbd>A</kbd>
+  - Turn left
+* - <kbd>D</kbd>
+  - Turn right
+* - <kbd>E</kbd>
+  - Toggle the `Emergency Stop` switch
+* - <kbd>F</kbd>
+  - Toggle the `Autopilot` switch
+* - <kbd>X</kbd>
+  - Increase the `Gain`
+* - <kbd>Z</kbd>
+  - Decrease the `Gain`
+* - <kbd>V</kbd>
+  - Increase the `Trim`
+* - <kbd>C</kbd>
+  - Decrease the `Trim`
+* - <kbd>Space</kbd>
+  - Save the `Gain` and `Trim`
+* - <kbd>R</kbd>
+  - Refresh the window
+* - <kbd>T</kbd>
+  - Open the `Debug Console`
 ```
 
 ```{note}
-The <kbd>a</kbd>, <kbd>s</kbd>, and <kbd>i</kbd> functions require the [lane following demo](demo-lane-following) to be running. For now, just try out the keyboard control and get your Duckiebot moving!
+The <kbd>F</kbd> key's function (`Autopilot`) requires software, such as the [lane following demo](demo-lane-following), to be running. For now, just try out the `Keyboard Controller` to get your Duckiebot moving.
 ```
 
-(mac-users-cli)=
-### Option 2: Use the CLI (For Mac Users)
-
-If you are using macOS and find the keyboard interface is not responsive, run the stack directly on the Duckiebot and use the same keys within the command line interface as listed in the [table above](keyboard-control-commands):
-
-    dts duckiebot keyboard_control ![DUCKIEBOT_NAME] --cli
-
+(operation-make-it-move-troubleshooting)=
 ## Troubleshooting
 
 ```{trouble}
-The Duckiebot does not move, and I cannot see the commands being sent to the Duckiebot when looking at the **Dashboard > Mission Control** page.
+My Duckiebot does not move.
 ---
-Make sure that the keyboard gui window is active by selecting it, then try the keyboard commands again.  Some keyboard configurations may require that you use <kbd>w</kbd> <kbd>a</kbd> <kbd>s</kbd> <kbd>d</kbd> rather than <kbd>&uarr;</kbd> <kbd>&darr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd>.
+Before trying to use the `Keyboard Controller`, make sure that it is active by selecting it's window.
 ```
 
 ```{trouble}
-I can see the commands being sent to the Duckiebot (e.g., through the **Dashboard > Mission Control**), but the Duckiebot does not move. My **Dashboard > Robot > Components** page shows a red alert for the `HUT`.
+The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `![DUCKIEBOT_NAME]/actuator/wheels/base/pwm` `DTPS` topic, after following [](operation-view-dtps-topics), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard ![DUCKIEBOT_NAME] --page robot/components`) shows a red alert for the HUT.
 ---
-If you have a `HUT` v3.1 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](reflash-microcontroller).
+If you have a HUT v3.1, re-flash it by following [](reflash-microcontroller).
 ```
 
 ```{trouble}
-I have reflashed the HUT but the joystick commands still do not work or the Duckiebot operates in a jerky manner.  
-Additionally, the ToF sensor and front bumper are not detected on the dashboard Components page. I may also be 
-having issues with the screen.
+I have reflashed the HUT but my Duckiebot still does not move or moves in a jerky manner. Additionally, the ToF sensor and front bumper are not detected on the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard ![DUCKIEBOT_NAME] --page robot/components`). I may also be having issues with the screen.
 ---
-Disconnect the ToF sensor from the front bumper and use the long cable that originally connected the front bumper to 
-the HUT to connect the ToF sensor directly to that same HUT port. Then reboot. This bypasses a known multiplexer 
-issue on some bumpers that can cause other HUT misbehaviors.
+Disconnect the ToF sensor from the front bumper and use the long I2C cable, that originally connected the front bumper to the HUT, to connect the ToF sensor directly to that same HUT port. Finally, reboot your Duckiebot. This procedure bypasses a known multiplexer issue on some front bumpers that can cause other issues with the HUT.
 ```
 
 ```{trouble}
-I checked the two troubleshooting issues above, and my Duckiebot still doesn't move.
+I have  connected the ToF sensor directly to the same HUT port that the front bumper was originally connected to and rebooted my Duckiebot but it still does not move.
 ---
-Check that the `duckiebot-interface` container is running
+Make sure that the `duckiebot-interface` container is running by opening the [Portainer interface](dashboard-portainer) or by running:
 
-Open [the Portainer interface](dashboard-portainer) and check the running containers. You should see one that has a name that contains `duckiebot-interface` (exact container name will depend on your robot version).
+    `docker -H ![DUCKIEBOT_NAME].local ps`
 
-You can also determine this by running:
+The exact name of the container will depend on your Duckiebot's version. If you do not see the `duckiebot-interface` container, update your Duckiebot by running:
 
-    `docker -H ![ROBOT_NAME].local ps`
-
-and look at the output to find the `duckiebot-interface` container and verify that it is running.
-
-If you don't see the container, your base image is out of date - update your Duckiebot with the command
-
-    `dts duckiebot update ![ROBOT_NAME]`
+    `dts duckiebot update ![DUCKIEBOT_NAME]`
 ```
 
 ```{trouble}
-Duckiebot goes backwards, even though I command it to go forward.
+When I press the <kbd>W</kbd> key, my Duckiebot moves backwards.
 ---
-If you have a `DB17` or `DB18`, revert the polarities (plus and minus cables) of the cables that go to the motor driver (`HUT`) for both motors.
+If you have a `DB17` or `DB18`, revert the polarities (`+` and `-`) of the cables that go to the motor driver (HUT) for both motors.
 ```

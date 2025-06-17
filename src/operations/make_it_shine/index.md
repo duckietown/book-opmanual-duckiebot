@@ -1,82 +1,88 @@
 ```{seo}
-:description: How to actuate the Duckiebot LEDs - changing color and intensity.
+:description: How to control a Duckiebot's LEDs by changing their color and intensity.
 :keywords: Duckietown, Duckiebot, LEDs, change LED color, change LED intensity
 ```
 
-(led-control)=
+(operation-make-it-shine)=
 # Operation - Make it Shine
 
-This section describes how to control the LEDs on your Duckiebot.
+This section describes how to control your Duckiebot's LEDs.
 
 Duckiebots have four LEDs, positioned similarly to the head and tail lights on a car.
 
 ```{figure} ../../_images/operations/leds_layout.png
 :name: leds_layout
 
-A Duckiebot with the LEDs shining white and a diagram with arrows indicating the front and rear LEDs.
+A Duckiebot with the LEDs shining white (left) and a diagram with arrows indicating the front and rear LEDs (right).
 ```
 
-LEDs as actuators on a Duckiebot can be used for many purposes, including
+LEDs as actuators on a Duckiebot can be used for many purposes, including but not limited to:
 
 * Indicating what mode or mission the Duckiebot is running
 * Communicating state changes in the controller
-* Signaling upcoming turns or other navigation plans
+* Signaling upcoming turns or other navigational plans
 * Expressing character and personality
-* And simply lighting the driving environment
+* Lighting the driving environment
 
-(make-it-shine_shell)=
-## LED control
+(operation-make-it-shine-led-controller)=
+## The LED Controller
 
-You can update the LEDs on your Duckiebot manually by bringing up the LED Widget using the `led_control` command provided by the Duckietown Shell.
+The easiest way to control your Duckiebot's LEDs is by using the `LED Controller`.
 
-Open a terminal and run:
+```{figure} ../../_images/operations/led_controller.png
+:name: led-controller
+
+The `LED Controller`.
+```
+
+To activate the `LED Controller`, run:
 
     dts duckiebot led_control ![DUCKIEBOT_NAME]
 
-```{attention}
-For all operation commands that use the Duckiebot's name - replace `![DUCKIEBOT_NAME]` with just the Duckiebot's `hostname`, do not include `.local` part that you used previously to access the dashboard.
-```
+To control your Duckiebot's LEDs, use the buttons and sliders to change their colors and intensities, respectively.
 
-After startup, the `led_control` command will open an interface window. Make sure the window is active by selecting it, and press the buttons to update the color and intensity of your Duckiebot's LEDs.
+Note the keys in the table below.
 
-```{figure} ../../_images/operations/led_widget.png
-:name: led_widget
+```{list-table}
+:header-rows: 1
+:name: led-controller-commands
 
-The LED control interface
+* - Key
+  - Function
+* - <kbd>R</kbd>
+  - Refresh the window
+* - <kbd>T</kbd>
+  - Open the `Debug Console`
 ```
 
 ## Troubleshooting
 
 ```{trouble}
-When I press the buttons, the LEDs do not update. My **Dashboard > Robot > Components** page shows a red alert for the `HUT`.
+My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `![DUCKIEBOT_NAME]/actuator/lights/base/pattern` `DTPS` topic, after following [](operation-view-dtps-topics).
 ---
-If you have a `HUT` v3.1 you will stumble on this problem the first time you try to move your Duckiebot. Re-flash your `HUT` following the procedure described in [](reflash-microcontroller).
+Contact support.
 ```
 
 ```{trouble}
-I have reflashed the HUT but the led commands still do not work.  
-Additionally, the ToF sensor and front bumper are not detected on the dashboard Components page. I may also be 
-having issues with the screen and joystick control.
+I can see messages being sent to my Duckiebot when looking at the `![DUCKIEBOT_NAME]/actuator/lights/base/pattern` `DTPS` topic, after following [](operation-view-dtps-topics), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard ![DUCKIEBOT_NAME] --page robot/components`) shows a red alert for the HUT.
 ---
-Disconnect the ToF sensor from the front bumper and use the long cable that originally connected the front bumper to 
-the HUT to connect the ToF sensor directly to that same HUT port. Then reboot. This bypasses a known multiplexer 
-issue on some bumpers that can cause other HUT misbehaviors.
+If you have a HUT v3.1, re-flash it by following [](reflash-microcontroller).
 ```
 
 ```{trouble}
-I checked the two troubleshooting issues above, and my Duckiebot still doesn't respond.
+I have reflashed the HUT but the LEDs still do not update. Additionally, the ToF sensor and front bumper are not detected on the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard ![DUCKIEBOT_NAME] --page robot/components`). I may also be having issues with the screen.
 ---
-Check that the `duckiebot-interface` container is running
+Disconnect the ToF sensor from the front bumper and use the long I2C cable, that originally connected the front bumper to the HUT, to connect the ToF sensor directly to that same HUT port. Finally, reboot your Duckiebot. This procedure bypasses a known multiplexer issue on some front bumpers that can cause other issues with the HUT.
+```
 
-Open [the Portainer interface](dashboard-portainer) and check the running containers. You should see one that has a name that contains `duckiebot-interface` (exact container name will depend on your robot version).
+```{trouble}
+I have connected the ToF sensor directly to the same HUT port that the front bumper was originally connected to and rebooted my Duckiebot but the LEDs still do not update.
+---
+Make sure that the `duckiebot-interface` container is running by opening the [Portainer interface](dashboard-portainer) or by running:
 
-You can also determine this by running:
+    `docker -H ![DUCKIEBOT_NAME].local ps`
 
-    `docker -H ![ROBOT_NAME].local ps`
+The exact name of the container will depend on your Duckiebot's version. If you do not see the `duckiebot-interface` container, update your Duckiebot by running:
 
-and look at the output to find the `duckiebot-interface` container and verify that it is running.
-
-If you don't see the container, your base image is out of date - update your Duckiebot with the command
-
-    `dts duckiebot update ![ROBOT_NAME]`
+    `dts duckiebot update ![DUCKIEBOT_NAME]`
 ```
