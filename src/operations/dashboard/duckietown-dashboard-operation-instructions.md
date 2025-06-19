@@ -60,6 +60,8 @@ In this tab, you can find information about your Duckiebot, including its name, 
 
 ```{figure} ../../_images/assembly_setup/dashboard_info.png
 :name: dashboard_info_tab
+
+The `Info` tab on the `Robot` page of the `Dashboard`.
 ```
 
 ```{note}
@@ -73,6 +75,8 @@ In this tab, you can see what your Duckiebot sees, its lateral and angular speed
 
 ```{figure} ../../_images/assembly_setup/dashboard_mission_control.png
 :name: dashboard_mission_control_tab
+
+The `Mission Control` tab on the `Robot` page of the `Dashboard`.
 ```
 
 (dashboard-robot-health)=
@@ -82,6 +86,8 @@ In this tab, you can see a plot of your Duckiebot's temperature, frequency and C
 
 ```{figure} ../../_images/assembly_setup/dashboard-health.png
 :name: dashboard_health_page
+
+The `Health` tab on the `Robot` page of the `Dashboard`.
 ```
 
 (dashboard-robot-architecture)=
@@ -91,6 +97,8 @@ In this tab, you can see the a graphical representation of the ROS network on yo
 
 ```{figure} ../../_images/assembly_setup/dashboard-architecture.png
 :name: dashboard_architecture_page
+
+The `Architecture` tab on the `Robot` page of the `Dashboard`.
 ```
 
 (dashboard-portainer)=
@@ -100,4 +108,6 @@ On this page, you can manage the containers on your Duckiebot.
 
 ```{figure} ../../_images/assembly_setup/dashboard-portainer.png
 :name: dashboard_portainer_page
+
+The `Portainer` page of the `Dashboard`.
 ```

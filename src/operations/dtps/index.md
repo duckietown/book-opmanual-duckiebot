@@ -1,5 +1,5 @@
 ```{seo}
-:description: How to view DTPS topics running on a Duckiebot.
+:description: How to view the DTPS topics on a Duckiebot.
 :keywords: Duckietown, Duckiebot, DTPS
 ```
 
