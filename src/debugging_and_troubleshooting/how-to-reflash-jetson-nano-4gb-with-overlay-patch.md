@@ -1,5 +1,5 @@
 ```{seo}
-:description: How to reflash a Jetson Nano 4GB development kit.
+:description: How to reflash a Jetson Nano 4GB development kit in Duckietown.
 :keywords: Duckietown, Duckiebot, Nvidia Jetson Nano, Jetson Nano, Jetson Nano development kit, Jetson does not boot, white screen nvidia logo, jetson nano 4gb reboots continuously
 ```
 
@@ -23,11 +23,15 @@
 ```
 
 ```{attention}
-After running this procedure it will be necessary to reflash the Duckietown SD card. The minimum sufficient firmware version is  `v1.4.2`. 
+After running this procedure it will be necessary to reflash the Duckietown SD card. Use version  `v1.4.6` or above. 
 ```
 
 ```{warning}
-You should not proceed with these instructions unless your Jetson is affected by the booting problem described below. This fix applies to a specific use case and irreversibly changes your Jetson's onboard filesystem. We do not provide instructions to revert the effects of these instructions. If you are uncertain, refer to the [Duckiebot FAQ Guide](troubleshooting-faq) for help or [reach out to the Duckietown team](https://duckietown.com/contact/). 
+Do not go through with these instructions unless your Jetson is affected by the booting problem described below. 
+
+This fix applies to a specific use case and irreversibly changes your Jetson's onboard filesystem
+
+Reverting the effect of these instruction is non-trivial and we do not provide instructions to do so. If you are uncertain on whether to proceed, refer to the [Duckiebot FAQ Guide](troubleshooting-faq) for help or [reach out to the Duckietown team](https://duckietown.com/contact/). 
 ```
 
 (reflash-jetson-4gb-when)=
@@ -35,7 +39,7 @@ You should not proceed with these instructions unless your Jetson is affected by
 
 * **What**: This procedure flashes the Jetson Nano Development Kit's onboard eMMC memory with a basic Ubuntu operating system (OS), necessary for the board to boot from SD card. 
 
-* **When**: A typical example of when it is necessary to flash the Jetson is that the Duckiebot does not seem to perform the first boot, and upon connecting the Jetson Nano to a screen with an HDMI cable, you see only an NVIDIA logo (white or black backgrounds) occasionally flickering (stuck on rebooting). Upon further debugging (e.g., looking at the UART logs during boot), the Jetson seems to be recognized as a 2GB board, while it should be a 4GB board.
+* **When**: Only use these instructions if: (a) you have a "Blue Jetson Nano", and (b) it does not seem to boot following the [standard Duckietown initialization instructions](setup-duckiebot-sd-card), and (c) upon connecting the Jetson Nano to a screen with an HDMI cable, you see only an NVIDIA logo (white or black backgrounds) occasionally flickering (stuck on rebooting).
 
 * **Why**: "recent" (post February 2025, to the best of our knowledge) Jetson Nano 4GB modules have a different memory module that requires a specific patch to be recognized. Without installing this patch, the onboard memory is not recognized correctly and "nothing works". Applying the patch requires (re)flashing the developer board.
 
@@ -77,7 +81,7 @@ In the Duckietown world, this procedure is usually performed by the Duckietown t
 (reflash-jetson-4gb-how)=
 ## How to flash the Jetson Nano 4GB Development Kit with eMMC memory
 
-We will have to prepare our base station, and the Jetson board before executing this procedure.
+First, prepare your base station (laptop or desktop) and the Jetson board before executing this procedure.
 
 (reflash-jetson-4gb-software-step)=
 ### Step 1. Preparing the flashing environment on the base station
@@ -405,7 +409,13 @@ Make sure you are using a native Ubuntu OS and not a virtual machine.
 ```{trouble}
 I completed the flashing of the Jetson Nano successfully, but it still does not work (e.g., static NVIDIA logo on screen). In particular, I see from the logs that my Jetson is recognized as a 2GB version, and not 4GB. 
 ---
-The overlay patch has not been applied correctly. Make sure to set up your flashing environment according to the instructions. Do not skip any step. 
+The overlay patch has not been applied correctly. Make sure to set up your flashing environment according to the instructions. Do not skip steps. 
+```
+
+```{trouble}
+I followed all the instructions and it still does not boot correctly.
+---
+Make sure to use a Duckietown SD card version `1.4.6` or above. 
 ```
 
 (reflash-jetson-additional)=
