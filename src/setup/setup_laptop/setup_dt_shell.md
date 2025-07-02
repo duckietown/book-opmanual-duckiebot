@@ -21,10 +21,17 @@ that provides all of the necessary Duckietown operations, such as
 (laptop-setup-ubuntu-shell)=
 **1) Install the Duckietown Shell (`dts`)**
 
-Install the Duckietown Shell using the following command,
+Install the Duckietown Shell using the following command. First install `pipx`
 
-    pip3 install --no-cache-dir --user --upgrade duckietown-shell
+    sudo apt install pipx
 
+Then install the `dts` by running
+
+    pipx install duckietown-shell
+    
+And finally we need to install `setuptools`:
+
+    pipx inject duckietown-shell setuptools
 
 **2) Source `dts`**
 
