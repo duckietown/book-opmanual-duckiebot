@@ -3,7 +3,7 @@
 :keywords: duckietown, duckiebot, operation manual, robotics class, getting started, autonomous driving, db21, db21-j4, AV, autonomous vehicle, self-driving car, self-driving, robot autonomy, AI robotics, simulation, hardware, jupyter notebook, nvidia jetson nano 4gb, jetson nano, assembly, calibration, operation, development, handling
 ```
 
-(book)=
+(the-duckiebot-operation-manual)=
 # The Duckiebot Operation Manual
 
 Welcome to the operation manual for your Duckiebot!
