@@ -19,26 +19,11 @@ that provides all of the necessary Duckietown operations, such as
 * (and more!)
 
 (laptop-setup-ubuntu-shell)=
-**1) Install the Duckietown Shell (`dts`)**
+**Install the Duckietown Shell (`dts`)**
 
-Install the Duckietown Shell using the following command,
+Install the Duckietown Shell using the following command:
 
-    pip3 install --no-cache-dir --user --upgrade duckietown-shell
-
-
-**2) Source `dts`**
-
-Make sure your system can find local binaries by adding the following to your `.bashrc` file. 
-
-```{attention}
-If you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
-```
-
-    export PATH=~/.local/bin:${PATH}
-
-Then source the updates to your current shell or restart your shell.
-
-    source ~/.bashrc
+    pipx install duckietown-shell
 
 ---
 
@@ -71,35 +56,11 @@ that provides all of the necessary Duckietown operations, such as
 * (and more!)
 
 (laptop-setup-mac-shell)=
-**1) Install the Duckietown Shell (`dts`)**
+**Install the Duckietown Shell (`dts`)**
 
-Install the Duckietown Shell using the following command,
+Install the Duckietown Shell using the following command:
 
-
-    pip3 install --no-cache-dir --user --upgrade duckietown-shell
-
-
-**2) Source `dts`**
-
-Make sure your system can find local `dts` binaries by adding the following to your `.bashrc` file. 
-
-```{attention}
-If you are using `zsh`, replace the `.bashrc` in the commands below with `.zshrc` instead.
-```
-
-    export PATH=~/.local/bin:${PATH}
-
-Then source the updates to your current shell
-
-    source ~/.bashrc
-
-```{attention}
-If this does not work, try using `.bash_profile` and/or `export PATH=~/Library/Python/VERSION/bin:${PATH}` instead, where `VERSION` is your Python version.  
-
-If you are unsure of your Python version, or have multiple, try the following: 
-<pre><code>find ~/Library/Python   -name 'dts' -type f -exec dirname {} \;</code></pre>  
-The output, if successful, can be used to set the `PATH` variable.
-```
+    pipx install duckietown-shell
 
 ---
 
@@ -132,13 +93,11 @@ that provides all of the necessary Duckietown operations, such as
 You can install the Duckietown Shell in your Ubuntu WSL distro.
 
 (laptop-setup-wsl-shell)=
-**1) Install the Duckietown Shell (`dts`)**
+**Install the Duckietown Shell (`dts`)**
 
-Install the Duckietown Shell using the following command,
+Install the Duckietown Shell using the following command:
 
-    pip3 install --no-cache-dir --user --upgrade duckietown-shell
-
-Once installed open a new shell and follow the setup prompts.
+    pipx install duckietown-shell
 
 ---
 
