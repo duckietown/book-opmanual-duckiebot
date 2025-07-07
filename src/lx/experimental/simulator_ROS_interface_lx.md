@@ -41,7 +41,7 @@ Since now we are running our code on a fake robot (which is really our local mac
 
 Some apt packages you will need are: `freeglut3-dev`, `xvfb`
 
-You will also need the `duckietown-gym-daffy` pip3 package
+You will also need the `duckietown-gym-daffy` pipx package
 
 Finally, to ensure your publishers and subscribers parse the same ROS messages as the rest of the Duckietown pipeline, you might want to make use of `duckietown_msgs` (which is just a ROS package defined in [`dt-ros-commons`](https://github.com/duckietown/dt-ros-commons/tree/daffy/packages/duckietown_msgs)).
 
