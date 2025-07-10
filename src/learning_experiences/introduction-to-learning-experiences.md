@@ -1,27 +1,36 @@
-(running-exercises)=
-# General Exercise Running Procedure 
+# Introduction to Learning Experiences
 
-```{todo}
-this must be updated to new `LX` workflow
+```{seo}
+:description: The LXs (Learning Experiences) available for a Duckiebot.
+:keywords: Duckietown, Duckiebot, LXs, Learning Experiences
 ```
 
-This page describes the exercises' infrastructure. 
-This infrastructure affords a seamless method to build on existing baselines, test them in simulation, 
-test them on robot hardware either remotely or locally, and then evaluate and submit them as 
-challenges with the [AIDO challenges infrastructure](book-research-aido:book).
+This chapter describes the `LXs` (`Learning Experiences`) available for your Duckiebot.
 
 ```{needget}
-- A Duckiebot that is initialized
-- Laptop configured, according to [](laptop-setup).
-- That you are able to submit a challenge according to [](book-research-aido:cm-first).
+* Completed [](../calibrations/camera.md).
+* Completed [](../calibrations/kinematics.md).
 ---
+Knowledge on the `LXs` available for your Duckiebot.
 ```
+
+## Introduction
+
+The following `LXs` are available for your Duckiebot:
+
+* [Braitenberg](https://github.com/duckietown/duckietown-lx/tree/mooc2022/braitenberg).
+* [Collision Checker](https://github.com/duckietown/duckietown-lx/tree/mooc2022/collision-checker).
+* [Modeling and Control](https://github.com/duckietown/duckietown-lx/tree/mooc2022/modcon).
+* [Visual Lane Servoing](https://github.com/duckietown/duckietown-lx/tree/mooc2022/visual-lane-servoing).
+* [Object Detection](https://github.com/duckietown/duckietown-lx/tree/mooc2022/object-detection).
+* [State Estimation](https://github.com/duckietown/duckietown-lx/tree/mooc2022/state-estimation).
+* [Planning](https://github.com/duckietown/duckietown-lx/tree/mooc2022/planning).
 
 ```{todo}
-add what we get in the needget section above
+this must be updated to the new `LX` workflow.
 ```
 
-## Video Tutorial
+### Video Tutorial
 
 ```{vimeo} 534777903
 ```
@@ -31,9 +40,7 @@ Add caption "Learn how to use the exercises infrastructure." and reference "fig:
 the video above.
 ```
 
-
-## Getting Started
-
+### Getting Started
 
 Fork the [`duckietown-lx`](https://github.com/duckietown/duckietown-lx) repository and clone it onto your computer.
 
@@ -52,12 +59,12 @@ Enter the `mooc-exercises` folder that you just cloned do:
 In here you will see a number of folders. Each folder corresponds to an exercise.
 
 
-## The Anatomy of an Exercise
+### The Anatomy of an Exercise
 
 
 Exercises should contain all of the following:
 
-### `config.yaml`
+#### `config.yaml`
 
 This contains information about the exercise. Example:
 
@@ -102,11 +109,11 @@ The `agent_run_cmd` indicates the command that should be run when the container 
 The `notebooks` contains the list of the notebooks that have to be converted to python scripts.
 For each notebook must be specified the name of the notebook `name`, and the name of the package where the generated script has to be copied `package_name`. Multiple notebooks can be listed.
 
-### `exercise_ws`
+#### `exercise_ws`
 
 As indicated above, the `exercise_ws` directory is where the code should go. For the case of ROS packages, they should go inside a `src` directory inside `exercise_ws`.
 
-### `assets`
+#### `assets`
 
 The `assets` folder contains two subfolders, `setup` and `calibrations`.
 
@@ -114,13 +121,13 @@ The `assets` folder contains two subfolders, `setup` and `calibrations`.
 
  - The `calibrations` folder contains robot calibrations with a similar directory structure as is on the Duckiebot.
 
-### `launchers`
+#### `launchers`
 
 The `launchers` folder contains scripts that can be run by the agent. Specifically, the one that is indicated in the `config.yaml` file will be run by default when the agent container is run or when your exercise is submitted through the challenges infrastructure.
 
 Note: You can specify different launchers to run depending on whether you are testing/developing with the *exercises* infrastructure or submitting through the *challenges* infrastructure.
 
-### `notebooks`
+#### `notebooks`
 
 The `notebooks` folder contains pedagogical notebooks that can be run. Some parts of the notebooks indeed are dedicated to tests, to check if the code is working properly before starting the simulation or testing on the Duckiebot.
 
@@ -139,23 +146,23 @@ This command convert the notebook into a python script and place it inside the p
 
 The same is when running the `run` command, with the difference that in this case the ROS workspace is not built:
 
-    dts exercises run ![options]
+    dts exercises run OPTIONS
 
 
-### `requirements.txt`
+#### `requirements.txt`
 
 The `requirements.txt` file contains any specific python requirements that you need for your submission. Note that these are requirements need over and above the *base image*.
 
-### `Dockerfile`
+#### `Dockerfile`
 
 The `Dockerfile` contains the recipe for making your submission. In the normal case, this is relatively straightforward. We install the requirements, copy in the code and run a `launcher`.
 
 
-## The Exercises API
+### The Exercises API
 
 In the following we will describe the current commands that are supported within `dts exercises` and how they are used.
 
-### Building your code
+#### Building your code
 
 You can start by building your code with:
 
@@ -166,7 +173,7 @@ If you go inside the `exercises_ws` folder you will notice that there are more f
 Note: every time you run a `dts exercises` command you have to be inside an exercise folder or you will see an error.
 
 
-### Testing your code
+#### Testing your code
 
 With `dts exercises test` you can test your agent:
 
@@ -175,7 +182,7 @@ With `dts exercises test` you can test your agent:
 3. with all of the code running on your robot.
 
 
-#### Running in Simulation
+##### Running in Simulation
 
 You can run your current solution in the gym simulator with:
 
@@ -183,16 +190,16 @@ You can run your current solution in the gym simulator with:
 
 Then you can look at what's happening by looking through the "novnc" browser at http://localhost:8087 .
 
-If you are running an exercise with a ROS-based baseline, you can use all of the existing ROS tools from this browser desktop. For example,  
+If you are running an exercise with a ROS-based baseline, you can use all of the existing ROS tools from this browser desktop. For example,
 open up the `rqt_image_view`, resize it, and choose `/agent/camera_node/image/compressed` in the dropdown. You should see the image from the robot in the simulator.
 
-You might want to launch a virtual joystick by opening a terminal and doing:
+You may want to launch a virtual joystick by opening a terminal and doing:
 
     dt-launcher-joystick
 
 If you are running the `duckietown_baseline`, by default the duckiebot is in joystick control mode, so you can freely drive it around. You can also set it to `LANE FOLLOWING` mode by pushing the `a` button when you have the virtual joystick active. If you do so you will see the robot move forward slowly and never turn.
 
-You might also explore the other outputs that you can look at in `rqt_image_view`.
+You may also explore the other outputs that you can look at in `rqt_image_view`.
 
 Also useful are some debugging outputs that are published and visualized in `RViz`.
 You can open `RViz` through the terminal in the `novnc` desktop by typing:
@@ -210,20 +217,20 @@ All of this data can be viewed as data through the command line also. Take a loo
 add pictures.
 ```
 
-#### Testing Your agent on the Robot
+##### Testing Your agent on the Robot
 
 If you are using a Linux laptop, you have two options, local (i.e., on your laptop) and remote (i.e., on the Duckiebot). If you are Mac user stick to the remote option. To run "locally"
 
-    dts exercises test --duckiebot_name ![ROBOT_NAME] --local
+    dts exercises test --duckiebot_name DUCKIEBOT_NAME --local
 
 To run on the Duckiebot:
 
-    dts exercises test --duckiebot_name ![ROBOT_NAME]
+    dts exercises test --duckiebot_name DUCKIEBOT_NAME
 
 In both cases you should still be able to look at things through novnc by pointing your browser to  http://localhost:8087 . If you are running on Linux, you can load up the virtual joystick and start lane following as above.
 
 
-#### Interactive Mode
+##### Interactive Mode
 
 You may find it annoying to completely shut down all of the running images and restart them to make a simple change to your code. To make things faster, you can use the `--interactive` flag with `dts exercises test`.
 
@@ -240,11 +247,11 @@ Then you can run the lane_following demo using your lane_controller by running
 
 You can do the normal thing of going to novnc and putting it into lane following mode or driving around with the joystick or whatever.
 
-If you would like to change your code and re-run, just edit your code on your laptop, and then go to that terminal and do CTRL-C. You will see everything start to shut down. Then you can simply rerun the agent and it will have the new code that you just modified since it's mounted into the agent container. So just do `launchers/run_agent.sh` again and it will start up again.
+If you would like to change your code and re-run, just edit your code on your laptop, and then go to that terminal and press <kbd>CTRL</kbd>+<kbd>C</kbd>. You will see everything start to shut down. Then you can simply rerun the agent and it will have the new code that you just modified since it's mounted into the agent container. So just do `launchers/run_agent.sh` again and it will start up again.
 
 Note: You will see an output from the anti-instagram node saying it's waiting for the first image. Don't worry, if you go to novnc and put the agent in lane following mode or drive with the joystick, it will start to receive images and that output will go away
 
-Note: There is a timeout on the simulator, so if you do CTRL-C and then spend a while editing your code, it's likely that the simulator will have shut down. So either leave it running while you edit your code or just restart everything.
+Note: There is a timeout on the simulator, so if you press <kbd>CTRL</kbd>+<kbd>C</kbd> and then spend a while editing your code, it's likely that the simulator will have shut down. So either leave it running while you edit your code or just restart everything.
 You can get out of your terminal by typing
 
     exit
