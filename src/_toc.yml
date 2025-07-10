@@ -4,104 +4,61 @@
 format: jb-book
 root: intro
 parts:
-    -   caption: Duckiebot Assembly
+    -   caption: Setup
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: preliminaries_hardware/duckiebot_configurations/index
-            -   file: preliminaries_hardware/get_hardware/index
-            -   file: assembly/db21j/assembly-instructions-db21j
-        #    -   file: assembly/db21m/assembly-instructions-db21m
-            -   file: debugging_and_troubleshooting/faq/duckiebot-troubleshooting-faq
-
-    -   caption: Software Setup
-        maxdepth: 2
+            -   file: setup/computer/intro
+                sections:
+                    -   file: setup/computer/dependencies
+                    -   file: setup/computer/docker
+                    -   file: setup/computer/dts
+            -   file: setup/sd-card
+            -   file: setup/assembly/intro
+                sections:
+                    -   file: setup/assembly/db21j
+            -   file: setup/handling
+    -   caption: Software Tools
+        maxdepth: 1
         numbered: False
         chapters:
-            -   file: setup/setup_laptop/index
-                sections:
-                    -   file: setup/setup_laptop/setup_dependencies
-                    -   file: setup/setup_laptop/setup_docker
-                    -   file: setup/setup_laptop/setup_dt_shell
-            -   file: setup/setup_account/index
-                sections:
-                    -   file: setup/setup_account/duckietown_accounts
-                    -   file: setup/setup_account/docker_accounts
-            -   file: setup/setup_sd_card/index
-                sections:
-                    -   file: setup/setup_sd_card/gui
-                    -   file: setup/setup_sd_card/cli
-            -   file: setup/setup_boot/setup-booting-the-duckiebot
-            -   file: setup/setup_dashboard/setup-duckiebot-dashboard
-
-    -   caption: Duckiebot Operations
-        maxdepth: 2
+            -   file: software_tools/dashboard
+            -   file: software_tools/dtps
+            -   file: software_tools/image-viewer
+            -   file: software_tools/keyboard-controller
+            -   file: software_tools/led-controller
+            -   file: software_tools/additional-software-tools
+    -   caption: Calibrations
+        maxdepth: 1
         numbered: False
         chapters:
-            -   file: operations/handling/db21-handling
-            -   file: operations/dashboard/duckietown-dashboard-operation-instructions
-                sections:
-                    -   file: operations/dashboard/user_hardware_testing_tools
-            -   file: operations/dtps/index
-            -   file: operations/make_it_move/index
-            -   file: operations/make_it_see/index
-            -   file: operations/make_it_shine/index
-            -   file: operations/additional_software_tools/index
-            -   file: operations/calibration_camera/index
-            -   file: operations/calibration_kinematics/index
-            #-   file: operations/logs/index
-
-    -   caption: Demos
-        maxdepth: 2
+            -   file: calibrations/camera
+            -   file: calibrations/kinematics
+    -   caption: Demonstrations
+        maxdepth: 1
         numbered: False
         chapters:
-            -   file: demos/index
-            -   file: demos/running_demos
-            -   file: demos/supported/index
-                sections:
-                    -   file: demos/supported/lane_following
-                    -   file: demos/supported/lane_following_pedestrians
-                    -   file: demos/supported/lane_following_intersections
-            -   file: demos/legacy/index
-                sections:
-                    -   file: demos/legacy/lane_following_with_obstacles
-
+            -   file: demonstrations/lane-following
+            # -   file: demonstrations/lane-following-with-obstacles
+            # -   file: demonstrations/lane-following-with-intersections
+            # -   file: demonstrations/lane-following-with-duckiebots
     -   caption: Learning Experiences
-        maxdepth: 2
+        maxdepth: 1
         numbered: False
         chapters:
-            -   file: lx/index
-            -   file: lx/supported/index
-                #sections:
-                #    -   file: lx/supported/general_running_lx
-            -   file: lx/experimental/index
-                sections:
-                    -   file: lx/experimental/simulator_ROS_interface_lx
-
-    -   caption: Troubleshooting Guides
-        maxdepth: 2
+            -   file: learning_experiences/introduction-to-learning-experiences
+    -   caption: Troubleshooting
+        maxdepth: 1
         numbered: False
         chapters:
-            - file: debugging_and_troubleshooting/network_config/index
-            - file: debugging_and_troubleshooting/how-to-reflash-jetson-nano-4gb-with-overlay-patch
-            - file: debugging_and_troubleshooting/reflash_mc/index
-            - file: debugging_and_troubleshooting/update/duckiebattery-update
-            - file: debugging_and_troubleshooting/update/index
-            - file: debugging_and_troubleshooting/support/index
-            - file: debugging_and_troubleshooting/reset_dashboard
-
-    -   caption: Reference Reading
-        maxdepth: 2
+            -   file: troubleshooting/network
+            -   file: troubleshooting/hardware-components
+            -   file: troubleshooting/on-board-computer
+            -   file: troubleshooting/duckiebattery
+            -   file: troubleshooting/hut
+            -   file: troubleshooting/faq
+    -   caption: Further Reading
+        maxdepth: 1
         numbered: False
         chapters:
-            -   file: preliminaries_software/git/index
-            -   file: preliminaries_software/docker/index
-            -   file: preliminaries_software/ssh/index
-            -   file: preliminaries_hardware/circuits_batteries/index
-
-    -   caption: Protips
-        maxdepth: 2
-        numbered: False
-        chapters:
-            -   file: protips/introduction-to-protips
-            -   file: protips/duckiebot-remote-connection
+            -   file: further_reading/zerotier
