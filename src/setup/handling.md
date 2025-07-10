@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Handling
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to handle a Duckiebot.
 :keywords: Duckietown, Duckiebot, handle
 ```
 
+<<<<<<< Updated upstream
 (handling)=
 # Handling
 
@@ -10,11 +16,21 @@ This chapter describes how to handle your Duckiebot.
 
 ```{needget}
 Completed [](assembly).
+=======
+This chapter describes how to handle your Duckiebot.
+
+```{needget}
+Completed [](assembly/db21j.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on how to handle your Duckiebot.
 ```
 
+<<<<<<< Updated upstream
 (tutorial-handling-video)=
+=======
+(handling-tutorial-video)=
+>>>>>>> Stashed changes
 ## Tutorial video
 
 ```{vimeo} 527038785
@@ -56,7 +72,11 @@ What to expect:
 1. The front and back LEDs will turn blue, the LEDs on the on-board computer and HUT will turn on, and the fan will turn on.
 2. The Wi-Fi dongle will start blinking.
 3. The front and back LEDs will turn white and red, respectively.
+<<<<<<< Updated upstream
 4. The top button and screen will turn on, as shown in [](tutorial-handling-video).
+=======
+4. The top button and screen will turn on, as shown in [](handling-tutorial-video).
+>>>>>>> Stashed changes
 
 To verify that your Duckiebot has completed the booting process, run the following command and wait for `Status` to change from `Booting` to `Ready`:
 
@@ -102,7 +122,11 @@ To turn your Duckiebot off using `dts`, run:
 dts duckiebot shutdown DUCKIEBOT_NAME
 ```
 
+<<<<<<< Updated upstream
 To turn your Duckiebot off through the `Dashboard`, after following [](dashboard):
+=======
+To turn your Duckiebot off through the `Dashboard`, after following [](../software_tools/dashboard.md):
+>>>>>>> Stashed changes
 
 1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
 2. Click the `Power` button.
@@ -127,6 +151,7 @@ dts duckiebot update DUCKIEBOT_NAME
 
 ## How to see what your Duckiebot sees
 
+<<<<<<< Updated upstream
 To see what your Duckiebot sees, follow [](image-viewer).
 
 ## How to make your Duckiebot move
@@ -136,6 +161,17 @@ To make your Duckiebot move, follow [](keyboard-controller).
 ## How to control your Duckiebot's LEDs
 
 To control your Duckiebot's LEDs, follow [](led-controller).
+=======
+To see what your Duckiebot sees, follow [](../software_tools/image-viewer.md).
+
+## How to make your Duckiebot move
+
+To make your Duckiebot move, follow [](../software_tools/keyboard-controller.md).
+
+## How to control your Duckiebot's LEDs
+
+To control your Duckiebot's LEDs, follow [](../software_tools/led-controller.md).
+>>>>>>> Stashed changes
 
 ## How to update the Duckiebattery
 
@@ -143,11 +179,19 @@ To update the Duckiebattery, follow [](duckiebattery-update).
 
 ## How to update the HUT
 
+<<<<<<< Updated upstream
 To update the HUT, follow [](hut).
 
 ## How to connect to your Duckiebot over the Internet
 
 To connect to your Duckiebot over the Internet, follow [](zerotier).
+=======
+To update the HUT, follow [](../troubleshooting/hut.md).
+
+## How to connect to your Duckiebot over the Internet
+
+To connect to your Duckiebot over the Internet, follow [](../further_reading/zerotier.md).
+>>>>>>> Stashed changes
 
 ## Troubleshooting
 

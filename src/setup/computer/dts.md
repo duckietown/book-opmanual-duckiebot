@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# DTS
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to install and set up DTS (Duckietown Shell).
 :keywords: Duckietown, Duckiebot, DTS, Duckietown Shell
 ```
 
+<<<<<<< Updated upstream
 (dts)=
 # DTS
 
@@ -10,6 +16,12 @@ This section describes how to install and set up `DTS` (`Duckietown Shell`).
 
 ```{needget}
 Completed [](docker).
+=======
+This section describes how to install and set up `DTS` (`Duckietown Shell`).
+
+```{needget}
+Completed [](docker.md).
+>>>>>>> Stashed changes
 ---
 A computer with `DTS` installed and set up.
 ```

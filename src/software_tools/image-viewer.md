@@ -1,8 +1,11 @@
+# Image Viewer
+
 ```{seo}
 :description: The Image Viewer.
 :keywords: Duckietown, Duckiebot, Image Viewer
 ```
 
+<<<<<<< Updated upstream
 (image-viewer)=
 # Image Viewer
 
@@ -14,6 +17,16 @@ Completed [](dtps).
 Knowledge on the `Image Viewer`.
 ```
 
+=======
+This chapter describes the `Image Viewer`.
+
+```{needget}
+Completed [](dtps.md).
+---
+Knowledge on the `Image Viewer`.
+```
+
+>>>>>>> Stashed changes
 ## Introduction
 
 One of the easiest ways to see what your Duckiebot sees is by using the `Image Viewer`.
@@ -52,7 +65,11 @@ Note the keys in the table below.
 ## Troubleshooting
 
 ```{trouble}
+<<<<<<< Updated upstream
 I can see messages being sent from my Duckiebot when looking at the `DUCKIEBOT_NAME/sensor/camera/front_center/jpeg` `DTPS` topic, after following [](dtps), but I do not see an image.
+=======
+I can see messages being sent from my Duckiebot when looking at the `DUCKIEBOT_NAME/sensor/camera/front_center/jpeg` `DTPS` topic, after following [](dtps.md), but I do not see an image.
+>>>>>>> Stashed changes
 ---
 Make sure that the `duckiebot-interface` container is running by checking the `Portainer` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page portainer`) or by running:
 
@@ -64,7 +81,11 @@ The exact name of the container will depend on your Duckiebot's version. If you 
 ```
 
 ```{trouble}
+<<<<<<< Updated upstream
 I cannot see an image after refreshing the window and I cannot see messages being sent from my Duckiebot when looking at the `DUCKIEBOT_NAME/sensor/camera/front_center/jpeg` `DTPS` topic, after following [](dtps).
+=======
+I cannot see an image after refreshing the window and I cannot see messages being sent from my Duckiebot when looking at the `DUCKIEBOT_NAME/sensor/camera/front_center/jpeg` `DTPS` topic, after following [](dtps.md).
+>>>>>>> Stashed changes
 ---
 Contact support.
 ```

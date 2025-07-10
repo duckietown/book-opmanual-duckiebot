@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# LED Controller
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: The LED Controller.
 :keywords: Duckietown, Duckiebot, LED Controller
 ```
 
+<<<<<<< Updated upstream
 (led-controller)=
 # LED Controller
 
@@ -10,6 +16,12 @@ This chapter describes the `LED Controller`.
 
 ```{needget}
 Completed [](dtps).
+=======
+This chapter describes the `LED Controller`.
+
+```{needget}
+Completed [](dtps.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on the `LED Controller`.
 ```
@@ -65,6 +77,7 @@ The color dropper tool is not operational yet.
 ## Troubleshooting
 
 ```{trouble}
+<<<<<<< Updated upstream
 I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
 If you have a HUT v3.1, follow [](hut).
@@ -72,6 +85,15 @@ If you have a HUT v3.1, follow [](hut).
 
 ```{trouble}
 My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps).
+=======
+I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps.md), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
+---
+If you have a HUT v3.1, follow [](../troubleshooting/hut.md).
+```
+
+```{trouble}
+My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps.md).
+>>>>>>> Stashed changes
 ---
 Contact support.
 ```

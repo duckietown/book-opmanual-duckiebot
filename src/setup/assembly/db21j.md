@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# DB21J
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: Assembly procedure for a Duckiebot DB21J.
 :keywords: Duckietown, Duckiebot, DB21J, assembly
 ```
 
+<<<<<<< Updated upstream
 (assembling-duckiebot-db21j)=
 # DB21J
 
@@ -10,6 +16,12 @@ This section describes the assembly procedure for your Duckiebot DB21J.
 
 ```{needget}
 * Completed [](sd-card).
+=======
+This section describes the assembly procedure for your Duckiebot DB21J.
+
+```{needget}
+* Completed [](intro.md).
+>>>>>>> Stashed changes
 * The components for a Duckiebot DB21J.
 * An NVIDIA Jetson Nano Developer Kit (4 GB).
 ---
@@ -734,7 +746,11 @@ Insert the SD card into the Jetson Nano as shown below.
 
 ### Back pattern assembly
 
+<<<<<<< Updated upstream
 The back pattern enables the traffic management behavior used in [demonstrations](introduction-to-demonstrations) with other Duckiebots.
+=======
+The back pattern enables the traffic management behavior used in demonstrations with other Duckiebots.
+>>>>>>> Stashed changes
 
 This section describes the steps to assemble the *back pattern assembly*.
 

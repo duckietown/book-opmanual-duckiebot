@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Additional Software Tools
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: Additional software tools.
 :keywords: Duckietown, Duckiebot, additional software tools
 ```
 
+<<<<<<< Updated upstream
 (additional-software-tools)=
 # Additional Software Tools
 
@@ -10,6 +16,12 @@ This chapter describes additional software tools.
 
 ```{needget}
 Completed [](dashboard).
+=======
+This chapter describes additional software tools.
+
+```{needget}
+Completed [](dashboard.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on additional software tools.
 ```

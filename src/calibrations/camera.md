@@ -1,8 +1,11 @@
+# Camera
+
 ```{seo}
 :description: How to perform the camera calibration procedure for a Duckiebot.
 :keywords: Duckietown, Duckiebot, camera calibration
 ```
 
+<<<<<<< Updated upstream
 (camera)=
 # Camera
 
@@ -10,6 +13,12 @@ This chapter describes how to perform the camera calibration procedure for your 
 
 ```{needget}
 Completed [](image-viewer).
+=======
+This chapter describes how to perform the camera calibration procedure for your Duckiebot.
+
+```{needget}
+Completed [](../software_tools/image-viewer.md).
+>>>>>>> Stashed changes
 ---
 A Duckiebot with a calibrated camera.
 ```
@@ -207,7 +216,11 @@ Within the `Camera Extrinsic` panel, under `Local`, you should see a tick next t
 ## Troubleshooting
 
 ```{trouble}
+<<<<<<< Updated upstream
 I do not see what my Duckiebot sees after refreshing the window and following [](image-viewer).
+=======
+I do not see what my Duckiebot sees after refreshing the window and following [](../software_tools/image-viewer.md).
+>>>>>>> Stashed changes
 ---
 Contact support.
 ```

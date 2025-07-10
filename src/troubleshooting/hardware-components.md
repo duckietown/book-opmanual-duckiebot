@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Hardware Components
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to test hardware components on a Duckiebot.
 :keywords: Duckietown, Duckiebot, Dashboard, test, hardware components
 ```
 
+<<<<<<< Updated upstream
 (hardware-components)=
 # Hardware Components
 
@@ -10,6 +16,12 @@ This chapter describes how to test hardware components on your Duckiebot.
 
 ```{needget}
 Completed [](dashboard).
+=======
+This chapter describes how to test hardware components on your Duckiebot.
+
+```{needget}
+Completed [](../software_tools/dashboard.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on how to test hardware components on your Duckiebot.
 ```

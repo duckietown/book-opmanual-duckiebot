@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Network
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to connect a Duckiebot to a network.
 :keywords: Duckietown, Duckiebot, network
 ```
 
+<<<<<<< Updated upstream
 (network)=
 # Network
 
@@ -10,6 +16,12 @@ This chapter describes how to connect your Duckiebot to a network.
 
 ```{needget}
 Completed [](sd-card).
+=======
+This chapter describes how to connect your Duckiebot to a network.
+
+```{needget}
+Completed [](../setup/sd-card.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on how to connect your Duckiebot to a network.
 ```

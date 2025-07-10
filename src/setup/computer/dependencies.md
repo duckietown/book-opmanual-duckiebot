@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Dependencies
+>>>>>>> Stashed changes
 
 ```{seo}
 :description: How to install some of the dependencies necessary to interact with your Duckiebot.
 :keywords: Duckietown, Duckiebot, dependencies
 ```
 
+<<<<<<< Updated upstream
 (dependencies)=
 # Dependencies
 
@@ -11,6 +16,12 @@ This section describes how to install some of the dependencies necessary to inte
 
 ```{needget}
 Completed [](computer).
+=======
+This section describes how to install some of the dependencies necessary to interact with your Duckiebot.
+
+```{needget}
+Completed [](intro.md).
+>>>>>>> Stashed changes
 ---
 A computer with some of the dependencies necessary to interact with your Duckiebot installed.
 ```

@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# HUT
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to re-flash a HUT's microcontroller.
 :keywords: Duckietown, Duckiebot, re-flash, HUT, microcontroller
 ```
 
+<<<<<<< Updated upstream
 (hut)=
 # HUT
 
@@ -10,6 +16,12 @@ This chapter describes how to re-flash the HUT's microcontroller.
 
 ```{needget}
 Completed [](dashboard).
+=======
+This chapter describes how to re-flash the HUT's microcontroller.
+
+```{needget}
+Completed [](../software_tools/dashboard.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on how to re-flash the HUT's microcontroller.
 ```

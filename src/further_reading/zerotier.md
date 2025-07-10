@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# ZeroTier
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to connect to a Duckiebot over the Internet using ZeroTier.
 :keywords: Duckietown, Duckiebot, connect, ZeroTier
 ```
 
+<<<<<<< Updated upstream
 (zerotier)=
 # ZeroTier
 
@@ -10,6 +16,12 @@ This chapter describes how to connect to your Duckiebot over the Internet using 
 
 ```{needget}
 * Completed [](additional-software-tools).
+=======
+This chapter describes how to connect to your Duckiebot over the Internet using ZeroTier.
+
+```{needget}
+* Completed [](../setup/handling.md).
+>>>>>>> Stashed changes
 * A [ZeroTier account](https://my.zerotier.com/).
 ---
 Knowledge on how to connect to your Duckiebot over the Internet using ZeroTier.

@@ -8,7 +8,11 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
+<<<<<<< Updated upstream
             -   file: setup/computer/computer
+=======
+            -   file: setup/computer/intro
+>>>>>>> Stashed changes
                 sections:
                     -   file: setup/computer/dependencies
                     -   file: setup/computer/docker
@@ -39,13 +43,23 @@ parts:
         numbered: False
         chapters:
             -   file: demonstrations/lane-following
+<<<<<<< Updated upstream
             # -   file: demonstrations/lane-following-obstacles
             # -   file: demonstrations/lane-following-intersections
+=======
+            # -   file: demonstrations/lane-following-with-obstacles
+            # -   file: demonstrations/lane-following-with-intersections
+            # -   file: demonstrations/lane-following-with-duckiebots
+>>>>>>> Stashed changes
     -   caption: Learning Experiences
         maxdepth: 1
         numbered: False
         chapters:
+<<<<<<< Updated upstream
             -   file: learning_experiences/intro
+=======
+            -   file: learning_experiences/introduction-to-learning-experiences
+>>>>>>> Stashed changes
     -   caption: Troubleshooting
         maxdepth: 1
         numbered: False

@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Dashboard
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: The Dashboard.
 :keywords: Duckietown, Duckiebot, Dashboard
 ```
 
+<<<<<<< Updated upstream
 (dashboard)=
 # Dashboard
 
@@ -10,6 +16,12 @@ This chapter describes the `Dashboard`.
 
 ```{needget}
 Completed [](handling).
+=======
+This chapter describes the `Dashboard`.
+
+```{needget}
+Completed [](../setup/handling.md).
+>>>>>>> Stashed changes
 ---
 Knowledge on the `Dashboard`.
 ```
@@ -62,7 +74,11 @@ On this page, you can find several tabs related to your Duckiebot.
 (dashboard-pages-robot-info)=
 #### Info
 
+<<<<<<< Updated upstream
 In this tab, you can see your Duckiebot's name, type, configuration, [firmware](sd-card), temperature, CPU usage, etc.
+=======
+In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/sd-card.md), temperature, CPU usage, etc.
+>>>>>>> Stashed changes
 
 ```{figure} ../_images/software_tools/dashboard/dashboard_info.png
 The `Info` tab on the `Robot` page of the `Dashboard`.

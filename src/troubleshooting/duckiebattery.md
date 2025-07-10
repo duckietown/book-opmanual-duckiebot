@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Duckiebattery
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: The Duckiebattery.
 :keywords: Duckietown, Duckiebot, Duckiebattery
 ```
 
+<<<<<<< Updated upstream
 (duckiebattery)=
 # Duckiebattery
 
@@ -10,6 +16,12 @@ This chapter describes the Duckiebattery.
 
 ```{needget}
 * Completed [](handling) up to [](how-to-turn-your-duckiebot-off).
+=======
+This chapter describes the Duckiebattery.
+
+```{needget}
+* Completed [](../setup/handling.md) up to [](handling-how-to-turn-your-duckiebot-off).
+>>>>>>> Stashed changes
 * A [Duckiebattery](db-opmanual-dtbattery-v2).
 ---
 Knowledge on the Duckiebattery.

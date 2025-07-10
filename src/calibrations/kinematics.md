@@ -1,8 +1,11 @@
+# Kinematics
+
 ```{seo}
 :description: How to perform the kinematics calibration procedure for a Duckiebot.
 :keywords: Duckietown, Duckiebot, kinematics calibration, odometry
 ```
 
+<<<<<<< Updated upstream
 (kinematics)=
 # Kinematics
 
@@ -10,6 +13,12 @@ This chapter describes how to perform the kinematics calibration procedure for y
 
 ```{needget}
 Completed [](keyboard-controller).
+=======
+This chapter describes how to perform the kinematics calibration procedure for your Duckiebot.
+
+```{needget}
+Completed [](../software_tools/keyboard-controller.md).
+>>>>>>> Stashed changes
 ---
 A Duckiebot with calibrated kinematics.
 ```
@@ -114,7 +123,11 @@ Within the `Kinematics` panel, under `Local`, you should see a tick next to `Com
 ## Troubleshooting
 
 ```{trouble}
+<<<<<<< Updated upstream
 My Duckiebot does not move after following [](keyboard-controller).
+=======
+My Duckiebot does not move after following [](../software_tools/keyboard-controller.md).
+>>>>>>> Stashed changes
 ---
 Contact support.
 ```

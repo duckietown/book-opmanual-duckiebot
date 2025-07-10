@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Docker
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to install and set up Docker.
 :keywords: Duckietown, Duckiebot, Docker, computer
 ```
 
+<<<<<<< Updated upstream
 (docker)=
 # Docker
 
@@ -10,6 +16,12 @@ This section describes how to install and set up Docker.
 
 ```{needget}
 Completed [](dependencies).
+=======
+This section describes how to install and set up Docker.
+
+```{needget}
+Completed [](dependencies.md).
+>>>>>>> Stashed changes
 ---
 A computer with Docker installed and set up.
 ```

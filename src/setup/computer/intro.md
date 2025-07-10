@@ -1,11 +1,19 @@
+<<<<<<< Updated upstream
+=======
+# Computer
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to set up your computer to interact with your Duckiebot.
 :keywords: Duckietown, Duckiebot, computer
 ```
 
+<<<<<<< Updated upstream
 (computer)=
 # Computer
 
+=======
+>>>>>>> Stashed changes
 This chapter describes how to set up your computer to interact with your Duckiebot.
 
 ```{needget}

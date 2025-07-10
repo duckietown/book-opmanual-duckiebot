@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# Lane Following
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: The Lane Following demo (demonstration) for a Duckiebot.
 :keywords: Duckietown, Duckiebot, Lane Following, demo, demonstration
 ```
 
+<<<<<<< Updated upstream
 (lane-following)=
 # Lane Following
 
@@ -11,12 +17,23 @@ This chapter describes the `Lane Following` demo (demonstration) for your Duckie
 ```{needget}
 * Completed [](camera).
 * Completed [](kinematics).
+=======
+This chapter describes the `Lane Following` demo (demonstration) for your Duckiebot.
+
+```{needget}
+* Completed [](../calibrations/camera.md).
+* Completed [](../calibrations/kinematics.md).
+>>>>>>> Stashed changes
 * A Duckietown, as defined in [](book-opmanual-duckietown:book).
 * Good lighting (ideally white diffused light).
   This demo relies on images from the camera and color detections.
   Therefore, avoid colored lights, reflections or other conditions that may confuse or blind the on-board image sensor.
 ---
+<<<<<<< Updated upstream
 A Duckiebot driving autonomously in a Duckietown without other vehicles, intersections or obstacles.
+=======
+A Duckiebot driving autonomously in a Duckietown without obstacles, intersections or other Duckiebots.
+>>>>>>> Stashed changes
 ```
 
 (demo-lane-following-expected)=
@@ -331,7 +348,11 @@ To view the lane pose and segment markers:
 You should see a top-down view of the lane in front of your Duckiebot.
 ```
 
+<<<<<<< Updated upstream
 If an error was incurred during the [camera calibration procedure](camera), it will be very apparent when looking at the ground projected segments.
+=======
+If an error was incurred during the [camera calibration procedure](../calibrations/camera.md), it will be very apparent when looking at the ground projected segments.
+>>>>>>> Stashed changes
 
 ### Tuning the PID gains
 
@@ -353,7 +374,11 @@ Before trying to use the `Keyboard Controller`, make sure that it is active by s
 ```{trouble}
 My Duckiebot does not move.
 ---
+<<<<<<< Updated upstream
 Follow [](operation-make-it-move-troubleshooting).
+=======
+Follow [](keyboard-controller-troubleshooting).
+>>>>>>> Stashed changes
 ```
 
 ```{trouble}

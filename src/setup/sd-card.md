@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# SD Card
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to initialize an SD card for a Duckiebot.
 :keywords: Duckietown, Duckiebot, initialize, SD card
 ```
 
+<<<<<<< Updated upstream
 (sd-card)=
 # SD Card
 
@@ -10,6 +16,12 @@ This chapter describes how to initialize an SD card for your Duckiebot.
 
 ```{needget}
 * Completed [](computer).
+=======
+This chapter describes how to initialize an SD card for your Duckiebot.
+
+```{needget}
+* Completed [](computer/dts.md).
+>>>>>>> Stashed changes
 * An SD card with at least `64 GB` of space.
 * An SD card adapter.
 ---

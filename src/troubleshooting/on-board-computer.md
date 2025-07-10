@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
+=======
+# On-board Computer
+
+>>>>>>> Stashed changes
 ```{seo}
 :description: How to re-flash the on-board computer.
 :keywords: Duckietown, Duckiebot, on-board computer, re-flash
 ```
 
+<<<<<<< Updated upstream
 (on-board-computer)=
 # On-board Computer
 
@@ -10,6 +16,12 @@ This chapter describes how to re-flash the on-board computer.
 
 ```{needget}
 * Completed [](computer) with Ubuntu running natively.
+=======
+This chapter describes how to re-flash the on-board computer.
+
+```{needget}
+* Completed [](../setup/computer/dependencies.md) with Ubuntu running natively.
+>>>>>>> Stashed changes
 * An NVIDIA Jetson Nano Developer Kit (`4 GB`) with eMMC memory.
 * A power source for the Jetson Nano.
 * A Micro USB cable with data connections that can connect to your computer or a Micro USB to USB type A adapter.
@@ -29,10 +41,16 @@ The minimum sufficient firmware version is `1.4.2`.
 Do not proceed with these instructions unless your Jetson Nano is affected by the booting problem described below.
 This procedure applies to a specific use case and will irreversibly alter your Jetson Nano's on-board filesystem.
 Instructions to revert the effects of these instructions are not provided.
+<<<<<<< Updated upstream
 If uncertain, follow [](troubleshooting-faq) or reach out to the [Duckietown team](https://duckietown.com/contact/).
 ```
 
 (re-flash-jetson-4gb-when)=
+=======
+If uncertain, follow [](on-board-computer-troubleshooting) or reach out to the [Duckietown team](https://duckietown.com/contact/).
+```
+
+>>>>>>> Stashed changes
 ## Procedure
 
 ### What will this procedure do?
@@ -53,7 +71,11 @@ Without installing this patch, the on-board memory is not recognized correctly a
 ```{admonition} What are all these different flashings about?
 :class: dropdown
 
+<<<<<<< Updated upstream
 Flashing a Jetson Nano is different to [flashing an SD card](sd-card) or an Ubuntu ISO on a thumbdrive:
+=======
+Flashing a Jetson Nano is different to [flashing an SD card](../setup/sd-card.md) or an Ubuntu ISO on a thumbdrive:
+>>>>>>> Stashed changes
 
 * Ubuntu is the OS running on your computer (base station).
 * Jetson Nanos are tiny but mighty computers and require an OS to function.
@@ -94,7 +116,10 @@ This procedure is normally performed by the Duckietown team at the manufacturing
 In particular, Jetson Nanos received between February and April 2025 may need to be re-flashed.
 ```
 
+<<<<<<< Updated upstream
 (re-flash-jetson-4gb-software-step)=
+=======
+>>>>>>> Stashed changes
 ### Preparing the flashing environment on your computer
 
 ```{note}
@@ -118,7 +143,10 @@ sudo ./Linux_for_Tegra/apply_binaries.sh
 tar -xpf overlay_32.7.5_PCN211181.tbz2 -C Linux_for_Tegra
 ```
 
+<<<<<<< Updated upstream
 (re-flash-jetson-4gb-hardware-step)=
+=======
+>>>>>>> Stashed changes
 ### Preparing the Jetson Nano and connecting it to your computer
 
 To start, make sure that the Jetson Nano is turned off.
@@ -149,7 +177,10 @@ To do so, we need to first identify the `FC REC` pin placed underneath the Jetso
 The `forced recovery` mode pin is labeled `FC REC` and needs to be shorted with the pin labeled `GND`.
 ```
 
+<<<<<<< Updated upstream
 (jetson-forced-recovery-mode)=
+=======
+>>>>>>> Stashed changes
 #### Shorting the FC REC and GND pins
 
 The Jetson Nano will boot into `forced recovery` mode when the `FC REC` and `GND` pins are shorted before it turns on.
@@ -275,10 +306,16 @@ Bus 001 Device 012: ID 0955:7f21 NVIDIA Corp. APX
 
 ```{attention}
 If a line containing `NVIDIA Corp. APX` is not present, the Jetson Nano is not connected to your computer.
+<<<<<<< Updated upstream
 Follow [](re-flash-jetson-faq).
 ```
 
 (re-flash-jetson-4gb-flashing-step)=
+=======
+Follow [](on-board-computer-troubleshooting).
+```
+
+>>>>>>> Stashed changes
 ### Flashing the Jetson Nano
 
 From your computer, run:
@@ -317,7 +354,11 @@ A green NVIDIA logo with a white background followed by boot information (as lon
 ```
 
 ```{testexpect}
+<<<<<<< Updated upstream
 Method 2: Follow [](sd-card), [](assembling-duckiebot-db21j) and [](handling).
+=======
+Method 2: Follow [](../setup/sd-card.md), [](../setup/assembly/db21j.md) and [](../setup/handling.md).
+>>>>>>> Stashed changes
 ---
 Your Duckiebot boots successfully.
 ```
@@ -327,13 +368,22 @@ This procedure updates the NVIDIA Jetpack version to `4.6.6`, requiring a Duckie
 You can find the firmware version number in the `Dashboard` or from the name of the file downloaded when initializing the SD card (e.g., `dt-nvidia-jetpack-v1.4.2-4gb`).
 ```
 
+<<<<<<< Updated upstream
 (re-flash-jetson-faq)=
 ### Troubleshooting
+=======
+(on-board-computer-troubleshooting)=
+## Troubleshooting
+>>>>>>> Stashed changes
 
 ```{trouble}
 The Jetson Nano is not showing up after running `lsbusb`.
 ---
+<<<<<<< Updated upstream
 Make sure that it is in [forced recovery mode](jetson-forced-recovery-mode) and that the Micro USB cable connected to your computer has a data channel.
+=======
+Make sure that it is in `forced recovery` mode and that the Micro USB cable connected to your computer has a data channel.
+>>>>>>> Stashed changes
 ```
 
 ```{trouble}
@@ -362,13 +412,21 @@ The overlay patch has not been applied correctly.
 Try again, while following the instructions more carefully.
 ```
 
+<<<<<<< Updated upstream
 (re-flash-jetson-additional)=
 ### Additional information
+=======
+## Additional information
+>>>>>>> Stashed changes
 
 ````{admonition} Successful flash logs
 :class: dropdown
 
+<<<<<<< Updated upstream
 ```shell
+=======
+```
+>>>>>>> Stashed changes
 tani@tani-ubuntu:~/jn/Linux_for_Tegra$ sudo ./flash.sh -x 0x21 jetson-nano-emmc sda1
 ###############################################################################
 # L4T BSP Information:
