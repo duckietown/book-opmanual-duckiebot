@@ -9,7 +9,7 @@ Duckietown leverages containerization to ensure software portability and reprodu
 Most procedures entail the use of `docker` operations behind the scenes.
 That is why we need to set up the logins for Docker within `dts`.
 
-We use [DockerHub](https://hub.docker.com/duckietown) to distribute the containerized version 
+We use [DockerHub](https://hub.docker.com/) to distribute the containerized version 
 of its software modules, and most Duckietown procedures entail some `docker` operations behind the scenes. 
 
 If you are unfamiliar with Docker, we strongly recommend reading the following reference page to gain a 
