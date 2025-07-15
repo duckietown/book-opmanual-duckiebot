@@ -21,7 +21,7 @@ Make sure the Duckiebot is powered on and connected to the network.
 You can verify the latter by launching, e.g., `dts fleet discover` and finding that your Duckiebot is on the list.
 
 1. Please update the `duckietown-shell` utility:
-    1. `pip3 install --user --upgrade --no-cache-dir duckietown-shell`
+    1. `pipx install duckietown-shell`
     2. `dts update`
     3. `dts desktop update`
 2. Update the Duckiebot:
