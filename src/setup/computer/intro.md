@@ -1,19 +1,27 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Computer
 
 >>>>>>> Stashed changes
+=======
+# Computer
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to set up your computer to interact with your Duckiebot.
 :keywords: Duckietown, Duckiebot, computer
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (computer)=
 # Computer
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to set up your computer to interact with your Duckiebot.
 
 ```{needget}

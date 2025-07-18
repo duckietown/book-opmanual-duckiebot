@@ -5,6 +5,7 @@
 :keywords: Duckietown, Duckiebot, Keyboard Controller
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (keyboard-controller)=
 # Keyboard Controller
@@ -20,6 +21,8 @@ Knowledge on the `Keyboard Controller`.
 ## Introduction
 
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes the `Keyboard Controller`.
 
 ```{needget}
@@ -30,7 +33,10 @@ Knowledge on the `Keyboard Controller`.
 
 ## Introduction
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 An easy way to make your Duckiebot move is by using the `Keyboard Controller`.
 
 ```{figure} ../_images/software_tools/keyboard_controller/keyboard_controller.png
@@ -80,11 +86,15 @@ Note the keys in the table below.
 ```
 
 ```{note}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 The <kbd>F</kbd> key's function (`Autopilot`) requires software, such as for [](lane-following), to be running.
 =======
 The <kbd>F</kbd> key's function (`Autopilot`) requires software, such as for [](../demonstrations/lane-following.md), to be running.
 >>>>>>> Stashed changes
+=======
+The <kbd>F</kbd> key's function (`Autopilot`) requires software, such as for [](../demonstrations/lane-following.md), to be running.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 (keyboard-controller-troubleshooting)=
@@ -97,6 +107,7 @@ Before trying to use the `Keyboard Controller`, make sure that it is active by s
 ```
 
 ```{trouble}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](dtps), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
@@ -106,6 +117,11 @@ The `Keyboard Controller` window is active but my Duckiebot still does not move.
 ---
 If you have a HUT v3.1, follow [](../troubleshooting/hut.md).
 >>>>>>> Stashed changes
+=======
+The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](dtps.md), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
+---
+If you have a HUT v3.1, follow [](../troubleshooting/hut.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}

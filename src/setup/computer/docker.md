@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Docker
 
 >>>>>>> Stashed changes
+=======
+# Docker
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to install and set up Docker.
 :keywords: Duckietown, Duckiebot, Docker, computer
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (docker)=
 # Docker
@@ -17,11 +23,16 @@ This section describes how to install and set up Docker.
 ```{needget}
 Completed [](dependencies).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This section describes how to install and set up Docker.
 
 ```{needget}
 Completed [](dependencies.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 A computer with Docker installed and set up.
 ```

@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # DTPS
 
 >>>>>>> Stashed changes
+=======
+# DTPS
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: DTPS (Duckietown Postal Service).
 :keywords: Duckietown, Duckiebot, DTPS, Duckietown Postal Service
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (dtps)=
 # DTPS
@@ -17,11 +23,16 @@ This chapter describes `DTPS` (`Duckietown Postal Service`).
 ```{needget}
 Completed [](dashboard).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes `DTPS` (`Duckietown Postal Service`).
 
 ```{needget}
 Completed [](dashboard.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on `DTPS`.
 ```

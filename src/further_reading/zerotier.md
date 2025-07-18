@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # ZeroTier
 
 >>>>>>> Stashed changes
+=======
+# ZeroTier
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to connect to a Duckiebot over the Internet using ZeroTier.
 :keywords: Duckietown, Duckiebot, connect, ZeroTier
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (zerotier)=
 # ZeroTier
@@ -17,11 +23,16 @@ This chapter describes how to connect to your Duckiebot over the Internet using 
 ```{needget}
 * Completed [](additional-software-tools).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to connect to your Duckiebot over the Internet using ZeroTier.
 
 ```{needget}
 * Completed [](../setup/handling.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 * A [ZeroTier account](https://my.zerotier.com/).
 ---
 Knowledge on how to connect to your Duckiebot over the Internet using ZeroTier.

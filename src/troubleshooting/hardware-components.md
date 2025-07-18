@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Hardware Components
 
 >>>>>>> Stashed changes
+=======
+# Hardware Components
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to test hardware components on a Duckiebot.
 :keywords: Duckietown, Duckiebot, Dashboard, test, hardware components
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (hardware-components)=
 # Hardware Components
@@ -17,11 +23,16 @@ This chapter describes how to test hardware components on your Duckiebot.
 ```{needget}
 Completed [](dashboard).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to test hardware components on your Duckiebot.
 
 ```{needget}
 Completed [](../software_tools/dashboard.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on how to test hardware components on your Duckiebot.
 ```

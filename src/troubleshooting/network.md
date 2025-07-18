@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Network
 
 >>>>>>> Stashed changes
+=======
+# Network
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to connect a Duckiebot to a network.
 :keywords: Duckietown, Duckiebot, network
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (network)=
 # Network
@@ -17,11 +23,16 @@ This chapter describes how to connect your Duckiebot to a network.
 ```{needget}
 Completed [](sd-card).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to connect your Duckiebot to a network.
 
 ```{needget}
 Completed [](../setup/sd-card.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on how to connect your Duckiebot to a network.
 ```

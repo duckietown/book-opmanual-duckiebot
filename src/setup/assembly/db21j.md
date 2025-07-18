@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # DB21J
 
 >>>>>>> Stashed changes
+=======
+# DB21J
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: Assembly procedure for a Duckiebot DB21J.
 :keywords: Duckietown, Duckiebot, DB21J, assembly
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (assembling-duckiebot-db21j)=
 # DB21J
@@ -17,11 +23,16 @@ This section describes the assembly procedure for your Duckiebot DB21J.
 ```{needget}
 * Completed [](sd-card).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This section describes the assembly procedure for your Duckiebot DB21J.
 
 ```{needget}
 * Completed [](intro.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 * The components for a Duckiebot DB21J.
 * An NVIDIA Jetson Nano Developer Kit (4 GB).
 ---
@@ -746,11 +757,15 @@ Insert the SD card into the Jetson Nano as shown below.
 
 ### Back pattern assembly
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 The back pattern enables the traffic management behavior used in [demonstrations](introduction-to-demonstrations) with other Duckiebots.
 =======
 The back pattern enables the traffic management behavior used in demonstrations with other Duckiebots.
 >>>>>>> Stashed changes
+=======
+The back pattern enables the traffic management behavior used in demonstrations with other Duckiebots.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 This section describes the steps to assemble the *back pattern assembly*.
 

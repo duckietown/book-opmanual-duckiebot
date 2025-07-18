@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Duckiebattery
 
 >>>>>>> Stashed changes
+=======
+# Duckiebattery
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: The Duckiebattery.
 :keywords: Duckietown, Duckiebot, Duckiebattery
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (duckiebattery)=
 # Duckiebattery
@@ -17,11 +23,16 @@ This chapter describes the Duckiebattery.
 ```{needget}
 * Completed [](handling) up to [](how-to-turn-your-duckiebot-off).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes the Duckiebattery.
 
 ```{needget}
 * Completed [](../setup/handling.md) up to [](handling-how-to-turn-your-duckiebot-off).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 * A [Duckiebattery](db-opmanual-dtbattery-v2).
 ---
 Knowledge on the Duckiebattery.

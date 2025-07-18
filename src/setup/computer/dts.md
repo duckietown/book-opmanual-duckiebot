@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # DTS
 
 >>>>>>> Stashed changes
+=======
+# DTS
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to install and set up DTS (Duckietown Shell).
 :keywords: Duckietown, Duckiebot, DTS, Duckietown Shell
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (dts)=
 # DTS
@@ -17,11 +23,16 @@ This section describes how to install and set up `DTS` (`Duckietown Shell`).
 ```{needget}
 Completed [](docker).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This section describes how to install and set up `DTS` (`Duckietown Shell`).
 
 ```{needget}
 Completed [](docker.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 A computer with `DTS` installed and set up.
 ```

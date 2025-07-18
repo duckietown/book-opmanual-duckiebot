@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Dashboard
 
 >>>>>>> Stashed changes
+=======
+# Dashboard
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: The Dashboard.
 :keywords: Duckietown, Duckiebot, Dashboard
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (dashboard)=
 # Dashboard
@@ -17,11 +23,16 @@ This chapter describes the `Dashboard`.
 ```{needget}
 Completed [](handling).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes the `Dashboard`.
 
 ```{needget}
 Completed [](../setup/handling.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on the `Dashboard`.
 ```
@@ -74,11 +85,15 @@ On this page, you can find several tabs related to your Duckiebot.
 (dashboard-pages-robot-info)=
 #### Info
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 In this tab, you can see your Duckiebot's name, type, configuration, [firmware](sd-card), temperature, CPU usage, etc.
 =======
 In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/sd-card.md), temperature, CPU usage, etc.
 >>>>>>> Stashed changes
+=======
+In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/sd-card.md), temperature, CPU usage, etc.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 ```{figure} ../_images/software_tools/dashboard/dashboard_info.png
 The `Info` tab on the `Robot` page of the `Dashboard`.

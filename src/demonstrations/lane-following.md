@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Lane Following
 
 >>>>>>> Stashed changes
+=======
+# Lane Following
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: The Lane Following demo (demonstration) for a Duckiebot.
 :keywords: Duckietown, Duckiebot, Lane Following, demo, demonstration
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (lane-following)=
 # Lane Following
@@ -18,22 +24,31 @@ This chapter describes the `Lane Following` demo (demonstration) for your Duckie
 * Completed [](camera).
 * Completed [](kinematics).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes the `Lane Following` demo (demonstration) for your Duckiebot.
 
 ```{needget}
 * Completed [](../calibrations/camera.md).
 * Completed [](../calibrations/kinematics.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 * A Duckietown, as defined in [](book-opmanual-duckietown:book).
 * Good lighting (ideally white diffused light).
   This demo relies on images from the camera and color detections.
   Therefore, avoid colored lights, reflections or other conditions that may confuse or blind the on-board image sensor.
 ---
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 A Duckiebot driving autonomously in a Duckietown without other vehicles, intersections or obstacles.
 =======
 A Duckiebot driving autonomously in a Duckietown without obstacles, intersections or other Duckiebots.
 >>>>>>> Stashed changes
+=======
+A Duckiebot driving autonomously in a Duckietown without obstacles, intersections or other Duckiebots.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 (demo-lane-following-expected)=
@@ -348,11 +363,15 @@ To view the lane pose and segment markers:
 You should see a top-down view of the lane in front of your Duckiebot.
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 If an error was incurred during the [camera calibration procedure](camera), it will be very apparent when looking at the ground projected segments.
 =======
 If an error was incurred during the [camera calibration procedure](../calibrations/camera.md), it will be very apparent when looking at the ground projected segments.
 >>>>>>> Stashed changes
+=======
+If an error was incurred during the [camera calibration procedure](../calibrations/camera.md), it will be very apparent when looking at the ground projected segments.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 ### Tuning the PID gains
 
@@ -374,11 +393,15 @@ Before trying to use the `Keyboard Controller`, make sure that it is active by s
 ```{trouble}
 My Duckiebot does not move.
 ---
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Follow [](operation-make-it-move-troubleshooting).
 =======
 Follow [](keyboard-controller-troubleshooting).
 >>>>>>> Stashed changes
+=======
+Follow [](keyboard-controller-troubleshooting).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}

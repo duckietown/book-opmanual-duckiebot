@@ -5,6 +5,7 @@
 :keywords: Duckietown, Duckiebot, kinematics calibration, odometry
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (kinematics)=
 # Kinematics
@@ -19,6 +20,12 @@ This chapter describes how to perform the kinematics calibration procedure for y
 ```{needget}
 Completed [](../software_tools/keyboard-controller.md).
 >>>>>>> Stashed changes
+=======
+This chapter describes how to perform the kinematics calibration procedure for your Duckiebot.
+
+```{needget}
+Completed [](../software_tools/keyboard-controller.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 A Duckiebot with calibrated kinematics.
 ```
@@ -123,11 +130,15 @@ Within the `Kinematics` panel, under `Local`, you should see a tick next to `Com
 ## Troubleshooting
 
 ```{trouble}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 My Duckiebot does not move after following [](keyboard-controller).
 =======
 My Duckiebot does not move after following [](../software_tools/keyboard-controller.md).
 >>>>>>> Stashed changes
+=======
+My Duckiebot does not move after following [](../software_tools/keyboard-controller.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Contact support.
 ```

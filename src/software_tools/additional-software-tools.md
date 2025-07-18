@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Additional Software Tools
 
 >>>>>>> Stashed changes
+=======
+# Additional Software Tools
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: Additional software tools.
 :keywords: Duckietown, Duckiebot, additional software tools
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (additional-software-tools)=
 # Additional Software Tools
@@ -17,11 +23,16 @@ This chapter describes additional software tools.
 ```{needget}
 Completed [](dashboard).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes additional software tools.
 
 ```{needget}
 Completed [](dashboard.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on additional software tools.
 ```

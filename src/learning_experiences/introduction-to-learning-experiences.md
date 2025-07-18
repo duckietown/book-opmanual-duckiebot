@@ -1,13 +1,28 @@
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/learning_experiences/intro.md
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 <<<<<<<< Updated upstream:src/learning_experiences/intro.md
 ========
 # Introduction to Learning Experiences
 
 >>>>>>>> Stashed changes:src/learning_experiences/introduction-to-learning-experiences.md
+<<<<<<< HEAD
+=======
+========
+# Introduction to Learning Experiences
+
+>>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot:src/learning_experiences/introduction-to-learning-experiences.md
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: The LXs (Learning Experiences) available for a Duckiebot.
 :keywords: Duckietown, Duckiebot, LXs, Learning Experiences
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/learning_experiences/intro.md
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 <<<<<<<< Updated upstream:src/learning_experiences/intro.md
 (introduction-to-learning-experiences)=
 # Introduction to Learning Experiences
@@ -24,6 +39,16 @@ This chapter describes the `LXs` (`Learning Experiences`) available for your Duc
 * Completed [](../calibrations/camera.md).
 * Completed [](../calibrations/kinematics.md).
 >>>>>>>> Stashed changes:src/learning_experiences/introduction-to-learning-experiences.md
+<<<<<<< HEAD
+=======
+========
+This chapter describes the `LXs` (`Learning Experiences`) available for your Duckiebot.
+
+```{needget}
+* Completed [](../calibrations/camera.md).
+* Completed [](../calibrations/kinematics.md).
+>>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot:src/learning_experiences/introduction-to-learning-experiences.md
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on the `LXs` available for your Duckiebot.
 ```

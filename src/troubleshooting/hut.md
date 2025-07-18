@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # HUT
 
 >>>>>>> Stashed changes
+=======
+# HUT
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to re-flash a HUT's microcontroller.
 :keywords: Duckietown, Duckiebot, re-flash, HUT, microcontroller
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (hut)=
 # HUT
@@ -17,11 +23,16 @@ This chapter describes how to re-flash the HUT's microcontroller.
 ```{needget}
 Completed [](dashboard).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to re-flash the HUT's microcontroller.
 
 ```{needget}
 Completed [](../software_tools/dashboard.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on how to re-flash the HUT's microcontroller.
 ```

@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Dependencies
 >>>>>>> Stashed changes
+=======
+# Dependencies
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 ```{seo}
 :description: How to install some of the dependencies necessary to interact with your Duckiebot.
 :keywords: Duckietown, Duckiebot, dependencies
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (dependencies)=
 # Dependencies
@@ -17,11 +22,16 @@ This section describes how to install some of the dependencies necessary to inte
 ```{needget}
 Completed [](computer).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This section describes how to install some of the dependencies necessary to interact with your Duckiebot.
 
 ```{needget}
 Completed [](intro.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 A computer with some of the dependencies necessary to interact with your Duckiebot installed.
 ```

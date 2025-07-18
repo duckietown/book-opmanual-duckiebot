@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # Handling
 
 >>>>>>> Stashed changes
+=======
+# Handling
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: How to handle a Duckiebot.
 :keywords: Duckietown, Duckiebot, handle
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (handling)=
 # Handling
@@ -17,20 +23,29 @@ This chapter describes how to handle your Duckiebot.
 ```{needget}
 Completed [](assembly).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes how to handle your Duckiebot.
 
 ```{needget}
 Completed [](assembly/db21j.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ---
 Knowledge on how to handle your Duckiebot.
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (tutorial-handling-video)=
 =======
 (handling-tutorial-video)=
 >>>>>>> Stashed changes
+=======
+(handling-tutorial-video)=
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ## Tutorial video
 
 ```{vimeo} 527038785
@@ -72,11 +87,15 @@ What to expect:
 1. The front and back LEDs will turn blue, the LEDs on the on-board computer and HUT will turn on, and the fan will turn on.
 2. The Wi-Fi dongle will start blinking.
 3. The front and back LEDs will turn white and red, respectively.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 4. The top button and screen will turn on, as shown in [](tutorial-handling-video).
 =======
 4. The top button and screen will turn on, as shown in [](handling-tutorial-video).
 >>>>>>> Stashed changes
+=======
+4. The top button and screen will turn on, as shown in [](handling-tutorial-video).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 To verify that your Duckiebot has completed the booting process, run the following command and wait for `Status` to change from `Booting` to `Ready`:
 
@@ -122,11 +141,15 @@ To turn your Duckiebot off using `dts`, run:
 dts duckiebot shutdown DUCKIEBOT_NAME
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 To turn your Duckiebot off through the `Dashboard`, after following [](dashboard):
 =======
 To turn your Duckiebot off through the `Dashboard`, after following [](../software_tools/dashboard.md):
 >>>>>>> Stashed changes
+=======
+To turn your Duckiebot off through the `Dashboard`, after following [](../software_tools/dashboard.md):
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
 2. Click the `Power` button.
@@ -151,6 +174,7 @@ dts duckiebot update DUCKIEBOT_NAME
 
 ## How to see what your Duckiebot sees
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 To see what your Duckiebot sees, follow [](image-viewer).
 
@@ -162,6 +186,8 @@ To make your Duckiebot move, follow [](keyboard-controller).
 
 To control your Duckiebot's LEDs, follow [](led-controller).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 To see what your Duckiebot sees, follow [](../software_tools/image-viewer.md).
 
 ## How to make your Duckiebot move
@@ -171,7 +197,10 @@ To make your Duckiebot move, follow [](../software_tools/keyboard-controller.md)
 ## How to control your Duckiebot's LEDs
 
 To control your Duckiebot's LEDs, follow [](../software_tools/led-controller.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 ## How to update the Duckiebattery
 
@@ -179,6 +208,7 @@ To update the Duckiebattery, follow [](duckiebattery-update).
 
 ## How to update the HUT
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 To update the HUT, follow [](hut).
 
@@ -186,12 +216,17 @@ To update the HUT, follow [](hut).
 
 To connect to your Duckiebot over the Internet, follow [](zerotier).
 =======
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 To update the HUT, follow [](../troubleshooting/hut.md).
 
 ## How to connect to your Duckiebot over the Internet
 
 To connect to your Duckiebot over the Internet, follow [](../further_reading/zerotier.md).
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 
 ## Troubleshooting
 

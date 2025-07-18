@@ -1,19 +1,27 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 # FAQ
 
 >>>>>>> Stashed changes
+=======
+# FAQ
+
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```{seo}
 :description: FAQ (Frequently Asked Questions) related to a Duckiebot.
 :keywords: Duckietown, Duckiebot, FAQ, Frequently Asked Questions
 ```
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 (faq)=
 # FAQ
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 This chapter describes FAQ (Frequently Asked Questions) related to your Duckiebot.
 
 ```{needget}
@@ -42,11 +50,15 @@ To receive an invitation, [join the Slack community](https://duckietown.com/join
 ```{trouble}
 My Duckiebot does not boot and when connecting it to a screen, I see only a static NVIDIA logo (occasionally flickering).
 ---
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Follow [](re-flash-jetson-4gb).
 =======
 Follow [](on-board-computer.md).
 >>>>>>> Stashed changes
+=======
+Follow [](on-board-computer.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}
@@ -59,11 +71,15 @@ The top button is only for turning your Duckiebot off.
 ```{trouble}
 My Duckiebot does not appear to boot after pressing the button on the Duckiebattery (i.e., I don't see a green light on the Jetson Nano or HUT).
 ---
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Follow [](assembling-duckiebot-db21j), checking each cable connection.
 =======
 Follow [](../setup/assembly/db21j.md), checking each cable connection.
 >>>>>>> Stashed changes
+=======
+Follow [](../setup/assembly/db21j.md), checking each cable connection.
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 Confirm the start and end port of each power cable from the Duckiebattery.
 The Duckiebattery must be fully charged, as shown in the first assembly step.
 ```
@@ -84,11 +100,15 @@ Disconnect the ToF sensor from the front bumper and use the long cable that orig
 ```{trouble}
 My Duckiebot appears to have booted and the screen is on but I can not see it after running `dts fleet discover`.
 ---
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Follow [](network).
 =======
 Follow [](network.md).
 >>>>>>> Stashed changes
+=======
+Follow [](network.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}
@@ -118,11 +138,15 @@ The top button does not turn my Duckiebot off.
 ---
 Press it harder for `5 s`.
 If this does not work, run `dts duckiebot update DUCKIEBOT_NAME` and then run `dts duckiebot reboot DUCKIEBOT_NAME`.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 If this does not work, follow [](hut).
 =======
 If this does not work, follow [](hut.md).
 >>>>>>> Stashed changes
+=======
+If this does not work, follow [](hut.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}
@@ -133,6 +157,7 @@ Allow the battery to charge for at least `5 h` before plugging these cables back
 ```
 
 ```{trouble}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](dtps), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
@@ -142,6 +167,11 @@ The `Keyboard Controller` window is active but my Duckiebot still does not move.
 ---
 If you have a HUT v3.1, follow [](hut.md).
 >>>>>>> Stashed changes
+=======
+The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](../software_tools/dtps.md), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
+---
+If you have a HUT v3.1, follow [](hut.md).
+>>>>>>> ente-DTSW-6848-Update-book-opmanual-duckiebot
 ```
 
 ```{trouble}
