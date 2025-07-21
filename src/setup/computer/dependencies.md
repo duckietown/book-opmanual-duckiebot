@@ -19,7 +19,7 @@ To install some of the dependencies necessary to interact with your Duckiebot, r
 
 ```shell
 sudo apt update
-sudo apt install -y ca-certificates curl git git-lfs gnupg pipx
+sudo apt install -y ca-certificates curl git git-lfs gnupg libfuse2 pipx
 pipx ensurepath
 ```
 
