@@ -8,7 +8,7 @@
 This chapter describes how to set up your computer to interact with your Duckiebot.
 
 ```{needget}
-* A computer with at least `50 GB` of free space running [Ubuntu 20.04 or newer](https://ubuntu.com/tutorials/install-ubuntu-desktop).
+* A computer with at least `50 GB` of free space running [Ubuntu 22.04 or newer](https://ubuntu.com/tutorials/install-ubuntu-desktop).
 * An Internet connection.
 * A [GitHub account](https://github.com/join).
 * An [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
