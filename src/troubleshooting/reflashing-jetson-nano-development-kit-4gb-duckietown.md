@@ -1,4 +1,5 @@
-# On-board Computer
+(db-troubleshooting-jetson-reflashing)=
+# Reflashing Jetson Nano Development Kit 4GB
 
 ```{seo}
 :description: How to re-flash the on-board computer.
@@ -8,7 +9,7 @@
 This chapter describes how to re-flash the on-board computer.
 
 ```{needget}
-* Completed [](../setup/computer/dependencies.md) with Ubuntu running natively.
+* Completed [](setup-computer-dependencies-installation) with Ubuntu running natively.
 * An NVIDIA Jetson Nano Developer Kit (`4 GB`) with eMMC memory.
 * A power source for the Jetson Nano.
 * A Micro USB cable with data connections that can connect to your computer or a Micro USB to USB type A adapter.
@@ -51,7 +52,7 @@ Without installing this patch, the on-board memory is not recognized correctly a
 ```{admonition} What are all these different flashings about?
 :class: dropdown
 
-Flashing a Jetson Nano is different to [flashing an SD card](../setup/sd-card.md) or an Ubuntu ISO on a thumbdrive:
+Flashing a Jetson Nano is different to [flashing an SD card](setup-db-sd-card-flashing) or an Ubuntu ISO on a thumbdrive:
 
 * Ubuntu is the OS running on your computer (base station).
 * Jetson Nanos are tiny but mighty computers and require an OS to function.
@@ -311,7 +312,7 @@ A green NVIDIA logo with a white background followed by boot information (as lon
 ```
 
 ```{testexpect}
-Method 2: Follow [](../setup/sd-card.md), [](../setup/assembly/db21j.md) and [](../setup/handling.md).
+Method 2: Follow [](setup-db-sd-card-flashing), [](assembly-instructions-db21j) and [](how-to-handle-a-duckiebot-db21).
 ---
 Your Duckiebot boots successfully.
 ```

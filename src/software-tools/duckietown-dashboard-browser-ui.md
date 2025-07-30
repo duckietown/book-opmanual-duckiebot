@@ -1,3 +1,4 @@
+(sw-tools-ui-dashboard)=
 # Dashboard
 
 ```{seo}
@@ -5,10 +6,10 @@
 :keywords: Duckietown, Duckiebot, Dashboard
 ```
 
-This chapter describes the `Dashboard`.
+This chapter describes the "Dashboard", i.e., a browser-based interface for Duckiebots.
 
 ```{needget}
-Completed [](../setup/handling.md).
+Completed [](how-to-handle-a-duckiebot-db21).
 ---
 Knowledge on the `Dashboard`.
 ```
@@ -18,14 +19,14 @@ Knowledge on the `Dashboard`.
 ```{vimeo} 527022343
 ```
 
-To open the `Dashboard`, run the following command, where `PAGE` is an optional page (e.g., `robot/mission_control`):
+To open the Dashboard, run the following command, where `PAGE` is an optional page (e.g., `robot/mission_control`):
 
 ```shell
 dts duckiebot dashboard [--page PAGE] DUCKIEBOT_NAME
 ```
 
 (dashboard-pages)=
-## Pages
+## Dashboard Pages
 
 Once logged in, you will see a navigation panel on the left side of the `Dashboard`.
 
@@ -61,7 +62,7 @@ On this page, you can find several tabs related to your Duckiebot.
 (dashboard-pages-robot-info)=
 #### Info
 
-In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/sd-card.md), temperature, CPU usage, etc.
+In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/flashing-duckiebot-sd-card.md), temperature, CPU usage, etc.
 
 ```{figure} ../_images/software_tools/dashboard/dashboard_info.png
 The `Info` tab on the `Robot` page of the `Dashboard`.

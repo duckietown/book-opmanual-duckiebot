@@ -1,4 +1,5 @@
-# Dependencies
+(setup-computer-dependencies-installation)=
+# Installing Software Dependencies
 
 ```{seo}
 :description: How to install some of the dependencies necessary to interact with your Duckiebot.
@@ -8,7 +9,7 @@
 This section describes how to install some of the dependencies necessary to interact with your Duckiebot.
 
 ```{needget}
-Completed [](intro.md).
+Completed [](assembly-instructions-db21j).
 ---
 A computer with some of the dependencies necessary to interact with your Duckiebot installed.
 ```

@@ -1,3 +1,4 @@
+(intro-db-assembly)=
 # Assembly
 
 ```{seo}
@@ -8,7 +9,7 @@
 This chapter describes the assembly procedure for your Duckiebot.
 
 ```{needget}
-* Completed [](../sd-card.md).
+* Completed [](setup-db-sd-card-flashing).
 * The parts for your Duckiebot.
 ---
 An assembled Duckiebot.

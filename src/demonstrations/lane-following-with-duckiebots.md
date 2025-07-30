@@ -1,4 +1,5 @@
-# Lane Following with Duckiebots
+(duckiebot-demo-lfv)=
+# Lane Following with Other Vehicles (`LFV`)
 
 ```{seo}
 :description: The Lane Following with Duckiebots demo (demonstration) for a Duckiebot.
@@ -8,7 +9,7 @@
 This chapter describes the `Lane Following with Duckiebots` demo for your Duckiebot.
 
 ```{needget}
-Completed [](lane-following-with-obstacles.md).
+Completed [](duckiebot-demo-lfp).
 ---
 A Duckiebot driving autonomously in a Duckietown with other Duckiebots but without obstacles or intersections.
 ```

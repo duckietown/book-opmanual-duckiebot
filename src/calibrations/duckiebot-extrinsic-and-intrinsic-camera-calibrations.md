@@ -1,18 +1,18 @@
-# Camera
-
 ```{seo}
 :description: How to perform the camera calibration procedure for a Duckiebot.
 :keywords: Duckietown, Duckiebot, camera calibration
 ```
+(db-camera-calibration)=
+# Camera Calibration
 
 This chapter describes how to perform the camera calibration procedure for your Duckiebot.
 
 ```{needget}
-Completed [](../software_tools/image-viewer.md).
+Completed [](db-opmanual-sw-tools-image-viewer).
 ---
 A Duckiebot with a calibrated camera.
 ```
-
+camera
 ## Introduction
 
 Every camera is unique. Therefore, a camera calibration procedure needs to be performed to account for small manufacturing discrepancies.
@@ -132,11 +132,11 @@ Within the `Camera Intrinsic` panel, under `Local`, you should see a tick next t
 ```
 
 (operation-camera-extrinsics-calibration)=
-## Extrinsics calibration
+## Extrinsic calibration
 
-### The Extrinsics Calibrator
+### The Extrinsic Calibrator
 
-The easiest way to perform the extrinsics camera calibration procedure for your Duckiebot is by using the `Extrinsics Calibrator`.
+The easiest way to perform the extrinsic camera calibration procedure for your Duckiebot is by using the `Extrinsics Calibrator`.
 
 ```{figure} ../_images/calibrations/camera/extrinsics_calibrator_1.png
 The `Extrinsics Calibrator`.
@@ -170,9 +170,9 @@ Note the keys in the table below.
   - Open the `Debug Console`
 ```
 
-### Extrinsics calibration procedure
+### Extrinsic calibration procedure
 
-To perform the extrinsics calibration procedure:
+To perform the extrinsic calibration procedure:
 
 1. Position your Duckiebot on the calibration board such that it faces the checkerboard pattern, your Duckiebot's axle is parallel to and directly above the **large** `y`-axis of the calibration board, and the axis that is perpendicular to and midway between your Duckiebot's axle is directly above the **large** `x`-axis of the calibration board (the trapezoid in the image under `Camera View` should turn from black to green).
 2. Click the `Calibrate` button.
@@ -189,7 +189,7 @@ Extrinsics calibration setup.
 The `Extrinsics Calibrator` with the `Project` switch set to `on`.
 ```
 
-To confirm that a new extrinsics calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Camera Extrinsic` panel:
+To confirm that a new extrinsic calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Camera Extrinsic` panel:
 
 ```shell
 dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
@@ -206,7 +206,7 @@ Within the `Camera Extrinsic` panel, under `Local`, you should see a tick next t
 ## Troubleshooting
 
 ```{trouble}
-I do not see what my Duckiebot sees after refreshing the window and following [](../software_tools/image-viewer.md).
+I do not see what my Duckiebot sees after refreshing the window and following [](db-opmanual-sw-tools-image-viewer).
 ---
 Contact support.
 ```

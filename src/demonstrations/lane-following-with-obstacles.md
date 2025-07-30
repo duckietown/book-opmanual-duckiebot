@@ -1,4 +1,5 @@
-# Lane Following with Obstacles
+(duckiebot-demo-lfp)=
+# Lane Following with Pedestrians (`LFP`)
 
 ```{seo}
 :description: The Lane Following with Obstacles demo (demonstration) for a Duckiebot.
@@ -8,7 +9,7 @@
 This chapter describes the `Lane Following with Obstacles` demo for your Duckiebot.
 
 ```{needget}
-Completed [](lane-following.md).
+Completed [](duckiebot-demo-lf).
 ---
 A Duckiebot driving autonomously in a Duckietown with obstacles but without intersections or other Duckiebots.
 ```

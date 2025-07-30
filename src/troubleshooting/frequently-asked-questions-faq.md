@@ -1,11 +1,12 @@
-# FAQ
+(db-troubleshooting-faqs)=
+# Frequently Asked Questions (FAQs)
 
 ```{seo}
 :description: FAQ (Frequently Asked Questions) related to a Duckiebot.
 :keywords: Duckietown, Duckiebot, FAQ, Frequently Asked Questions
 ```
 
-This chapter describes FAQ (Frequently Asked Questions) related to your Duckiebot.
+This chapter describes frequently asked questions (FAQs) related to your Duckiebot.
 
 ```{needget}
 Nothing.
@@ -33,7 +34,7 @@ To receive an invitation, [join the Slack community](https://duckietown.com/join
 ```{trouble}
 My Duckiebot does not boot and when connecting it to a screen, I see only a static NVIDIA logo (occasionally flickering).
 ---
-Follow [](on-board-computer.md).
+Follow [](db-troubleshooting-jetson-reflashing).
 ```
 
 ```{trouble}
@@ -46,7 +47,7 @@ The top button is only for turning your Duckiebot off.
 ```{trouble}
 My Duckiebot does not appear to boot after pressing the button on the Duckiebattery (i.e., I don't see a green light on the Jetson Nano or HUT).
 ---
-Follow [](../setup/assembly/db21j.md), checking each cable connection.
+Follow [](assembly-instructions-db21j), checking each cable connection.
 Confirm the start and end port of each power cable from the Duckiebattery.
 The Duckiebattery must be fully charged, as shown in the first assembly step.
 ```
@@ -67,7 +68,7 @@ Disconnect the ToF sensor from the front bumper and use the long cable that orig
 ```{trouble}
 My Duckiebot appears to have booted and the screen is on but I can not see it after running `dts fleet discover`.
 ---
-Follow [](network.md).
+Follow [](db-troubleshooting-network).
 ```
 
 ```{trouble}
@@ -97,7 +98,7 @@ The top button does not turn my Duckiebot off.
 ---
 Press it harder for `5 s`.
 If this does not work, run `dts duckiebot update DUCKIEBOT_NAME` and then run `dts duckiebot reboot DUCKIEBOT_NAME`.
-If this does not work, follow [](hut.md).
+If this does not work, follow [](db-troubleshooting-hut).
 ```
 
 ```{trouble}
@@ -108,9 +109,9 @@ Allow the battery to charge for at least `5 h` before plugging these cables back
 ```
 
 ```{trouble}
-The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](../software_tools/dtps.md), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
+The `Keyboard Controller` window is active but my Duckiebot still does not move. However, I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/wheels/base/pwm` `DTPS` topic, after following [](sw-tools-dtps), and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
-If you have a HUT v3.1, follow [](hut.md).
+If you have a HUT v3.1, follow [](db-troubleshooting-hut).
 ```
 
 ```{trouble}

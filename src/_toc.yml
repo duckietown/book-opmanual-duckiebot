@@ -8,37 +8,37 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: setup/computer/intro
+            -   file: setup/computer/introduction
                 sections:
-                    -   file: setup/computer/dependencies
+                    -   file: setup/computer/software-dependencies
                     -   file: setup/computer/docker
-                    -   file: setup/computer/dts
-            -   file: setup/sd-card
-            -   file: setup/assembly/intro
+                    -   file: setup/computer/duckietown-shell-dts
+            -   file: setup/flashing-duckiebot-sd-card
+            -   file: setup/assembly/introduction-to-duckiebot-assembly
                 sections:
-                    -   file: setup/assembly/db21j
-            -   file: setup/handling
+                    -   file: setup/assembly/instructions-duckiebot-db21j-assembly
+            -   file: setup/instruction-handling-duckiebot-db21m-db21j
     -   caption: Software Tools
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: software_tools/dashboard
-            -   file: software_tools/dtps
-            -   file: software_tools/image-viewer
-            -   file: software_tools/keyboard-controller
-            -   file: software_tools/led-controller
-            -   file: software_tools/additional-software-tools
+            -   file: software-tools/duckietown-dashboard-browser-ui
+            -   file: software-tools/duckietown-postal-service-dtps
+            -   file: software-tools/duckietown-duckiebot-image-viewer
+            -   file: software-tools/duckiebot-keyboard-controller
+            -   file: software-tools/duckiebot-led-lights-controller
+            -   file: software-tools/duckietown-duckiebot-additional-software-tools
     -   caption: Calibrations
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: calibrations/camera
-            -   file: calibrations/kinematics
+            -   file: calibrations/duckiebot-extrinsic-and-intrinsic-camera-calibrations
+            -   file: calibrations/duckiebot-kinematics-odometry-calibration
     -   caption: Demonstrations
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: demonstrations/lane-following
+            -   file: demonstrations/lane-following-lf
             # -   file: demonstrations/lane-following-with-obstacles
             # -   file: demonstrations/lane-following-with-intersections
             # -   file: demonstrations/lane-following-with-duckiebots
@@ -46,19 +46,19 @@ parts:
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: learning_experiences/introduction-to-learning-experiences
+            -   file: learning-experiences/introduction-to-duckietown-lxs
     -   caption: Troubleshooting
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: troubleshooting/network
-            -   file: troubleshooting/hardware-components
-            -   file: troubleshooting/on-board-computer
-            -   file: troubleshooting/duckiebattery
-            -   file: troubleshooting/hut
-            -   file: troubleshooting/faq
+            -   file: troubleshooting/duckiebot-network-faqs
+            -   file: troubleshooting/duckiebot-hardware-components
+            -   file: troubleshooting/reflashing-jetson-nano-development-kit-4gb-duckietown
+            -   file: troubleshooting/duckietown-smart-robotics-duckiebattery-5v-2a
+            -   file: troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs
+            -   file: troubleshooting/frequently-asked-questions-faq
     -   caption: Further Reading
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: further_reading/zerotier
+            -   file: further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier

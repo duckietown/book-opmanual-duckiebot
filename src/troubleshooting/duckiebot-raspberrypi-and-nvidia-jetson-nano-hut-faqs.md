@@ -1,3 +1,4 @@
+(db-troubleshooting-hut)=
 # HUT
 
 ```{seo}
@@ -8,7 +9,7 @@
 This chapter describes how to re-flash the HUT's microcontroller.
 
 ```{needget}
-Completed [](../software_tools/dashboard.md).
+Completed [](sw-tools-ui-dashboard).
 ---
 Knowledge on how to re-flash the HUT's microcontroller.
 ```

@@ -8,7 +8,7 @@
 This chapter describes additional software tools.
 
 ```{needget}
-Completed [](dashboard.md).
+Completed [](sw-tools-ui-dashboard).
 ---
 Knowledge on additional software tools.
 ```

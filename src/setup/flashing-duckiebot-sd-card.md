@@ -1,14 +1,15 @@
-# SD Card
+(setup-db-sd-card-flashing)=
+# Duckiebot SD Card preparation
 
 ```{seo}
 :description: How to initialize an SD card for a Duckiebot.
-:keywords: Duckietown, Duckiebot, initialize, SD card
+:keywords: Duckietown, Duckiebot, initialization, SD card, flashing
 ```
 
 This chapter describes how to initialize an SD card for your Duckiebot.
 
 ```{needget}
-* Completed [](computer/dts.md).
+* Completed [](setup-dts).
 * An SD card with at least `64 GB` of space.
 * An SD card adapter.
 ---

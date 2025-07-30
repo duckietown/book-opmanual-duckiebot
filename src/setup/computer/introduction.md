@@ -1,8 +1,9 @@
-# Computer
+(setup-computer-intro)=
+# Computer setup for Duckietown
 
 ```{seo}
-:description: How to set up your computer to interact with your Duckiebot.
-:keywords: Duckietown, Duckiebot, computer
+:description: How to set up your base station (laptop, desktop) to work with Duckietown robots and simulators. 
+:keywords: Duckietown, Duckiebot, computer setup, set up, preparation, base station
 ```
 
 This chapter describes how to set up your computer to interact with your Duckiebot.

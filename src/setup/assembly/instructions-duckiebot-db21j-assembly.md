@@ -1,4 +1,5 @@
-# DB21J
+(assembly-instructions-db21j)=
+# Assembly Instructions (`DB21J`)
 
 ```{seo}
 :description: Assembly procedure for a Duckiebot DB21J.
@@ -8,7 +9,7 @@
 This section describes the assembly procedure for your Duckiebot DB21J.
 
 ```{needget}
-* Completed [](intro.md).
+* Completed [](assembly-instructions-db21j).
 * The components for a Duckiebot DB21J.
 * An NVIDIA Jetson Nano Developer Kit (4 GB).
 ---

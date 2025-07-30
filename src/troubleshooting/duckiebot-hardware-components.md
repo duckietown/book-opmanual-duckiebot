@@ -1,4 +1,5 @@
-# Hardware Components
+(db-troubleshooting-hw)=
+# Duckiebot Hardware Components
 
 ```{seo}
 :description: How to test hardware components on a Duckiebot.
@@ -8,7 +9,7 @@
 This chapter describes how to test hardware components on your Duckiebot.
 
 ```{needget}
-Completed [](../software_tools/dashboard.md).
+Completed [](sw-tools-ui-dashboard).
 ---
 Knowledge on how to test hardware components on your Duckiebot.
 ```

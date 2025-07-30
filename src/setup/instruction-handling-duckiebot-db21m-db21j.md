@@ -1,4 +1,5 @@
-# Handling
+(how-to-handle-a-duckiebot-db21)=
+# Duckiebot Handling (`DB21`)
 
 ```{seo}
 :description: How to handle a Duckiebot.
@@ -8,7 +9,7 @@
 This chapter describes how to handle your Duckiebot.
 
 ```{needget}
-Completed [](assembly/db21j.md).
+Completed [](assembly-instructions-db21j).
 ---
 Knowledge on how to handle your Duckiebot.
 ```
@@ -101,7 +102,7 @@ To turn your Duckiebot off using `dts`, run:
 dts duckiebot shutdown DUCKIEBOT_NAME
 ```
 
-To turn your Duckiebot off through the `Dashboard`, after following [](../software_tools/dashboard.md):
+To turn your Duckiebot off through the `Dashboard`, after following [](../software-tools/duckietown-dashboard-browser-ui.md):
 
 1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
 2. Click the `Power` button.
@@ -126,15 +127,15 @@ dts duckiebot update DUCKIEBOT_NAME
 
 ## How to see what your Duckiebot sees
 
-To see what your Duckiebot sees, follow [](../software_tools/image-viewer.md).
+To see what your Duckiebot sees, follow [](../software-tools/duckietown-duckiebot-image-viewer.md).
 
 ## How to make your Duckiebot move
 
-To make your Duckiebot move, follow [](../software_tools/keyboard-controller.md).
+To make your Duckiebot move, follow [](../software-tools/duckiebot-keyboard-controller.md).
 
 ## How to control your Duckiebot's LEDs
 
-To control your Duckiebot's LEDs, follow [](../software_tools/led-controller.md).
+To control your Duckiebot's LEDs, follow [](../software-tools/duckiebot-led-lights-controller.md).
 
 ## How to update the Duckiebattery
 
@@ -142,11 +143,11 @@ To update the Duckiebattery, follow [](duckiebattery-update).
 
 ## How to update the HUT
 
-To update the HUT, follow [](../troubleshooting/hut.md).
+To update the HUT, follow [](../troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs.md).
 
 ## How to connect to your Duckiebot over the Internet
 
-To connect to your Duckiebot over the Internet, follow [](../further_reading/zerotier.md).
+To connect to your Duckiebot over the Internet, follow [](../further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier.md).
 
 ## Troubleshooting
 
