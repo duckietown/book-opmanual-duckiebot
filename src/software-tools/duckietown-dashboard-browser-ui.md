@@ -1,9 +1,9 @@
 (sw-tools-ui-dashboard)=
-# Dashboard
+# Duckiebot Dashboard
 
 ```{seo}
-:description: The Dashboard.
-:keywords: Duckietown, Duckiebot, Dashboard
+:description: The Dashboard is a browser-based UI for Duckiebots, enabling convenient hardware and software debugging.
+:keywords: Duckietown, Duckiebot, Dashboard, browser-based UI, UI, debugging
 ```
 
 This chapter describes the "Dashboard", i.e., a browser-based interface for Duckiebots.

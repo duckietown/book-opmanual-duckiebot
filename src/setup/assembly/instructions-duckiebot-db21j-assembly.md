@@ -9,9 +9,8 @@
 This section describes the assembly procedure for your Duckiebot DB21J.
 
 ```{needget}
-* Completed [](assembly-instructions-db21j).
-* The components for a Duckiebot DB21J.
-* An NVIDIA Jetson Nano Developer Kit (4 GB).
+* The components for a Duckiebot DB21J (available on the [Duckietown online store](https://get.duckietown.com)).
+* An NVIDIA Jetson Nano 4 GB Developer Kit.
 ---
 An assembled Duckiebot DB21J.
 ```

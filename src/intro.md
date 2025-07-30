@@ -17,8 +17,15 @@ If you are a Duckietown veteran, treat this book as a reference manual on how to
 If, instead, you:
 
 - want to improve this documentation: read the [Duckietown Book Writer Manual](devmanual-docs:book-devmanual-intro);
-- need help with any step in this book: check out the [technical support section on the Duckietown website](https://duckietown.com/contact/);
 - want to get a Duckiebot or Duckietown: visit the [official Duckietown online store](https://get.duckietown.com/).
+
+(how-to-get-help)=
+## How to get help
+- need help with any step in this book: check out the [technical support section on the Duckietown website](https://duckietown.com/contact/);
+
+
+(book-db-opmanual-toc)=
+## Table of Contents
 
 ```{tableofcontents}
 ```

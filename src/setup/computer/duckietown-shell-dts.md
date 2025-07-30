@@ -2,8 +2,8 @@
 # The Duckietown Shell (`DTS`)
 
 ```{seo}
-:description: How to install and set up DTS (Duckietown Shell).
-:keywords: Duckietown, Duckiebot, DTS, Duckietown Shell
+:description: How to install and set up DTS (Duckietown Shell), the terminal based and most powerful UI in Duckietown. 
+:keywords: Duckietown, Duckiebot, DTS, Duckietown Shell, UI, terminal
 ```
 
 This section describes how to install and set up `DTS` (`Duckietown Shell`).
@@ -11,14 +11,14 @@ This section describes how to install and set up `DTS` (`Duckietown Shell`).
 ```{needget}
 Completed [](setup-computer-docker).
 ---
-A computer with `DTS` installed and set up.
+A computer with `DTS` installed and correctly set up.
 ```
 
-## Introduction
+## Introduction to `DTS`
 
 `DTS` is a CLI (Command-Line Interface) program that is used for Duckietown-related operations.
 
-## Installation
+## `DTS` Installation
 
 To install `DTS`, run:
 
@@ -37,7 +37,7 @@ which dts
 The path to `dts`.
 ````
 
-## Setup
+## `DTS` Setup
 
 To perform the initial setup of `DTS`:
 

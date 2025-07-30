@@ -2,8 +2,8 @@
 # Network troubleshooting
 
 ```{seo}
-:description: How to connect a Duckiebot to a network.
-:keywords: Duckietown, Duckiebot, network
+:description: Additional information on how to correctly configure, edit or supplement your Duckietown robot network configuration.
+:keywords: Duckietown, Duckiebot, network, troubleshooting, wifi, ethernet, multiple duckiebot networks, I hate networks
 ```
 
 This chapter describes how to connect your Duckiebot to a network.
@@ -14,11 +14,11 @@ Completed [](setup-db-sd-card-flashing).
 Knowledge on how to connect your Duckiebot to a network.
 ```
 
-## Using Wi-Fi
+There is a saying in robotics: "90% of problems come from networks". Getting your network set up right should be a very high level priority to ensure a joyful learning experience. 
 
-To edit the Wi-Fi networks known to your Duckiebot, edit the `wpa_supplicant.conf` file in the main partition of the SD card.
-If your Duckiebot has an NVIDIA Jetson Nano, this file is located in the `/etc` directory in the `APP` partition.
-Otherwise, if your Duckiebot has a Raspberry Pi, this file is located in the `/etc/wpa_supplicant` directory in the `root` partition.
+## Modifying the Wi-Fi settings
+
+To edit the Wi-Fi networks known to your Duckiebot, edit the `wpa_supplicant.conf` file on your SD card. If your Duckiebot has an NVIDIA Jetson Nano, this file is located in the `/etc` directory in the `APP` partition. Otherwise, if your Duckiebot has a Raspberry Pi, this file is located in the `/etc/wpa_supplicant` directory in the `root` partition.
 
 ````{note}
 The following is from a `wpa_supplicant.conf` file with two Wi-Fi networks defined:
@@ -30,15 +30,15 @@ country=CH
 
 network={
     id_str="network_1"
-    ssid="comnet23243"
-    psk="MSNDJWKE32"
+    ssid="mywifiisbeautiful"
+    psk="sobeautiful"
     key_mgmt=WPA-PSK
 }
 
 network={
     id_str="network_2"
-    ssid="TPlink23432"
-    psk="ksnbn4wn3"
+    ssid="notyournet"
+    psk="thisisnotthenetyouarelookingfor"
     key_mgmt=WPA-PSK
 }
 ```
@@ -64,30 +64,54 @@ To connect your Duckiebot to a network through your computer:
 10. Click the `Save` button.
 
 (duckiebot-network-test)=
-## Test your Duckiebot's connection to the Internet
+## Testing your connections
 
-Run the following command and enter the password (the default password is `quackquack`):
+All these tests should pass. 
+
+### Test if your computer is connected to the internet
+
+One way to test if your computer is on the internet is by trying to ping any website, e.g.:
+
+    ping duckietown.com
+
+
+(network-trouble-shooting-ping-robotname-local)=
+### Test if your computer and robot are on the same network
+
+From your computer, try to ping your robot using its `HOSTNAME`:
+
+    ping HOSTNAME.local
+
+```{attention}
+This is one of the most important steps and potential initial failure mode. If the command above does not work as is, fix this before proceeding.
+```
+
+### Test if your Duckiebot is connected to the internet
+
+First, [make sure your robot and computer are on the same network](network-trouble-shooting-ping-robotname-local). Then, `ssh` into your robot with (the default password is `quackquack`):
 
 ```shell
 ssh duckie@DUCKIEBOT_NAME.local
 ```
 
-Run:
+From the robot side:
 
 ```shell
 ping duckietown.com
 ```
 
+(or, a more modest `ping 8.8.8.8`, unless you are trying from China).
+
 ````{note}
 Over time, the resulting output should look similar to the following:
 
 ```shell
-PING duckietown.com (172.67.205.80) 56(84) bytes of data.
-64 bytes from 172.67.205.80 (172.67.205.80): icmp_seq=1 ttl=53 time=26.4 ms
-64 bytes from 172.67.205.80 (172.67.205.80): icmp_seq=2 ttl=53 time=24.9 ms
-64 bytes from 172.67.205.80 (172.67.205.80): icmp_seq=3 ttl=53 time=27.4 ms
-64 bytes from 172.67.205.80 (172.67.205.80): icmp_seq=4 ttl=53 time=24.0 ms
-64 bytes from 172.67.205.80 (172.67.205.80): icmp_seq=5 ttl=53 time=24.5 ms
+PING duckietown.com (123.45.678.90) 56(84) bytes of data.
+64 bytes from 123.45.678.90 (123.45.678.90): icmp_seq=1 ttl=53 time=26.4 ms
+64 bytes from 123.45.678.90 (123.45.678.90): icmp_seq=2 ttl=53 time=24.9 ms
+64 bytes from 123.45.678.90 (123.45.678.90): icmp_seq=3 ttl=53 time=27.4 ms
+64 bytes from 123.45.678.90 (123.45.678.90): icmp_seq=4 ttl=53 time=24.0 ms
+64 bytes from 123.45.678.90 (123.45.678.90): icmp_seq=5 ttl=53 time=24.5 ms
 ...
 ```
 ````

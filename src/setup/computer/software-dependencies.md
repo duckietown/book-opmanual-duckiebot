@@ -2,21 +2,21 @@
 # Installing Software Dependencies
 
 ```{seo}
-:description: How to install some of the dependencies necessary to interact with your Duckiebot.
-:keywords: Duckietown, Duckiebot, dependencies
+:description: Learn how to install the software dependencies necessary to work with Duckietown. 
+:keywords: Duckietown, Duckiebot, dependencies, computer setup
 ```
 
-This section describes how to install some of the dependencies necessary to interact with your Duckiebot.
+This section describes how to install the dependencies necessary to use Duckietown, in particular Duckiebots.
 
 ```{needget}
 Completed [](assembly-instructions-db21j).
 ---
-A computer with some of the dependencies necessary to interact with your Duckiebot installed.
+A computer with the dependencies necessary to interact with Duckietown.
 ```
 
-## Installation
+## Dependencies Installation
 
-To install some of the dependencies necessary to interact with your Duckiebot, run:
+Open a terminal and run, in order:
 
 ```shell
 sudo apt update
@@ -33,6 +33,10 @@ sudo apt install open-vm-tools
 ````
 
 ## Checkpoint
+
+```{warning}
+Never skip a checkpoint! If checkpoints fail (for whatever reason), chances are future steps will not work either. [Seek help](https://duckietown.com/contact/) if needed. 
+```
 
 ```{testexpect}
 Run:
