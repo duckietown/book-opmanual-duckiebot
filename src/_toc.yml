@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-    -   caption: Setup
+    -   caption: Start Here - Setup
         maxdepth: 2
         numbered: False
         chapters:
@@ -62,3 +62,4 @@ parts:
         numbered: False
         chapters:
             -   file: further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier
+            -   file: further-reading/duckiebot-configurations-explained

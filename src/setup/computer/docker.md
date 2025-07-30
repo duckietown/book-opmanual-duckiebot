@@ -2,11 +2,11 @@
 # Docker
 
 ```{seo}
-:description: How to install and set up Docker.
-:keywords: Duckietown, Duckiebot, Docker, computer
+:description: How to install and set up Docker on your computer. This is a necessary step to use Duckietown software. 
+:keywords: Duckietown, Duckiebot, Docker, computer setup
 ```
 
-This section describes how to install and set up Docker.
+This section describes how to install and set up Docker on your computer.
 
 ```{needget}
 Completed [](setup-computer-dependencies-installation).
@@ -16,7 +16,7 @@ A computer with Docker installed and set up.
 
 ## Installation
 
-To remove older versions of Docker, run:
+If you have prior installations of Docker, start by cleaning up. To remove older versions of Docker, run:
 
 ```shell
 sudo apt remove containerd docker docker-engine docker.io runc
@@ -40,7 +40,11 @@ sudo apt update
 sudo apt install containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-compose docker-compose-plugin
 ```
 
-## Setup
+## Docker Setup
+
+```{warning}
+Make sure not to skip this part, it is a common source of troubles.
+```
 
 To add `docker` to your user group, run:
 
