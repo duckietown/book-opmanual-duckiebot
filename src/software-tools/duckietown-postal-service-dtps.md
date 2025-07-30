@@ -1,4 +1,5 @@
-# DTPS
+(sw-tools-dtps)=
+# Duckietown Postal Service (`DTPS`)
 
 ```{seo}
 :description: DTPS (Duckietown Postal Service).
@@ -8,7 +9,7 @@
 This chapter describes `DTPS` (`Duckietown Postal Service`).
 
 ```{needget}
-Completed [](dashboard.md).
+Completed [](sw-tools-ui-dashboard).
 ---
 Knowledge on `DTPS`.
 ```

@@ -8,7 +8,7 @@
 This chapter describes the `LED Controller`.
 
 ```{needget}
-Completed [](dtps.md).
+Completed [](sw-tools-dtps).
 ---
 Knowledge on the `LED Controller`.
 ```
@@ -64,13 +64,13 @@ The color dropper tool is not operational yet.
 ## Troubleshooting
 
 ```{trouble}
-I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps.md), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
+I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](sw-tools-dtps), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
-If you have a HUT v3.1, follow [](../troubleshooting/hut.md).
+If you have a HUT v3.1, follow [](db-troubleshooting-hut).
 ```
 
 ```{trouble}
-My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](dtps.md).
+My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](sw-tools-dtps).
 ---
 Contact support.
 ```

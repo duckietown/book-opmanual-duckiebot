@@ -1,3 +1,4 @@
+(db-troubleshooting-duckiebattery)=
 # Duckiebattery
 
 ```{seo}
@@ -8,7 +9,7 @@
 This chapter describes the Duckiebattery.
 
 ```{needget}
-* Completed [](../setup/handling.md) up to [](handling-how-to-turn-your-duckiebot-off).
+* Completed [](how-to-handle-a-duckiebot-db21) up to [](handling-how-to-turn-your-duckiebot-off).
 * A [Duckiebattery](db-opmanual-dtbattery-v2).
 ---
 Knowledge on the Duckiebattery.

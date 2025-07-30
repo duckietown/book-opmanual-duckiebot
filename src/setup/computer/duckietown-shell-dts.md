@@ -1,4 +1,5 @@
-# DTS
+(setup-dts)=
+# The Duckietown Shell (`DTS`)
 
 ```{seo}
 :description: How to install and set up DTS (Duckietown Shell).
@@ -8,7 +9,7 @@
 This section describes how to install and set up `DTS` (`Duckietown Shell`).
 
 ```{needget}
-Completed [](docker.md).
+Completed [](setup-computer-docker).
 ---
 A computer with `DTS` installed and set up.
 ```

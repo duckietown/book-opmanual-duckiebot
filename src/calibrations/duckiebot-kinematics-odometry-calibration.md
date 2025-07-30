@@ -1,4 +1,5 @@
-# Kinematics
+(db-wheels-calibration)=
+# Wheel Calibration
 
 ```{seo}
 :description: How to perform the kinematics calibration procedure for a Duckiebot.
@@ -8,7 +9,7 @@
 This chapter describes how to perform the kinematics calibration procedure for your Duckiebot.
 
 ```{needget}
-Completed [](../software_tools/keyboard-controller.md).
+Completed [](sw-tools-keyboard-controller).
 ---
 A Duckiebot with calibrated kinematics.
 ```
@@ -113,7 +114,7 @@ Within the `Kinematics` panel, under `Local`, you should see a tick next to `Com
 ## Troubleshooting
 
 ```{trouble}
-My Duckiebot does not move after following [](../software_tools/keyboard-controller.md).
+My Duckiebot does not move after following [](sw-tools-keyboard-controller).
 ---
 Contact support.
 ```

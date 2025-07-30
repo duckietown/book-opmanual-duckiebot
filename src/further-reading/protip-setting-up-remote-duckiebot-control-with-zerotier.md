@@ -8,7 +8,7 @@
 This chapter describes how to connect to your Duckiebot over the Internet using ZeroTier.
 
 ```{needget}
-* Completed [](../setup/handling.md).
+* Completed [](how-to-handle-a-duckiebot-db21).
 * A [ZeroTier account](https://my.zerotier.com/).
 ---
 Knowledge on how to connect to your Duckiebot over the Internet using ZeroTier.

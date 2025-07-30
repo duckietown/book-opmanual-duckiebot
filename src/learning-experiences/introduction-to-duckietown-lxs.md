@@ -8,8 +8,8 @@
 This chapter describes the `LXs` (`Learning Experiences`) available for your Duckiebot.
 
 ```{needget}
-* Completed [](../calibrations/camera.md).
-* Completed [](../calibrations/kinematics.md).
+* Completed [](db-camera-calibration).
+* Completed [](db-wheels-calibration).
 ---
 Knowledge on the `LXs` available for your Duckiebot.
 ```

@@ -1,3 +1,4 @@
+(duckiebot-demo-lf)=
 # Lane Following
 
 ```{seo}
@@ -5,11 +6,11 @@
 :keywords: Duckietown, Duckiebot, Lane Following, demo, demonstration
 ```
 
-This chapter describes the `Lane Following` demo (demonstration) for your Duckiebot.
+This chapter describes the `Lane Following (LF)` demo (demonstration) for Duckiebots.
 
 ```{needget}
-* Completed [](../calibrations/camera.md).
-* Completed [](../calibrations/kinematics.md).
+* Completed [](db-camera-calibration).
+* Completed [](db-wheels-calibration).
 * A Duckietown, as defined in [](book-opmanual-duckietown:book).
 * Good lighting (ideally white diffused light).
   This demo relies on images from the camera and color detections.
@@ -330,7 +331,7 @@ To view the lane pose and segment markers:
 You should see a top-down view of the lane in front of your Duckiebot.
 ```
 
-If an error was incurred during the [camera calibration procedure](../calibrations/camera.md), it will be very apparent when looking at the ground projected segments.
+If an error was incurred during the [camera calibration procedure](../calibrations/duckiebot-extrinsic-and-intrinsic-camera-calibrations.md), it will be very apparent when looking at the ground projected segments.
 
 ### Tuning the PID gains
 

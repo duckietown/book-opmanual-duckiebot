@@ -1,3 +1,4 @@
+(setup-computer-docker)=
 # Docker
 
 ```{seo}
@@ -8,7 +9,7 @@
 This section describes how to install and set up Docker.
 
 ```{needget}
-Completed [](dependencies.md).
+Completed [](setup-computer-dependencies-installation).
 ---
 A computer with Docker installed and set up.
 ```

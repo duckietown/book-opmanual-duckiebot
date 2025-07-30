@@ -1,4 +1,5 @@
-# Network
+(db-troubleshooting-network)=
+# Network troubleshooting
 
 ```{seo}
 :description: How to connect a Duckiebot to a network.
@@ -8,7 +9,7 @@
 This chapter describes how to connect your Duckiebot to a network.
 
 ```{needget}
-Completed [](../setup/sd-card.md).
+Completed [](setup-db-sd-card-flashing).
 ---
 Knowledge on how to connect your Duckiebot to a network.
 ```
