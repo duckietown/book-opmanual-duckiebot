@@ -1,5 +1,5 @@
-(setup-computer-dependencies-installation)=
-# Installing Software Dependencies
+(setup-sw-dependencies-installation)=
+# Setup - Software Dependencies
 
 ```{seo}
 :description: Learn how to install the software dependencies necessary to work with Duckietown. 

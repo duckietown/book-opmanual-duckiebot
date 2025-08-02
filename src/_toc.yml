@@ -8,16 +8,27 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: setup/computer/introduction
+            -   file: setup/00-computer/installing-ubuntu-on-your-computer
+            -   file: setup/01-accounts/introduction
                 sections:
-                    -   file: setup/computer/software-dependencies
-                    -   file: setup/computer/docker
-                    -   file: setup/computer/duckietown-shell-dts
-            -   file: setup/flashing-duckiebot-sd-card
-            -   file: setup/assembly/introduction-to-duckiebot-assembly
+                    -   file: setup/01-accounts/github-account
+                    -   file: setup/01-accounts/docker-account
+                    -   file: setup/01-accounts/duckietown-hub-account
+                    -   file: setup/01-accounts/duckietown-slack-account
+                    -   file: setup/01-accounts/duckietown-stack-overflow-account
+            -   file: setup/02-software/introduction
                 sections:
-                    -   file: setup/assembly/instructions-duckiebot-db21j-assembly
-            -   file: setup/instruction-handling-duckiebot-db21m-db21j
+                    -   file: setup/02-software/software-dependencies-installation
+                    -   file: setup/02-software/docker-installation
+                    -   file: setup/02-software/github-installation
+                    -   file: setup/02-software/duckietown-shell-dts-installation
+            - file: setup/03-duckiebot/introduction
+              sections:
+                  - file: setup/03-duckiebot/flashing-duckiebot-sd-card
+                  - file: setup/03-duckiebot/safety-lithium-ion-duckiebattery
+                  - file: setup/03-duckiebot/assembly-introduction-duckiebot
+                  - file: setup/03-duckiebot/assembly-instructions-duckiebot-db21j
+                  - file: setup/03-duckiebot/instruction-handling-duckiebot-db21m-db21j
     -   caption: Software Tools
         maxdepth: 1
         numbered: False
@@ -47,10 +58,11 @@ parts:
         numbered: False
         chapters:
             -   file: learning-experiences/introduction-to-duckietown-lxs
-    -   caption: Troubleshooting
+    -   caption: FAQ and Troubleshooting
         maxdepth: 1
         numbered: False
         chapters:
+            -   file: troubleshooting/how-to-get-help
             -   file: troubleshooting/duckiebot-network-faqs
             -   file: troubleshooting/duckiebot-hardware-components
             -   file: troubleshooting/reflashing-jetson-nano-development-kit-4gb-duckietown
@@ -63,3 +75,6 @@ parts:
         chapters:
             -   file: further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier
             -   file: further-reading/duckiebot-configurations-explained
+            -   file: further-reading/working-with-docker-in-duckietown
+            -   file: further-reading/version-control-with-git
+            -   file: further-reading/ssh-aliases-setup

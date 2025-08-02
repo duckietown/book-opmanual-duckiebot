@@ -62,7 +62,7 @@ On this page, you can find several tabs related to your Duckiebot.
 (dashboard-pages-robot-info)=
 #### Info
 
-In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/flashing-duckiebot-sd-card.md), temperature, CPU usage, etc.
+In this tab, you can see your Duckiebot's name, type, configuration, [firmware](../setup/03-duckiebot/flashing-duckiebot-sd-card.md), temperature, CPU usage, etc.
 
 ```{figure} ../_images/software_tools/dashboard/dashboard_info.png
 The `Info` tab on the `Robot` page of the `Dashboard`.

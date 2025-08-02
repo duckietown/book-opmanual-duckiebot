@@ -1,5 +1,5 @@
-(setup-computer-intro)=
-# Computer setup for Duckietown
+(setup-sw-intro)=
+# Setup - Software
 
 ```{seo}
 :description: Learn how to set up your base station (laptop, desktop) to work with Duckietown robots and simulators. This is the first step in getting started with Duckietown.

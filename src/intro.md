@@ -10,26 +10,22 @@ Welcome to the Duckiebot operation manual!
 
 This book is a great starting point for getting started with Duckietown "hands-on". It contains step-by-step instructions on how to set up your computer, assemble, calibrate, and operate a Duckiebot, along with some troubleshooting tips.
 
-If you are new to Duckietown, you can go through this book in order. Do not skip steps. 
+```{note}
+If you are new to Duckietown, you should find a course that helps you navigate this content. For example, our [massive open online course "Self-Driving Cars with Duckietown"](https://duckietown.com/self-driving-cars-with-duckietown-mooc/). 
+```
 
 If you are a Duckietown veteran, treat this book as a reference manual on how to do specific things. 
 
-If, instead, you:
+If you have suggestions on how to improve this documentation, read the [Duckietown Book Writer Manual](https://docs.duckietown.com/daffy/devmanual-docs/intro.html) to learn how to make contributions.
 
-- want to improve this documentation: read the [Duckietown Book Writer Manual](devmanual-docs:book-devmanual-intro);
-- want to get a Duckiebot or Duckietown: visit the [official Duckietown online store](https://get.duckietown.com/).
 
-(how-to-get-help)=
+(how-to-get-help-pointer)=
 ## How to get help
-- need help with any step in this book: check out the [technical support section on the Duckietown website](https://duckietown.com/contact/);
 
+Read the [FAQ and Troubleshooting](how-to-get-help) to find out how to get support in Duckietown.
 
 (book-db-opmanual-toc)=
 ## Table of Contents
 
 ```{tableofcontents}
-```
-
-```{todo}
-fix inter book link to devmanual after books unification
 ```

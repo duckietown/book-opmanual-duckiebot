@@ -1,5 +1,5 @@
 (setup-dts)=
-# The Duckietown Shell (`DTS`)
+# Setup - Duckietown Shell (`DTS`)
 
 ```{seo}
 :description: How to install and set up DTS (Duckietown Shell), the terminal based and most powerful UI in Duckietown. 
