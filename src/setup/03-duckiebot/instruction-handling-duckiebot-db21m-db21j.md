@@ -64,7 +64,7 @@ To verify that your Duckiebot has completed the booting process, run the followi
 dts fleet discover
 ```
 
-```{figure} ../_images/setup/handling/fleet_discover.png
+```{figure} ../../_images/setup/handling/fleet_discover.png
 Output of `dts fleet discover`.
 ```
 
@@ -102,7 +102,7 @@ To turn your Duckiebot off using `dts`, run:
 dts duckiebot shutdown DUCKIEBOT_NAME
 ```
 
-To turn your Duckiebot off through the `Dashboard`, after following [](../software-tools/duckietown-dashboard-browser-ui.md):
+To turn your Duckiebot off through the `Dashboard`, after following [](../../software-tools/duckietown-dashboard-browser-ui.md):
 
 1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
 2. Click the `Power` button.
@@ -127,15 +127,15 @@ dts duckiebot update DUCKIEBOT_NAME
 
 ## How to see what your Duckiebot sees
 
-To see what your Duckiebot sees, follow [](../software-tools/duckietown-duckiebot-image-viewer.md).
+To see what your Duckiebot sees, follow [](../../software-tools/duckietown-duckiebot-image-viewer.md).
 
 ## How to make your Duckiebot move
 
-To make your Duckiebot move, follow [](../software-tools/duckiebot-keyboard-controller.md).
+To make your Duckiebot move, follow [](../../software-tools/duckiebot-keyboard-controller.md).
 
 ## How to control your Duckiebot's LEDs
 
-To control your Duckiebot's LEDs, follow [](../software-tools/duckiebot-led-lights-controller.md).
+To control your Duckiebot's LEDs, follow [](../../software-tools/duckiebot-led-lights-controller.md).
 
 ## How to update the Duckiebattery
 
@@ -143,11 +143,11 @@ To update the Duckiebattery, follow [](duckiebattery-update).
 
 ## How to update the HUT
 
-To update the HUT, follow [](../troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs.md).
+To update the HUT, follow [](../../troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs.md).
 
 ## How to connect to your Duckiebot over the Internet
 
-To connect to your Duckiebot over the Internet, follow [](../further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier.md).
+To connect to your Duckiebot over the Internet, follow [](../../further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier.md).
 
 ## Troubleshooting
 
