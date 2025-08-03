@@ -42,7 +42,7 @@ The path to `dts`.
 To appropriately configure the Duckietown Shell:
 
 1. [Login `dts` as a Duckietown User](dt-account-set-token)
-2. [Provide DockerHub credentials](dts-dockerhub-credentials)
+2. [Provide DockerHub credentials](dt-account-dockerhub-config-docker-set)
 
 (dt-account-set-token)=
 ### Configure the Duckietown token in the Duckietown Shell
