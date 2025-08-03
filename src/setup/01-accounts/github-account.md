@@ -10,7 +10,7 @@
 ```
 
 (setup-account-github)=
-# GitHub Account Setup
+# GitHub Account
 
 [GitHub](https://github.com/duckietown) is a developer platform used to collaboratively build and distribute software. It uses Git, which is a widely used version control system. 
 

@@ -9,20 +9,20 @@ parts:
         numbered: False
         chapters:
             -   file: setup/00-computer/installing-ubuntu-on-your-computer
-            -   file: setup/01-accounts/introduction
+            -   file: setup/01-accounts/accounts-introduction
                 sections:
                     -   file: setup/01-accounts/github-account
                     -   file: setup/01-accounts/docker-account
                     -   file: setup/01-accounts/duckietown-hub-account
                     -   file: setup/01-accounts/duckietown-slack-account
                     -   file: setup/01-accounts/duckietown-stack-overflow-account
-            -   file: setup/02-software/introduction
+            -   file: setup/02-software/sw-introduction
                 sections:
                     -   file: setup/02-software/software-dependencies-installation
                     -   file: setup/02-software/docker-installation
                     -   file: setup/02-software/github-installation
                     -   file: setup/02-software/duckietown-shell-dts-installation
-            - file: setup/03-duckiebot/introduction
+            - file: setup/03-duckiebot/duckiebot-introduction
               sections:
                   - file: setup/03-duckiebot/flashing-duckiebot-sd-card
                   - file: setup/03-duckiebot/safety-lithium-ion-duckiebattery

@@ -6,30 +6,31 @@
 :keywords: Duckietown, Duckiebot, computer setup, set up, preparation, base station, getting started
 ```
 
-This chapter describes how to set up your computer to interact with your Duckiebot.
+In this chapter instructions are provided to set up the software needed to work with Duckietown. 
 
 ```{needget}
-* A computer with at least `50 GB` of free space running [Ubuntu 22.04 or newer](https://ubuntu.com/tutorials/install-ubuntu-desktop).
-* An Internet connection.
-* A [GitHub account](https://github.com/join).
+* A computer with at least `50 GB` of free space running [Ubuntu 22.04 or newer](setup-computer).
+* A [GitHub account](setup-account-github).
+* A [Docker Hub account](setup-account-docker).
+* A [Duckietown account](setup-account-duckietown-hub).
 * An [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
-* A [Duckietown account](https://hub.duckietown.com/signup/).
-* A [Docker Hub account](https://hub.docker.com/signup).
+* An Internet connection.
+* Approximately 30 minutes.
 ---
-A computer set up to interact with your Duckiebot.
+A computer set up to use Duckietown and interact with Duckiebots. 
 ```
 
 ```{attention}
-Throughout this book, replace `DUCKIEBOT_NAME` with your Duckiebot's `hostname`, which does not include `.local` at the end.
+Throughout this book, replace `DUCKIEBOT_NAME` with your Duckiebot's `HOSTNAME`, which does not include `.local` at the end.
 ```
 
 ```{note}
 <kbd>Key</kbd> indicates a keyboard key.
 ```
 (setup-computer-vm-vs-native-ubuntu)=
-## Native installation vs VM
+## Native Ubuntu installation and Virtual Machines (VM)
 
-Running Ubuntu natively is recommended but not strictly required.
+Running Ubuntu natively is _strongly_ recommended but not strictly required.
 
 If you are running Ubuntu in a VM (Virtual Machine), make sure that your computer and Duckiebot appear as physical entities on the same network. This is achieved by selecting the "bridged network adapter" (e.g., VirtualBox uses NAT by default), which will allow you to be on the same subnetwork as your Duckiebot.
 
@@ -38,6 +39,8 @@ When running a VMware machine on a macOS host, it may be necessary to have the f
 * `Share with my Mac` (for connecting to the Internet).
 * `Bridged Networking` (for connecting to your Duckiebot).
 ```
+
+If using a M-series Mac (ARM architecture), some success has been achieved by emulating a x86 architecture using [UTM](https://mac.getutm.app/).  
 
 ```{attention}
 While VMs on different host OS might work:
