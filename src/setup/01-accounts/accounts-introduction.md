@@ -16,11 +16,15 @@
 - Joining the Duckietown Stack Overflow archive of Q&As
 ```
 
-The first step is to create a number of accounts with third-party resources used by or in conjunction with Duckietown. 
+The first step is to create accounts with third-party resources used in conjunction with Duckietown. 
 
 All these accounts are free, and when paid options exist, those are not necessary in the context of Duckietown.
 
 You can re-use these accounts for other projects. If you already have some of these accounts from other projects, you can skip the respective sections. 
+
+```{tip}
+Although not strictly necessary, it is a good idea to use teh same email address for all the following accounts. 
+```
 
 ```{tableofcontents}
 ```

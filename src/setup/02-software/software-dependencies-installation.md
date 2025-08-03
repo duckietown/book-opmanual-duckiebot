@@ -1,5 +1,5 @@
 (setup-sw-dependencies-installation)=
-# Setup - Software Dependencies
+# Software dependencies installation
 
 ```{seo}
 :description: Learn how to install the software dependencies necessary to work with Duckietown. 
@@ -9,7 +9,8 @@
 This section describes how to install the dependencies necessary to use Duckietown, in particular Duckiebots.
 
 ```{needget}
-Completed [](assembly-instructions-db21j).
+- Completed [Computer OS setup](setup-computer)
+- Completed [Accounts setup](dt-account)
 ---
 A computer with the dependencies necessary to interact with Duckietown.
 ```
@@ -20,12 +21,12 @@ Open a terminal and run, in order:
 
 ```shell
 sudo apt update
-sudo apt install -y ca-certificates curl git git-lfs gnupg libfuse2 pipx
+sudo apt install -y ca-certificates curl git git-lfs git-extras gnupg libfuse2 pipx
 pipx ensurepath
 ```
 
 ````{note}
-If you are running Ubuntu in a VM, run the following command as well:
+If you are running Ubuntu in a VM, in addition:
 
 ```shell
 sudo apt install open-vm-tools

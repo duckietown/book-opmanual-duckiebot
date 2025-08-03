@@ -4,11 +4,13 @@
 ```
 
 (how-to-get-help)=
-## How to get help
+# How to get help in Duckietown
 
 Getting (and providing) help is part of the learning process. 
 
-Unless you are an instructor with an [instructor pack subscritpion](https://get.duckietown.com/products/instructor-pack-subscription?variant=44201386180783), Duckietown support is community-driven. Follow these steps if you run in any technical issue: 
+Unless you are an instructor with an [instructor pack subscription](https://get.duckietown.com/products/instructor-pack-subscription?variant=44201386180783), Duckietown support is community-driven. This means technical support is provided on a best-effort basis, without guarantees of timeliness. 
+
+Follow these steps if you run in any technical issue: 
 
 ```{admonition} How to get help
 :class: tip

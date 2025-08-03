@@ -14,15 +14,16 @@ Professional software development typically leverages versioning to keep track o
 
 ## Background reading
 
-See: [GitHub tutorial](https://guides.github.com/activities/hello-world/)
+See: [GitHub Hello World](https://guides.github.com/activities/hello-world/)
 
 See: [GitHub workflow](https://guides.github.com/introduction/Llow/)
 
+<!--
 ## Installation
 
 The basic Git program is installed using
 
-    sudo apt install git
+    sudo apt install git git-lfs
 
 Additional utilities for `git` are installed using:
 
@@ -39,6 +40,7 @@ Use these commands to tell Git who you are:
 
     git config --global user.email "![email]"
     git config --global user.name  "![full name]"
+-->
 
 (prelim-sw-git-tips)=
 ## Git tips
@@ -124,13 +126,18 @@ To delete a remote branch you need to push the delete command:
 
 If you are working on another branch than the master or forked a repository and want to propose changes you made into the master, you can open a so-called `pull-request`. To do so, press the corresponding tab in the dashboard of a repository and then press the green button `New pull request`. You will be asked which branch from which fork you want to merge.
 
+<!--
 ### Keep your password stored locally
 
-If you are setting up Github on your personal computer, and you use two-factor authentication, it might be time-consuming to configure that every time you need to provide git credentials. Instead, you can have the computer to remember your password. To do that, you can:
+If you are setting up GitHub on your personal computer, and you use two-factor authentication, it might be time-consuming to configure that every time you need to provide git credentials. Instead, you can have the computer to remember your password. To do that, you can:
 
     git config --global credential.helper store
 
 Note: you should only do this on your **personal** computer.
+
+-->
+
+<!--
 
 (prelim-sw-ssh)=
 ## Connect with SSH
@@ -734,13 +741,14 @@ From [GitHub](https://docs.github.com/en/authentication/connecting-to-github-wit
 4. Verify that the resulting message contains your username.
 ````
 `````
-
+-->
+<!--
 ## Submitting issues
 
 If you are experiencing issues with any code or content of a repository (such as this operating manual you are reading right now), you can submit issues. For doing so go to the dashboard of the corresponding repository and press the `Issues` tab where you can open a new request.
 
 For example you encounter a bug or a mistake in this operating manual, please visit this [repository](https://github.com/duckietown/docs-opmanual_duckiebot/issues) to open a new issue.
-
+-->
 ## Git troubleshooting
 
 ```{todo}

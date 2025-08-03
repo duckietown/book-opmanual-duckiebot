@@ -1,11 +1,11 @@
 ```{seo}
-:description: 
-:keywords: 
+:description: The supported OS for working with Duckietown is Ubuntu 22.04 or newer. Learn how to install Ubuntu on your computer, and what requirements it should have.
+:keywords: computer setup, how to install ubuntu, duckietown supported OS, why ubuntu duckietown 
 ```
 
 ```{needget}
 - A computer (laptop or desktop) satisfying [minimum requirements](setup-computer-requirements)
-* A 32GB+ external drive (e.g., the Duckietown SD card + adapter)
+- A 32GB+ external drive (e.g., the Duckietown SD card + adapter)
 ---
 - A computer with native Ubuntu installation
 ```
@@ -43,6 +43,10 @@ Before installing Ubuntu:
 
 ```{tip}
 We recommend installing Ubuntu as a dual boot when possible. Each time you turn on your computer, you will be able to choose which OS to run.
+```
+
+```{warning}
+The currently supported version of Ubuntu is 22.04.x or newer.
 ```
  
 To install Ubuntu, follow this [Ubuntu Desktop Installation Tutorial](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview).
