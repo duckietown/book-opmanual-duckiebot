@@ -8,6 +8,8 @@
 
 This section lists all Duckietown learning experiences (`LX`s):
 
+- See [Dev Manual](https://docs.duckietown.com/ente/devmanual-lx/consume/01-duckietown-lx-environment-setup.html#env-setup) for setup instructions
+
 - **Supported**: these are polished `LX`s that are actively maintained. You should be able to follow the instructions and obtain the expected outcomes.
 
 - **Experimental**: these `LX`s are either under development or worked at some point in the past. This content is not actively supported at this point in time but might work with some particular attention. We leave this non-polished content here to provide ideas on projects or classes. We welcome contributions to these materials.

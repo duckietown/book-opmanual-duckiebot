@@ -18,11 +18,11 @@ This section lists the supported learning experiences available for Duckiebots.
 * Skills
 ```
 
-- [Braitenberg](https://github.com/duckietown/duckietown-lx/tree/mooc2022/braitenberg)
-- [Collision Checker](https://github.com/duckietown/duckietown-lx/tree/mooc2022/collision-checker)
-- [Odometry and PID Control](https://github.com/duckietown/duckietown-lx/tree/mooc2022/modcon)
-- [Visual lane servoing](https://github.com/duckietown/duckietown-lx/tree/mooc2022/visual-lane-servoing)
-- [Object Detection](https://github.com/duckietown/duckietown-lx/tree/mooc2022/object-detection)
-- [State Estimation](https://github.com/duckietown/duckietown-lx/tree/mooc2022/state-estimation)
-- [Planning](https://github.com/duckietown/duckietown-lx/tree/mooc2022/planning)
+- [Braitenberg](https://github.com/duckietown/lx-braitenberg)
+- [Object Detection](https://github.com/duckietown/lx-object-detection)
+- [Kinematics and Odometry](https://github.com/duckietown/lx-kinematics-odometry)
+- [Computer Vision](https://github.com/duckietown/lx-computer-vision)
+- [ROS Basics](https://github.com/duckietown/lx-ros-basics)
+- [EKF Localization](https://github.com/duckietown/lx-ekf-localization)
+- [State Estimation](https://github.com/duckietown/lx-estimation)
 
