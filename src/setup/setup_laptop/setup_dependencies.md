@@ -14,12 +14,12 @@ Select the tab for your operating system below, and follow the instructions to b
 
 **1) Install dependencies**
 
-The basic development tools that you will need are `pip3`, `git`, `git-lfs`, `curl`, and `wget`.  Install these by running the 
+The basic development tools that you will need are `pipx`, `git`, `git-lfs`, `curl`, and `wget`.  Install these by running the
 following commands in the shell:
 
     sudo apt update
-    sudo apt install -y python3-pip git git-lfs curl wget
-
+    sudo apt install -y pipx git git-lfs curl wget
+    pipx ensurepath
 
 **If you are running Ubuntu on a virtual machine**, install the package `open-vm-tools` in addition to the 
 normal Ubuntu dependencies:
@@ -33,10 +33,10 @@ normal Ubuntu dependencies:
 Before continuing, run the following test command
 
 ```{testexpect}
-```bash 
-pip3 --version
+```bash
+pipx --version
 ---
-This command should output a version number for the `pip3` package.
+This command should output a version number for the `pipx` package.
 ```
 
 ```{tip}
@@ -104,6 +104,13 @@ popup windows from within docker containers.
 Alternatively, if you do not wish to make these changes permanent, you can run the commands above 
 every time you open a new terminal.
 
+**3) Install pipx**
+
+To install `pipx` using `brew`, run:
+
+    brew install pipx
+    pipx ensurepath
+
 ```{trouble}
 The command `xhost` is not found.
 ---
@@ -117,10 +124,10 @@ Add the path `/usr/X11/bin` to your `PATH` variable. e.g., `PATH=/usr/X11/bin:${
 Before continuing, run the following test command
 
 ```{testexpect}
-```bash 
-pip3 --version
+```bash
+pipx --version
 ---
-This command should output a version number for the `pip3` package.
+This command should output a version number for the `pipx` package.
 ```
 
 ```{tip}
@@ -147,10 +154,11 @@ This configuration is not officially supported. We recommend using the Ubuntu Op
 
 **1) Install dependencies**
 
-The basic development tools that you will need are `pip3`, `git`, `git-lfs`, `curl`, and `wget`.  Install these in your Ubuntu WSL by running the following commands in the shell:
+The basic development tools that you will need are `pipx`, `git`, `git-lfs`, `curl`, and `wget`.  Install these in your Ubuntu WSL by running the following commands in the shell:
 
     sudo apt update
-    sudo apt install -y python3-pip git git-lfs curl wget
+    sudo apt install -y pipx git git-lfs curl wget
+    pipx ensurepath
 
 ---
 
@@ -159,10 +167,10 @@ The basic development tools that you will need are `pip3`, `git`, `git-lfs`, `cu
 Before continuing, run the following test command
 
 ```{testexpect}
-```bash 
-pip3 --version
+```bash
+pipx --version
 ---
-This command should output a version number for the `pip3` package.
+This command should output a version number for the `pipx` package.
 ```
 
 ```{tip}
