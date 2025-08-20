@@ -58,12 +58,12 @@ If you do not already have a Duckietown calibration board:
 If the pattern is not rigid, the calibrations should not be used. You can print on thick paper or adhere to something rigid to achieve this.
 ```
 
-(operation-camera-intrinsics-calibration)=
-## Intrinsics calibration
+(operation-camera-intrinsic-calibration)=
+## Intrinsic calibration
 
 ### The Intrinsics Calibrator
 
-The easiest way to perform the intrinsics camera calibration procedure for your Duckiebot is by using the `Intrinsics Calibrator`.
+The easiest way to perform the intrinsic camera calibration procedure for your Duckiebot is by using the `Intrinsics Calibrator`.
 
 ```{figure} ../_images/calibrations/camera/intrinsics_calibrator_1.png
 The `Intrinsics Calibrator`.
@@ -97,9 +97,9 @@ Note the keys in the table below.
   - Open the `Debug Console`
 ```
 
-### Intrinsics calibration procedure
+### Intrinsic calibration procedure
 
-To perform the intrinsics calibration procedure:
+To perform the intrinsic calibration procedure:
 
 1. Move the calibration board in front of your Duckiebot's camera such that the **entire** checkerboard pattern is within its field of view and colored lines begin to overlay the checkerboard pattern.
 2. Rotate the mechanical focus ring on the lens until you can clearly read the `x` and `y` labels on the checkerboard pattern (do not adjust the focus again or place the lens cover back onto the lens unless you plan on repeating this procedure).
@@ -117,7 +117,7 @@ The `Intrinsics Calibrator` with all of its bars filled in.
 The `Intrinsics Calibrator` with the `Undistort` switch set to `on`.
 ```
 
-To confirm that a new intrinsics calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Camera Intrinsic` panel:
+To confirm that a new intrinsic calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Camera Intrinsic` panel:
 
 ```shell
 dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
@@ -131,10 +131,10 @@ The `Camera Intrinsic` panel on the `Robot` page of the `Dashboard`.
 Within the `Camera Intrinsic` panel, under `Local`, you should see a tick next to `Completed`, the calibration date next to `Calibration date` and `/data/config/calibrations/camera_intrinsic/DUCKIEBOT_NAME.yaml` next to `Files`.
 ```
 
-(operation-camera-extrinsics-calibration)=
+(operation-camera-extrinsic-calibration)=
 ## Extrinsic calibration
 
-### The Extrinsic Calibrator
+### The Extrinsics Calibrator
 
 The easiest way to perform the extrinsic camera calibration procedure for your Duckiebot is by using the `Extrinsics Calibrator`.
 
@@ -164,6 +164,8 @@ Note the keys in the table below.
   - Calibrate the camera
 * - <kbd>F</kbd>
   - Toggle the `Project` switch
+* - <kbd>E</kbd>
+  - Toggle the `Check error` switch
 * - <kbd>R</kbd>
   - Refresh the window
 * - <kbd>T</kbd>
@@ -174,18 +176,23 @@ Note the keys in the table below.
 
 To perform the extrinsic calibration procedure:
 
-1. Position your Duckiebot on the calibration board such that it faces the checkerboard pattern, your Duckiebot's axle is parallel to and directly above the **large** `y`-axis of the calibration board, and the axis that is perpendicular to and midway between your Duckiebot's axle is directly above the **large** `x`-axis of the calibration board (the trapezoid in the image under `Camera View` should turn from black to green).
-2. Click the `Calibrate` button.
-3. Wait for the spinner to disappear.
-4. (optional) Click the `Project` switch to see a top-down view of what your Duckiebot sees under `Projection`.
+1. (optional) Click the `Check error` switch to enforce a pose error bound for your Duckiebot's camera based on it's known intrinsic parameters (a trapezoid in the image under `Camera View` should appear).
+2. Position your Duckiebot on the calibration board such that it faces the checkerboard pattern, your Duckiebot's axle is parallel to and directly above the **large** `y`-axis of the calibration board, and the axis that is perpendicular to and midway between your Duckiebot's axle is directly above the **large** `x`-axis of the calibration board (if the `Check error` switch is set to `on`, the trapezoid in the image under `Camera View` should turn from black to blue).
+3. Click the `Calibrate` button.
+4. Wait for the spinner to disappear.
+5. (optional) Click the `Project` switch to see a top-down view of what your Duckiebot sees under `Projection`.
 
 ```{figure} ../_images/calibrations/camera/extrinsic_setup.jpg
 :width: 30em
 
-Extrinsics calibration setup.
+Extrinsic calibration setup.
 ```
 
 ```{figure} ../_images/calibrations/camera/extrinsics_calibrator_2.png
+The `Extrinsics Calibrator` with the `Check error` switch set to `on`.
+```
+
+```{figure} ../_images/calibrations/camera/extrinsics_calibrator_3.png
 The `Extrinsics Calibrator` with the `Project` switch set to `on`.
 ```
 
