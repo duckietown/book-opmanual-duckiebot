@@ -1,6 +1,6 @@
 ```{seo}
-:description: 
-:keywords: 
+:description: Learn about the components inside an NVIDIA Jetson Nano powered Duckiebot box.
+:keywords: Duckiebot, DB21J4, components, duckiebox components, bom, bill of materials
 ```
 
 ```{needget}

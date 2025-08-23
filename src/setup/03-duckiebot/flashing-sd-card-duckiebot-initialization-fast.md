@@ -8,7 +8,7 @@
 * An SD card adapter appropriate for the computer you are using to flash the SD card
 * A broadband internet connection
 * 5-15 mins, depending on your internet connection speed
-* At least 25 GB of free space on your hard drive before starting
+* At least 26 GB of free space on your hard drive before starting
 ---
 An initialized SD card for your Duckiebot with default configuration settings.
 ```
@@ -32,21 +32,21 @@ By proceeding with these instructions you are accepting the [Duckietown terms of
 1. Read and understand the [](initialization-tos) before proceeding. For any questions or doubts, [reach out](mailto:info@duckietown.com).
 
 (initialization-tos)=
-### Legal things - Accepting Duckietown terms of service, software license, privacy policy.
+### Legal things - Accepting Duckietown legal terms
 
 By downloading this image you accept the [Duckietown Software License](https://duckietown.com/sw-license/), [Terms and Conditions](https://duckietown.com/terms-and-conditions/) and [Privacy Policy](https://duckietown.com/privacy/), as well as robot configuration-specific licenses due to the presence of third party software in the SD card. Acceptance is mandatory, resistance is futile.
 
-```{note}
-The default username (not to be confused with the hostname/robotname) and password are `duckie` and `quackquack`, respectively. This is useful if you want to later `ssh` into your robot.
-```
-
 Start by plugging the SD card into your computer using a SD card reader or the USB to microSD card adapter provided in your Duckiebot kit. Make sure the SD card is detected before proceeding.
 
-2. [Download the Duckietown compressed image](https://duckietown.com/download-duckiebot-ente-image) and unzip it
+2. [Download the Duckietown compressed image](https://cutt.ly/ente-duckiebot-image-207-googledrive) and unzip it
 
-```{todo}
-upload image and create redirect
+<!--
+ temp link above
+
+ ```{todo}
+upload image to aws and create redirect from https://duckietown.com/download-duckiebot-ente-image to link
 ```
+-->
 
 The image is downloaded as a compressed `.zip` file. After downloading it to your computer, unzip it to obtain a `.img` file. Flash this file to the SD card (not the `.zip` one).
 
@@ -71,9 +71,9 @@ You are now ready for the [Duckiebot first boot](duckiebot-boot) sequence.
 
 This image has the following default settings: 
 
-- username: `duckie`
-- user password: `quackquack`
-- robotname: `entebot`
+- default username: `duckie`
+- default user password: `quackquack`
+- robot name (hostname): `entebot`
 - type: `duckiebot`
 - configuration: `DB21J` (works only with Jetson Nano 4GB developer kit) 
 - will connect to Wi-Fi named `duckietown` with password `quackquack`
