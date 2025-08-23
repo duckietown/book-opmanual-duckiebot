@@ -8,7 +8,9 @@
 
 Welcome to the Duckiebot operation manual!
 
-This book is a great starting point for getting started with Duckietown "hands-on". It contains step-by-step instructions on how to set up your computer, assemble, calibrate, and operate a Duckiebot, along with some troubleshooting tips.
+This book is a great place for getting started with Duckietown. 
+
+It contains step-by-step instructions on how to set up your computer, assemble, calibrate, and operate a Duckiebot, along with troubleshooting tips.
 
 ```{note}
 If you are new to Duckietown, you should find a course that helps you navigate this content. For example, our [massive open online course "Self-Driving Cars with Duckietown"](https://duckietown.com/self-driving-cars-with-duckietown-mooc/). 

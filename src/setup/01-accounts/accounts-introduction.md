@@ -26,5 +26,7 @@ You can re-use these accounts for other projects. If you already have some of th
 Although not strictly necessary, it is a good idea to use teh same email address for all the following accounts. 
 ```
 
+## In this Section
+
 ```{tableofcontents}
 ```

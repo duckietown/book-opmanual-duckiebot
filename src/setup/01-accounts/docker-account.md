@@ -3,6 +3,12 @@
 :keywords: Duckietown, Docker, setup, account
 ```
 
+```{needget}
+- Nothing
+---
+- A DockerHub account
+```
+
 (setup-account-docker)=
 # Docker Account
 

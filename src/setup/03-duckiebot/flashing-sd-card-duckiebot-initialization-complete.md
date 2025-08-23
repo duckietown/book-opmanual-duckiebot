@@ -1,12 +1,7 @@
-(setup-db-sd-card-flashing)=
-# Duckiebot SD Card preparation
-
 ```{seo}
 :description: Instructions on how to flash an SD card to initialize a Duckiebot, Duckiedrone, Traffic Light or Watchtower.
 :keywords: Duckietown, Duckiebot, Duckiedrone, flashing, initialization, SD card, Traffic Light, Watchtower, dts init sd card, dts init_sd_card
 ```
-
-This chapter describes how to initialize an SD card for your Duckietown robots, e.g., a Duckiebot.
 
 ```{needget}
 * [Functional DTS installation](setup-dts).
@@ -18,6 +13,12 @@ This chapter describes how to initialize an SD card for your Duckietown robots, 
 ---
 An initialized SD card for your Duckietown robot.
 ```
+
+(setup-db-sd-card-flashing-complete)=
+# The Complete Way - Initialization
+
+Use this procedure if you want full control over the configuration settings of your robot.
+
 
 (initialize-sd-card-video)=
 ## Burning the SD card with `dts init_sd_card`

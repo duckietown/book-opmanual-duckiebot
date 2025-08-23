@@ -22,30 +22,55 @@ parts:
                     -   file: setup/02-software/docker-installation
                     -   file: setup/02-software/github-installation
                     -   file: setup/02-software/duckietown-shell-dts-installation
-            - file: setup/03-duckiebot/duckiebot-introduction
-              sections:
-                  - file: setup/03-duckiebot/flashing-duckiebot-sd-card
-                  - file: setup/03-duckiebot/safety-lithium-ion-duckiebattery
-                  - file: setup/03-duckiebot/assembly-introduction-duckiebot
-                  - file: setup/03-duckiebot/assembly-instructions-duckiebot-db21j
-                  - file: setup/03-duckiebot/instruction-handling-duckiebot-db21m-db21j
+            -   file: setup/03-duckiebot/duckiebot-introduction
+                sections:
+                    -   file: setup/03-duckiebot/safety-lithium-ion-duckiebattery
+                    -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization
+                        sections:
+                            -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-fast
+                            -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-complete
+                    -   file: setup/03-duckiebot/what-is-in-the-duckiebot-db21j4-box
+                        # sections:
+                        #    -   file: setup/03-duckiebot/duckiebot-db21j-components-explained
+                    -   file: setup/03-duckiebot/assembly-instructions-duckiebot-db21j
+                    -   file: setup/03-duckiebot/network-configuration
+                    -   file: setup/03-duckiebot/duckiebot-first-boot
+                    -   file: setup/03-duckiebot/dashboard-setup
+                    -   file: setup/03-duckiebot/hardware-components-testing #verify correct assembly
+    -   caption: Duckiebot Operations
+        maxdepth: 3
+        numbered: False
+        chapters:
+            -   file: operations/how-to-use-a-duckiebot-intro
+                sections:
+                  -   file: operations/01-duckiebot-handling/instruction-handling-duckiebot-db21m-db21j
+                  -   file: operations/01-duckiebot-handling/db21-power-management # turn on, off, charge
+                  -   file: operations/01-duckiebot-handling/db21-software-update # keep sw up to date
+                  -   file: operations/01-duckiebot-handling/db21-hardware-update-hut # keep hardware up to date
+                  -   file: operations/01-duckiebot-handling/db21-hardware-update-duckiebattery
+            -   file: operations/02-components-testing/index # components testing - check if duckiebot is assembled correctly
+                sections:
+                  -   file: operations/02-components-testing/introduction-to-hardware-component-testing # detail on individual hardware component tests
+            -   file: operations/03-subsystem-testing/duckiebot-subsystem-introduction # this should be subsystems testing
+                sections:
+                  -   file: operations/03-subsystem-testing/make-it-move-duckiebot-keyboard-control
+                  -   file: operations/03-subsystem-testing/make-it-see-duckiebot-image-streaming
+                  -   file: operations/03-subsystem-testing/make-it-shine-duckiebot-led-control
+            -   file: operations/04-calibrations/duckiebot-calibrations-intro # now calibrate
+                sections:
+                  -   file: operations/04-calibrations/duckiebot-camera-calibration
+                  -   file: operations/04-calibrations/duckiebot-motor-odometry-calibration
     -   caption: Software Tools
-        maxdepth: 1
+        maxdepth: 2
         numbered: False
         chapters:
             -   file: software-tools/duckietown-dashboard-browser-ui
-            -   file: software-tools/duckietown-postal-service-dtps
             -   file: software-tools/duckietown-duckiebot-image-viewer
             -   file: software-tools/duckiebot-keyboard-controller
             -   file: software-tools/duckiebot-led-lights-controller
+            -   file: software-tools/duckietown-postal-service-dtps
             -   file: software-tools/duckietown-duckiebot-additional-software-tools
-    -   caption: Calibrations
-        maxdepth: 1
-        numbered: False
-        chapters:
-            -   file: calibrations/duckiebot-extrinsic-and-intrinsic-camera-calibrations
-            -   file: calibrations/duckiebot-kinematics-odometry-calibration
-    -   caption: Demonstrations
+    -   caption: Autonomous Behaviors (Demos)
         maxdepth: 1
         numbered: False
         chapters:
