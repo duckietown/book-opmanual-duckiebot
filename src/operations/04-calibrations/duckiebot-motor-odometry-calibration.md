@@ -1,6 +1,3 @@
-(db-wheels-calibration)=
-# Wheel Calibration
-
 ```{seo}
 :description: How to perform the kinematics calibration procedure for a Duckiebot.
 :keywords: Duckietown, Duckiebot, kinematics calibration, odometry
@@ -13,6 +10,11 @@ Completed [](sw-tools-keyboard-controller).
 ---
 A Duckiebot with calibrated kinematics.
 ```
+
+(db-wheels-calibration)=
+# Wheel Calibration
+
+A wheel calibration is required to make a Duckiebot go straight when commanded to do so.
 
 ## Introduction
 

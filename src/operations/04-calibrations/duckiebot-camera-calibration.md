@@ -2,17 +2,19 @@
 :description: How to perform the camera calibration procedure for a Duckiebot.
 :keywords: Duckietown, Duckiebot, camera calibration
 ```
+
+```{needget}
+- Completed [](db-opmanual-sw-tools-image-viewer).
+---
+- A Duckiebot with a calibrated camera.
+```
+
 (db-camera-calibration)=
 # Camera Calibration
 
 This chapter describes how to perform the camera calibration procedure for your Duckiebot.
 
-```{needget}
-Completed [](db-opmanual-sw-tools-image-viewer).
----
-A Duckiebot with a calibrated camera.
-```
-camera
+
 ## Introduction
 
 Every camera is unique. Therefore, a camera calibration procedure needs to be performed to account for small manufacturing discrepancies.

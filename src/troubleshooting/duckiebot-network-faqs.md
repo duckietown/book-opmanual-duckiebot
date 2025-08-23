@@ -16,6 +16,7 @@ Knowledge on how to connect your Duckiebot to a network.
 
 There is a saying in robotics: "90% of problems come from networks". Getting your network set up right should be a very high level priority to ensure a joyful learning experience. 
 
+(duckiebot-setup-wifi)=
 ## Modifying the Wi-Fi settings
 
 To edit the Wi-Fi networks known to your Duckiebot, edit the `wpa_supplicant.conf` file on your SD card. If your Duckiebot has an NVIDIA Jetson Nano, this file is located in the `/etc` directory in the `APP` partition. Otherwise, if your Duckiebot has a Raspberry Pi, this file is located in the `/etc/wpa_supplicant` directory in the `root` partition.
