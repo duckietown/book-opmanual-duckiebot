@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    { "id": "start", "label": "Start • Overview", "url": "#" , "parent": "phase-prepare", "position": { "x": 120, "y": 110 } }
+    // ...
+  ],
+  "edges": [
+    { "id": "e1", "source": "start", "target": "setup" }
+    // ...
+  ],
+  "groups": [
+    { "id": "phase-prepare", "label": "Prepare" },
+    { "id": "phase-config",  "label": "Configure" }
+  ]
+}

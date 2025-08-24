@@ -29,5 +29,16 @@ Read the [FAQ and Troubleshooting](how-to-get-help) to find out how to get suppo
 (book-db-opmanual-toc)=
 ## Table of Contents
 
+
+```{figure} /_images/intro/duckiebot-status-flow.webp
+:alt: duckiebot assembly, setup, configuration and status definition diagram
+:width: 75%
+:name: duckiebot-status-flow
+:align: center
+
+How to build a Duckiebot: from a box of parts to a self-driving car.
+```
+
 ```{tableofcontents}
 ```
+
