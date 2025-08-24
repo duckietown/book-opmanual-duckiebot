@@ -8,98 +8,99 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: setup/00-computer/installing-ubuntu-on-your-computer
-            -   file: setup/01-accounts/accounts-introduction
+            #-   file: setup/overview
+            -   file: 01-setup/00-computer/installing-ubuntu-on-your-computer
+            -   file: 01-setup/01-accounts/accounts-introduction
                 sections:
-                    -   file: setup/01-accounts/github-account
-                    -   file: setup/01-accounts/docker-account
-                    -   file: setup/01-accounts/duckietown-hub-account
-                    -   file: setup/01-accounts/duckietown-slack-account
-                    -   file: setup/01-accounts/duckietown-stack-overflow-account
-            -   file: setup/02-software/sw-introduction
+                    -   file: 01-setup/01-accounts/github-account
+                    -   file: 01-setup/01-accounts/docker-account
+                    -   file: 01-setup/01-accounts/duckietown-hub-account
+                    -   file: 01-setup/01-accounts/duckietown-slack-account
+                    -   file: 01-setup/01-accounts/duckietown-stack-overflow-account
+            -   file: 01-setup/02-software/sw-introduction
                 sections:
-                    -   file: setup/02-software/software-dependencies-installation
-                    -   file: setup/02-software/docker-installation
-                    -   file: setup/02-software/github-installation
-                    -   file: setup/02-software/duckietown-shell-dts-installation
-            -   file: setup/03-duckiebot/duckiebot-introduction
+                    -   file: 01-setup/02-software/software-dependencies-installation
+                    -   file: 01-setup/02-software/docker-installation
+                    -   file: 01-setup/02-software/github-installation
+                    -   file: 01-setup/02-software/duckietown-shell-dts-installation
+            -   file: 01-setup/03-duckiebot/duckiebot-introduction
                 sections:
-                    -   file: setup/03-duckiebot/safety-lithium-ion-duckiebattery
-                    -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization
+                    -   file: 01-setup/03-duckiebot/safety-lithium-ion-duckiebattery
+                    -   file: 01-setup/03-duckiebot/flashing-sd-card-duckiebot-initialization
                         sections:
-                            -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-fast
-                            -   file: setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-complete
-                    -   file: setup/03-duckiebot/what-is-in-the-duckiebot-db21j4-box
+                            -   file: 01-setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-fast
+                            -   file: 01-setup/03-duckiebot/flashing-sd-card-duckiebot-initialization-complete
+                    -   file: 01-setup/03-duckiebot/what-is-in-the-duckiebot-db21j4-box
                         # sections:
-                        #    -   file: setup/03-duckiebot/duckiebot-db21j-components-explained
-                    -   file: setup/03-duckiebot/assembly-instructions-duckiebot-db21j
-                    -   file: setup/03-duckiebot/network-configuration
-                    -   file: setup/03-duckiebot/duckiebot-first-boot
-                    -   file: setup/03-duckiebot/dashboard-setup
-                    -   file: setup/03-duckiebot/hardware-components-testing #verify correct assembly
+                        #    -   file: 01-setup/03-duckiebot/duckiebot-db21j-components-explained
+                    -   file: 01-setup/03-duckiebot/assembly-instructions-duckiebot-db21j
+                    -   file: 01-setup/03-duckiebot/network-configuration
+                    -   file: 01-setup/03-duckiebot/duckiebot-first-boot
+                    -   file: 01-setup/03-duckiebot/dashboard-setup
+                    -   file: 01-setup/03-duckiebot/hardware-components-testing #verify correct assembly
     -   caption: Duckiebot Operations
         maxdepth: 3
         numbered: False
         chapters:
-            -   file: operations/how-to-use-a-duckiebot-intro
+            -   file: 02-operations/how-to-use-a-duckiebot-intro
                 sections:
-                  -   file: operations/01-duckiebot-handling/instruction-handling-duckiebot-db21m-db21j
-                  -   file: operations/01-duckiebot-handling/db21-power-management # turn on, off, charge
-                  -   file: operations/01-duckiebot-handling/db21-software-update # keep sw up to date
-                  -   file: operations/01-duckiebot-handling/db21-hardware-update-hut # keep hardware up to date
-                  -   file: operations/01-duckiebot-handling/db21-hardware-update-duckiebattery
-            -   file: operations/02-components-testing/index # components testing - check if duckiebot is assembled correctly
+                  -   file: 02-operations/01-duckiebot-handling/instruction-handling-duckiebot-db21m-db21j
+                  -   file: 02-operations/duckietown-dashboard-browser-ui
+                  -   file: 02-operations/01-duckiebot-handling/db21-power-management # turn on, off, charge
+                  -   file: 02-operations/01-duckiebot-handling/db21-software-update # keep sw up to date
+                  -   file: 02-operations/01-duckiebot-handling/db21-hardware-update-hut # keep hardware up to date
+                  -   file: 02-operations/01-duckiebot-handling/db21-hardware-update-duckiebattery
+            -   file: 02-operations/02-components-testing/index # components testing - check if duckiebot is assembled correctly
                 sections:
-                  -   file: operations/02-components-testing/introduction-to-hardware-component-testing # detail on individual hardware component tests
-            -   file: operations/03-subsystem-testing/duckiebot-subsystem-introduction # this should be subsystems testing
+                  -   file: 02-operations/02-components-testing/introduction-to-hardware-component-testing # detail on individual hardware component tests
+            -   file: 02-operations/03-subsystem-testing/duckiebot-subsystem-introduction # this should be subsystems testing
                 sections:
-                  -   file: operations/03-subsystem-testing/make-it-move-duckiebot-keyboard-control
-                  -   file: operations/03-subsystem-testing/make-it-see-duckiebot-image-streaming
-                  -   file: operations/03-subsystem-testing/make-it-shine-duckiebot-led-control
-            -   file: operations/04-calibrations/duckiebot-calibrations-intro # now calibrate
+                  -   file: 02-operations/03-subsystem-testing/make-it-move-duckiebot-keyboard-control
+                  -   file: 02-operations/03-subsystem-testing/make-it-see-duckiebot-image-streaming
+                  -   file: 02-operations/03-subsystem-testing/make-it-shine-duckiebot-led-control
+            -   file: 02-operations/04-calibrations/duckiebot-calibrations-intro # now calibrate
                 sections:
-                  -   file: operations/04-calibrations/duckiebot-camera-calibration
-                  -   file: operations/04-calibrations/duckiebot-motor-odometry-calibration
-    -   caption: Software Tools
-        maxdepth: 2
-        numbered: False
-        chapters:
-            -   file: software-tools/duckietown-dashboard-browser-ui
-            -   file: software-tools/duckietown-duckiebot-image-viewer
-            -   file: software-tools/duckiebot-keyboard-controller
-            -   file: software-tools/duckiebot-led-lights-controller
-            -   file: software-tools/duckietown-postal-service-dtps
-            -   file: software-tools/duckietown-duckiebot-additional-software-tools
+                  -   file: 02-operations/04-calibrations/duckiebot-camera-calibration
+                  -   file: 02-operations/04-calibrations/duckiebot-motor-odometry-calibration
     -   caption: Autonomous Behaviors (Demos)
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: demonstrations/lane-following-lf
+            -   file: 03-demonstrations/lane-following-lf
             # -   file: demonstrations/lane-following-with-obstacles
             # -   file: demonstrations/lane-following-with-intersections
             # -   file: demonstrations/lane-following-with-duckiebots
+    -   caption: Software Tools
+        maxdepth: 2
+        numbered: False
+        chapters:
+            -   file: 04-software-tools/duckietown-duckiebot-image-viewer
+            -   file: 04-software-tools/duckiebot-keyboard-controller
+            -   file: 04-software-tools/duckiebot-led-lights-controller
+            -   file: 04-software-tools/duckietown-postal-service-dtps
+            -   file: 04-software-tools/duckietown-duckiebot-additional-software-tools
     -   caption: Learning Experiences
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: learning-experiences/introduction-to-duckietown-lxs
+            -   file: 05-learning-experiences/introduction-to-duckietown-lxs
     -   caption: FAQ and Troubleshooting
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: troubleshooting/how-to-get-help
-            -   file: troubleshooting/duckiebot-network-faqs
-            -   file: troubleshooting/duckiebot-hardware-components
-            -   file: troubleshooting/reflashing-jetson-nano-development-kit-4gb-duckietown
-            -   file: troubleshooting/duckietown-smart-robotics-duckiebattery-5v-2a
-            -   file: troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs
-            -   file: troubleshooting/frequently-asked-questions-faq
+            -   file: 06-troubleshooting/how-to-get-help
+            -   file: 06-troubleshooting/duckiebot-network-faqs
+        #    -   file: 06-troubleshooting/duckiebot-hardware-components
+            -   file: 06-troubleshooting/reflashing-jetson-nano-development-kit-4gb-duckietown
+            -   file: 06-troubleshooting/duckietown-smart-robotics-duckiebattery-5v-2a
+        #    -   file: 06-troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs
+            -   file: 06-troubleshooting/frequently-asked-questions-faq
     -   caption: Further Reading
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier
-            -   file: further-reading/duckiebot-configurations-explained
-            -   file: further-reading/working-with-docker-in-duckietown
-            -   file: further-reading/version-control-with-git
-            -   file: further-reading/ssh-aliases-setup
+            -   file: 07-further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier
+            -   file: 07-further-reading/duckiebot-configurations-explained
+            -   file: 07-further-reading/working-with-docker-in-duckietown
+            -   file: 07-further-reading/version-control-with-git
+            -   file: 07-further-reading/ssh-aliases-setup
