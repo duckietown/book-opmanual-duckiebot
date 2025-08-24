@@ -153,7 +153,7 @@ It should be connected to the on-board computer, to prevent the Duckiebattery fr
 
 The Duckiebattery's outputs behave differently.
 ```
-
+<!--
 (duckiebattery-update)=
 ## Update
 
@@ -182,6 +182,7 @@ Otherwise, if the output of the step 7 is any other error message, press the Duc
 ```{note}
 You can verify that the Duckiebattery related software is running correctly by checking whether the display reacts to different charging states when plugging the charging cable in or out.
 ```
+-->
 
 (duckiebattery-troubleshooting)=
 ## Troubleshooting
