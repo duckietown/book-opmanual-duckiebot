@@ -1,3 +1,6 @@
+(setup-db-sd-card-flashing-intro)=
+# Duckiebot SD Card preparation - introduction
+
 ```{seo}
 :description: Instructions on how to flash an SD card to initialize a Duckiebot, Duckiedrone, Traffic Light or Watchtower.
 :keywords: Duckietown, Duckiebot, Duckiedrone, flashing, initialization, SD card, Traffic Light, Watchtower, dts init sd card, dts init_sd_card
@@ -14,8 +17,6 @@
 An initialized SD card for your Duckiebot with customized settings. 
 ```
 
-(setup-db-sd-card-flashing-intro)=
-# Duckiebot SD Card preparation - introduction
 
 While the hardware represents the body of the robot, the software running on it is its mind. In this chapter we set up the mind of the Duckiebot. 
 

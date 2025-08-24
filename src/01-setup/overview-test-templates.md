@@ -1,3 +1,5 @@
+
+<!--
 (test-overview)=
 # Setup Graph (test)
 
@@ -27,26 +29,10 @@ do this
 get this
 ```
 
+-->
 
-```{toc}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
+## Graph test
 
 ```{only} html
 ```{raw} html
@@ -57,8 +43,11 @@ get this
     <button id="dg-reset" style="padding:.4rem .7rem;border:1px solid #d1d5db;border-radius:8px;background:#fff;cursor:pointer">Reset</button>
   </div>
 </div>
+-->
 
 <!-- Dev: use CDN. Release: vendor to /_static/js/cytoscape.min.js and swap src -->
+
+<!--
 <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
 <script>
 (function () {
@@ -219,3 +208,5 @@ get this
 }());
 </script>
 ```
+
+-->

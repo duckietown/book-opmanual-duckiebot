@@ -1,8 +1,10 @@
+(duckiebot-dashboard-setup)=
+# Setup - Duckiebot Dashboard
+
 ```{seo}
-:description: How to set up your Duckiebot Dashboard in Duckietown.
+:description: Tep by step instructions on how to set up your Duckiebot Dashboard in Duckietown.
 :keywords: Duckietown, Duckiebot, Dashboard, Compose, browser based UI
 ```
-
 
 ```{needget}
 - A Duckietown account: [](setup-account-duckietown-hub)
@@ -11,11 +13,8 @@
 - A working Duckiebot Dashboard for hardware and software diagnostics
 ```
 
-
-(duckiebot-dashboard-setup)=
-# Setup - Duckiebot Dashboard
-
 This section shows how to install a perform the first setup of the Duckietown Dashboard on the Duckiebot.
+
 <!--
 (compose-platform)=
 ## The \compose\ platform

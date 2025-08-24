@@ -15,14 +15,19 @@
 - A Duckiebot connected to the network
 ```
 
+```{todo}
+JT: do a thorough review of this page
+```
 
-## You are now ready to boot up your Duckiebot!
+
+## You are now ready to boot up your Duckiebot
 
 Insert the SD card as shown in the video below into your robot and push the button on the 
 battery to power up the Duckiebot. While the video shows the procedure being performed on 
 a `DB21M` robot, this procedure is the same on all Duckietown robot models.
 
 ```{vimeo} 527364179
+:alt: Duckiebot first boot
 ```
 
 ```{warning}
@@ -57,7 +62,7 @@ Within a few minutes of powering up the robot with the SD card in, your Duckiebo
 in the list with status **Booting**.  If it does not appear within 5 minutes, check out the Troubleshooting guide at 
 the end of this page.
 
-```{figure} ../../_images/assembly_setup/fleet_discover.png
+```{figure} ../../_images/setup/handling/fleet_discover.png
 :name: fig:fleet-discover
 
 Output of 'dts fleet discover'
@@ -80,8 +85,9 @@ The reader does not need to perform this right now. This is mentioned here so th
 (confirm-first-boot)=
 ## Confirming the First Boot
 
-Once the Duckiebot is `Ready` and `Updated` (software), you are ready to access your Duckiebot's Dashboard.
+Once the Duckiebot is `Ready` and `Updated` (software), you are ready to access your Duckiebot's Dashboard and perform the first login [Dashboard setup](duckiebot-dashboard-setup).
 
+<!--
 Open your browser and visit the
 URL `http://HOSTNAME.local/`. You will see a page similar to the following,
 
@@ -96,7 +102,9 @@ framework called \\compose\\. You configure it in in [](duckiebot-dashboard-setu
 
 If you can't access the dashboard, check out the Troubleshooting guide at 
 the end of this page.
+-->
 
+<!--
 (setup-duckiebot-reboot)=
 ## Powering off the Duckiebot
 
@@ -117,6 +125,7 @@ To reboot your Duckiebot, use the command,
     dts duckiebot reboot HOSTNAME
 
 You will learn more about how to handle your Duckiebot in [](handling-duckiebot-db21).
+-->
 
 (duckiebot-first-boot-troubleshooting)=
 ## Troubleshoot - First Boot

@@ -1,24 +1,29 @@
+(setup-duckiebot-battery-safety-basics)=
+# Safety First - On Lithium-Ion Batteries
+
+
+```{todo}
+JT: review this page
+```
+
 ```{seo}
 :description: Batteries are potentially dangerous and should be handled with care. Learn about Duckiebot batteries and how to handle them. 
 :keywords: Duckietown, Duckiebot, batteries, duckiebattery, duckie-power-bank, handling batteries, Duckiebot autonomy
 ```
-
-(setup-duckiebot-battery-safety-basics)=
-# Safety Precautions for Lithium-Ion Batteries
-
 
 ```{needget}
 * Nothing
 ---
 * Preliminary knowledge of circuits and power source properties useful in Duckietown
 ```
-
-
-(db-opmanual-preliminaries-electronics)= 
+<!--
+(db-opmanual-preliminaries-electronics)=
 ## Handling circuits and batteries
+-->
 
+Duckiebots support different battery (power bank) models, although not all will work.
 
-Duckiebots support several power bank models, although not all power sources will work. Here, we list the properties of the supported models.
+The Duckiebattery was designed in house to right power requirements, diagnostics and desirable features in robotics applications.  
 
 (db-opmanual-dtbattery-v2)=
 ## The Duckiebattery (`DB-C-DBatt`)
@@ -46,11 +51,13 @@ Caption
 
 
 
-```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_real2.jpg
-:width: 200px
+```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_real2.jpg
+:width: 50%
 :name: fig:DB-C-DBatt_real
+:alt: The Duckiebattery is a 5V 2A power bank with two USB-A outputs designed for robotics applications.
+:align: center
 
-The Duckiebattery.
+The Duckiebattery is a 5V 2A power bank with two USB-A outputs designed for robotics applications.
 ```
 
 (db-opmanual-dtbattery-v2-tech-specs)=
@@ -70,6 +77,7 @@ Here are some things to do and not to do.
 ```{warning}
 Keep reading the following safety precautions: do not skip this section.
 ```
+
 (db-opmanual-dtbattery-v2-dos)=
 ### Handling: things to do
 
@@ -82,6 +90,7 @@ Keep reading the following safety precautions: do not skip this section.
 - Storage at high temperatures (>50 C) should be avoided.
 
 ```
+
 (db-opmanual-dtbattery-v2-donts)=
 ### Handling: things not to do
 
@@ -106,9 +115,11 @@ The Duckiebattery has several operation modes, the most relevant of which are de
 ### LED description
 The battery has five LEDs on the top, used for indicating the state of charge.
 
-```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_1.png
-:width: 200px
+```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_1.png
 :name: fig:DB-C-DBatt_1
+:width: 50%
+:align: center
+:alt: LEDs indicate the state of charge of the Duckiebattery.
 
 LEDs indicate the state of charge of the Duckiebattery.
 ```
@@ -124,11 +135,13 @@ LEDs indicate the state of charge of the Duckiebattery.
 To see the battery state of charge, click _once_ on the button. The state of charge LEDs will stay on for 10 seconds and the battery set in `idle` state, "waking up" the battery.
 ```
 
-```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_2.png
-:width: 200px
+```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_2.png
 :name: DB-C-DBatt_2
+:width: 50%
+:align: center
+:alt: Wake up the battery by pressing the side button once.
 
-Wake up the battery by pressing the button once.
+Wake up the battery by pressing the side button once.
 ```
 
 <!--
@@ -143,9 +156,11 @@ Wake up the battery by pressing the button once.
 
 After setting the battery in `idle` mode, charge it by connecting a 5V 2A power adapter. Note that using a higher amperage charger will not damage the unit. The LEDs will be flashing at 1 Hz, showing the battery is receiving charge.
 
-```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/DB-C-DBatt_3.png
-:width: 200px
+```{figure} ../../_images/troubleshooting/duckiebattery/chap_2_1_images/DB-C-DBatt_3.png
 :name: fig:DB-C-DBatt_3
+:width: 50%
+:align: center
+:alt: Charging the Duckiebattery.
 
 Charging the Duckiebattery.
 ```
@@ -176,9 +191,11 @@ The battery protection mode can last up to 30 minutes, during which the battery 
 
 The battery has two separate 5V 2A USB type A outputs, namely USB OUT-1 (a.k.a. the muscles) and USB OUT-2 (a.k.a. the brains).
 
-```{figure} ../../_images/preliminaries_hardware/chap_2_1_images/duckiebattery-outputs.png
-:width: 300px
+```{figure} ../../_images/troubleshooting/duckiebattery/duckiebattery-outputs.png
 :name: fig:DB-C-DBatt_4
+:width: 60%
+:align: center
+:alt: Duckiebattery outputs behave differently.
 
 Duckiebattery outputs behave differently.
 ```

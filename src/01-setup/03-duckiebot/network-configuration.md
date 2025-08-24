@@ -1,3 +1,6 @@
+(setup-duckiebot-network)=
+# Network Configuration in Duckietown
+
 ```{seo}
 :description: It is said 90% of problems in robotics stem from networks. Learn how to avoid them by setting your networks up correctly for Duckietown.
 :keywords: Duckietown, Duckiebot, network setup, networks
@@ -12,9 +15,6 @@
 * Basics for debugging network challenges
 * A connected Duckiebot
 ```
-
-(setup-duckiebot-network)=
-# Network Configuration in Duckietown
 
 Most `dts` commands rely on the connectivity between the Duckiebot, the computer used to interact with it, and the internet. To achieve this, the Duckiebot and the computer need to appear both as physical devices on a same subnet that has access to the internet. 
 
@@ -44,8 +44,9 @@ Run:
 dts fleet discover
 ```
 ---
-```{figure} ../../_images/assembly_setup/fleet_discover.png
+```{figure} ../../_images/setup/handling/fleet_discover.png
 :name: fig:fleet-discover-2
+:alt: duckiebot ready on dts fleet discover network discovery tool
 
 Output of `dts fleet discover` with a connected Duckiebot
 ```

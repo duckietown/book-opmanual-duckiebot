@@ -37,7 +37,6 @@ parts:
                     -   file: 01-setup/03-duckiebot/network-configuration
                     -   file: 01-setup/03-duckiebot/duckiebot-first-boot
                     -   file: 01-setup/03-duckiebot/dashboard-setup
-                    -   file: 01-setup/03-duckiebot/hardware-components-testing #verify correct assembly
     -   caption: Duckiebot Operations
         maxdepth: 3
         numbered: False
@@ -74,9 +73,9 @@ parts:
         maxdepth: 2
         numbered: False
         chapters:
-            -   file: 04-software-tools/duckietown-duckiebot-image-viewer
-            -   file: 04-software-tools/duckiebot-keyboard-controller
-            -   file: 04-software-tools/duckiebot-led-lights-controller
+            # -   file: 04-software-tools/duckietown-duckiebot-image-viewer
+            # -   file: 04-software-tools/duckiebot-keyboard-controller
+            # -   file: 04-software-tools/duckiebot-led-lights-controller
             -   file: 04-software-tools/duckietown-postal-service-dtps
             -   file: 04-software-tools/duckietown-duckiebot-additional-software-tools
     -   caption: Learning Experiences

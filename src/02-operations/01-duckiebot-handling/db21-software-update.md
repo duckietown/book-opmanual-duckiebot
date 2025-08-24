@@ -1,4 +1,4 @@
-(ops-db-battery-update)=
+(ops-db-update)=
 # Operations - Duckiebot Software Update
 
 ```{seo}

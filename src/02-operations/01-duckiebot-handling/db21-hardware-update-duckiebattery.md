@@ -1,5 +1,5 @@
 (ops-db-battery-update)=
-# Debug - Duckiebattery Update
+# Debug - Duckiebattery Software Update
 
 ```{seo}
 :description: Learn how to update the software on your Duckiebattery, a smart battery for autonomous robotics applications. 

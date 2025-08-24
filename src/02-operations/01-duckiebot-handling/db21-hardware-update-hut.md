@@ -161,6 +161,7 @@ I see the message `make: warning: Clock skew detected. Your build may be incompl
 
 And then retry running the `make fuses` command.
 ```
+
 ### Flashing the HUT
 
 Remove all temporary files by running:
@@ -172,7 +173,7 @@ Then, compile the firmware and upload it to the microcontroller with:
     make
 
 
-##### Checkpoint
+#### Checkpoint
 
 To make sure the installation was completed successfully:
 
@@ -218,7 +219,7 @@ The resulting output should be:
 
 ````
 
-### Clean up
+### Cleaning up
 
 Remove the cloned repository to free up space:
 

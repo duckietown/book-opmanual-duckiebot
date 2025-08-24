@@ -34,6 +34,6 @@ Once logged in your Duckietown Hub account, go to [https://hub.duckietown.com/pr
 Duckietown token for personal authentication.
 ```
 
-```{admonition}
+```{attention}
 Make sure your token starts with `dt2`. Legacy `dt1` tokens are only useful in corner cases which you should not run into.
 ```

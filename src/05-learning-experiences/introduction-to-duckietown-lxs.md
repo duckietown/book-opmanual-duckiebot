@@ -1,4 +1,5 @@
-# Introduction to Learning Experiences
+(duckiebot-lxs)=
+# The Learning Experiences (`LX`)
 
 ```{seo}
 :description: The LXs (Learning Experiences) available for a Duckiebot.

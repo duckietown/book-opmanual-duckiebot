@@ -9,7 +9,7 @@
 - Understanding of each component in a Duckiebox (`DB21-J4`)
 ```
 
-(setup-db21j4-whats-in-the-box)=
+(setup-db21j4-whats-in-the-box-components-explained)=
 # Duckiebot (`DB21-J4`) components explained
 
 ```{todo}

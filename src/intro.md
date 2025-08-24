@@ -39,6 +39,9 @@ Read the [FAQ and Troubleshooting](how-to-get-help) to find out how to get suppo
 How to build a Duckiebot: from a box of parts to a self-driving car.
 ```
 
-```{tableofcontents}
+```{todo}
+fix hardware activities -> robot side; software activities -> computer side
 ```
 
+```{tableofcontents}
+```
