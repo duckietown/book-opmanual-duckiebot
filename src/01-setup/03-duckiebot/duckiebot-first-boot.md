@@ -43,7 +43,7 @@ burn the SD card again.
 (monitor-first-boot)=
 ## Monitoring the First Boot
 
-Make sure your desktop or laptop computer is connected to the same WiFi network the Duckiebot
+Make sure your desktop or laptop computer is connected to the same Wi-Fi network the Duckiebot
 was instructed to connect to.
 
 Then open a terminal and run the following command,
@@ -64,6 +64,7 @@ the end of this page.
 
 ```{figure} ../../_images/setup/handling/fleet_discover.png
 :name: fig:fleet-discover
+:width: 85%
 
 Output of 'dts fleet discover'
 ```

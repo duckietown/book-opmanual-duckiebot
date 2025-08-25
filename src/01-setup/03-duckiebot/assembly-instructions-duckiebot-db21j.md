@@ -511,7 +511,7 @@ Connect the cable from [](db21j-back-assembly-step-28) to the middle connector l
 
 ### Step 41
 
-Connect the WiFi dongle to a USB type A connector on the Jetson Nano as shown below.
+Connect the Wi-SFi dongle to a USB type A connector on the Jetson Nano as shown below.
 
 ```{figure} ../../_images/assembly/db21j/db21-rev1-step_41.jpg
 ```

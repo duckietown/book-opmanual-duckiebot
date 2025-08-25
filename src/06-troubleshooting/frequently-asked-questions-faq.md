@@ -53,7 +53,7 @@ The Duckiebattery must be fully charged, as shown in the first assembly step.
 ```
 
 ```{trouble}
-My Duckiebot is receiving power and has an initialized SD card inserted correctly but it does not seem to boot (i.e., the WiFi dongle does not blink).
+My Duckiebot is receiving power and has an initialized SD card inserted correctly but it does not seem to boot (i.e., the Wi-Fi dongle does not blink).
 ---
 Make sure that you specified the correct Duckiebot configuration when initializing the SD card.
 ```

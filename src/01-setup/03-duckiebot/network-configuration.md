@@ -47,6 +47,7 @@ dts fleet discover
 ```{figure} ../../_images/setup/handling/fleet_discover.png
 :name: fig:fleet-discover-2
 :alt: duckiebot ready on dts fleet discover network discovery tool
+:width: 85%
 
 Output of `dts fleet discover` with a connected Duckiebot
 ```

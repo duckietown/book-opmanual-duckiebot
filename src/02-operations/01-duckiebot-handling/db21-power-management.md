@@ -18,6 +18,13 @@
 
 Robots, as well as humans, need energy to operate. Duckiebots take their energy from the Duckiebattery. This section covers the basic operations for power management. 
 
+(handling-tutorial-video)=
+## Tutorial video
+
+```{vimeo} 527038785
+:alt: how to handle a Duckiebot DB21J
+```
+
 (how-to-charge-the-Duckiebattery)=
 ## How to charge the Duckiebot
 
@@ -63,8 +70,8 @@ dts fleet discover
 ```
 
 ```{figure} ../../_images/setup/handling/fleet_discover.png
-:alt: output of dts fleet discover
-:width: 40%
+:alt: output of dts fleet discover-3
+:width: 85%
 
 Output of `dts fleet discover`.
 ```

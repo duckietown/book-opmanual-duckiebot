@@ -1,5 +1,5 @@
 (how-to-handle-a-duckiebot-db21)=
-# Duckiebot Handling (`DB21`)
+# Duckiebot Handling Cheatsheet (`DB21`)
 
 ```{seo}
 :description: A compendium of common operations for interacting with a Duckiebot.
@@ -11,22 +11,18 @@ This chapter describes how to handle your Duckiebot.
 ```{needget}
 - A connected Duckiebot: [](setup-duckiebot-network)
 ---
-- 
+- A "cheatsheet" for common Duckiebot operations
 ```
 
-(handling-tutorial-video)=
-## Tutorial video
-
-```{vimeo} 527038785
-:alt: how to handle a Duckiebot DB21J
-```
 
 (handling-how-to-ssh-into-your-duckiebot)=
 ## How to update the software on a Duckiebot
 
-To update the software on your Duckiebot, 
+To update the software on your Duckiebot, run:
 
-
+```shell
+dts duckiebot update ROBOT_NAME
+```
 
 (handling-how-to-ssh-into-your-duckiebot)=
 ## How to SSH into your Duckiebot

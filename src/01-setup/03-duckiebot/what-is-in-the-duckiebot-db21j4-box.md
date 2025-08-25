@@ -67,7 +67,7 @@ We are always striving to improve, so minor details - e.g. the number and type o
 |      1 | Duckietown Hut v 3.15                                                |
 |      1 | 64GB Class 10 U3 micro SD card                                       |
 |      1 | Duckiebattery                                                        |
-|      1 | WiFi dongle                                                          |
+|      1 | Wi-Fi dongle                                                          |
 |      1 | Screen                                                               |
 |      1 | Shutdown button                                                      |
 |      1 | DC fan                                                               |
