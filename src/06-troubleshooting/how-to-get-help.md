@@ -1,12 +1,12 @@
 ```{seo}
-:description: Learn how to get technical support in Duckietown.
-:keywords: duckietown, getting help, technical support
+:description: Learn about how to get technical support in Duckietown.
+:keywords: duckietown, getting help, technical support, how to get help
 ```
 
 (how-to-get-help)=
 # How to get help in Duckietown
 
-Getting (and providing) help is part of the learning process. 
+Getting (and providing) help is part of the learning process.
 
 Unless you are an instructor with an [instructor pack subscription](https://get.duckietown.com/products/instructor-pack-subscription?variant=44201386180783), Duckietown support is community-driven. This means technical support is provided on a best-effort basis, without guarantees of timeliness. 
 

@@ -9,6 +9,7 @@
 This chapter describes the `Lane Following (LF)` demo (demonstration) for Duckiebots.
 
 ```{needget}
+- A calibrated Duckiebot: [](ops-db-calibrations)
 * Completed [](db-camera-calibration).
 * Completed [](db-wheels-calibration).
 * A Duckietown, as defined in [](book-opmanual-duckietown:book).
@@ -112,8 +113,11 @@ The `Lane Following` demo consists of the following processing steps:
 5. **Control** (based on the lane pose estimate, a PID controller sends control signals to adjust your Duckiebot's heading).
 6. **Actuation** (the control signals are applied to your Duckiebot's motors).
 
-```{figure} ../_images/demonstrations/lane_following/processing_flow.png
+```{figure} ../../_images/demonstrations/lane_following/processing_flow.png
 :name: fig:lane-detection-process
+:alt: duckiebot image pipeline for autonomous lane following
+:align: center
+:width: 60%
 
 Lane following processing flow, from input image to belief.
 ```
@@ -331,7 +335,7 @@ To view the lane pose and segment markers:
 You should see a top-down view of the lane in front of your Duckiebot.
 ```
 
-If an error was incurred during the [camera calibration procedure](../calibrations/duckiebot-extrinsic-and-intrinsic-camera-calibrations.md), it will be very apparent when looking at the ground projected segments.
+If an error was incurred during the [camera calibration procedure](db-camera-calibration), it will be very apparent when looking at the ground projected segments.
 
 ### Tuning the PID gains
 

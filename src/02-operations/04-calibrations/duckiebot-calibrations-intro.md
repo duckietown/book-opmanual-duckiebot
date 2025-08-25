@@ -7,7 +7,7 @@
 ```
 
 ```{needget}
-- A working Duckiebot
+- A working Duckiebot: [](ops-db-subsys-testing-intro)
 ---
 - A calibrated Duckiebot
 ```

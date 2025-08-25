@@ -9,7 +9,7 @@
 This chapter describes how to connect your Duckiebot to a network.
 
 ```{needget}
-Completed [](setup-db-sd-card-flashing).
+Completed [](setup-db-sd-card-flashing-intro).
 ---
 Knowledge on how to connect your Duckiebot to a network.
 ```

@@ -9,7 +9,7 @@
 This section describes how to install and set up Docker on your computer.
 
 ```{needget}
-Completed [](setup-computer-dependencies-installation).
+Completed [](setup-sw-dependencies-installation).
 ---
 A computer with Docker installed and correctly set up.
 ```

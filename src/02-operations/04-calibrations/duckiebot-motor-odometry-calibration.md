@@ -1,6 +1,9 @@
+(db-wheels-calibration)=
+# Wheel Calibration
+
 ```{seo}
 :description: How to perform the kinematics calibration procedure for a Duckiebot.
-:keywords: Duckietown, Duckiebot, kinematics calibration, odometry
+:keywords: Duckietown, Duckiebot, kinematics calibration, odometry, wheel calibration, odometry calibration, differential drive robot calibration
 ```
 
 This chapter describes how to perform the kinematics calibration procedure for your Duckiebot.
@@ -11,17 +14,20 @@ Completed [](sw-tools-keyboard-controller).
 A Duckiebot with calibrated kinematics.
 ```
 
-(db-wheels-calibration)=
-# Wheel Calibration
+This wheel calibration is required to make a Duckiebot go straight when commanded to do so.
 
-A wheel calibration is required to make a Duckiebot go straight when commanded to do so.
+## Introduction to wheel calibration
 
-## Introduction
+To perform the kinematics calibration procedure for your Duckiebot is by using the `Keyboard Controller`.
 
-The easiest way to perform the kinematics calibration procedure for your Duckiebot is by using the `Keyboard Controller`.
+```{figure} ../../_images/software_tools/keyboard_controller/keyboard_controller.png
+:width: 60%
+:align: center
+:alt: Duckietown keyboard controller for Duckiebots
+:name: keyboard_controller_2
 
-```{figure} ../_images/software_tools/keyboard_controller/keyboard_controller.png
-The `Keyboard Controller`.
+
+The Duckiebot keyboard controller is useful to easily open loop control a connected Duckiebot, as well as for adjusting the wheel calibration parameters. 
 ```
 
 To open the `Keyboard Controller`, run:
@@ -81,22 +87,31 @@ To perform the kinematics calibration procedure:
 9. Set the `Gain`.
 10. Click the `Save` button.
 
-```{figure} ../_images/calibrations/kinematics/wheel_calibration_line.jpg
-:width: 30em
+```{figure} ../../_images/calibrations/kinematics/wheel_calibration_line.jpg
+:width: 60%
+:align: center
+:alt: Straight line for Duckiebot wheel/odometry/kinematics calibration procedure
+:name: wheel_calibration_line
 
-A straight line used for the kinematics calibration procedure.
+Mark a straight line on the floor to set a baseline for the Duckiebot kinematics/wheel/odometry calibration procedure.
 ```
 
-```{figure} ../_images/calibrations/kinematics/wheel_calibration_lr_drift.jpg
-:width: 30em
+```{figure} ../../_images/calibrations/kinematics/wheel_calibration_lr_drift.jpg
+:width: 60%
+:align: center
+:alt: Straight line for Duckiebot wheel/odometry/kinematics calibration procedure
+:name: wheel_calibration_lr_drift
 
-Left/right drift.
+Left/right drift is caused by uncalibrated wheels. Modifying the trim parameter will help correct imperfections.
 ```
 
-```{figure} ../_images/calibrations/kinematics/wheel_calibration_measuring_drift.jpg
-:width: 30em
+```{figure} ../../_images/calibrations/kinematics/wheel_calibration_measuring_drift.jpg
+:width: 60%
+:align: center
+:alt: Measuring the drift of a Duckiebot from a straight line as part of the wheel calibration procedure 
+:name: wheel_calibration_measuring_drift
 
-Measuring the amount of drift after driving forward for about `2 m`.
+Measure the amount of drift, or deviation from the line, after driving forward for about `2 m`, to determine when the calibration is "good enough". 
 ```
 
 To confirm that a new kinematics calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Kinematics` panel:
@@ -105,14 +120,19 @@ To confirm that a new kinematics calibration file has been created on your Ducki
 dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
 ```
 
-```{figure} ../_images/calibrations/kinematics/kinematics_panel.png
+```{figure} ../../_images/calibrations/kinematics/kinematics_panel.png
+:width: 60%
+:align: center
+:alt: The kinematics calibration panel on the Duckiebot Dashboard
+:name: kinematics_panel
+
 The `Kinematics` panel on the `Robot` page of the `Dashboard`.
 ```
 
 ```{note}
 Within the `Kinematics` panel, under `Local`, you should see a tick next to `Completed`, the calibration date next to `Calibration date` and `/data/config/calibrations/kinematics/DUCKIEBOT_NAME.yaml` next to `Files`.
 ```
-
+<!--
 ## Troubleshooting
 
 ```{trouble}
@@ -120,3 +140,4 @@ My Duckiebot does not move after following [](sw-tools-keyboard-controller).
 ---
 Contact support.
 ```
+-->

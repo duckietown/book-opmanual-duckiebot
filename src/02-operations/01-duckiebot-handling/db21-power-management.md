@@ -102,7 +102,7 @@ If the screen switched to the next page and the top button did not blink, try ag
 dts duckiebot shutdown DUCKIEBOT_NAME
 ```
 
-3. **Dashboard shutdown**: to turn your Duckiebot off through the `Dashboard`, after following [](../../software-tools/duckietown-dashboard-browser-ui.md):
+3. **Dashboard shutdown**: to turn your Duckiebot off through the `Dashboard`:
 
     1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
     2. Click the `Power` button.

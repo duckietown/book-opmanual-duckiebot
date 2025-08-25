@@ -22,7 +22,12 @@ This section describes how to see what your Duckiebot sees, in other words, gain
 One of the easiest ways to see what your Duckiebot sees is by using the `Image Viewer`.
 
 ```{figure} ../../_images/software_tools/image_viewer/image_viewer.png
-The `Image Viewer`.
+:name: image_viewer
+:align: center
+:width: 60%
+:alt: the duckietown image viewer enables basic user camera operations such as viewing the image stream and capturing a frame to disk
+
+The Duckietown "Image Viewer" helps visualize the Duckiebot's camera stream.
 ```
 
 To open the `Image Viewer`, run:
@@ -57,8 +62,13 @@ If you followed the instructions in [](duckiebot-dashboard-setup), you should ha
 
 The bottom of the page shows the camera block. You should be able to see the camera feed in the camera block, as shown in the image below.
 
-```{figure} ../../_images/src/_images/software_tools/dashboard/dashboard_mission_control_camera_feed.png
+```{figure} ../../_images/software_tools/dashboard/dashboard_mission_control_camera_feed.png
 :name: dashboard_mission_control_camera_feed
+:align: center
+:width: 60%
+:alt: the duckietown dashboard mission control page showing the duckiebot's camera stream
+
+The Dashboard Robot > Mission Control page shows basic sensor and actuator data streams.
 ```
 
 By default, the camera stream is throttled down to 8 frames per second. This is to minimize the resources used by your browser while streaming
@@ -99,6 +109,9 @@ You will have to select the `camera_node/image/compressed` topic from the drop-d
 
 ```{figure} ../../_images/software_tools/image_viewer/rqt_image_view.png
 :name: rqt_dropdown_sub
+:align: center
+:width: 60%
+:alt: rqt image view window with dropdown menu in duckietown
 
 The rqt image view window with dropdown menu - select the `camera_node/image/compressed` topic.
 ```
@@ -125,6 +138,9 @@ Then, run `rqt_image_view` again, and use the top-right "**Save as image**" butt
 ```{image} ../../_images/software_tools/image_viewer/rqt_image_view_save_dialog1.png
 :align: center
 :name: rqt_save_dialog1
+:width: 60%
+:alt: rqt image view saving an image step 1
+
 ```
 
 <br/>
@@ -132,6 +148,8 @@ Then, run `rqt_image_view` again, and use the top-right "**Save as image**" butt
 ```{image} ../../_images/software_tools/image_viewer/rqt_image_view_save_dialog2.png
 :align: center
 :name: rqt_save_dialog2
+:width: 60%
+:alt: rqt image view saving an image step 2
 ```
 
 <br/>

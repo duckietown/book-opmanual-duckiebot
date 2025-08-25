@@ -2,23 +2,31 @@
 # Duckiebot Handling (`DB21`)
 
 ```{seo}
-:description: How to handle a Duckiebot.
-:keywords: Duckietown, Duckiebot, handle
+:description: A compendium of common operations for interacting with a Duckiebot.
+:keywords: Duckietown, Duckiebot, Duckiebot handling, ssh, moving a Duckiebot, Duckiebot image streaming, Duckiebot LED control, Duckiebot HUT update, Duckiebot battery update, Duckiebot remote control, Duckiebot software update
 ```
 
 This chapter describes how to handle your Duckiebot.
 
 ```{needget}
-Completed [](assembly-instructions-db21j).
+- A connected Duckiebot: [](setup-duckiebot-network)
 ---
-Knowledge on how to handle your Duckiebot.
+- 
 ```
 
 (handling-tutorial-video)=
 ## Tutorial video
 
 ```{vimeo} 527038785
+:alt: how to handle a Duckiebot DB21J
 ```
+
+(handling-how-to-ssh-into-your-duckiebot)=
+## How to update the software on a Duckiebot
+
+To update the software on your Duckiebot, 
+
+
 
 (handling-how-to-ssh-into-your-duckiebot)=
 ## How to SSH into your Duckiebot
@@ -31,15 +39,15 @@ ssh duckie@DUCKIEBOT_NAME.local
 
 ## How to see what your Duckiebot sees
 
-To see what your Duckiebot sees, follow [](../../software-tools/duckietown-duckiebot-image-viewer.md).
+To see what your Duckiebot sees, follow [](ops-db-subsys-make-it-see).
 
 ## How to make your Duckiebot move
 
-To make your Duckiebot move, follow [](../../software-tools/duckiebot-keyboard-controller.md).
+To make your Duckiebot move, follow [](ops-db-subsys-make-it-move).
 
 ## How to control your Duckiebot's LEDs
 
-To control your Duckiebot's LEDs, follow [](../../software-tools/duckiebot-led-lights-controller.md).
+To control your Duckiebot's LEDs, follow [](ops-db-subsys-make-it-shine).
 
 ## How to update the Duckiebattery
 
@@ -47,11 +55,11 @@ To update the Duckiebattery, follow [](duckiebattery-update).
 
 ## How to update the HUT
 
-To update the HUT, follow [](../../troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs.md).
+To update the HUT, follow [](reflash-microcontroller).
 
 ## How to connect to your Duckiebot over the Internet
 
-To connect to your Duckiebot over the Internet, follow [](../../further-reading/protip-setting-up-remote-duckiebot-control-with-zerotier.md).
+To connect to your Duckiebot over the Internet, follow [](protip-zerotier-remote-duckiebot-control).
 
 ## Troubleshooting
 

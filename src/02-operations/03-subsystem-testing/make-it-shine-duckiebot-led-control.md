@@ -16,7 +16,7 @@
 
 Duckiebots have four LEDs, positioned similarly to the head and tail lights on a car. This section describes how control the LEDs on your Duckiebot through the `LED Controller`.
 
-```{figure} ../_images/software_tools/led_controller/leds_layout.png
+```{figure} ../../_images/software_tools/led_controller/leds_layout.png
 A Duckiebot with the LEDs shining white (left) and a diagram with arrows indicating the front and back LEDs (right).
 ```
 
@@ -32,7 +32,7 @@ LEDs are more than just lights. As proper actuators on a Duckiebot, they can be 
 
 An easy way to control your Duckiebot's LEDs is by using the `LED Controller`.
 
-```{figure} ../_images/software_tools/led_controller/led_controller.png
+```{figure} ../../_images/software_tools/led_controller/led_controller.png
 The `LED Controller`.
 ```
 

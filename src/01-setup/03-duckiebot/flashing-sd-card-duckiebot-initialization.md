@@ -12,7 +12,7 @@
 * A broadband internet connection
 * 20 - 40 mins, depending on internet connection speed and procedure (easy/complete)
 * At least 40 GB of free space on your hard drive before starting
-* [Functional DTS installation](setup-dts) if using the [Complete - Initialization](setup-db-sd-card-flashing-intro-complete) procedure.
+* [Functional DTS installation](setup-dts) if using the [Complete - Initialization](setup-db-sd-card-flashing-complete) procedure.
 ---
 An initialized SD card for your Duckiebot with customized settings. 
 ```

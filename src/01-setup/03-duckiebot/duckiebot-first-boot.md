@@ -73,14 +73,25 @@ During the first boot, the robot will automatically reboot several times.
 Wait for the "Status" column to read "Ready" and turn solid green.
 ```
 
-## Software and Hardware updates
+## Software and Hardware Updates
+
 Once the status of your Duckiebot is `Ready`, you are ready to update your Duckiebot. The software update is required now, while the hardware update is conditional and also can be carried out later.
 
-### Software update
-Please update your Duckiebot's software stack with the latest by following: [](duckiebot-autoupdate).
+### Duckiebot Software Update
 
-### Hut Microcontroller update
-The reader does not need to perform this right now. This is mentioned here so that the reader is aware of the existence and a potential need of this procedure. The Hut connects to various electronics beyond the Duckiebot computer, e.g. motors, LEDs. If you run into problems with the operations in the **Duckiebot Operations** section later, and it is related to the hardware on the HUT, you are then suggested to follow the [](reflash-microcontroller) page to update the HUT firmware.
+It is good practice to keep your Duckiebot's software stack up to date with the latest code by following: [](ops-db-update).
+
+### HUT Microcontroller Update
+
+We call Duckiebot "HUT" (not a typo) the electronic board that connects to the GPIO pins of the onboard computer. 
+
+```{warning}
+It is not necessary to run this procedure after the first boot. We add this link here for completeness and to inform you of the existence of a microcontroller on the HUT.
+```
+
+The Duckiebot HUT connects to various electronics beyond the Duckiebot onboard computer, like motors and LEDs.
+
+If facing challenges with moving your Duckiebot or controlling the LEDs, it is possible that [reflashing the Duckiebot's HUT](reflash-microcontroller) might address your issues.
 
 (confirm-first-boot)=
 ## Confirming the First Boot
@@ -124,7 +135,7 @@ To reboot your Duckiebot, use the command,
 
     dts duckiebot reboot HOSTNAME
 
-You will learn more about how to handle your Duckiebot in [](handling-duckiebot-db21).
+You will learn more about how to handle your Duckiebot in [](how-to-handle-a-duckiebot-db21).
 -->
 
 (duckiebot-first-boot-troubleshooting)=
@@ -134,50 +145,49 @@ You will learn more about how to handle your Duckiebot in [](handling-duckiebot-
 I pressed the power button on top but nothing happened.
 ---
 Power on your Duckiebot using the button on the side of the Duckiebattery.  The top button is only for powering off. 
- You can also learn more about how to handle your Duckiebot in [](handling-duckiebot-db21).
+ You can also learn more about how to handle your Duckiebot in [](how-to-handle-a-duckiebot-db21).
 ```
 
 ```{trouble}
 My Duckiebot does not appear to boot after pressing the power button on the battery. I don't see a green light on 
 the HUT or the Jetson Nano.
 ---
-Refer back to [](assembling-duckiebot-db21j), and check each of your cable connections.  Confirm the start and end 
+Refer back to [](assembly-instructions-db21j), and check each of your cable connections.  Confirm the start and end 
 port of each power cable from the battery.  The battery must be charged fully as shown in the first assembly step.
 ```
 
 ```{trouble}
-My Duckiebot is getting power but does not appear to be booting. The Wifi dongle is not blinking.
+My Duckiebot is getting power but does not appear to be booting. The Wi-Fi dongle is not blinking.
 ---
-Make sure you flashed the SD card following the instructions in [](setup-duckiebot-sd-card).
+Make sure you flashed the SD card following the instructions in [](setup-db-sd-card-flashing-intro).
 ```
 
 ```{trouble}
-My Duckiebot is getting power but does not appear to be booting. The Wifi dongle is not blinking.
+My Duckiebot is getting power but does not appear to be booting. The Wi-Fi dongle is not blinking.
 ---
 Make sure that you correctly specified the model of your Duckiebot when initializing the SD card.
 
-If you have a Duckiebot with a 2GB Jetson Nano - the model is DB21M
+If you have a Duckiebot with a 2GB Jetson Nano - the model is `DB21M`
 
-If you have a Duckiebot with a 4GB Jetson Nano - the model is DB21J
+If you have a Duckiebot with a 4GB Jetson Nano - the model is `DB21J`
 
-If you are not using a Jetson Nano, the model is the model of your Duckiebot (ex. DB19 or DBR4)
+If you are not using a Jetson Nano, the model is the model of your Duckiebot (e.g., `DB19` or `DBR4`)
 ```
 
 ```{trouble}
 The Duckiebot screen does no turn on even though it shows up in `dts fleet discover` and the dashboard is accessible.
- The ToF and front bumper are not detected on the dashboard Components page.
+ The time of flight (ToF) sensor and front bumper are not detected on the Dashboard Components page.
 ---
 Disconnect the ToF sensor from the front bumper and use the long cable that originally connected the front bumper to 
 the HUT to connect the ToF sensor directly to that same HUT port. Then reboot. This bypasses a known multiplexer 
-issue on some 
-bumpers.
+issue affecting some front bumpers.
 ```
 
 ```{trouble}
 My Duckiebot appears to be booted and the screen is on, but I can't see it using `dts fleet discover`.
 ---
 Your Duckiebot must be connected to the same network as the computer you are using to run the `dts` commands.  Check 
-the [networking section](duckiebot-network) of the book to see if your network is set up correctly.
+the [networking section](setup-duckiebot-network) of the book to see if your network is set up correctly.
 ```
 
 ```{trouble}

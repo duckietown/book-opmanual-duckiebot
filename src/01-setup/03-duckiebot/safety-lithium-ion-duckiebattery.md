@@ -156,7 +156,7 @@ Wake up the battery by pressing the side button once.
 
 After setting the battery in `idle` mode, charge it by connecting a 5V 2A power adapter. Note that using a higher amperage charger will not damage the unit. The LEDs will be flashing at 1 Hz, showing the battery is receiving charge.
 
-```{figure} ../../_images/troubleshooting/duckiebattery/chap_2_1_images/DB-C-DBatt_3.png
+```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_3.png
 :name: fig:DB-C-DBatt_3
 :width: 50%
 :align: center

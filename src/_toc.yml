@@ -44,7 +44,7 @@ parts:
             -   file: 02-operations/how-to-use-a-duckiebot-intro
                 sections:
                   -   file: 02-operations/01-duckiebot-handling/instruction-handling-duckiebot-db21m-db21j
-                  -   file: 02-operations/duckietown-dashboard-browser-ui
+                  -   file: 02-operations/01-duckiebot-handling/duckietown-dashboard-browser-ui
                   -   file: 02-operations/01-duckiebot-handling/db21-power-management # turn on, off, charge
                   -   file: 02-operations/01-duckiebot-handling/db21-software-update # keep sw up to date
                   -   file: 02-operations/01-duckiebot-handling/db21-hardware-update-hut # keep hardware up to date

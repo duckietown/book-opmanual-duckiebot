@@ -9,7 +9,7 @@
 This section describes how to install and set up `DTS` (`Duckietown Shell`), a CLI (Command-Line Interface) program that is used for Duckietown-related operations.
 
 ```{needget}
-- [Docker is installed and set up](docker-sw-github)
+- [Docker is installed and set up](setup-sw-docker)
 - [GitHub is installed and set up](setup-sw-github)
 - [Duckietown account](setup-account-duckietown-hub)
 ---
@@ -93,7 +93,7 @@ most of the back-end operations involving Docker.
 * **Never use your account password** instead of an personal access tokens (PAT);
 ```  
 
-Recall your `DOCKERHUB_USERNAME` from []() and create a PAT following [DockerHub instructions on access tokens](https://docs.docker.com/security/access-tokens/).
+Recall your `DOCKERHUB_USERNAME` from [](dt-account-dockerhub) and create a PAT following [DockerHub instructions on access tokens](https://docs.docker.com/security/access-tokens/).
 
 You can pass your DockerHub credentials to the Duckietown Shell by running the following command,
 

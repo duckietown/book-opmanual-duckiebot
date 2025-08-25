@@ -29,7 +29,7 @@ By proceeding with these instructions you are accepting the [Duckietown terms of
 (initialize-sd-card-video-fast)=
 ## Image download
 
-1. Read and understand the [](initialization-tos) before proceeding. For any questions or doubts, [reach out](mailto:info@duckietown.com).
+- Read and understand the [](initialization-tos) before proceeding. For any questions or doubts, [reach out](mailto:info@duckietown.com).
 
 (initialization-tos)=
 ### Legal things - Accepting Duckietown legal terms
@@ -38,7 +38,7 @@ By downloading this image you accept the [Duckietown Software License](https://d
 
 Start by plugging the SD card into your computer using a SD card reader or the USB to microSD card adapter provided in your Duckiebot kit. Make sure the SD card is detected before proceeding.
 
-2. [Download the Duckietown compressed image](https://cutt.ly/ente-duckiebot-image-207-googledrive) and unzip it
+- [Download the Duckietown compressed image](https://cutt.ly/ente-duckiebot-image-207-googledrive)
 
 <!--
  temp link above
@@ -48,28 +48,28 @@ upload image to aws and create redirect from https://duckietown.com/download-duc
 ```
 -->
 
-The image is downloaded as a compressed `.zip` file. After downloading it to your computer, unzip it to obtain a `.img` file. Flash this file to the SD card (not the `.zip` one).
+The image is downloaded as a compressed `.zip` file. Programs like Balena Etcher allow you to flash the `.zip` file directly to the SD card, taking care of unzipping it. If you are using a different program, unzip the downloaded file to obtain a `.img` file to flash to the SD card.
 
-3. [Install Balena Etcher](https://etcher.balena.io/) or equivalent software
+- [Install Balena Etcher](https://etcher.balena.io/) or equivalent software
 
-4. Use Balena Etcher to flash the downloaded image to the SD card
+- Use Balena Etcher to flash the downloaded image to the SD card
 
-Open the Balena Etcher application you just downloaded, and follow the instructions. 
+Open the Balena Etcher application you just downloaded, and follow the instructions.
 
-5. Configure the network
+- Configure the network
 
-Create a network with `ssid` duckietown and passwork `quackquack`, and the Duckiebot will automatically connect to it. 
+Create a network with `ssid` duckietown and password `quackquack`, and the Duckiebot will automatically connect to it.
 
 Alternatively, [edit the Wi-Fi settings on your Duckiebot](duckiebot-setup-wifi) to make it connect to your existing network.
 
-6. Plug in the SD card into your Duckiebot
+- Plug in the SD card into your Duckiebot
 
-You are now ready for the [Duckiebot first boot](duckiebot-boot) sequence. 
+You are now ready for the [Duckiebot first boot](duckiebot-boot) sequence.
 
 (db-init-fast-default-settings)=
 ## Default settings
 
-This image has the following default settings: 
+This image has the following default settings:
 
 - default username: `duckie`
 - default user password: `quackquack`

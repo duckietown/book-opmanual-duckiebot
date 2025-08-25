@@ -1,10 +1,10 @@
 ```{seo}
-:description: How to perform the camera calibration procedure for a Duckiebot.
-:keywords: Duckietown, Duckiebot, camera calibration
+:description: Learn how to perform the intrinsics and extrinsics camera calibration procedure for a Duckietown Duckiebot with step by step instructions.
+:keywords: Duckiebot, calibration, camera calibration, intrinsics camera calibration, extrinsics camera calibration
 ```
 
 ```{needget}
-- Completed [](db-opmanual-sw-tools-image-viewer).
+- A working Duckiebot: [](ops-db-subsys-testing-intro)
 ---
 - A Duckiebot with a calibrated camera.
 ```
@@ -14,20 +14,27 @@
 
 This chapter describes how to perform the camera calibration procedure for your Duckiebot.
 
+## Introduction to camera calibration
 
-## Introduction
+Every camera is unique due to manufacturing and assembly differences. Therefore, a camera calibration procedure needs to be performed to account for small manufacturing discrepancies. 
 
-Every camera is unique. Therefore, a camera calibration procedure needs to be performed to account for small manufacturing discrepancies.
 This procedure involves displaying a predetermined pattern in front of the camera and using it to solve for the camera's parameters.
-For more information, review [these slides](https://github.com/duckietown/lectures/blob/master/1_ideal/25_computer_vision/cv_calibration.pdf).
 
+For more information about the mathematics behind the process, review the appropriate [learning experience](duckiebot-lxs).
+
+<!--
+ review [these slides](https://github.com/duckietown/lectures/blob/master/1_ideal/25_computer_vision/cv_calibration.pdf).
+-->
 (operation-camera-calibration-board)=
 ## Calibration board
 
-```{figure} ../_images/calibrations/camera/a3-calibration-pattern.png
+```{figure} ../../_images/calibrations/camera/a3-calibration-pattern.png
 :width: 20em
+:align: center
+:alt: Duckietown camera calibration pattern in A3 format
+:name: a3-calibration-pattern
 
-Duckietown calibration pattern.
+Duckietown camera calibration pattern.
 ```
 
 `````{tab-set}
@@ -35,7 +42,8 @@ Duckietown calibration pattern.
 If you do not already have a Duckietown calibration board:
 1. Download the [Duckietown calibration pattern](https://github.com/duckietown/lib-dt-computer-vision/blob/ente/assets/extrinsics/camera_calibration_pattern_A3_rev0424.pdf)
 2. Print it in **A3** format
-3. Fix it to a rigid planar surface that you can move around
+3. Make sure the printing settings have not deformed the pattern, by measuring the features as indicated on the pattern itself
+4. Fix it to a rigid planar surface that you can move around
 
 ```{note}
 * The squares must have side lengths equal to **0.031 m** (**3.1 cm**). Measure this, as having the wrong size may lead to your Duckiebot crashing.
@@ -63,18 +71,25 @@ If the pattern is not rigid, the calibrations should not be used. You can print 
 (operation-camera-intrinsic-calibration)=
 ## Intrinsic calibration
 
+The instrinsic camera calibration procedure identifies parameters that enable creating a relationship between the 2D image plane and the 3D world around the Duckiebot. These parameters account for various optical specifications such as the camera's focal length, the pixel aspect ratio, and the distortion field applied by the fisheye lens.
+
+For optimal performance, repeat this procedure if you change the focus of the camera by rotating the lens.
+
 ### The Intrinsics Calibrator
 
-The easiest way to perform the intrinsic camera calibration procedure for your Duckiebot is by using the `Intrinsics Calibrator`.
-
-```{figure} ../_images/calibrations/camera/intrinsics_calibrator_1.png
-The `Intrinsics Calibrator`.
-```
-
-To open the `Intrinsics Calibrator`, run:
+To perform the intrinsic camera calibration procedure for your Duckiebot, run:
 
 ```shell
 dts duckiebot calibrate_intrinsics DUCKIEBOT_NAME
+```
+
+```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_1.png
+:width: 60%
+:align: center
+:alt: Duckietown instrinsics camera calibration interface
+:name: intrinsics_calibrator_1
+
+The Duckietown intrinsics camera calibration interface.
 ```
 
 Note the keys in the table below.
@@ -103,7 +118,7 @@ Note the keys in the table below.
 
 To perform the intrinsic calibration procedure:
 
-1. Move the calibration board in front of your Duckiebot's camera such that the **entire** checkerboard pattern is within its field of view and colored lines begin to overlay the checkerboard pattern.
+1. Move the calibration pattern in front of your Duckiebot's camera such that the **entire** checkerboard pattern is within its field of view and colored lines begin to overlay the checkerboard pattern.
 2. Rotate the mechanical focus ring on the lens until you can clearly read the `x` and `y` labels on the checkerboard pattern (do not adjust the focus again or place the lens cover back onto the lens unless you plan on repeating this procedure).
 3. Slowly move the calibration board left, right, up, down, forwards and backwards, relative to your Duckiebot's camera, until each region within the `x`, `y` and `Size` bars is filled in.
 4. Slowly tilt and pan the calibration board, relative to your Duckiebot's camera, until each region within the `Skew` bar is filled in.
@@ -111,11 +126,21 @@ To perform the intrinsic calibration procedure:
 6. Wait for the spinner to disappear.
 7. (optional) Click the `Undistort` switch to see an undistorted view of what your Duckiebot sees.
 
-```{figure} ../_images/calibrations/camera/intrinsics_calibrator_2.png
-The `Intrinsics Calibrator` with all of its bars filled in.
+```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_2.png
+:width: 60%
+:align: center
+:alt: Duckietown instrinsics camera calibration interface showing a successful procedure
+:name: intrinsics_calibrator_2
+
+The Duckietown intrinsics camera calibration interface (Intrinsics Calibrator) with all of its bars filled in.
 ```
 
-```{figure} ../_images/calibrations/camera/intrinsics_calibrator_3.png
+```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_3.png
+:width: 60%
+:align: center
+:alt: Duckietown instrinsics camera calibration interface showing a successful procedure
+:name: intrinsics_calibrator_3
+
 The `Intrinsics Calibrator` with the `Undistort` switch set to `on`.
 ```
 
@@ -125,22 +150,36 @@ To confirm that a new intrinsic calibration file has been created on your Duckie
 dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
 ```
 
-```{figure} ../_images/calibrations/camera/camera_intrinsic_panel.png
-The `Camera Intrinsic` panel on the `Robot` page of the `Dashboard`.
+```{figure} ../../_images/calibrations/camera/camera_intrinsic_panel.png
+:width: 60%
+:align: center
+:alt: Duckietown instrinsics camera calibration interface showing a successful procedure
+:name: camera_intrinsic_panel
+
+The Camera Intrinsic panel on the Robot page of the Dashboard.
 ```
 
 ```{note}
-Within the `Camera Intrinsic` panel, under `Local`, you should see a tick next to `Completed`, the calibration date next to `Calibration date` and `/data/config/calibrations/camera_intrinsic/DUCKIEBOT_NAME.yaml` next to `Files`.
+Within the Camera Intrinsic panel, under `Local`, you should see a tick next to `Completed`, the calibration date next to `Calibration date` and `/data/config/calibrations/camera_intrinsic/DUCKIEBOT_NAME.yaml` next to `Files`.
 ```
 
 (operation-camera-extrinsic-calibration)=
-## Extrinsic calibration
+## Extrinsic camera calibration procedure
+
+This camera calibration procedure outputs the relative pose between the camera and Duckiebot frame. 
+
+For optimal performance, repeat this procedure if you ship the Duckiebot or otherwise touch the camera holder.
 
 ### The Extrinsics Calibrator
 
 The easiest way to perform the extrinsic camera calibration procedure for your Duckiebot is by using the `Extrinsics Calibrator`.
 
-```{figure} ../_images/calibrations/camera/extrinsics_calibrator_1.png
+```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_1.png
+:width: 60%
+:align: center
+:alt: Duckietown extrinsics camera calibration interface
+:name: extrinsics_calibrator_1
+
 The `Extrinsics Calibrator`.
 ```
 
@@ -184,18 +223,32 @@ To perform the extrinsic calibration procedure:
 4. Wait for the spinner to disappear.
 5. (optional) Click the `Project` switch to see a top-down view of what your Duckiebot sees under `Projection`.
 
-```{figure} ../_images/calibrations/camera/extrinsic_setup.jpg
+```{figure} ../../_images/calibrations/camera/extrinsic_setup_db21j_duckiebot.jpg
 :width: 30em
+:align: center
+:alt: Duckiebot extrinsics camera calibration setup
+:name: extrinsic_setup
 
-Extrinsic calibration setup.
+
+Extrinsic calibration setup: align the Duckiebot with the marks on the calibration pattern, on a white backdrop.
 ```
 
-```{figure} ../_images/calibrations/camera/extrinsics_calibrator_2.png
-The `Extrinsics Calibrator` with the `Check error` switch set to `on`.
+```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_2.png
+:width: 30em
+:align: center
+:alt: Duckietown extrinsics camera calibration check error function
+:name: extrinsics_calibrator_2
+
+The Extrinsics Calibrator with the Check error switch set to `on`.
 ```
 
-```{figure} ../_images/calibrations/camera/extrinsics_calibrator_3.png
-The `Extrinsics Calibrator` with the `Project` switch set to `on`.
+```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_3.png
+:width: 30em
+:align: center
+:alt: Duckietown extrinsics camera calibration projection functionality
+:name: extrinsics_calibrator_3
+
+The Extrinsics Calibrator with the Project switch set to `on`.
 ```
 
 To confirm that a new extrinsic calibration file has been created on your Duckiebot, run the following command and inspect the contents of the `Camera Extrinsic` panel:
@@ -204,7 +257,12 @@ To confirm that a new extrinsic calibration file has been created on your Duckie
 dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
 ```
 
-```{figure} ../_images/calibrations/camera/camera_extrinsic_panel.png
+```{figure} ../../_images/calibrations/camera/camera_extrinsic_panel.png
+:width: 30em
+:align: center
+:alt: Duckietown extrinsics camera calibration extrinsics panel
+:name: camera_extrinsic_panel
+
 The `Camera Extrinsic` panel on the `Robot` page of the `Dashboard`.
 ```
 

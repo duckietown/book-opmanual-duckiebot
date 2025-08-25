@@ -19,7 +19,12 @@ This chapter describes the `Keyboard Controller`.
 An easy way to make your Duckiebot move is by using the `Keyboard Controller`.
 
 ```{figure} ../../_images/software_tools/keyboard_controller/keyboard_controller.png
-The `Keyboard Controller`.
+:name: keyboard_controller
+:align: center
+:width: 60%
+:alt: the duckietown keyboard controller is a software tool that enables manual control of Duckiebots
+
+The Keyboard Controller enables manual control of the Duckiebot. 
 ```
 
 To open the `Keyboard Controller`, run:

@@ -1,4 +1,5 @@
-# ZeroTier
+(protip-zerotier-remote-duckiebot-control)=
+# Remote Duckiebot control with ZeroTier
 
 ```{seo}
 :description: How to connect to a Duckiebot over the Internet using ZeroTier.

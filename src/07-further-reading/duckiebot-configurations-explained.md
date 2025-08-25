@@ -22,10 +22,11 @@ Duckiebots `DB18` onwards can be obtained from the [Duckietown project store](ht
 | Model |  Computation  |              Sensing|             Actuation| Memory |       Power |       Notes   |
 |-------|:-------------:|:--------------------------------:|:---------------------------------:|:------:|:-----------------:|:----------------:|
 | [DB17](duckiebot-config-db17)   	|      RPI3     	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	|   Off-the-shelf   	|                  	|
-| [DB18](duckiebot-config-db18)   	|     RPI3B+    	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	| addressable LEDs 	|
-| [DB19](duckiebot-config-db19)   	|     RPI3B+    	|      Camera, Wheel Encoders      	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| [Duckie-power bank]({#db-opmanual-dtbattery-v1}) 	|                  	|
-| [DB21M](duckiebot-config-db21m) 	|     JN2GB     	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  32GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})    	|    Chassis v1    	|
-| [DB21](duckiebot-config-db21)  	| JN2GB / JN4GB 	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  64GB  	|   [Duckiebattery]({#db-opmanual-dtbattery-v2})   	|    Chassis v2    	|
+| [DB18](duckiebot-config-db18)   	|     RPI3B+    	|              Camera              	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| Duckie-power bank 	| addressable LEDs 	|
+| [DB19](duckiebot-config-db19)   	|     RPI3B+    	|      Camera, Wheel Encoders      	|     2x DC motors, 5x RGB LEDs     	|  32GB  	| Duckie-power bank 	|                  	|
+| [DB21M](duckiebot-config-db21m) 	|     JN2GB     	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  32GB  	|   [Duckiebattery](db-opmanual-dtbattery-v2)    	|    Chassis v1    	|
+| [DB21](duckiebot-config-db21)  	| JN2GB / JN4GB 	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  64GB  	|   [Duckiebattery](db-opmanual-dtbattery-v2)   	|    Chassis v2    	|
+| [DB21(v3)](duckiebot-config-db21)  	| JN4GB 	| Camera, Wheel Encoders, ToF, IMU 	| 2x DC motors, 4x RGB LEDs, Screen 	|  64GB  	|   [Duckiebattery](db-opmanual-dtbattery-v2)   	|    Chassis v3, new omnidirectional wheel    	|
 
 Legend:
 
