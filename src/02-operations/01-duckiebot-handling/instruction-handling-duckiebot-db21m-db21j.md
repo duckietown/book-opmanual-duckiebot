@@ -15,7 +15,7 @@ This chapter describes how to handle your Duckiebot.
 ```
 
 
-(handling-how-to-ssh-into-your-duckiebot)=
+(handling-how-to-update-db-software)=
 ## How to update the software on a Duckiebot
 
 To update the software on your Duckiebot, run:
@@ -48,6 +48,27 @@ To control your Duckiebot's LEDs, follow [](ops-db-subsys-make-it-shine).
 ## How to update the Duckiebattery
 
 To update the Duckiebattery, follow [](duckiebattery-update).
+
+### How to check the charging efficiency of your Duckiebot
+
+Once your Duckiebattery is up to date and your Duckiebot is connected, run:
+
+    dts duckiebot battery info ROBOT_NAME
+
+```shell
+battery:
+  cell_voltage: 3.59
+  charging: true
+  current: 0.84
+  cycle_count: 20
+  input_voltage: 4.82
+  percentage: 12
+  present: true
+  temperature: 39.85
+  time_to_empty: 3932100
+  usb_out_1_voltage: 4.73
+  usb_out_2_voltage: 5.01
+```
 
 ## How to update the HUT
 

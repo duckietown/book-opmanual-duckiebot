@@ -1,3 +1,6 @@
+(setup-account-duckietown-hub)=
+# Duckietown Account
+
 ```{seo}
 :description: Learn how to create a Duckietown account and get a token to authenticate your Duckietown Shell. 
 :keywords: Duckietown, setup, accounts, Duckietown Hub, Duckietown token, DTS
@@ -10,9 +13,6 @@
 - A Duckietown account
 ```
 
-
-(setup-account-duckietown-hub)=
-# Duckietown Account
 
 A Duckietown account is necessary to operate Duckietown software. Duckietown accounts are created through the [Duckietown Hub](https://hub.duckietown.com).
 
@@ -27,7 +27,7 @@ Once logged in your Duckietown Hub account, go to [https://hub.duckietown.com/pr
 
 ```{figure} ../../_images/setup/accounts/dt-token.png
 :alt: example duckietown token dt2
-:width: 75%
+:width: 90%
 :name: duckietown-token-dt2
 :align: center
 

@@ -1,14 +1,9 @@
 (setup-duckiebot-battery-safety-basics)=
 # Safety First - On Lithium-Ion Batteries
 
-
-```{todo}
-JT: review this page
-```
-
 ```{seo}
 :description: Batteries are potentially dangerous and should be handled with care. Learn about Duckiebot batteries and how to handle them. 
-:keywords: Duckietown, Duckiebot, batteries, duckiebattery, duckie-power-bank, handling batteries, Duckiebot autonomy
+:keywords: Duckietown, Duckiebot, batteries, duckiebattery, duckie-power-bank, handling batteries, Duckiebot autonomy, duckiebattery state diagram
 ```
 
 ```{needget}
@@ -52,7 +47,7 @@ Caption
 
 
 ```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_real2.jpg
-:width: 50%
+:width: 30%
 :name: fig:DB-C-DBatt_real
 :alt: The Duckiebattery is a 5V 2A power bank with two USB-A outputs designed for robotics applications.
 :align: center
@@ -105,12 +100,6 @@ Keep reading the following safety precautions: do not skip this section.
 - Do not place the battery near heating equipment, nor expose it to direct sunlight for long periods.
 ```
 
-<!--
-### Battery modes
-
-The Duckiebattery has several operation modes, the most relevant of which are described below.
--->
-
 (db-opmanual-dtbattery-leds)=
 ### LED description
 The battery has five LEDs on the top, used for indicating the state of charge.
@@ -158,7 +147,7 @@ After setting the battery in `idle` mode, charge it by connecting a 5V 2A power 
 
 ```{figure} ../../_images/troubleshooting/duckiebattery/DB-C-DBatt_3.png
 :name: fig:DB-C-DBatt_3
-:width: 50%
+:width: 30%
 :align: center
 :alt: Charging the Duckiebattery.
 
@@ -174,6 +163,21 @@ When the battery's state of charge is particularly depleted (e.g., as soon as yo
 
 [comment]: <> (</div>)
 -->
+
+
+(duckiebattery-state-diagram)=
+### Duckiebattery states and state transitions
+
+The Duckiebattery has several operation modes (states), the most relevant of which are described below.
+
+```{figure} ../../_images/troubleshooting/duckiebattery/duckiebattery-state-diagram.png
+:name: duckiebattery-state-diagram-pic
+:width: 70%
+:align: center
+:alt: Duckietown Duckiebattery state diagram
+
+State diagram for the Duckiebattery. 
+```
 
 (db-opmanual-dtbattery-v2-protection-mode)=
 ### Battery protection mode
@@ -211,6 +215,12 @@ Duckiebattery outputs behave differently.
 - USB OUT-1: Connect this output to a non-sensitive power load, i.e., motor or LEDs. This output will experience short power drops when plugging and unplugging the charger cable.    
 
 - USB OUT-2: this is a 5V 2A USB output, uninterrupted by the charging process or the status of USB OUT-1. This port should be connected to the computing unit (i.e., NVIDIA Jetson Nano or Raspberry Pi) to allow the unit not to restart when plugging or unplugging the charger of the battery.
+
+(duckiebattery-live-diagnostics)=
+### Duckiebattery live diagnostics
+
+The Duckiebattery provides live diagnostics. Learn how to query them in the [](how-to-handle-a-duckiebot-db21).
+
 
 (db-opmanual-dtbattery-v2-troubleshooting)=
 ### Troubleshooting
@@ -400,3 +410,38 @@ The battery capacity is 7.4Ah at 5V with an efficiency as follows:
 ```
 
 -->
+
+
+(duckiebattery-troubleshooting)=
+## Troubleshooting
+
+```{note}
+The most common fault is not related to the Duckiebattery itself but the connection between it and the charger and/or the load.
+```
+
+```{note}
+Make sure that the charging cable is not damaged and is of good quality.
+Do not use a charging cable longer than `30 cm`.
+A faulty cable can cause excessive voltage drops between the Duckiebattery and load, leading to low voltage issues.
+```
+
+```{trouble}
+The Duckiebattery does not look like it is charging.
+---
+There could be several reasons why the Duckiebattery would not look like it is charging:
+
+* The input voltage may be too low/high (make sure to apply `5 V` via the Micro USB connector).
+* The Duckiebattery is in `protection` mode (plug it in a 5V 2A wall charger, wait for around `30 mins` and then press the side button **once** and notice if a faint red LED turns on).
+* The Duckiebattery is in a fault state, which could be caused by a cell and/or its internal PCB being overheated (unplug the charging cable from the charger, wait for around `1 h` and then plug the charging cable back into the charger).
+```
+
+```{trouble}
+One or both of the USB output ports are not working.
+---
+There could be several reasons why a USB output port would not be working:
+
+* The Duckiebattery is not in `idle` mode (press its button **once**).
+* The Duckiebattery is in `protection` mode (disconnect all loads, plug the charging cable into a charger, wait for around `30 min` and then press its button **once**).
+* The USB output port is in `overcurrent`/`overtemperature` mode (disconnect all loads, press the Duckiebattery's button **once** and then wait for around `30 min`).
+* An external voltage was applied to the USB output port (disconnect all loads and then press the Duckiebattery's button **once**).
+```

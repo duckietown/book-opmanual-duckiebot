@@ -21,7 +21,7 @@ A Duckiebot driving autonomously in a Duckietown without obstacles, intersection
 ```
 
 (demo-lane-following-expected)=
-## Introduction
+## Introduction to lane following
 
 ```{vimeo} 1026496889
 ```
@@ -113,7 +113,7 @@ The `Lane Following` demo consists of the following processing steps:
 5. **Control** (based on the lane pose estimate, a PID controller sends control signals to adjust your Duckiebot's heading).
 6. **Actuation** (the control signals are applied to your Duckiebot's motors).
 
-```{figure} ../../_images/demonstrations/lane_following/processing_flow.png
+```{figure} ../_images/demonstrations/lane_following/processing_flow.png
 :name: fig:lane-detection-process
 :alt: duckiebot image pipeline for autonomous lane following
 :align: center

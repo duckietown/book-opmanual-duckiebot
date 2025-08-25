@@ -1,66 +1,54 @@
 ```{seo}
-:description: Guide on turning on your Duckiebot for the first time.
-:keywords: Duckietown, Duckiebot, first boot, boot, 
+:description: Guide on turning on your Duckiebot for the first time. During the first boot, the Duckiebot completes its initialization procedure. 
+:keywords: Duckietown, Duckiebot, first boot, booting up a Duckiebot
 ```
 
 (duckiebot-boot)=
-# Setup - Booting the Duckiebot
+# Setup - Duckiebot First Boot
 
 ```{needget}
-- A flashed Duckiebot SD card
+- A flashed Duckiebot SD card: [](setup-db-sd-card-flashing-intro)
 - A Duckiebot of the same model chosen during the SD card flashing procedure
-- A fully charged battery
+- A charged battery (>50%)
 ---
 - An online (successfully initialized) Duckiebot
-- A Duckiebot connected to the network
+- (if network is correctly configured) A Duckiebot connected to the network
 ```
-
-```{todo}
-JT: do a thorough review of this page
-```
-
 
 ## You are now ready to boot up your Duckiebot
 
-Insert the SD card as shown in the video below into your robot and push the button on the 
-battery to power up the Duckiebot. While the video shows the procedure being performed on 
-a `DB21M` robot, this procedure is the same on all Duckietown robot models.
+Insert the initialized SD card into your Duckiebot's Jetson Nano until your feel a "click". Then, push the button on the 
+battery to power up the Duckiebot. 
+
 
 ```{vimeo} 527364179
 :alt: Duckiebot first boot
 ```
 
 ```{warning}
-Be sure your Duckiebattery was fully charged as shown in the assembly steps before 
-attempting to boot.
+Be sure your Duckiebattery is well charged before attempting to boot the Duckiebot for the first time.
 
 The external power supply might not be able to provide sufficient current if the battery is low, causing the on-board 
-computer to reboot. Should that happen during the first boot, you will likely have to 
-burn the SD card again.
+computer to reboot. Should that happen during the first boot, you will likely have to burn the SD card again.
 ```
 
 
 (monitor-first-boot)=
 ## Monitoring the First Boot
 
-Make sure your desktop or laptop computer is connected to the same Wi-Fi network the Duckiebot
-was instructed to connect to.
+Make sure your desktop or laptop computer is connected to the same Wi-Fi network the Duckiebot was instructed to connect to.
 
-Then open a terminal and run the following command,
+Then open a terminal and run:
 
 ``` 
 dts fleet discover
 ```
 
-The command above will show a list of all the Duckiebots
-reachable on your local network.  For each Duckiebot, the tool will also show the model that was used to flash the SD card, the hostname of your robot, and a status indicator.
+The command above will show a list of all the Duckiebots reachable on your local network.  For each Duckiebot, `dts fleet discover` will also show the model that was used to flash the SD card, the hostname of your robot, and a status indicator.
 
-Leave this tool open, it will refresh automatically every
-second, so there is no need to manually restart it.
+Leave this tool open, it will refresh automatically every second, so there is no need to manually restart it.
 
-Within a few minutes of powering up the robot with the SD card in, your Duckiebot will appear
-in the list with status **Booting**.  If it does not appear within 5 minutes, check out the Troubleshooting guide at 
-the end of this page.
+Within a few minutes of powering up the robot with the SD card in, your Duckiebot will appear in the list with status **Booting**.  If it does not appear within 5 minutes, check out the Troubleshooting guide at the end of this page.
 
 ```{figure} ../../_images/setup/handling/fleet_discover.png
 :name: fig:fleet-discover
@@ -70,8 +58,7 @@ Output of 'dts fleet discover'
 ```
 
 ```{attention}
-During the first boot, the robot will automatically reboot several times.
-Wait for the "Status" column to read "Ready" and turn solid green.
+During the first boot, the robot will automatically reboot several times. Wait for the "Status" column to read "Ready" and turn solid green.
 ```
 
 ## Software and Hardware Updates
@@ -82,17 +69,7 @@ Once the status of your Duckiebot is `Ready`, you are ready to update your Ducki
 
 It is good practice to keep your Duckiebot's software stack up to date with the latest code by following: [](ops-db-update).
 
-### HUT Microcontroller Update
-
-We call Duckiebot "HUT" (not a typo) the electronic board that connects to the GPIO pins of the onboard computer. 
-
-```{warning}
-It is not necessary to run this procedure after the first boot. We add this link here for completeness and to inform you of the existence of a microcontroller on the HUT.
-```
-
-The Duckiebot HUT connects to various electronics beyond the Duckiebot onboard computer, like motors and LEDs.
-
-If facing challenges with moving your Duckiebot or controlling the LEDs, it is possible that [reflashing the Duckiebot's HUT](reflash-microcontroller) might address your issues.
+    dts duckiebot update ROBOT_NAME
 
 (confirm-first-boot)=
 ## Confirming the First Boot
@@ -137,6 +114,20 @@ To reboot your Duckiebot, use the command,
     dts duckiebot reboot HOSTNAME
 
 You will learn more about how to handle your Duckiebot in [](how-to-handle-a-duckiebot-db21).
+-->
+
+<!--
+### (optional) HUT Microcontroller Update
+
+We call Duckiebot "HUT" (not a typo) the electronic board that connects to the GPIO pins of the onboard computer. 
+
+```{warning}
+It is not necessary to run this procedure after the first boot. We add this link here for completeness and to inform you of the existence of a microcontroller on the HUT.
+```
+
+The Duckiebot HUT connects to various electronics beyond the Duckiebot onboard computer, like motors and LEDs.
+
+If facing challenges with moving your Duckiebot or controlling the LEDs, it is possible that [reflashing the Duckiebot's HUT](reflash-microcontroller) might address your issues.
 -->
 
 (duckiebot-first-boot-troubleshooting)=

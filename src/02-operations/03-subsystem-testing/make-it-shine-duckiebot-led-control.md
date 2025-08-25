@@ -33,7 +33,12 @@ LEDs are more than just lights. As proper actuators on a Duckiebot, they can be 
 An easy way to control your Duckiebot's LEDs is by using the `LED Controller`.
 
 ```{figure} ../../_images/software_tools/led_controller/led_controller.png
-The `LED Controller`.
+:name: led_controller
+:alt: The Duckietown GUI for LED control
+:width: 60%
+:align: center
+
+The `LED Controller` interface is a simple way for controlling color and intensity of the Duckiebot's LEDs.
 ```
 
 To open the `LED Controller`, run:
@@ -67,13 +72,13 @@ The color dropper tool is not operational yet.
 ```{trouble}
 I can see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](sw-tools-dtps), but the LEDs do not update and the `Components` page of the `Dashboard` (opened by running `dts duckiebot dashboard DUCKIEBOT_NAME --page robot/components`) shows a red alert for the HUT.
 ---
-If you have a HUT v3.1, follow [](db-troubleshooting-hut).
+If you have a HUT v3.1, follow [](reflash-microcontroller).
 ```
 
 ```{trouble}
 My Duckiebot's LEDs do not update and I cannot see messages being sent to my Duckiebot when looking at the `DUCKIEBOT_NAME/actuator/lights/base/pattern` `DTPS` topic, after following [](sw-tools-dtps).
 ---
-Contact support.
+Reach out for help: [](how-to-get-help)
 ```
 
 ```{trouble}

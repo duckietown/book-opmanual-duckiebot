@@ -37,6 +37,23 @@ For more information about the mathematics behind the process, review the approp
 Duckietown camera calibration pattern.
 ```
 
+If you do not already have a Duckietown calibration board:
+
+1. Download the [Duckietown calibration pattern](https://github.com/duckietown/lib-dt-computer-vision/blob/ente/assets/extrinsics/camera_calibration_pattern_A3_rev0424.pdf)
+
+2. Print it in **A3** format
+
+3. Make sure the printing settings have not deformed the pattern, by measuring the features as indicated on the pattern itself
+
+4. Fix it to a rigid planar surface that you can move around
+
+```{note}
+* The squares must have side lengths equal to **0.031 m** (**3.1 cm**). Measure this, as having the wrong size may lead to your Duckiebot crashing.
+* In case your squares are not the correct size, make sure that your printer settings are set to **A3** format, with no automatic scaling and size set to `100%`.
+```
+
+
+<!--
 `````{tab-set}
 ````{tab-item} Duckiebot
 If you do not already have a Duckietown calibration board:
@@ -64,6 +81,8 @@ If you do not already have a Duckietown calibration board:
 ````
 `````
 
+-->
+
 ```{warning}
 If the pattern is not rigid, the calibrations should not be used. You can print on thick paper or adhere to something rigid to achieve this.
 ```
@@ -84,7 +103,7 @@ dts duckiebot calibrate_intrinsics DUCKIEBOT_NAME
 ```
 
 ```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_1.png
-:width: 60%
+:width: 70%
 :align: center
 :alt: Duckietown instrinsics camera calibration interface
 :name: intrinsics_calibrator_1
@@ -127,7 +146,7 @@ To perform the intrinsic calibration procedure:
 7. (optional) Click the `Undistort` switch to see an undistorted view of what your Duckiebot sees.
 
 ```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_2.png
-:width: 60%
+:width: 70%
 :align: center
 :alt: Duckietown instrinsics camera calibration interface showing a successful procedure
 :name: intrinsics_calibrator_2
@@ -136,7 +155,7 @@ The Duckietown intrinsics camera calibration interface (Intrinsics Calibrator) w
 ```
 
 ```{figure} ../../_images/calibrations/camera/intrinsics_calibrator_3.png
-:width: 60%
+:width: 70%
 :align: center
 :alt: Duckietown instrinsics camera calibration interface showing a successful procedure
 :name: intrinsics_calibrator_3
@@ -151,7 +170,7 @@ dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
 ```
 
 ```{figure} ../../_images/calibrations/camera/camera_intrinsic_panel.png
-:width: 60%
+:width: 70%
 :align: center
 :alt: Duckietown instrinsics camera calibration interface showing a successful procedure
 :name: camera_intrinsic_panel
@@ -175,7 +194,7 @@ For optimal performance, repeat this procedure if you ship the Duckiebot or othe
 The easiest way to perform the extrinsic camera calibration procedure for your Duckiebot is by using the `Extrinsics Calibrator`.
 
 ```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_1.png
-:width: 60%
+:width: 70%
 :align: center
 :alt: Duckietown extrinsics camera calibration interface
 :name: extrinsics_calibrator_1
@@ -224,7 +243,7 @@ To perform the extrinsic calibration procedure:
 5. (optional) Click the `Project` switch to see a top-down view of what your Duckiebot sees under `Projection`.
 
 ```{figure} ../../_images/calibrations/camera/extrinsic_setup_db21j_duckiebot.jpg
-:width: 30em
+:width: 70%
 :align: center
 :alt: Duckiebot extrinsics camera calibration setup
 :name: extrinsic_setup
@@ -234,7 +253,7 @@ Extrinsic calibration setup: align the Duckiebot with the marks on the calibrati
 ```
 
 ```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_2.png
-:width: 30em
+:width: 70%
 :align: center
 :alt: Duckietown extrinsics camera calibration check error function
 :name: extrinsics_calibrator_2
@@ -243,7 +262,7 @@ The Extrinsics Calibrator with the Check error switch set to `on`.
 ```
 
 ```{figure} ../../_images/calibrations/camera/extrinsics_calibrator_3.png
-:width: 30em
+:width: 70%
 :align: center
 :alt: Duckietown extrinsics camera calibration projection functionality
 :name: extrinsics_calibrator_3
@@ -258,7 +277,7 @@ dts duckiebot dashboard DUCKIEBOT_NAME --page robot/calibrations
 ```
 
 ```{figure} ../../_images/calibrations/camera/camera_extrinsic_panel.png
-:width: 30em
+:width: 70%
 :align: center
 :alt: Duckietown extrinsics camera calibration extrinsics panel
 :name: camera_extrinsic_panel

@@ -67,7 +67,7 @@ In this tab, you can see your Duckiebot's name, type, configuration, firmware (i
 ```{figure} ../../_images/software_tools/dashboard/dashboard_info.png
 :name: dashboard-info
 :align: center
-:width: 60%
+:width: 80%
 :alt: The Info tab on the Robot page of the Duckietown Duckiebot Dashboard
 
 The **Info** tab on the **Robot** page of the Dashboard.
@@ -81,7 +81,7 @@ In this tab, you can see what your Duckiebot sees, its lateral and angular speed
 ```{figure} ../../_images/software_tools/dashboard/dashboard_mission_control.png
 :name: dashboard_mission_control
 :align: center
-:width: 60%
+:width: 80%
 :alt: The Mission Control tab on the Robot page of the Dashboard. of the Duckietown Duckiebot Dashboard
 
 The **Mission Control** tab on the **Robot** page of the Dashboard.
@@ -95,7 +95,7 @@ In this tab, you can see a plot of your Duckiebot's temperature, CPU usage, etc.
 ```{figure} ../../_images/software_tools/dashboard/dashboard-health.png
 :name: dashboard-health
 :align: center
-:width: 60%
+:width: 80%
 :alt: The Health tab on the Robot page of the Dashboard.
 
 The **Health** tab on the **Robot** page of the Dashboard.
@@ -109,7 +109,7 @@ In this tab, you can see a graphical representation of your Duckiebot's ROS netw
 ```{figure} ../../_images/software_tools/dashboard/dashboard-architecture.png
 :name: dashboard-architecture
 :align: center
-:width: 60%
+:width: 80%
 :alt: The Architecture tab on the Robot page of the Dashboard.
 
 The **Architecture** tab on the **Robot** page of the Dashboard.
@@ -123,7 +123,7 @@ On this page, you can manage your Duckiebot's Docker containers.
 ```{figure} ../../_images/software_tools/dashboard/dashboard-portainer.png
 :name: dashboard-portainer
 :align: center
-:width: 60%
+:width: 80%
 :alt: The Portainer page of the Dashboard.
 
 The **Portainer** page of the Dashboard.

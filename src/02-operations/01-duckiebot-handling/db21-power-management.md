@@ -95,34 +95,34 @@ Otherwise, follow [](duckiebattery-update) before proceeding, or perform a [hard
 ### Soft shutdown
 
 
-1. **Top button shutdown**: to turn your Duckiebot off using the **top** button (**preferred**), press the **top** button (not the button on the Duckiebattery) for `5 s` and then release it.
+* **Top button shutdown**: to turn your Duckiebot off using the **top** button (**preferred**), press the **top** button (not the button on the Duckiebattery) for `5 s` and then release it.
 
-You should see the button blinking and the screen showing "Shutdown". It will take a few seconds for the procedure to complete. 
+    You should see the button blinking and the screen showing "Shutdown". It will take a few seconds for the procedure to complete. 
 
-```{attention}
-If the screen switched to the next page and the top button did not blink, try again and fully press the **top** button for a little longer than 5 seconds.
-```
+    ```{attention}
+    If the screen switched to the next page and the top button did not blink, try again and fully press the **top** button for a little longer than 5 seconds.
+    ```
 
-2. **DTS shutdown**: to turn your Duckiebot off using `dts`, run:
+* **DTS shutdown**: to turn your Duckiebot off using `dts`, run:
 
-```shell
-dts duckiebot shutdown DUCKIEBOT_NAME
-```
+    ```shell
+    dts duckiebot shutdown DUCKIEBOT_NAME
+    ```
 
-3. **Dashboard shutdown**: to turn your Duckiebot off through the `Dashboard`:
+* **Dashboard shutdown**: to turn your Duckiebot off through the `Dashboard`:
 
     1. Run `dts duckiebot dashboard DUCKIEBOT_NAME`.
     2. Click the `Power` button.
     3. Select the `Shutdown` option.
     4. Click the `Yes` button.
 
-4. **SSH shutdown**: to turn your Duckiebot off using `ssh`, run:
+* **SSH shutdown**: to turn your Duckiebot off using `ssh`, run:
 
-```shell
-ssh duckie@DUCKIEBOT_NAME.local sudo poweroff
-```
+    ```shell
+    ssh duckie@DUCKIEBOT_NAME.local sudo poweroff
+    ```
 
 (duckiebot-hard-shutdown)=
 ### Hard shutdown (last resort)
 
-If none of the previous methods worked, after waiting a few seconds from your last attempt, unplug the cable connected to the `5VRASPI` port on the HUT. Use this method only as a last resort, and possibly not during the first boot. 
+If none of the previous methods worked, after waiting a few seconds from your last attempt, unplug the cable connected to the `5VRASPI` port on the HUT (the closest mini-USB port on the HUT to the camera side). Use this method only as a last resort, and not during the first boot.
