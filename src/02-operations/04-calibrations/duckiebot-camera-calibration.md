@@ -242,7 +242,7 @@ To perform the extrinsic calibration procedure:
 4. Wait for the spinner to disappear.
 5. (optional) Click the `Project` switch to see a top-down view of what your Duckiebot sees under `Projection`.
 
-```{figure} ../../_images/calibrations/camera/extrinsic_setup_db21j_duckiebot.jpg
+```{figure} ../../_images/calibrations/camera/extrinsics-calibration-setup.jpg
 :width: 70%
 :align: center
 :alt: Duckiebot extrinsics camera calibration setup

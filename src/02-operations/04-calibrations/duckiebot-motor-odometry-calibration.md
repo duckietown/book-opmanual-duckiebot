@@ -76,18 +76,18 @@ Note the keys in the table below.
 
 To perform the kinematics calibration procedure:
 
-1. Create a slightly greater than `2 m` long straight line on your floor using tape.
-2. Place your Duckiebot at one end of the line.
-3. Note your Duckiebot's position.
-4. Face your Duckiebot towards the other end of the line.
-5. Drive your Duckiebot forward for about `2 m`.
-6. Note your Duckiebot's position.
-7. Measure the distance between the center of the tape and the center of your Duckiebot's axle using a ruler, making sure that the ruler is perpendicular to the tape.
-8. Decrease (resp., increase) the `Trim` and repeat steps **2**-**8** if your Duckiebot drifted to the left (resp., right) side of the tape by more than `10 cm`.
+1. Create a slightly greater than `2 m` long straight line on your floor using tape (or 4 straight tiles, each one is `60 cm` long)
+2. Place your Duckiebot at one end of the line
+3. Note your Duckiebot's position
+4. Face your Duckiebot towards the other end of the line
+5. Drive your Duckiebot forward for about `2 m`
+6. Note your Duckiebot's position
+7. Measure the distance between the center of the tape and the center of your Duckiebot's axle using a ruler, making sure that the ruler is perpendicular to the tape
+8. Decrease (increase) the `Trim` and repeat steps **2**-**8** if your Duckiebot drifted to the left (right) side of the tape by more than `10 cm`.
 9. Set the `Gain`.
 10. Click the `Save` button.
 
-```{figure} ../../_images/calibrations/kinematics/wheel_calibration_line.jpg
+```{figure} ../../_images/calibrations/kinematics/wheel_calibration_line.png
 :width: 60%
 :align: center
 :alt: Straight line for Duckiebot wheel/odometry/kinematics calibration procedure
