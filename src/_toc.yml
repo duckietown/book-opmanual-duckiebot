@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 parts:
     -   caption: Start Here - Setup
-        maxdepth: 2
+        maxdepth: 3
         numbered: False
         chapters:
             #-   file: setup/overview
@@ -38,7 +38,7 @@ parts:
                     -   file: 01-setup/03-duckiebot/duckiebot-first-boot
                     -   file: 01-setup/03-duckiebot/dashboard-setup
     -   caption: Duckiebot Operations
-        maxdepth: 3
+        maxdepth: 2
         numbered: False
         chapters:
             -   file: 02-operations/how-to-use-a-duckiebot-intro
@@ -70,7 +70,7 @@ parts:
             # -   file: demonstrations/lane-following-with-intersections
             # -   file: demonstrations/lane-following-with-duckiebots
     -   caption: Software Tools
-        maxdepth: 2
+        maxdepth: 1
         numbered: False
         chapters:
             # -   file: 04-software-tools/duckietown-duckiebot-image-viewer
