@@ -30,9 +30,9 @@ Read the [FAQ and Troubleshooting](how-to-get-help) to find out how to get suppo
 ## Table of Contents
 
 
-```{figure} /_images/intro/duckiebot-status-flow.webp
+```{figure} /_images/intro/db-status-diagram.jpg
 :alt: duckiebot assembly, setup, configuration and status definition diagram
-:width: 75%
+:width: 60%
 :name: duckiebot-status-flow
 :align: center
 

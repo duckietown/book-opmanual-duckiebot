@@ -16,10 +16,10 @@ An initialized SD card for your Duckiebot with default configuration settings.
 (setup-db-sd-card-flashing-fast)=
 # The Fast Way - Initialization
 
-Use this procedure if you want a quicker result, and do not mind having a default robot name. 
+Use this procedure if you want a quicker result, and do not mind having [default settings](db-init-fast-default-settings).
 
 ```{tip}
-Robots on the same network must have unique names. Do not follow this procedure if you plan on having multiple Duckiebots on the same network.
+Robots on the same network must have unique names. **Do not follow this procedure if you plan on having multiple Duckiebots on the same network.**
 ```
 
 ```{attention}
@@ -27,44 +27,37 @@ By proceeding with these instructions you are accepting the [Duckietown terms of
 ```
 
 (initialize-sd-card-video-fast)=
-## Image download
+## Duckiebot (`DB21J`) image download
 
-- Read and understand the [](initialization-tos) before proceeding. For any questions or doubts, [reach out](mailto:info@duckietown.com).
+1. Read and understand the [](initialization-tos) before proceeding. For any questions or doubts, [reach out](mailto:info@duckietown.com).
 
-(initialization-tos)=
-### Legal things - Accepting Duckietown legal terms
+2. [Download the Duckietown compressed image](https://duckietown.com/download-duckiebot-ente-sdcard-image-googledrive)
 
-By downloading this image you accept the [Duckietown Software License](https://duckietown.com/sw-license/), [Terms and Conditions](https://duckietown.com/terms-and-conditions/) and [Privacy Policy](https://duckietown.com/privacy/), as well as robot configuration-specific licenses due to the presence of third party software in the SD card. Acceptance is mandatory, resistance is futile.
+    The image is downloaded as a compressed `.zip` file. Programs like Balena Etcher allow flashing this format directly to the SD card. If you are using a different program, unzip the downloaded file to obtain a `.img` file to flash to the SD card.
 
-Start by plugging the SD card into your computer using a SD card reader or the USB to microSD card adapter provided in your Duckiebot kit. Make sure the SD card is detected before proceeding.
+3. [Install Balena Etcher](https://etcher.balena.io/) or equivalent software
 
-- [Download the Duckietown compressed image](https://cutt.ly/ente-duckiebot-image-207-googledrive)
+4. Use Balena Etcher to flash the downloaded image to the SD card
 
-<!--
- temp link above
+    Open the Balena Etcher application you just downloaded, and follow the instructions.
 
- ```{todo}
-upload image to aws and create redirect from https://duckietown.com/download-duckiebot-ente-image to link
-```
--->
+5. Configure the network on the Duckiebot
 
-The image is downloaded as a compressed `.zip` file. Programs like Balena Etcher allow you to flash the `.zip` file directly to the SD card, taking care of unzipping it. If you are using a different program, unzip the downloaded file to obtain a `.img` file to flash to the SD card.
+    This image is pre-configured to so that the Duckiebot will connects to a network with SSID `duckietown` and password `quackquack`.
 
-- [Install Balena Etcher](https://etcher.balena.io/) or equivalent software
+    To have the Duckiebot connect to a different network, your will have to [edit the Wi-Fi settings on your Duckiebot](duckiebot-setup-wifi).
 
-- Use Balena Etcher to flash the downloaded image to the SD card
+    To access the `/etc/wpa_supplicant.conf` file on your Duckiebot, various options exist:
 
-Open the Balena Etcher application you just downloaded, and follow the instructions.
+    * If you have an Ubuntu computer set up, plug the SD card of the Duckiebot in your computer through the provided SD card adapter, navigate to the `/media/duckietown/[...]/etc/` folder, edit the Wi-Fi settings with `sudo nano wpa_supplicant.conf`, and plug the SD card back in the Duckiebot; or,
 
-- Configure the network
+    * if you do not have an Ubuntu computer set up; create a temporary hotspot with your phone, windows or macOS computer with SSID `duckietown` and WPA-PSK password `quackquack`, and connect your computer to it. Plug the SD card in the Duckiebot, and after the [first boot](duckiebot-boot) it will eventually connect to it. It does not matter at this stage to have internet connection. From your computer, [SSH into the Duckiebot](handling-how-to-ssh-into-your-duckiebot), and proceed to edit the Wi-Fi settings file as described above. Or,
 
-Create a network with `ssid` duckietown and password `quackquack`, and the Duckiebot will automatically connect to it.
+    * if you have access to the router and an ethernet cable, connect your Duckiebot through the ethernet cable to the router, connect your computer to the same network, and proceed to SSH into the Duckiebot to edit the Wi-Fi settings file.
 
-Alternatively, [edit the Wi-Fi settings on your Duckiebot](duckiebot-setup-wifi) to make it connect to your existing network.
+6. Plug in the SD card into your Duckiebot
 
-- Plug in the SD card into your Duckiebot
-
-You are now ready for the [Duckiebot first boot](duckiebot-boot) sequence.
+7. Perform the [Duckiebot first boot](duckiebot-boot) sequence.
 
 (db-init-fast-default-settings)=
 ## Default settings
@@ -73,11 +66,19 @@ This image has the following default settings:
 
 - default username: `duckie`
 - default user password: `quackquack`
-- robot name (hostname): `entebot`
+- robot name (hostname): `entebot208`
 - type: `duckiebot`
 - configuration: `DB21J` (works only with Jetson Nano 4GB developer kit) 
 - will connect to Wi-Fi named `duckietown` with password `quackquack`
 - country: `US`
+
+(initialization-tos)=
+### Legal things - Accepting Duckietown legal terms
+
+By downloading this image you accept the [Duckietown Software License](https://duckietown.com/sw-license/), [Terms and Conditions](https://duckietown.com/terms-and-conditions/) and [Privacy Policy](https://duckietown.com/privacy/), as well as robot configuration-specific licenses due to the presence of third party software in the SD card. Acceptance is mandatory, resistance is futile.
+
+Start by plugging the SD card into your computer using a SD card reader or the USB to microSD card adapter provided in your Duckiebot kit. Make sure the SD card is detected before proceeding.
+
 
 (sd-card-flashing-troubleshooting-fast)=
 ## Troubleshooting
