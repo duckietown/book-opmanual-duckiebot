@@ -91,6 +91,7 @@ parts:
             -   file: 06-troubleshooting/duckiebot-network-faqs
         #    -   file: 06-troubleshooting/duckiebot-hardware-components
             -   file: 06-troubleshooting/reflashing-jetson-nano-development-kit-4gb-duckietown
+            -   file: 06-troubleshooting/flashing-okdo-jetson-nano
             -   file: 06-troubleshooting/duckietown-smart-robotics-duckiebattery-5v-2a
         #    -   file: 06-troubleshooting/duckiebot-raspberrypi-and-nvidia-jetson-nano-hut-faqs
             -   file: 06-troubleshooting/frequently-asked-questions-faq
