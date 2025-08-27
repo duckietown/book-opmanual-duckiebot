@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 parts:
     -   caption: Start Here - Setup
-        maxdepth: 2
+        maxdepth: 3
         numbered: False
         chapters:
             #-   file: setup/overview
@@ -65,7 +65,8 @@ parts:
         maxdepth: 1
         numbered: False
         chapters:
-            -   file: 03-demonstrations/lane-following-lf
+            - file: 03-demonstrations/general_procedure
+            - file: 03-demonstrations/lane-following-lf
             # -   file: demonstrations/lane-following-with-obstacles
             # -   file: demonstrations/lane-following-with-intersections
             # -   file: demonstrations/lane-following-with-duckiebots
