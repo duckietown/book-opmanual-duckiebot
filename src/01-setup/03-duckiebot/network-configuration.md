@@ -16,7 +16,12 @@
 * A connected Duckiebot
 ```
 
-Most `dts` commands rely on the connectivity between the Duckiebot, the computer used to interact with it, and the internet. To achieve this, the Duckiebot and the computer need to appear both as physical devices on a same subnet that has access to the internet. 
+Most `dts` commands rely on the connectivity between the Duckiebot, the computer used to interact with it, and the internet. 
+
+To make sure all commands work, the Duckiebot and the computer must:
+
+* appear as physical devices on a same subnet;
+* the network should have access to the internet.
 
 ```{warning}
 Networks are the most common blocker when using Duckietown. Making sure this step is completely correctly will remove many future headaches. 
@@ -57,7 +62,8 @@ Output of `dts fleet discover` with a connected Duckiebot
 (setup-duckiebot-edit-networks)=
 ## How to add or edit Wi-Fi networks on a Duckiebot
 
-It is possible to add, remove, or edit networks to which a Duckiebot will connect to by editing the network configuration file, without the need to reflash the SD card: [](duckiebot-setup-wifi).
+It is possible to add, remove, or edit networks to which a Duckiebot will connect to by editing the network configuration file, **without** the need to re-flash the SD card. To do so, one must edit the `/etc/wpa_supplicant.conf` file on the Duckiebot's SD card: [](duckiebot-setup-wifi).
+
 
 (setup-uni-network)=
 ### A word on "corporate" networks, e.g., `eduroam`
