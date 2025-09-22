@@ -6,9 +6,9 @@
 (laptop-setup-shell)=
 # Step 3: Duckietown Shell Installation
 
-`````{tab-set}
+``````{tab-set}
 
-````{tab-item} Ubuntu
+`````{tab-item} Ubuntu
 
 The Duckietown Shell is a [command-line interface (CLI) program](https://en.wikipedia.org/wiki/Command-line_interface) 
 that provides all of the necessary Duckietown operations, such as
@@ -20,6 +20,14 @@ that provides all of the necessary Duckietown operations, such as
 
 (laptop-setup-ubuntu-shell)=
 **Install the Duckietown Shell (`dts`)**
+
+````{attention}
+If you have already installed the Duckietown Shell using `pip3`, run the following command and follow the on-screen instructions:
+
+```shell
+pip3 uninstall duckietown-shell
+```
+````
 
 Install the Duckietown Shell using the following command:
 
@@ -38,10 +46,10 @@ which dts
 This should output a path ending in `dts`.
 ```
 
-````
+`````
 
 
-````{tab-item} macOS
+`````{tab-item} macOS
 
 ```{warning}
 This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
@@ -57,6 +65,14 @@ that provides all of the necessary Duckietown operations, such as
 
 (laptop-setup-mac-shell)=
 **Install the Duckietown Shell (`dts`)**
+
+````{attention}
+If you have already installed the Duckietown Shell using `pip3`, run the following command and follow the on-screen instructions:
+
+```shell
+pip3 uninstall duckietown-shell
+```
+````
 
 Install the Duckietown Shell using the following command:
 
@@ -75,8 +91,10 @@ which dts
 This should output a path ending in `dts`.  If there is no output, then the `dts` executables are not located where `PATH` is pointing.  Try one of the `PATH` alternatives above.
 ```
 
+`````
 
-````{tab-item} Windows
+
+`````{tab-item} Windows
 
 ```{warning}
 This configuration is not officially supported. We recommend using the Ubuntu Operating System for an optimal experience.
@@ -95,6 +113,14 @@ You can install the Duckietown Shell in your Ubuntu WSL distro.
 (laptop-setup-wsl-shell)=
 **Install the Duckietown Shell (`dts`)**
 
+````{attention}
+If you have already installed the Duckietown Shell using `pip3`, run the following command and follow the on-screen instructions:
+
+```shell
+pip3 uninstall duckietown-shell
+```
+````
+
 Install the Duckietown Shell using the following command:
 
     pipx install duckietown-shell
@@ -112,5 +138,5 @@ which dts
 This should output a path ending in `dts`.
 ```
 
-````
 `````
+``````
